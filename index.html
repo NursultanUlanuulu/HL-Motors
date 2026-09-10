@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HL Motors — поставка автомобилей из Китая под ключ." />
+    <title>HL Motors — Автомобили из Китая</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="HL Motors — на главную">
+        <span class="brand-mark">
+          <svg viewBox="0 0 92 32" aria-hidden="true"><path d="M5 22C15 11 30 10 43 12c10 2 18-3 25-8 6-4 12-5 18-3M6 23l8 2m-1-4c7-7 14-8 19-6m38-7c4 0 8 2 11 5m-5 5c4 0 7-2 10-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M31 13c2 5 3 10 3 15m14-15c-1 5-1 10 0 15M28 20h24" fill="none" stroke="currentColor" stroke-width="1.1"/></svg>
+          <b>HL</b>
+        </span>
+        <span>HL <i>Motors</i></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="catalog.html">Автомобили</a>
+        <a href="#process">Как мы работаем</a>
+        <a href="#about">О компании</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-select" aria-label="Выбор языка">
+          <button class="lang-toggle" aria-expanded="false">RU <span>⌄</span></button>
+          <div class="language-menu">
+            <button class="active" data-lang="RU">Русский</button>
+            <button data-lang="EN">English</button>
+            <button data-lang="中文">中文</button>
+          </div>
+        </div>
+        <button class="theme-toggle" aria-label="Переключить тему"><span class="theme-icon">◐</span></button>
+        <button class="menu-toggle" aria-label="Открыть меню"><span></span><span></span></button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Поставка автомобилей из Китая <span></span> с 2015 года</p>
+          <h1 id="hero-title">Автомобили,<br /><em>достойные</em> движения.</h1>
+          <p class="hero-lead">Находим, проверяем и доставляем автомобили из Китая. От первого выбора — до ключей в ваших руках.</p>
+          <div class="hero-ctas">
+            <a class="button button-gold" href="catalog.html">Смотреть автомобили <span>↗</span></a>
+            <a class="text-link" href="#process">Узнать о поставке <span>↓</span></a>
+          </div>
+        </div>
+        <div class="hero-meta">
+          <div><span>01</span><small>01 / 04</small></div>
+          <p>Ваш проводник<br />на автомобильном рынке Китая</p>
+        </div>
+        <button class="scroll-cue" data-scroll="#catalog" aria-label="Прокрутить к каталогу"><span>SCROLL</span><i></i></button>
+      </section>
+
+      <section class="quick-search" aria-label="Быстрый поиск автомобиля">
+        <div class="quick-search-title"><span class="section-number">01</span><h2>Найдите свой автомобиль</h2></div>
+        <form id="quick-search-form" class="filter-row">
+          <label><span>Марка</span><select id="brand-filter"><option value="">Любая марка</option><option>Zeekr</option><option>Li Auto</option><option>Toyota</option><option>BYD</option><option>Mercedes-Benz</option></select></label>
+          <label><span>Статус</span><select id="status-filter"><option value="">Любой статус</option><option value="В наличии">В наличии</option><option value="В пути">В пути</option><option value="Под заказ">Под заказ</option></select></label>
+          <label><span>Бюджет</span><select id="price-filter"><option value="">Любой бюджет</option><option value="50000">до $50 000</option><option value="80000">до $80 000</option><option value="120000">до $120 000</option></select></label>
+          <button class="button button-dark" type="submit">Найти <span>↗</span></button>
+        </form>
+      </section>
+
+      <section id="catalog" class="catalog section-space" aria-labelledby="catalog-title">
+        <div class="section-header">
+          <div><p class="eyebrow"><span class="section-number">02</span> Актуальные предложения</p><h2 id="catalog-title">Автомобили<br /><em>в вашем ритме</em></h2></div>
+          <div class="catalog-actions"><p id="result-count">08 автомобилей</p><button class="filter-button" id="filter-button" aria-expanded="false"><span class="filter-icon">≡</span> Все фильтры</button></div>
+        </div>
+
+        <div class="filter-panel" id="filter-panel">
+          <label>Год<select id="year-filter"><option value="">Любой год</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option></select></label>
+          <label>Тип<select id="condition-filter"><option value="">Любое состояние</option><option value="Новый">Новый</option><option value="С пробегом">С пробегом</option></select></label>
+          <label>Сортировка<select id="sort-filter"><option value="asc">Сначала дешевле</option><option value="desc">Сначала дороже</option></select></label>
+          <button id="reset-filters" class="reset-button" type="button">Сбросить</button>
+        </div>
+        <div class="catalog-grid" id="catalog-grid"></div>
+        <div class="empty-state" id="empty-state" hidden>По этим параметрам автомобилей пока нет. Попробуйте изменить фильтры.</div>
+        <a class="catalog-more" href="#contacts">Нужна другая модель? <span>Подберём под заказ</span> <b>↗</b></a>
+      </section>
+
+      <section id="about" class="statement section-space">
+        <div class="statement-image"></div>
+        <div class="statement-content">
+          <p class="eyebrow"><span class="section-number">03</span> HL Motors</p>
+          <h2>Не просто<br />поставляем. <em>Отвечаем</em><br />за каждый выбор.</h2>
+          <p>Мы более десяти лет работаем с автомобильным рынком Китая и пять лет — в Кыргызстане. Вы видите реальную историю автомобиля, понимаете состав цены и знаете, где находится машина на каждом этапе.</p>
+          <div class="figures">
+            <div><strong>10<span>+</span></strong><small>лет опыта<br />в Китае</small></div>
+            <div><strong>1 200<span>+</span></strong><small>автомобилей<br />доставлено</small></div>
+            <div><strong>4</strong><small>страны<br />поставки</small></div>
+          </div>
+          <a class="text-link dark-link" href="#contacts">Больше о нас <span>↗</span></a>
+        </div>
+      </section>
+
+      <section id="process" class="process section-space" aria-labelledby="process-title">
+        <div class="section-header"><div><p class="eyebrow"><span class="section-number">04</span> Полный цикл</p><h2 id="process-title">Спокойствие на каждом<br /><em>километре пути</em></h2></div><p class="process-intro">Вы выбираете автомобиль. Всё остальное берём на себя — от проверки в Китае до выдачи в вашем городе.</p></div>
+        <ol class="process-list">
+          <li><span>01</span><div><h3>Подбор</h3><p>Находим автомобиль по вашим параметрам и бюджету.</p></div><i>↗</i></li>
+          <li><span>02</span><div><h3>Проверка</h3><p>Проводим осмотр, диагностику и проверяем документы.</p></div><i>↗</i></li>
+          <li><span>03</span><div><h3>Доставка</h3><p>Организуем безопасную перевозку и сопровождаем груз.</p></div><i>↗</i></li>
+          <li><span>04</span><div><h3>Оформление</h3><p>Таможня, лаборатория и документы — без лишних забот.</p></div><i>↗</i></li>
+        </ol>
+      </section>
+
+      <section class="testimonial">
+        <div class="quote-mark">“</div>
+        <blockquote>В HL Motors нет сюрпризов после покупки. Только честный автомобиль, прозрачная цена и команда, которой можно доверять.</blockquote>
+        <div class="testimonial-author"><div class="avatar">А</div><div><strong>Алексей М.</strong><span>Zeekr 001 · Бишкек</span></div></div>
+        <div class="testimonial-count">01 <i></i> 03</div>
+      </section>
+
+      <section id="contacts" class="contact-cta">
+        <div class="contact-car" aria-hidden="true"></div>
+        <div class="contact-inner">
+          <p class="eyebrow">Ваш следующий автомобиль уже ждёт</p>
+          <h2>Начнём<br />с разговора.</h2>
+          <p>Расскажите, какой автомобиль ищете — найдём лучший вариант и рассчитаем поставку под ключ.</p>
+          <div class="contact-buttons"><a class="button button-gold" href="https://wa.me/996502102270" target="_blank" rel="noreferrer">Написать в WhatsApp <span>↗</span></a><a class="text-link contact-copy" href="https://t.me/nur6ultan" target="_blank" rel="noreferrer">Написать в Telegram <span>↗</span></a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top"><a class="brand footer-brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 92 32" aria-hidden="true"><path d="M5 22C15 11 30 10 43 12c10 2 18-3 25-8 6-4 12-5 18-3M6 23l8 2m-1-4c7-7 14-8 19-6m38-7c4 0 8 2 11 5m-5 5c4 0 7-2 10-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><b>HL</b></span><span>HL <i>Motors</i></span></a><p>Автомобили из Китая.<br />С заботой о каждом километре.</p><a class="footer-email" href="mailto:hello@hlmotors.com">hello@hlmotors.com <span>↗</span></a></div>
+      <div class="footer-bottom"><span>© 2025 HL Motors</span><span>Бишкек · Кыргызстан</span><span>Россия · Беларусь · Казахстан</span><a href="#top">Наверх ↑</a></div>
+    </footer>
+
+    <aside class="vehicle-modal" id="vehicle-modal" aria-hidden="true" aria-labelledby="modal-title" role="dialog">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="modal-card">
+        <button class="modal-close" data-close-modal aria-label="Закрыть">×</button>
+        <div class="modal-image" id="modal-image"></div>
+        <div class="modal-content"><p class="eyebrow" id="modal-status"></p><h2 id="modal-title"></h2><p id="modal-specs"></p><div class="modal-price" id="modal-price"></div><dl id="modal-details"></dl><a class="button button-gold" id="modal-contact" href="https://wa.me/996502102270" target="_blank" rel="noreferrer">Узнать об автомобиле <span>↗</span></a></div>
+      </article>
+    </aside>
+    <div class="toast" id="toast" role="status">Текст запроса скопирован</div>
+    <script src="cars-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

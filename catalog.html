@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Каталог автомобилей HL Motors — в наличии, в пути и под заказ." />
+    <title>Автомобили — HL Motors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header page-header">
+      <a class="brand" href="index.html" aria-label="HL Motors — на главную"><span class="brand-mark"><svg viewBox="0 0 92 32" aria-hidden="true"><path d="M5 22C15 11 30 10 43 12c10 2 18-3 25-8 6-4 12-5 18-3M6 23l8 2m-1-4c7-7 14-8 19-6m38-7c4 0 8 2 11 5m-5 5c4 0 7-2 10-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M31 13c2 5 3 10 3 15m14-15c-1 5-1 10 0 15M28 20h24" fill="none" stroke="currentColor" stroke-width="1.1"/></svg><b>HL</b></span><span>HL <i>Motors</i></span></a>
+      <nav class="desktop-nav" aria-label="Основная навигация"><a class="active" href="catalog.html">Автомобили</a><a href="index.html#process">Как мы работаем</a><a href="index.html#about">О компании</a><a href="index.html#contacts">Контакты</a></nav>
+      <div class="header-actions"><button class="theme-toggle" aria-label="Переключить тему"><span class="theme-icon">◐</span></button><button class="menu-toggle" aria-label="Открыть меню"><span></span><span></span></button></div>
+    </header>
+    <main>
+      <section class="catalog-hero">
+        <p class="eyebrow"><span class="section-number">01</span> Автомобили HL Motors</p>
+        <div class="catalog-heading"><h1>Автомобили<br /><em>на ваш маршрут.</em></h1><p>В наличии, уже в пути или под заказ из Китая. Каждое предложение прошло проверку нашей команды.</p></div>
+      </section>
+      <section class="catalog-page-content">
+        <div class="catalog-toolbar">
+          <button class="catalog-filter-toggle" id="catalog-filter-toggle" aria-expanded="true"><span>Фильтры</span><b>−</b></button>
+          <p id="catalog-page-count">12 автомобилей</p>
+          <label class="sort-select">Сортировка<select id="catalog-sort"><option value="asc">Сначала дешевле</option><option value="desc">Сначала дороже</option></select></label>
+        </div>
+        <div class="catalog-layout">
+          <aside class="catalog-sidebar" id="catalog-sidebar">
+            <div class="sidebar-title"><strong>Подобрать автомобиль</strong><button type="button" id="catalog-reset">Сбросить</button></div>
+            <label>Марка<select id="catalog-brand"><option value="">Все марки</option><option>Zeekr</option><option>Li Auto</option><option>Toyota</option><option>BYD</option><option>Mercedes-Benz</option><option>Aito</option><option>Porsche</option><option>Lexus</option><option>BMW</option></select></label>
+            <label>Статус<select id="catalog-status"><option value="">Любой статус</option><option value="В наличии">В наличии</option><option value="В пути">В пути</option><option value="Под заказ">Под заказ</option></select></label>
+            <label>Цена до<select id="catalog-price"><option value="">Без ограничения</option><option value="60000">$60 000</option><option value="90000">$90 000</option><option value="120000">$120 000</option></select></label>
+            <label>Год<select id="catalog-year"><option value="">Любой год</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option></select></label>
+            <label>Состояние<select id="catalog-condition"><option value="">Любое состояние</option><option value="Новый">Новый</option><option value="С пробегом">С пробегом</option></select></label>
+            <div class="sidebar-note"><span>✦</span><p>Не нашли нужную комплектацию? Найдём автомобиль на аукционах и у дилеров Китая.</p><a href="index.html#contacts">Оставить заявку ↗</a></div>
+          </aside>
+          <div><div class="catalog-page-grid" id="catalog-page-grid"></div><p class="catalog-empty" id="catalog-empty" hidden>По этим параметрам пока нет автомобилей. Попробуйте сбросить фильтры.</p></div>
+        </div>
+      </section>
+    </main>
+    <footer><div class="footer-top"><a class="brand footer-brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 92 32" aria-hidden="true"><path d="M5 22C15 11 30 10 43 12c10 2 18-3 25-8 6-4 12-5 18-3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><b>HL</b></span><span>HL <i>Motors</i></span></a><p>Автомобили из Китая.<br />С заботой о каждом километре.</p><a class="footer-email" href="mailto:hello@hlmotors.com">hello@hlmotors.com <span>↗</span></a></div><div class="footer-bottom"><span>© 2025 HL Motors</span><span>Бишкек · Кыргызстан</span><span>Россия · Беларусь · Казахстан</span><a href="#top">Наверх ↑</a></div></footer>
+    <script src="cars-data.js"></script><script src="catalog.js"></script>
+  </body>
+</html>
