@@ -5,7 +5,7 @@ export const contactsKey = 'hl-motors-contacts';
 export type Contacts = { whatsapp: string; telegram: string; email: string };
 export const defaultContacts: Contacts = { whatsapp: '996502102270', telegram: 'nur6ultan', email: 'hello@hlmotors.com' };
 
-function isCar(value: unknown): value is Car {
+export function isCar(value: unknown): value is Car {
   if (!value || typeof value !== 'object') return false;
   const car = value as Record<string, unknown>;
   return ['id', 'brand', 'model', 'trim', 'mileage', 'city', 'power', 'drive', 'image'].every(key => typeof car[key] === 'string')

@@ -8,6 +8,7 @@ export type CarText = Partial<Record<CarTextField, string>>;
 
 export type Car = {
   id: string;
+  version?: number;
   brand: string;
   model: string;
   trim: string;

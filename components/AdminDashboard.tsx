@@ -64,7 +64,7 @@ export function AdminDashboard() {
       if (!await ensureAdminSession()) throw new Error('Сессия завершена. Войдите в админку снова.');
       const gallery = (draft.gallery ?? [draft.image]).map(source => source.trim()).filter(Boolean);
       const normalized = normalizeCarText({ ...draft, gallery, image: gallery[0] || '' });
-      const next = storeCar(normalized, original.current);
+      const next = await storeCar(normalized, original.current);
       cleanup(next, original.current ? [original.current] : []);
       setDraft(null);
       setToast(original.current ? 'Изменения сохранены и опубликованы на сайте.' : 'Автомобиль добавлен на сайт.');
@@ -76,7 +76,7 @@ export function AdminDashboard() {
     setSaving(true);
     try {
       if (!await ensureAdminSession()) throw new Error('Сессия завершена. Войдите в админку снова.');
-      const next = removeCar(deleting);
+      const next = await removeCar(deleting);
       cleanup(next, [deleting]);
       setDeleting(null); setToast('Объявление удалено из каталога и с сайта.');
     } catch (err) { setToast(err instanceof Error ? err.message : 'Не удалось удалить объявление.'); }
@@ -117,8 +117,8 @@ export function AdminDashboard() {
       <form className="admin-editor" onSubmit={saveCar}>
         <header><div><p>{t(original.current ? 'Редактирование объявления' : 'Новое объявление')}</p><h2>{draftDisplay?.brand && draftDisplay?.model ? `${draftDisplay.brand} ${draftDisplay.model}` : t('Автомобиль')}</h2></div><button type="button" className="admin-editor-close" disabled={busy} onClick={closeEditor} aria-label={t("Закрыть")}>×</button></header>
         <div className="admin-editor-body"><fieldset className="admin-editor-fields" disabled={saving}>
-          <AdminMediaEditor key={draft.id} car={draft} onChange={media => setDraft(current => current ? { ...current, ...media } : current)} onBusy={setMediaBusy} onUploaded={sources => { pendingMedia.current.push(...sources); }} />
-          <CarTextEditor key={draft.id} car={draft} onChange={setDraft} />
+          <AdminMediaEditor key={`media-${draft.id}`} car={draft} onChange={media => setDraft(current => current ? { ...current, ...media } : current)} onBusy={setMediaBusy} onUploaded={sources => { pendingMedia.current.push(...sources); }} />
+          <CarTextEditor key={`text-${draft.id}`} car={draft} onChange={setDraft} />
           <fieldset><legend>{t("Основные данные")}</legend><div className="admin-form-grid">
             <label>{t("Цена, USD")}<input type="number" min="1" value={draft.price || ''} onChange={event => updateDraft('price', Number(event.target.value))} required /></label>
             <label>{t("Год выпуска")}<input type="number" list="admin-year-options" min="2000" max="2035" value={draft.year || ''} onChange={event => updateDraft('year', Number(event.target.value))} required /><datalist id="admin-year-options">{years.map(year => <option key={year} value={year} />)}</datalist></label>
