@@ -1,11 +1,16 @@
 import 'server-only';
 import { getSupabase } from './supabase-server';
 import { DataError, requireVersion, validateCloudCar } from './cloud-validation';
-import { normalizeContacts, type Contacts } from './site-data';
+import { normalizeContacts, publicCar, type Contacts } from './site-data';
 import type { Car } from './cars';
 
-export type VehicleRow = { id: string; data: Car; version: number };
-const asCar = (row: VehicleRow): Car => ({ ...row.data, id: row.id, version: row.version });
+export type VehicleRow = { id: string; data: unknown; version: number };
+const asCar = (row: VehicleRow): Car | null => {
+  if (!row || typeof row !== 'object') return null;
+  const car = publicCar(row.data);
+  if (!car || car.id !== row.id || !Number.isSafeInteger(row.version) || row.version < 1) return null;
+  try { return { ...validateCloudCar(car), version: row.version }; } catch { return null; }
+};
 
 export async function listCloudCars() {
   const client = getSupabase();
@@ -14,7 +19,10 @@ export async function listCloudCars() {
   for (let offset = 0; ; offset += 500) {
     const { data, error } = await client.from('vehicles').select('id,data,version').order('created_at', { ascending: false }).order('id').range(offset, offset + 499);
     if (error) throw error;
-    cars.push(...(data as VehicleRow[]).map(asCar));
+    for (const row of data as VehicleRow[]) {
+      const car = asCar(row);
+      if (car) cars.push(car);
+    }
     if (data.length < 500) return cars;
   }
 }
@@ -35,7 +43,9 @@ export async function saveCloudCar(value: unknown, previousVersion?: unknown) {
   if (error?.code === '23505') throw new DataError('Объявление с этим номером уже существует.', 409);
   if (error) throw error;
   if (!data) throw new DataError('Это объявление изменилось в другой вкладке. Закройте редактор и откройте его снова.', 409);
-  return asCar(data as VehicleRow);
+  const saved = asCar(data as VehicleRow);
+  if (!saved) throw new Error('Invalid vehicle returned by storage.');
+  return saved;
 }
 
 export async function deleteCloudCar(id: unknown, version: unknown) {
@@ -45,11 +55,12 @@ export async function deleteCloudCar(id: unknown, version: unknown) {
   if (!data.length) throw new DataError('Объявление изменилось в другой вкладке. Повторите действие с актуальными данными.', 409);
 }
 
-export async function saveCloudContacts(value: Contacts, previous?: Contacts) {
+export async function saveCloudContacts(value: unknown, previous?: unknown) {
   let contacts: Contacts;
-  try { contacts = normalizeContacts(value); } catch (error) { throw new DataError(error instanceof Error ? error.message : 'Проверьте контакты.'); }
   if (!previous) throw new DataError('Обновите страницу перед редактированием.');
-  const { data, error } = await getSupabase().from('site_settings').update({ contacts }).eq('id', 'main').eq('contacts', JSON.stringify(previous)).select('contacts').maybeSingle();
+  let original: Contacts;
+  try { contacts = normalizeContacts(value); original = normalizeContacts(previous); } catch (error) { throw new DataError(error instanceof Error ? error.message : 'Проверьте контакты.'); }
+  const { data, error } = await getSupabase().from('site_settings').update({ contacts }).eq('id', 'main').eq('contacts', JSON.stringify(original)).select('contacts').maybeSingle();
   if (error) throw error;
   if (!data) throw new DataError('Контакты изменились. Обновите страницу и повторите.', 409);
   return contacts;

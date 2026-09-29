@@ -5,7 +5,7 @@ import { useLocale } from '@/components/LocaleProvider';
 import { type FormEvent, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import type { Car, CarCondition, CarStatus, CustomsType } from '@/lib/cars';
-import { customsTypes, formatPrice } from '@/lib/cars';
+import { carPriceMin, carPriceMax, customsTypes, formatPrice } from '@/lib/cars';
 import { AdminMediaEditor, AdminMediaImage, mediaSources } from './AdminMediaEditor';
 import { removeMedia } from '@/lib/admin-media';
 import { useSiteData } from './SiteDataProvider';
@@ -14,6 +14,7 @@ import { filterAdminCars, initialAdminFilters, type AdminFilters } from '@/lib/c
 import { CarTextEditor } from './CarTextEditor';
 import { normalizeCarText, localizeCar, brandLabel } from '@/lib/car-translations';
 import { ensureAdminSession } from '@/app/actions/auth';
+import { withDeadline, clientRequestTimeoutMs } from '@/lib/request-deadline';
 
 const statuses: CarStatus[] = ['В наличии', 'В пути', 'Под заказ'];
 const conditions: CarCondition[] = ['Новый', 'С пробегом'];
@@ -21,7 +22,7 @@ const emptyCar = (): Car => ({ id: `HL-${crypto.randomUUID()}`, brand: '', model
 
 export function AdminDashboard() {
   const { locale, t } = useLocale();
-  const { cars: items, loaded, error, saveCar: storeCar, removeCar } = useSiteData();
+  const { cars: items, loaded, error, mode, saveCar: storeCar, removeCar } = useSiteData();
   const [filters, setFilters] = useState(initialAdminFilters);
   const [draft, setDraft] = useState<Car | null>(null);
   const [deleting, setDeleting] = useState<Car | null>(null);
@@ -61,7 +62,7 @@ export function AdminDashboard() {
     if (busy || !loaded || !draft) return;
     setSaving(true); setEditorError('');
     try {
-      if (!await ensureAdminSession()) throw new Error('Сессия завершена. Войдите в админку снова.');
+      if (mode === 'local' && !await withDeadline(() => ensureAdminSession(), { timeoutMs: clientRequestTimeoutMs })) throw new Error('Сессия завершена. Войдите в админку снова.');
       const gallery = (draft.gallery ?? [draft.image]).map(source => source.trim()).filter(Boolean);
       const normalized = normalizeCarText({ ...draft, gallery, image: gallery[0] || '' });
       const next = await storeCar(normalized, original.current);
@@ -75,7 +76,7 @@ export function AdminDashboard() {
     if (!deleting || saving) return;
     setSaving(true);
     try {
-      if (!await ensureAdminSession()) throw new Error('Сессия завершена. Войдите в админку снова.');
+      if (mode === 'local' && !await withDeadline(() => ensureAdminSession(), { timeoutMs: clientRequestTimeoutMs })) throw new Error('Сессия завершена. Войдите в админку снова.');
       const next = await removeCar(deleting);
       cleanup(next, [deleting]);
       setDeleting(null); setToast('Объявление удалено из каталога и с сайта.');
@@ -120,9 +121,9 @@ export function AdminDashboard() {
           <AdminMediaEditor key={`media-${draft.id}`} car={draft} onChange={media => setDraft(current => current ? { ...current, ...media } : current)} onBusy={setMediaBusy} onUploaded={sources => { pendingMedia.current.push(...sources); }} />
           <CarTextEditor key={`text-${draft.id}`} car={draft} onChange={setDraft} />
           <fieldset><legend>{t("Основные данные")}</legend><div className="admin-form-grid">
-            <label>{t("Цена, USD")}<input type="number" min="1" value={draft.price || ''} onChange={event => updateDraft('price', Number(event.target.value))} required /></label>
+            <label>{t("Цена, USD")}<input type="number" min={carPriceMin} max={carPriceMax} step="1" value={draft.price || ''} onChange={event => updateDraft('price', Number(event.target.value))} required /><small>{t('Целое число от 1 до 100 000 000 USD.')}</small></label>
             <label>{t("Год выпуска")}<input type="number" list="admin-year-options" min="2000" max="2035" value={draft.year || ''} onChange={event => updateDraft('year', Number(event.target.value))} required /><datalist id="admin-year-options">{years.map(year => <option key={year} value={year} />)}</datalist></label>
-            <label>VIN<input value={draft.vin ?? ''} onChange={event => updateDraft('vin', event.target.value)} /></label>
+            <label>VIN<input maxLength={64} value={draft.vin ?? ''} onChange={event => updateDraft('vin', event.target.value)} /></label>
             <label>{t("Тип оформления")}<select value={draft.customsType ?? ''} onChange={event => updateDraft('customsType', event.target.value ? event.target.value as CustomsType : undefined)}><option value="">{t("Не указано")}</option>{customsTypes.map(type => <option key={type} value={type}>{type}</option>)}</select></label>
           </div></fieldset>
           <fieldset><legend>{t("Публикация")}</legend><div className="admin-form-grid">

@@ -1,0 +1,65 @@
+ISOLATION http://127.0.0.1:3107 http://127.0.0.1:54329 PGlite in-memory; no external requests allowed in browser
+INCOMPLETE anonymous writes, cross-origin and missing origin Expected values to be strictly equal:
+
+403 !== 401
+
+DONE real SQL permissions for anon and two authenticated principals {"engine":"PGlite PostgreSQL, exact migration; not Supabase JWT/RLS REST validation","operations":[{"role":"anon","table":"vehicles","operation":"select","code":"42501"},{"role":"anon","table":"vehicles","operation":"insert","code":"42501"},{"role":"anon","table":"vehicles","operation":"update","code":"42501"},{"role":"anon","table":"vehicles","operation":"delete","code":"42501"},{"role":"anon","table":"site_settings","operation":"select","code":"42501"},{"role":"anon","table":"site_settings","operation":"insert","code":"42501"},{"role":"anon","table":"site_settings","operation":"update","code":"42501"},{"role":"anon","table":"site_settings","operation":"delete","code":"42501"},{"role":"audit_user_a","table":"vehicles","operation":"select","code":"42501"},{"role":"audit_user_a","table":"vehicles","operation":"insert","code":"42501"},{"role":"audit_user_a","table":"vehicles","operation":"update","code":"42501"},{"role":"audit_user_a","table":"vehicles","operation":"delete","code":"42501"},{"role":"audit_user_a","table":"site_settings","operation":"select","code":"42501"},{"role":"audit_user_a","table":"site_settings","operation":"insert","code":"42501"},{"role":"audit_user_a","table":"site_settings","operation":"update","code":"42501"},{"role":"audit_user_a","table":"site_settings","operation":"delete","code":"42501"},{"role":"audit_user_b","table":"vehicles","operation":"select","code":"42501"},{"role":"audit_user_b","table":"vehicles","operation":"insert","code":"42501"},{"role":"audit_user_b","table":"vehicles","operation":"update","code":"42501"},{"role":"audit_user_b","table":"vehicles","operation":"delete","code":"42501"},{"role":"audit_user_b","table":"site_settings","operation":"select","code":"42501"},{"role":"audit_user_b","table":"site_settings","operation":"insert","code":"42501"},{"role":"audit_user_b","table":"site_settings","operation":"update","code":"42501"},{"role":"audit_user_b","table":"site_settings","operation":"delete","code":"42501"}]}
+DONE default admin password grants actual production session {"finding":"F01","url":"http://127.0.0.1:3107/admin/vehicles","cookie":{"httpOnly":true,"secure":true,"sameSite":"Lax","ttlSeconds":43200},"passwordConfiguration":"empty, production mode","sessionValue":"REDACTED"}
+INCOMPLETE tampered, expired and non-admin signed sessions rejected Expected values to be strictly equal:
+
+403 !== 401
+
+INCOMPLETE persisted create, replay, concurrent update and delete integrity Expected values to be strictly equal:
+
+403 !== 200
+
+INCOMPLETE contact optimistic concurrency checks real JSONB state Expected values to be strictly deep-equal:
++ actual - expected
+
+  [
++   403,
++   403
+-   200,
+-   409
+  ]
+
+INCOMPLETE input boundaries and harmless injection probes Expected values to be strictly equal:
+
+403 !== 400
+
+INCOMPLETE enum arrays and unrestricted properties persist through API Expected values to be strictly equal:
+
+403 !== 200
+
+INCOMPLETE small positive and extreme prices are stored verbatim Expected values to be strictly equal:
+
+403 !== 200
+
+INCOMPLETE upload signing validates declaration but does not bind size/type Expected values to be strictly equal:
+
+403 !== 400
+
+INCOMPLETE desktop navigation, refresh, back and harmless stored XSS locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByText('<img src=x onerror="window.AUDIT_XSS=1">').first() to be visible[22m
+
+INCOMPLETE Chinese locale crashes on accepted non-string condition locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: '中文', exact: true }).first()[22m
+
+INCOMPLETE mobile catalogue, navigation, admin editor layout locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('a[href="/catalog/AUDIT-UI"]').first() to be visible[22m
+
+INCOMPLETE outage and timeout fail closed and hide diagnostics Expected values to be strictly equal:
+
+403 !== 503
+
+DONE bounded load: max 24 requests, concurrency 1 then 4, deadline 15s {"maxRequests":24,"maxConcurrency":4,"maxDurationMs":15000,"stopOn":"first 5xx or deadline between batches","requests":24,"durationMs":350,"p50Ms":48,"p95Ms":62,"statuses":[200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200]}
+INCOMPLETE logout deletes browser cookie but replay still writes to database Expected values to be strictly equal:
+
+403 !== 401
+
+DONE migration CHECK constraints admit missing protected fields {"finding":"F05","stored":[{"id":"AUDIT-INVALID-SQL","data":{},"version":1}],"precondition":"privileged/direct writer; public API rejects this record","reason":"PostgreSQL CHECK treats NULL as satisfied"}
+DONE client bundles contain none of the synthetic server credentials {"checkedJavaScriptFiles":23,"secretHits":[]}
+RESULT 5 completed; 13 incomplete. Confirmed findings are observations, NOT security passes.

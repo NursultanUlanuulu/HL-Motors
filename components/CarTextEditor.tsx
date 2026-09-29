@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useLocale } from './LocaleProvider';
 import type { Car, CarTextField } from '@/lib/cars';
+import { carTextLimits } from '@/lib/cars';
 import type { Locale } from '@/lib/i18n';
 import { updateCarText } from '@/lib/car-translations';
 
@@ -21,7 +22,7 @@ export function CarTextEditor({ car, onChange }: { car: Car; onChange: (car: Car
     </div>
     <div className="admin-form-grid">
       {fields.map(([field, label]) => <label key={field} className={field === 'trim' ? 'wide' : undefined}>{t(label)} · {language === 'ru' ? 'RU' : '中文'}
-        <input lang={language === 'zh' ? 'zh-CN' : 'ru'} value={car.translations?.[language]?.[field] ?? (language === 'ru' ? car[field] ?? '' : '')} onChange={event => onChange(updateCarText(car, language, field, event.target.value))} />
+        <input maxLength={carTextLimits[field]} lang={language === 'zh' ? 'zh-CN' : 'ru'} value={car.translations?.[language]?.[field] ?? (language === 'ru' ? car[field] ?? '' : '')} onChange={event => onChange(updateCarText(car, language, field, event.target.value))} />
       </label>)}
     </div>
   </fieldset>;

@@ -1,0 +1,31 @@
+
+> hl-motors@0.1.0 test
+> node --test tests/*.test.cjs
+
+✔ all cloud writes require the existing admin session and matching origin (34.2784ms)
+✔ cloud validation preserves bilingual fields but rejects browser-only media and invalid records (1.9814ms)
+✔ create persists both languages; update and delete use atomic version predicates (22.0954ms)
+✔ duplicate inserts never overwrite an existing cloud vehicle (2.5449ms)
+✔ contact edits compare the original stored contacts and reject stale updates (2.3879ms)
+✔ file signing validates format and size before any storage request (5.0753ms)
+✔ public catalogue paginates beyond the API row limit and contains no browser fallback (17.8863ms)
+✔ partial configuration fails closed; API errors never disclose diagnostics or keys (2.9437ms)
+✔ existing browser catalogue is retained and an intentionally empty catalogue stays empty (3.7359ms)
+✔ new and edited cars retain characteristics and local media after reading again (1.1035ms)
+✔ saving one record preserves a different record changed by another tab (0.6686ms)
+✔ stale edits and deletes cannot overwrite a newer version (1.7909ms)
+✔ deleted cars do not return on reload (0.7947ms)
+✔ invalid saved data and storage quota failures are not silently overwritten (0.7626ms)
+✔ contact inputs are normalized, persisted and produce the actual public links (1.5727ms)
+✔ brand/year options and combined admin filters work with newly added values (17.5717ms)
+✔ Chinese text can create a vehicle without requiring a Russian translation (1.7127ms)
+✔ adding or clearing translations preserves the other language and legacy data (1.051ms)
+✔ translation validation and Chinese search do not break canonical status filters (0.8397ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 929.8185

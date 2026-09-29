@@ -1,5 +1,5 @@
 import type { Car } from './cars';
-import { isCar } from './site-data';
+import { isCar, publicCar } from './site-data';
 
 export type DataMode = 'local' | 'supabase';
 export const mediaBucket = 'vehicle-media';
@@ -21,11 +21,14 @@ export function validateCloudCar(value: unknown): Car {
   if (JSON.stringify(value).length > 128000 || (value.gallery?.length ?? 0) > 100) throw new DataError('Объявление слишком большое.');
   const sources = [value.image, ...(value.gallery ?? []), value.video ?? ''].filter(Boolean);
   for (const source of sources) {
+    // Keep the API and JSONB constraint aligned: URL() alone also accepts
+    // shorthand such as "https:photo" and strips surrounding whitespace.
+    if (!/^https?:\/\/[^\s]+$/i.test(source)) throw new DataError('Сначала загрузите фотографии и видео в облако.');
     let url: URL;
     try { url = new URL(source); } catch { throw new DataError('Сначала загрузите фотографии и видео в облако.'); }
     if (!['https:', 'http:'].includes(url.protocol)) throw new DataError('Сначала загрузите фотографии и видео в облако.');
   }
-  const { version: _version, ...car } = value;
+  const { version: _version, ...car } = publicCar(value)!;
   return car;
 }
 

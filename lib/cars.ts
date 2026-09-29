@@ -5,6 +5,13 @@ export type CustomsType = typeof customsTypes[number];
 export const carTextFields = ['brand', 'model', 'trim', 'mileage', 'city', 'power', 'drive', 'body', 'color', 'transmission', 'engine'] as const;
 export type CarTextField = typeof carTextFields[number];
 export type CarText = Partial<Record<CarTextField, string>>;
+export const carPriceMin = 1;
+export const carPriceMax = 100_000_000;
+export const carTextLimits: Record<CarTextField, number> = {
+  brand: 80, model: 80, trim: 160, mileage: 80, city: 120, power: 80,
+  drive: 80, body: 80, color: 80, transmission: 80, engine: 80,
+};
+export const carFields = ['id', 'version', ...carTextFields, 'price', 'year', 'status', 'condition', 'image', 'vin', 'customsType', 'translations', 'gallery', 'video'] as const;
 
 export type Car = {
   id: string;
@@ -48,7 +55,9 @@ export const cars: Car[] = [
 ];
 
 export const getCar = (id: string) => cars.find((car) => car.id === id);
-export const formatPrice = (value: number) => new Intl.NumberFormat('en-US').format(value);
+export const formatPrice = (value: number) => Number.isSafeInteger(value) && value >= carPriceMin && value <= carPriceMax
+  ? new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(value)
+  : '—';
 
 export function pluralizeCars(value: number) {
   const last = Math.abs(value) % 10;

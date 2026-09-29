@@ -1,0 +1,300 @@
+[
+  {
+    "name": "anonymous writes, cross-origin and missing origin",
+    "completed": false,
+    "error": "Expected values to be strictly equal:\n\n403 !== 401\n"
+  },
+  {
+    "name": "real SQL permissions for anon and two authenticated principals",
+    "completed": true,
+    "details": {
+      "engine": "PGlite PostgreSQL, exact migration; not Supabase JWT/RLS REST validation",
+      "operations": [
+        {
+          "role": "anon",
+          "table": "vehicles",
+          "operation": "select",
+          "code": "42501"
+        },
+        {
+          "role": "anon",
+          "table": "vehicles",
+          "operation": "insert",
+          "code": "42501"
+        },
+        {
+          "role": "anon",
+          "table": "vehicles",
+          "operation": "update",
+          "code": "42501"
+        },
+        {
+          "role": "anon",
+          "table": "vehicles",
+          "operation": "delete",
+          "code": "42501"
+        },
+        {
+          "role": "anon",
+          "table": "site_settings",
+          "operation": "select",
+          "code": "42501"
+        },
+        {
+          "role": "anon",
+          "table": "site_settings",
+          "operation": "insert",
+          "code": "42501"
+        },
+        {
+          "role": "anon",
+          "table": "site_settings",
+          "operation": "update",
+          "code": "42501"
+        },
+        {
+          "role": "anon",
+          "table": "site_settings",
+          "operation": "delete",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_a",
+          "table": "vehicles",
+          "operation": "select",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_a",
+          "table": "vehicles",
+          "operation": "insert",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_a",
+          "table": "vehicles",
+          "operation": "update",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_a",
+          "table": "vehicles",
+          "operation": "delete",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_a",
+          "table": "site_settings",
+          "operation": "select",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_a",
+          "table": "site_settings",
+          "operation": "insert",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_a",
+          "table": "site_settings",
+          "operation": "update",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_a",
+          "table": "site_settings",
+          "operation": "delete",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_b",
+          "table": "vehicles",
+          "operation": "select",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_b",
+          "table": "vehicles",
+          "operation": "insert",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_b",
+          "table": "vehicles",
+          "operation": "update",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_b",
+          "table": "vehicles",
+          "operation": "delete",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_b",
+          "table": "site_settings",
+          "operation": "select",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_b",
+          "table": "site_settings",
+          "operation": "insert",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_b",
+          "table": "site_settings",
+          "operation": "update",
+          "code": "42501"
+        },
+        {
+          "role": "audit_user_b",
+          "table": "site_settings",
+          "operation": "delete",
+          "code": "42501"
+        }
+      ]
+    }
+  },
+  {
+    "name": "default admin password grants actual production session",
+    "completed": true,
+    "details": {
+      "finding": "F01",
+      "url": "http://127.0.0.1:3107/admin/vehicles",
+      "cookie": {
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Lax",
+        "ttlSeconds": 43200
+      },
+      "passwordConfiguration": "empty, production mode",
+      "sessionValue": "REDACTED"
+    }
+  },
+  {
+    "name": "tampered, expired and non-admin signed sessions rejected",
+    "completed": false,
+    "error": "Expected values to be strictly equal:\n\n403 !== 401\n"
+  },
+  {
+    "name": "persisted create, replay, concurrent update and delete integrity",
+    "completed": false,
+    "error": "Expected values to be strictly equal:\n\n403 !== 200\n"
+  },
+  {
+    "name": "contact optimistic concurrency checks real JSONB state",
+    "completed": false,
+    "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   403,\n+   403\n-   200,\n-   409\n  ]\n"
+  },
+  {
+    "name": "input boundaries and harmless injection probes",
+    "completed": false,
+    "error": "Expected values to be strictly equal:\n\n403 !== 400\n"
+  },
+  {
+    "name": "enum arrays and unrestricted properties persist through API",
+    "completed": false,
+    "error": "Expected values to be strictly equal:\n\n403 !== 200\n"
+  },
+  {
+    "name": "small positive and extreme prices are stored verbatim",
+    "completed": false,
+    "error": "Expected values to be strictly equal:\n\n403 !== 200\n"
+  },
+  {
+    "name": "upload signing validates declaration but does not bind size/type",
+    "completed": false,
+    "error": "Expected values to be strictly equal:\n\n403 !== 400\n"
+  },
+  {
+    "name": "desktop navigation, refresh, back and harmless stored XSS",
+    "completed": false,
+    "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('<img src=x onerror=\"window.AUDIT_XSS=1\">').first() to be visible\u001b[22m\n"
+  },
+  {
+    "name": "Chinese locale crashes on accepted non-string condition",
+    "completed": false,
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '中文', exact: true }).first()\u001b[22m\n"
+  },
+  {
+    "name": "mobile catalogue, navigation, admin editor layout",
+    "completed": false,
+    "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href=\"/catalog/AUDIT-UI\"]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "name": "outage and timeout fail closed and hide diagnostics",
+    "completed": false,
+    "error": "Expected values to be strictly equal:\n\n403 !== 503\n"
+  },
+  {
+    "name": "bounded load: max 24 requests, concurrency 1 then 4, deadline 15s",
+    "completed": true,
+    "details": {
+      "maxRequests": 24,
+      "maxConcurrency": 4,
+      "maxDurationMs": 15000,
+      "stopOn": "first 5xx or deadline between batches",
+      "requests": 24,
+      "durationMs": 350,
+      "p50Ms": 48,
+      "p95Ms": 62,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    }
+  },
+  {
+    "name": "logout deletes browser cookie but replay still writes to database",
+    "completed": false,
+    "error": "Expected values to be strictly equal:\n\n403 !== 401\n"
+  },
+  {
+    "name": "migration CHECK constraints admit missing protected fields",
+    "completed": true,
+    "details": {
+      "finding": "F05",
+      "stored": [
+        {
+          "id": "AUDIT-INVALID-SQL",
+          "data": {},
+          "version": 1
+        }
+      ],
+      "precondition": "privileged/direct writer; public API rejects this record",
+      "reason": "PostgreSQL CHECK treats NULL as satisfied"
+    }
+  },
+  {
+    "name": "client bundles contain none of the synthetic server credentials",
+    "completed": true,
+    "details": {
+      "checkedJavaScriptFiles": 23,
+      "secretHits": []
+    }
+  }
+]

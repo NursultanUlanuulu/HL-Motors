@@ -1,0 +1,35 @@
+[
+  {
+    "finding": "F08",
+    "name": "local contacts lose another tabs email change",
+    "initial": {
+      "whatsapp": "996502102270",
+      "telegram": "nur6ultan",
+      "email": "hello@hlmotors.com"
+    },
+    "firstTabEmail": "first-tab@example.invalid",
+    "secondTabEdit": "telegram only from stale snapshot",
+    "persisted": {
+      "whatsapp": "996502102270",
+      "telegram": "second_tab",
+      "email": "hello@hlmotors.com"
+    },
+    "scope": "localStorage implementation; deterministic sequential stale edits, not a real two-tab timing race"
+  },
+  {
+    "finding": "F02",
+    "name": "password rotation leaves existing token valid",
+    "oldPasswordAccepted": false,
+    "oldSessionAccepted": true,
+    "scope": "actual auth module with only Next cookies context supplied; no token output"
+  },
+  {
+    "name": "local mode accepts slash in ID unlike cloud",
+    "storedId": "LOCAL-ROUTE/TEST",
+    "scope": "local data API; public routing impact not browser-verified"
+  },
+  {
+    "name": "Unicode, long text and SQL marker remain plain strings",
+    "cases": 3
+  }
+]

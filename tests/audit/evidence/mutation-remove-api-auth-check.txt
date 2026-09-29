@@ -1,0 +1,46 @@
+✖ all cloud writes require the existing admin session and matching origin (52.2932ms)
+✔ cloud validation preserves bilingual fields but rejects browser-only media and invalid records (2.313ms)
+✔ create persists both languages; update and delete use atomic version predicates (22.1239ms)
+✔ duplicate inserts never overwrite an existing cloud vehicle (3.3449ms)
+✔ contact edits compare the original stored contacts and reject stale updates (2.5453ms)
+✔ file signing validates format and size before any storage request (6.9588ms)
+✔ public catalogue paginates beyond the API row limit and contains no browser fallback (21.978ms)
+✔ partial configuration fails closed; API errors never disclose diagnostics or keys (4.8382ms)
+✔ existing browser catalogue is retained and an intentionally empty catalogue stays empty (5.1194ms)
+✔ new and edited cars retain characteristics and local media after reading again (1.3214ms)
+✔ saving one record preserves a different record changed by another tab (0.9937ms)
+✔ stale edits and deletes cannot overwrite a newer version (1.6513ms)
+✔ deleted cars do not return on reload (0.6587ms)
+✔ invalid saved data and storage quota failures are not silently overwritten (0.6738ms)
+✔ contact inputs are normalized, persisted and produce the actual public links (0.9699ms)
+✔ brand/year options and combined admin filters work with newly added values (20.7325ms)
+✔ Chinese text can create a vehicle without requiring a Russian translation (1.6672ms)
+✔ adding or clearing translations preserves the other language and legacy data (1.7176ms)
+✔ translation validation and Chinese search do not break canonical status filters (0.8835ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 18
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 959.0385
+
+✖ failing tests:
+
+test at tests\cloud.test.cjs:64:1
+✖ all cloud writes require the existing admin session and matching origin (52.2932ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  400 !== 401
+  
+      at TestContext.<anonymous> (C:\Users\user\Desktop\work\chinacars\tests\audit\.mutation-47f52q\remove-api-auth-check\tests\cloud.test.cjs:67:12)
+      at async Test.run (node:internal/test_runner/test:1110:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 400,
+    expected: 401,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

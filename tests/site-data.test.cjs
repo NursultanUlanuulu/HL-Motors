@@ -82,12 +82,12 @@ test('invalid saved data and storage quota failures are not silently overwritten
 });
 
 test('contact inputs are normalized, persisted and produce the actual public links', () => {
-  data.writeContacts({ whatsapp: '+996 (502) 102-270', telegram: 'https://t.me/nur6ultan/', email: ' contact@example.com ' });
+  data.writeContacts({ whatsapp: '+996 (502) 102-270', telegram: 'https://t.me/nur6ultan/', email: ' contact@example.com ' }, data.readContacts());
   const contacts = data.readContacts();
   assert.equal(data.whatsappLink(contacts, 'Car 1'), 'https://wa.me/996502102270?text=Car%201');
   assert.equal(data.telegramLink(contacts), 'https://t.me/nur6ultan');
   assert.equal(contacts.email, 'contact@example.com');
-  assert.throws(() => data.writeContacts({ ...contacts, telegram: 'javascript:alert(1)' }));
+  assert.throws(() => data.writeContacts({ ...contacts, telegram: 'javascript:alert(1)' }, contacts));
   assert.equal(data.readContacts().telegram, 'nur6ultan');
 });
 

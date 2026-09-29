@@ -1,31 +1,64 @@
-import { cars as seedCars, carTextFields, customsTypes, type Car } from './cars';
+import { cars as seedCars, carFields, carTextFields, carTextLimits, carPriceMin, carPriceMax, customsTypes, type Car, type CarTextField } from './cars';
 
 export const carsKey = 'hl-motors-admin-cars';
 export const contactsKey = 'hl-motors-contacts';
 export type Contacts = { whatsapp: string; telegram: string; email: string };
 export const defaultContacts: Contacts = { whatsapp: '996502102270', telegram: 'nur6ultan', email: 'hello@hlmotors.com' };
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return value !== null && typeof value === 'object' && !Array.isArray(value);
+}
+
+function boundedText(value: unknown, limit: number): value is string {
+  return typeof value === 'string' && Array.from(value).length <= limit;
+}
+
 export function isCar(value: unknown): value is Car {
-  if (!value || typeof value !== 'object') return false;
-  const car = value as Record<string, unknown>;
+  if (!isRecord(value)) return false;
+  const car = value;
   return ['id', 'brand', 'model', 'trim', 'mileage', 'city', 'power', 'drive', 'image'].every(key => typeof car[key] === 'string')
-    && !!car.id && !!car.brand && !!car.model
-    && typeof car.price === 'number' && Number.isFinite(car.price) && car.price > 0
+    && Object.keys(car).every(key => carFields.some(field => field === key))
+    && typeof car.id === 'string' && /^[\w-]{1,100}$/.test(car.id)
+    && typeof car.brand === 'string' && !!car.brand.trim() && typeof car.model === 'string' && !!car.model.trim()
+    && carTextFields.every(field => car[field] === undefined || boundedText(car[field], carTextLimits[field]))
+    && typeof car.price === 'number' && Number.isSafeInteger(car.price) && car.price >= carPriceMin && car.price <= carPriceMax
     && typeof car.year === 'number' && Number.isInteger(car.year) && car.year >= 2000 && car.year <= 2035
-    && ['В наличии', 'В пути', 'Под заказ'].includes(String(car.status))
-    && ['Новый', 'С пробегом'].includes(String(car.condition))
+    && typeof car.status === 'string' && ['В наличии', 'В пути', 'Под заказ'].includes(car.status)
+    && typeof car.condition === 'string' && ['Новый', 'С пробегом'].includes(car.condition)
+    && (car.version === undefined || (typeof car.version === 'number' && Number.isSafeInteger(car.version) && car.version >= 1))
     && (car.customsType === undefined || customsTypes.some(type => type === car.customsType))
     && validTranslations(car.translations)
-    && ['vin', 'body', 'color', 'transmission', 'engine', 'video'].every(key => car[key] === undefined || typeof car[key] === 'string')
-    && (car.gallery === undefined || (Array.isArray(car.gallery) && car.gallery.every(source => typeof source === 'string')));
+    && (car.vin === undefined || boundedText(car.vin, 64))
+    && boundedText(car.image, 4096) && (car.video === undefined || boundedText(car.video, 4096))
+    && (car.gallery === undefined || (Array.isArray(car.gallery) && car.gallery.length <= 100 && car.gallery.every(source => boundedText(source, 4096))));
 }
 
 function validTranslations(value: unknown): boolean {
   if (value === undefined) return true;
-  if (!value || typeof value !== 'object' || Array.isArray(value)) return false;
+  if (!isRecord(value)) return false;
   return Object.entries(value).every(([locale, fields]) => ['ru', 'zh'].includes(locale)
-    && fields && typeof fields === 'object' && !Array.isArray(fields)
-    && Object.entries(fields).every(([key, text]) => carTextFields.some(field => field === key) && typeof text === 'string'));
+    && isRecord(fields)
+    && Object.entries(fields).every(([key, text]) => carTextFields.some(field => field === key) && boundedText(text, carTextLimits[key as CarTextField])));
+}
+
+// A read boundary must never spread stored JSON into a public response. Legacy
+// extra fields are omitted; malformed known fields make only this record unusable.
+export function publicCar(value: unknown): Car | null {
+  if (!isRecord(value)) return null;
+  const projected: Record<string, unknown> = {};
+  for (const key of carFields) if (Object.hasOwn(value, key)) projected[key] = value[key];
+  if (isRecord(projected.translations)) {
+    const translations: Record<string, unknown> = {};
+    for (const locale of ['ru', 'zh']) {
+      const fields = projected.translations[locale];
+      if (fields === undefined) continue;
+      translations[locale] = isRecord(fields)
+        ? Object.fromEntries(carTextFields.filter(field => Object.hasOwn(fields, field)).map(field => [field, fields[field]]))
+        : fields;
+    }
+    projected.translations = translations;
+  }
+  return isCar(projected) ? projected : null;
 }
 
 // All browser persistence lives here so it can later be replaced by an API.
@@ -61,7 +94,11 @@ export function deleteCar(car: Car): Car[] {
   return next;
 }
 
-export function normalizeContacts(value: Contacts): Contacts {
+export function normalizeContacts(value: unknown): Contacts {
+  if (!isRecord(value) || Object.keys(value).some(key => !['whatsapp', 'telegram', 'email'].includes(key))
+    || !boundedText(value.whatsapp, 100) || !boundedText(value.telegram, 100) || !boundedText(value.email, 254)) {
+    throw new Error('Проверьте контакты.');
+  }
   const whatsapp = value.whatsapp.trim().replace(/^https:\/\/wa\.me\//i, '').replace(/[\s()+-]/g, '');
   const telegram = value.telegram.trim().replace(/^https:\/\/t\.me\//i, '').replace(/^@/, '').replace(/\/$/, '');
   const email = value.email.trim();
@@ -77,8 +114,10 @@ export function readContacts(): Contacts {
   return normalizeContacts(JSON.parse(saved) as Contacts);
 }
 
-export function writeContacts(value: Contacts): Contacts {
+export function writeContacts(value: Contacts, previous: Contacts): Contacts {
   const contacts = normalizeContacts(value);
+  const original = normalizeContacts(previous);
+  if (JSON.stringify(readContacts()) !== JSON.stringify(original)) throw new Error('Контакты изменились. Обновите страницу и повторите.');
   localStorage.setItem(contactsKey, JSON.stringify(contacts));
   return contacts;
 }

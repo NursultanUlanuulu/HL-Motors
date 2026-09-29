@@ -1,0 +1,27 @@
+✔ all cloud writes require the existing admin session and matching origin (49.4848ms)
+✔ cloud validation preserves bilingual fields but rejects browser-only media and invalid records (3.8394ms)
+✔ create persists both languages; update and delete use atomic version predicates (26.4942ms)
+✔ duplicate inserts never overwrite an existing cloud vehicle (4.1303ms)
+✔ contact edits compare the original stored contacts and reject stale updates (4.7454ms)
+✔ file signing validates format and size before any storage request (7.131ms)
+✔ public catalogue paginates beyond the API row limit and contains no browser fallback (26.0761ms)
+✔ partial configuration fails closed; API errors never disclose diagnostics or keys (4.7936ms)
+✔ existing browser catalogue is retained and an intentionally empty catalogue stays empty (3.5237ms)
+✔ new and edited cars retain characteristics and local media after reading again (2.2432ms)
+✔ saving one record preserves a different record changed by another tab (0.8838ms)
+✔ stale edits and deletes cannot overwrite a newer version (1.4305ms)
+✔ deleted cars do not return on reload (0.5281ms)
+✔ invalid saved data and storage quota failures are not silently overwritten (0.5233ms)
+✔ contact inputs are normalized, persisted and produce the actual public links (0.9614ms)
+✔ brand/year options and combined admin filters work with newly added values (24.4708ms)
+✔ Chinese text can create a vehicle without requiring a Russian translation (1.8043ms)
+✔ adding or clearing translations preserves the other language and legacy data (1.3292ms)
+✔ translation validation and Chinese search do not break canonical status filters (0.7807ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1157.136

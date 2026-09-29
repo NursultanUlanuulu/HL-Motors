@@ -1,0 +1,51 @@
+{
+  "originalSourceUnchanged": true,
+  "sourceHashes": {
+    "lib/admin-auth.ts": "c16f221144e62ff3f1729478f74c7e3b759e837f7b21eff45cd0c3b27b37cb2e",
+    "lib/cloud-repository.ts": "8978fc51a4a6f0df02d1bb0e1f845018ba38217cc319bfe196bb1b74e9324c8a",
+    "lib/api-server.ts": "6290a1b303e92c351dbd2a83ffd517a63a7fcdea37ae4b1f241b53481c694dce",
+    "supabase/migrations/202609140001_catalog.sql": "be49374b21badb793132546b3afdcee707670d32e59908604835d0e89edc1c2a"
+  },
+  "results": [
+    {
+      "name": "accept-all-credentials",
+      "status": 0,
+      "detected": false,
+      "summary": [
+        "ℹ tests 19",
+        "ℹ pass 19",
+        "ℹ fail 0"
+      ]
+    },
+    {
+      "name": "silently-corrupt-persisted-price",
+      "status": 0,
+      "detected": false,
+      "summary": [
+        "ℹ tests 19",
+        "ℹ pass 19",
+        "ℹ fail 0"
+      ]
+    },
+    {
+      "name": "remove-api-auth-check",
+      "status": 1,
+      "detected": true,
+      "summary": [
+        "ℹ tests 19",
+        "ℹ pass 18",
+        "ℹ fail 1"
+      ]
+    },
+    {
+      "name": "remove-database-version-trigger",
+      "status": 0,
+      "detected": false,
+      "summary": [
+        "ℹ tests 19",
+        "ℹ pass 19",
+        "ℹ fail 0"
+      ]
+    }
+  ]
+}

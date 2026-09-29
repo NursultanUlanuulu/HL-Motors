@@ -1,0 +1,40 @@
+
+> hl-motors@0.1.0 build
+> next build
+
+▲ Next.js 16.3.5 (Turbopack)
+- Environments: .env.local
+✓ Running next.config.ts took 39ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 364ms
+  Running TypeScript ...
+  Finished TypeScript in 2.2s ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/13) ...
+  Generating static pages using 15 workers (3/13) 
+  Generating static pages using 15 workers (6/13) 
+  Generating static pages using 15 workers (9/13) 
+✓ Generating static pages using 15 workers (13/13) in 415ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /admin
+├ ƒ /admin/analytics
+├ ƒ /admin/contacts
+├ ƒ /admin/settings
+├ ƒ /admin/vehicles
+├ ƒ /api/admin/contacts
+├ ƒ /api/admin/media
+├ ƒ /api/admin/vehicles
+├ ƒ /api/site
+├ ○ /catalog
+├ ƒ /catalog/[id]
+└ ƒ /login
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

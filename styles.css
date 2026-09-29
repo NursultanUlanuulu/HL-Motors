@@ -242,3 +242,18 @@ html:has(.site-header) { scroll-padding-top:calc(var(--site-header-height) + 16p
   .site-footer-compact { padding-bottom:calc(74px + env(safe-area-inset-bottom)); }
 }
 .admin-import-preview { margin-top:20px; padding:18px; border:1px solid #e4e0d7; border-radius:5px; font-size:12px; line-height:1.7; }.admin-import-preview ul { max-height:220px; overflow:auto; padding-left:20px; }.admin-import-preview label { display:flex; align-items:center; gap:8px; margin:18px 0; }.admin-import-preview .admin-primary { margin-top:12px; }
+
+/* Long vehicle names and maximum supported prices must fit narrow screens. */
+.vehicle-head,.catalog-page-info,.vehicle-details,.breadcrumbs { flex-wrap:wrap; }
+.breadcrumbs b { min-width:0; max-width:100%; overflow-wrap:anywhere; }
+.vehicle-head h3,.vehicle-info>p,.catalog-page-info>div,.catalog-page-meta,.vehicle-heading>div,.vehicle-information,.purchase-card,.admin-editor>header>div { min-width:0; overflow-wrap:anywhere; }
+.spec-grid dt,.spec-grid dd,.location-block h3,.purchase-status,.purchase-telegram,.admin-car { overflow-wrap:anywhere; min-width:0; }
+.purchase-price strong { font-size:clamp(26px,4vw,40px); overflow-wrap:anywhere; }
+.mobile-contact { gap:12px; }
+.mobile-contact>span { min-width:0; font-size:clamp(16px,5vw,22px); }
+.mobile-contact .button { flex-shrink:0; }
+.admin-form-grid label { min-width:0; }
+.admin-form-grid small { line-height:1.5; }
+.site-sync-notice { position:fixed; z-index:95; top:94px; left:50%; transform:translateX(-50%); width:min(620px,calc(100% - 32px)); display:flex; align-items:center; gap:16px; padding:12px 16px; color:#f5e7cd; background:#30291d; border:1px solid #a2814d; border-radius:5px; box-shadow:0 8px 28px #0004; font:12px/1.6 var(--sans); }
+.site-sync-notice button { flex-shrink:0; min-height:40px; padding:0 10px; background:transparent; border:1px solid #bfa372; border-radius:3px; color:inherit; cursor:pointer; }
+@media(max-width:540px) { .site-sync-notice { top:78px; gap:10px; font-size:11px; } }
