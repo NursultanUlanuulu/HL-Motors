@@ -42,7 +42,7 @@ test('strict car input rejects enum coercion, null, extra keys and malformed tra
     { ...fixture(), internal_note: 'PRIVATE' }, { ...fixture(), role: 'admin' },
     { ...fixture(), translations: { zh: { color: ['白色'] } } },
     { ...fixture(), translations: { zh: { internal_note: 'PRIVATE' } } },
-    { ...fixture(), translations: { en: { color: 'White' } } },
+    { ...fixture(), translations: { de: { color: 'White' } } },
   ]) {
     assert.equal(data.isCar(value), false);
     assert.throws(() => validateCloudCar(value));
@@ -54,7 +54,7 @@ test('public read projection excludes private keys without discarding valid lega
     translations: { ru: { color: 'Белый', internal_note: 'PRIVATE' }, zh: { brand: '品牌' }, en: { role: 'PRIVATE' } } };
   const car = data.publicCar(stored);
   assert.equal(car.id, stored.id);
-  assert.deepEqual(car.translations, { ru: { color: 'Белый' }, zh: { brand: '品牌' } });
+  assert.deepEqual(car.translations, { ru: { color: 'Белый' }, zh: { brand: '品牌' }, en: {} });
   assert.doesNotMatch(JSON.stringify(car), /PRIVATE|owner_id|internal_note/);
   assert.equal(data.publicCar({ ...stored, condition: ['Новый'] }), null);
   assert.equal(data.publicCar({ ...stored, translations: { zh: { brand: 123 } } }), null);

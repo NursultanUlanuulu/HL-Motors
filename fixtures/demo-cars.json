@@ -1,0 +1,316 @@
+[
+  {
+    "id": "DEMO-1",
+    "carCode": "DEMO-1",
+    "brand": "Mercedes Benz",
+    "model": "GLC 260 L",
+    "trim": "4MATIC • 2,0 л турбо",
+    "city": "Китай",
+    "title": "Демо · Mercedes Benz GLC 260 L",
+    "remark": "Демонстрационная карточка для проверки сайта. Цена и статус условные; это не предложение продажи. Характеристики и фотографии взяты из сохранённого примера AutoHaina.",
+    "price": 29900,
+    "year": 2023,
+    "mileage": "60000 км",
+    "status": "В наличии",
+    "condition": "С пробегом",
+    "power": "197 л.с.",
+    "drive": "",
+    "image": "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_1-1280w.webp",
+    "gallery": [
+      "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_1-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_2-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_3-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_4-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_5-1280w.webp"
+    ],
+    "specs": {
+      "mileageKm": 60000,
+      "powerHp": 197,
+      "fuelType": "6289d9d52d0e",
+      "transmission": "848536883918",
+      "driveType": "72591e4bba79",
+      "bodyType": "90e26bda560a",
+      "color": "ae43afb7adcc",
+      "seats": "97c7b1aee347",
+      "flowMode": "9fd50073ba8f",
+      "displacement": 2,
+      "acceleration": 8.4,
+      "fuelConsumption": 8.55,
+      "officialPrice": 429200,
+      "registrationDate": "2023-02-13"
+    },
+    "translations": {
+      "ru": {
+        "model": "GLC 260 L",
+        "trim": "4MATIC • 2,0 л турбо",
+        "city": "Китай",
+        "title": "Демо · Mercedes Benz GLC 260 L",
+        "remark": "Демонстрационная карточка для проверки сайта. Цена и статус условные; это не предложение продажи. Характеристики и фотографии взяты из сохранённого примера AutoHaina."
+      },
+      "en": {
+        "model": "GLC 260 L",
+        "trim": "4MATIC • 2.0L turbo",
+        "city": "China",
+        "title": "Demo · Mercedes Benz GLC 260 L",
+        "remark": "Demo listing for testing this website. The price and availability are illustrative, not a sales offer. Specifications and photos come from a saved AutoHaina example."
+      },
+      "zh": {
+        "model": "GLC 260 L",
+        "trim": "4MATIC • 2.0升涡轮增压",
+        "city": "中国",
+        "title": "演示 · 奔驰 GLC 260 L",
+        "remark": "本车辆为网站功能测试示例。价格和库存状态仅作演示，不构成销售报价。参数和照片来自已保存的 AutoHaina 示例。"
+      }
+    }
+  },
+  {
+    "id": "DEMO-2",
+    "carCode": "DEMO-2",
+    "brand": "Dongfeng Yi Pai",
+    "model": "eπ007",
+    "trim": "Электромобиль • задний привод",
+    "city": "Китай",
+    "title": "Демо · Dongfeng Yi Pai eπ007",
+    "remark": "Демонстрационная карточка для проверки сайта. Цена и статус условные; это не предложение продажи. Характеристики и фотографии взяты из сохранённого примера AutoHaina.",
+    "price": 24900,
+    "year": 2026,
+    "mileage": "0 км",
+    "status": "В пути",
+    "condition": "Новый",
+    "power": "272 л.с.",
+    "drive": "",
+    "image": "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249395_14-1280w.webp",
+    "gallery": [
+      "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249395_14-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249394_15-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249390_19-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249392_17-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249391_18-1280w.webp"
+    ],
+    "specs": {
+      "mileageKm": 0,
+      "powerHp": 272,
+      "fuelType": "9bdbc2f60b49",
+      "transmission": "72e8dd533fe5",
+      "driveType": "298db4b41bdb",
+      "bodyType": "0cbd08f2c690",
+      "seats": "97c7b1aee347",
+      "batteryType": "e1314b3169a8",
+      "acceleration": 5.7,
+      "range": 650,
+      "officialPrice": 144900
+    },
+    "translations": {
+      "ru": {
+        "model": "eπ007",
+        "trim": "Электромобиль • задний привод",
+        "city": "Китай",
+        "title": "Демо · Dongfeng Yi Pai eπ007",
+        "remark": "Демонстрационная карточка для проверки сайта. Цена и статус условные; это не предложение продажи. Характеристики и фотографии взяты из сохранённого примера AutoHaina."
+      },
+      "en": {
+        "model": "eπ007",
+        "trim": "Electric • rear-wheel drive",
+        "city": "China",
+        "title": "Demo · Dongfeng Yi Pai eπ007",
+        "remark": "Demo listing for testing this website. The price and availability are illustrative, not a sales offer. Specifications and photos come from a saved AutoHaina example."
+      },
+      "zh": {
+        "model": "eπ007",
+        "trim": "纯电动 • 后轮驱动",
+        "city": "中国",
+        "title": "演示 · 东风奕派 eπ007",
+        "remark": "本车辆为网站功能测试示例。价格和库存状态仅作演示，不构成销售报价。参数和照片来自已保存的 AutoHaina 示例。"
+      }
+    }
+  },
+  {
+    "id": "DEMO-3",
+    "carCode": "DEMO-3",
+    "brand": "BYD",
+    "model": "Seal 06 DM-i",
+    "trim": "Подключаемый гибрид • 1,5 л",
+    "city": "Китай",
+    "title": "Демо · BYD Seal 06 DM-i",
+    "remark": "Демонстрационная карточка для проверки сайта. Цена и статус условные; это не предложение продажи. Характеристики и фотографии взяты из сохранённого примера AutoHaina.",
+    "price": 19900,
+    "year": 2027,
+    "mileage": "0 км",
+    "status": "Под заказ",
+    "condition": "Новый",
+    "power": "101 л.с.",
+    "drive": "",
+    "image": "https://img.autohaina.com/vehicle/2026/08/11/rlfqgphcgp/rlfqgphcgp_1-1280w.webp",
+    "gallery": [
+      "https://img.autohaina.com/vehicle/2026/08/11/rlfqgphcgp/rlfqgphcgp_1-1280w.webp"
+    ],
+    "specs": {
+      "mileageKm": 0,
+      "powerHp": 101,
+      "driveType": "b64fb9aad8ea",
+      "bodyType": "781a40168c0e",
+      "seats": "97c7b1aee347",
+      "batteryType": "e1314b3169a8",
+      "flowMode": "7c2b37e3404d",
+      "fuelType": "eba69e23d059",
+      "displacement": 1.5,
+      "acceleration": 7.5,
+      "fuelConsumption": 0.77,
+      "officialPrice": 99900
+    },
+    "translations": {
+      "ru": {
+        "model": "Seal 06 DM-i",
+        "trim": "Подключаемый гибрид • 1,5 л",
+        "city": "Китай",
+        "title": "Демо · BYD Seal 06 DM-i",
+        "remark": "Демонстрационная карточка для проверки сайта. Цена и статус условные; это не предложение продажи. Характеристики и фотографии взяты из сохранённого примера AutoHaina."
+      },
+      "en": {
+        "model": "Seal 06 DM-i",
+        "trim": "Plug-in hybrid • 1.5L",
+        "city": "China",
+        "title": "Demo · BYD Seal 06 DM-i",
+        "remark": "Demo listing for testing this website. The price and availability are illustrative, not a sales offer. Specifications and photos come from a saved AutoHaina example."
+      },
+      "zh": {
+        "model": "海豹06 DM-i",
+        "trim": "插电式混合动力 • 1.5升",
+        "city": "中国",
+        "title": "演示 · 比亚迪 海豹06 DM-i",
+        "remark": "本车辆为网站功能测试示例。价格和库存状态仅作演示，不构成销售报价。参数和照片来自已保存的 AutoHaina 示例。"
+      }
+    }
+  },
+  {
+    "id": "DEMO-4",
+    "carCode": "DEMO-4",
+    "brand": "AITO AITO",
+    "model": "M7",
+    "trim": "Гибрид с увеличителем хода • 6 мест",
+    "city": "Китай",
+    "title": "Демо · AITO AITO M7",
+    "remark": "Демонстрационная карточка для проверки сайта. Цена и статус условные; это не предложение продажи. Характеристики и фотографии взяты из сохранённого примера AutoHaina.",
+    "price": 32900,
+    "year": 2022,
+    "mileage": "42000 км",
+    "status": "В наличии",
+    "condition": "С пробегом",
+    "power": "125 л.с.",
+    "drive": "",
+    "image": "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_1-1280w.webp",
+    "gallery": [
+      "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_1-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_2-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_3-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_4-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_5-1280w.webp"
+    ],
+    "specs": {
+      "mileageKm": 42000,
+      "powerHp": 125,
+      "fuelType": "ae529d5626b2",
+      "transmission": "848536883918",
+      "driveType": "c184c92aa561",
+      "bodyType": "90e26bda560a",
+      "color": "0a43e56ae281",
+      "seats": "8cf20c2ebf6a",
+      "batteryType": "42aa69997f4e",
+      "flowMode": "9fd50073ba8f",
+      "displacement": 1.5,
+      "acceleration": 4.8,
+      "fuelConsumption": 1.09,
+      "batteryCapacity": 40,
+      "range": 200,
+      "officialPrice": 339800,
+      "registrationDate": "2022-11-15"
+    },
+    "translations": {
+      "ru": {
+        "model": "M7",
+        "trim": "Гибрид с увеличителем хода • 6 мест",
+        "city": "Китай",
+        "title": "Демо · AITO AITO M7",
+        "remark": "Демонстрационная карточка для проверки сайта. Цена и статус условные; это не предложение продажи. Характеристики и фотографии взяты из сохранённого примера AutoHaina."
+      },
+      "en": {
+        "model": "M7",
+        "trim": "Range extender • 6 seats",
+        "city": "China",
+        "title": "Demo · AITO AITO M7",
+        "remark": "Demo listing for testing this website. The price and availability are illustrative, not a sales offer. Specifications and photos come from a saved AutoHaina example."
+      },
+      "zh": {
+        "model": "M7",
+        "trim": "增程式 • 6座",
+        "city": "中国",
+        "title": "演示 · AITO 问界 M7",
+        "remark": "本车辆为网站功能测试示例。价格和库存状态仅作演示，不构成销售报价。参数和照片来自已保存的 AutoHaina 示例。"
+      }
+    }
+  },
+  {
+    "id": "DEMO-5",
+    "carCode": "DEMO-5",
+    "brand": "Buick",
+    "model": "Century",
+    "trim": "Минивэн • 6 мест",
+    "city": "Китай",
+    "title": "Демо · Buick Century",
+    "remark": "Демонстрационная карточка для проверки сайта. Цена и статус условные; это не предложение продажи. Характеристики и фотографии взяты из сохранённого примера AutoHaina.",
+    "price": 54900,
+    "year": 2023,
+    "mileage": "21000 км",
+    "status": "В пути",
+    "condition": "С пробегом",
+    "power": "237 л.с.",
+    "drive": "",
+    "image": "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_1-1280w.webp",
+    "gallery": [
+      "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_1-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_2-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_3-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_4-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_5-1280w.webp"
+    ],
+    "specs": {
+      "mileageKm": 21000,
+      "powerHp": 237,
+      "fuelType": "6289d9d52d0e",
+      "transmission": "848536883918",
+      "driveType": "b64fb9aad8ea",
+      "bodyType": "1b6ddf25aeca",
+      "color": "0a43e56ae281",
+      "seats": "8cf20c2ebf6a",
+      "flowMode": "9fd50073ba8f",
+      "displacement": 2,
+      "acceleration": 10.3,
+      "fuelConsumption": 8.65,
+      "officialPrice": 529900,
+      "registrationDate": "2023-04-18"
+    },
+    "translations": {
+      "ru": {
+        "model": "Century",
+        "trim": "Минивэн • 6 мест",
+        "city": "Китай",
+        "title": "Демо · Buick Century",
+        "remark": "Демонстрационная карточка для проверки сайта. Цена и статус условные; это не предложение продажи. Характеристики и фотографии взяты из сохранённого примера AutoHaina."
+      },
+      "en": {
+        "model": "Century",
+        "trim": "MPV • 6 seats",
+        "city": "China",
+        "title": "Demo · Buick Century",
+        "remark": "Demo listing for testing this website. The price and availability are illustrative, not a sales offer. Specifications and photos come from a saved AutoHaina example."
+      },
+      "zh": {
+        "model": "世纪",
+        "trim": "MPV • 6座",
+        "city": "中国",
+        "title": "演示 · 别克 世纪",
+        "remark": "本车辆为网站功能测试示例。价格和库存状态仅作演示，不构成销售报价。参数和照片来自已保存的 AutoHaina 示例。"
+      }
+    }
+  }
+]

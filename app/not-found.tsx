@@ -3,9 +3,9 @@
 import { useLocale } from '@/components/LocaleProvider';
 
 import Link from 'next/link';
-import { Header } from '@/components/Header';
+import { MarketFrame } from '@/components/MarketFrame';
 
 export default function NotFound() {
   const { t } = useLocale();
-  return <><Header active="catalog" /><main className="not-found"><p className="eyebrow">Motors</p><h1>{t("Страница")}<br /><em>{t("не найдена.")}</em></h1><p>{t("Возможно, автомобиль уже продан или ссылка устарела.")}</p><Link className="button button-gold" href="/catalog">{t("Вернуться в каталог")} <span>↗</span></Link></main></>;
+  return <MarketFrame><main className="market-main market-empty"><h1>{t('Страница')} {t('не найдена.')}</h1><p>{t('Возможно, автомобиль уже продан или ссылка устарела.')}</p><Link className="market-primary" href="/catalog">{t('Вернуться в каталог')} ↗</Link></main></MarketFrame>;
 }

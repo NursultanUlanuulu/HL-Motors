@@ -1,0 +1,976 @@
+{
+  "data": {
+    "id": "0md6fj8ctt",
+    "carCode": "0c9fee41b0dfa47a | 18533498",
+    "brandId": "s4033d85el",
+    "title": "Mercedes Benz 2022 GLC 260 L 4MATIC 2.0T Luxury (Change 2) Automatic Gear",
+    "titleZh": "奔驰 2022款 GLC 260 L 4MATIC 2.0T 豪华型(改款二) 自动挡",
+    "metaTitle": "Mercedes Benz 2022 GLC 260 L 4MATIC 2.0T Luxury (Change 2) Automatic Gear",
+    "metaDescription": "The license was licensed in 23 years, with a real meter of more than 60000 kilometers. The headlight cover was replaced in vehicle condition. Posterior lobe cutting.",
+    "remark": "The license was licensed in 23 years, with a real meter of more than 60000 kilometers. The headlight cover was replaced in vehicle condition. Posterior lobe cutting.",
+    "featureTags": [],
+    "highlights": [],
+    "highlightItems": [],
+    "price": 145000,
+    "fobPrice": 164500,
+    "listedAt": "2026-10-13",
+    "registrationDate": "2023-02-13",
+    "horsepower": 197,
+    "year": "2023",
+    "mileage": "60,000 km",
+    "tag": "",
+    "images": [
+      "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_1-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_2-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_3-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_4-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_5-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_6-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_7-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_8-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_9-1280w.webp"
+    ],
+    "specs": {
+      "engine": "2.0T 197 horsepower L4",
+      "transmission": "Automatic",
+      "fuelType": "Gasoline",
+      "driveType": "Four-wheel drive",
+      "seats": "5",
+      "color": "Black",
+      "bodyType": "SUV",
+      "displacement": "2.0T",
+      "flowMode": "Turbocharging",
+      "acceleration": "8.4",
+      "fuelConsumption": "8.55",
+      "batteryCapacity": "0",
+      "range": "0",
+      "registrationDate": "2023-02-13",
+      "officialPrice": "429200",
+      "condition": "Used Car",
+      "location": "Henan Shangqiu"
+    }
+  },
+  "breadcrumb": {
+    "brandId": "s4033d85el",
+    "brandName": "Mercedes Benz",
+    "seriesId": "ua2h8508pb",
+    "seriesName": "GLC"
+  },
+  "parameters_by_group": {
+    "Basic Parameters": [
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Vehicle Model Name",
+        "param_value": "Mercedes Benz GLC 2022 model changed to GLC 260 L 4MATIC luxury model",
+        "idx": 1
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Reference Price (CNY)",
+        "param_value": "From 374200",
+        "idx": 2
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Manufacturer’s Suggested Retail Price (RMB)",
+        "param_value": "429200",
+        "idx": 3
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Manufacturer",
+        "param_value": "Beijing Mercedes Benz",
+        "idx": 4
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Level",
+        "param_value": "Mid-size SUV",
+        "idx": 5
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Energy type",
+        "param_value": "Gasoline",
+        "idx": 6
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Environmental standards",
+        "param_value": "China VI",
+        "idx": 7
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Release date",
+        "param_value": "2022.03",
+        "idx": 8
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Maximum power (kW)",
+        "param_value": "145",
+        "idx": 9
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Maximum torque (N · m)",
+        "param_value": "320",
+        "idx": 10
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Engine",
+        "param_value": "2.0T 197 horsepower L4",
+        "idx": 11
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "gearbox",
+        "param_value": "9-gear manual integration",
+        "idx": 12
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Length × Width × Height (mm)",
+        "param_value": "4764*1898*1642",
+        "idx": 13
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Body structure",
+        "param_value": "5 door 5 seat SUV",
+        "idx": 14
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Maximum speed (km/h)",
+        "param_value": "213",
+        "idx": 15
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Official 0–100 km/h acceleration (s)",
+        "param_value": "8.4",
+        "idx": 16
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Full-vehicle warranty",
+        "param_value": "Three years unlimited kilometers",
+        "idx": 17
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "WLTC combined fuel consumption (L/100 km)",
+        "param_value": "8.55",
+        "idx": 18
+      }
+    ],
+    "Car body": [
+      {
+        "group_name": "Car body",
+        "param_name": "Length (mm)",
+        "param_value": "4764",
+        "idx": 19
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Width (mm)",
+        "param_value": "1898",
+        "idx": 20
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Height (mm)",
+        "param_value": "1642",
+        "idx": 21
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Wheelbase (mm)",
+        "param_value": "2973",
+        "idx": 22
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Front track (mm)",
+        "param_value": "1614",
+        "idx": 23
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Rear track (mm)",
+        "param_value": "1611",
+        "idx": 24
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Number of doors (units)",
+        "param_value": "5",
+        "idx": 25
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Number of seats (units)",
+        "param_value": "5",
+        "idx": 26
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Fuel tank capacity (L)",
+        "param_value": "66",
+        "idx": 27
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Curb weight (kg)",
+        "param_value": "1890",
+        "idx": 28
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Approach angle (°)",
+        "param_value": "23",
+        "idx": 29
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Departure angle (°)",
+        "param_value": "21",
+        "idx": 30
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Door opening method",
+        "param_value": "Swing door",
+        "idx": 31
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Maximum gross vehicle weight (kg)",
+        "param_value": "2370",
+        "idx": 32
+      }
+    ],
+    "Engine": [
+      {
+        "group_name": "Engine",
+        "param_name": "Engine model",
+        "param_value": "264 920",
+        "idx": 33
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Displacement (mL)",
+        "param_value": "1991",
+        "idx": 34
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Displacement (L)",
+        "param_value": "2.0",
+        "idx": 35
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Intake mode",
+        "param_value": "Turbocharging",
+        "idx": 36
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Cylinder arrangement",
+        "param_value": "L",
+        "idx": 37
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Number of cylinders (units)",
+        "param_value": "4",
+        "idx": 38
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Number of valves per cylinder (units)",
+        "param_value": "4",
+        "idx": 39
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Valve train",
+        "param_value": "DOHC",
+        "idx": 40
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum horsepower (Ps)",
+        "param_value": "197",
+        "idx": 41
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum power speed (rpm)",
+        "param_value": "6100",
+        "idx": 42
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum torque speed (rpm)",
+        "param_value": "1650-4000",
+        "idx": 43
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Fuel form",
+        "param_value": "Gasoline",
+        "idx": 44
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Fuel octane rating",
+        "param_value": "No. 95",
+        "idx": 45
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Fuel supply method",
+        "param_value": "Direct injection",
+        "idx": 46
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Cylinder head material",
+        "param_value": "Aluminum alloy",
+        "idx": 47
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Cylinder block material",
+        "param_value": "Aluminum alloy",
+        "idx": 48
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Engine layout",
+        "param_value": "Longitudinal",
+        "idx": 49
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum net power (kW)",
+        "param_value": "145",
+        "idx": 50
+      }
+    ],
+    "gearbox": [
+      {
+        "group_name": "gearbox",
+        "param_name": "Number of gears",
+        "param_value": "9",
+        "idx": 51
+      },
+      {
+        "group_name": "gearbox",
+        "param_name": "gearbox Type",
+        "param_value": "Hand-automatic integrated gearbox (AT)",
+        "idx": 52
+      },
+      {
+        "group_name": "gearbox",
+        "param_name": "Abbreviation",
+        "param_value": "9-gear manual integration",
+        "idx": 53
+      }
+    ],
+    "Chassis steering": [
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Drive method",
+        "param_value": "Front-wheel drive with four-wheel drive",
+        "idx": 54
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Front suspension type",
+        "param_value": "Multi-link independent suspension",
+        "idx": 55
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Rear suspension type",
+        "param_value": "Multi-link independent suspension",
+        "idx": 56
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Type of support",
+        "param_value": "Electric power assistance",
+        "idx": 57
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Vehicle Body Structure",
+        "param_value": "Load-bearing",
+        "idx": 58
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Four-wheel drive form",
+        "param_value": "All-wheel drive",
+        "idx": 59
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Central differential structure",
+        "param_value": "multi-plate clutch",
+        "idx": 60
+      }
+    ],
+    "Wheel brake": [
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Front brake type",
+        "param_value": "Ventilated disc",
+        "idx": 61
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Rear brake type",
+        "param_value": "Ventilated disc",
+        "idx": 62
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Parking brake type",
+        "param_value": "Electronic parking brake",
+        "idx": 63
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Front tire specifications",
+        "param_value": "235/55 R19",
+        "idx": 64
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Rear tire specifications",
+        "param_value": "235/55 R19",
+        "idx": 65
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Spare tire specifications",
+        "param_value": "None",
+        "idx": 66
+      }
+    ],
+    "Active/Passive Safety Equipment": [
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Driver’s and passenger’s airbags",
+        "param_value": "Main standard/auxiliary standard",
+        "idx": 67
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Front/rear side airbags",
+        "param_value": "Front standard/rear optional",
+        "idx": 68
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Front/rear head airbags (curtain airbags)",
+        "param_value": "Front standard/rear standard",
+        "idx": 69
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "knee airbag",
+        "param_value": "Standard equipment",
+        "idx": 70
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "ISOFIX child seat anchorages",
+        "param_value": "Standard equipment",
+        "idx": 71
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "ABS anti-lock",
+        "param_value": "Standard equipment",
+        "idx": 72
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Braking force distribution (EBD/CBC, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 73
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Brake assist (EBA/BAS/BA, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 74
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Traction control (ASR/TCS/TRC, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 75
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Body stability control (ESC/ESP/DSC, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 76
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Automatic Braking/Advanced Safety System",
+        "param_value": "Standard equipment",
+        "idx": 77
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Fatigue Driving Alert",
+        "param_value": "Standard equipment",
+        "idx": 78
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Forward Collision Warning",
+        "param_value": "Standard equipment",
+        "idx": 79
+      }
+    ],
+    "Auxiliary/Control Configuration": [
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Front/rear parking Radar",
+        "param_value": "Front standard/rear standard",
+        "idx": 80
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Automatic parking",
+        "param_value": "Standard equipment",
+        "idx": 81
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Engine start-stop technology",
+        "param_value": "Standard equipment",
+        "idx": 82
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Auto Hold",
+        "param_value": "Standard equipment",
+        "idx": 83
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Hill-start assist",
+        "param_value": "Standard equipment",
+        "idx": 84
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Variable steering ratio",
+        "param_value": "Standard equipment",
+        "idx": 85
+      }
+    ],
+    "Exterior/Security Features": [
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Sport Appearance Kit",
+        "param_value": "Standard equipment",
+        "idx": 86
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Electric trunk lid",
+        "param_value": "Standard equipment",
+        "idx": 87
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Sensing trunk",
+        "param_value": "Optional equipment",
+        "idx": 88
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Electric trunk position memory",
+        "param_value": "Standard equipment",
+        "idx": 89
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Roof rack",
+        "param_value": "Standard equipment",
+        "idx": 90
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Engine electronic immobilizer",
+        "param_value": "Standard equipment",
+        "idx": 91
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "In-car central locking",
+        "param_value": "Standard equipment",
+        "idx": 92
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Keyless start system",
+        "param_value": "Standard equipment",
+        "idx": 93
+      }
+    ],
+    "Internal configuration": [
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Multi-function steering wheel",
+        "param_value": "Standard equipment",
+        "idx": 94
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Steering wheel shift paddles",
+        "param_value": "Standard equipment",
+        "idx": 95
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Steering wheel memory",
+        "param_value": "Standard equipment",
+        "idx": 96
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "All-digital instrument cluster",
+        "param_value": "Standard equipment",
+        "idx": 97
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "HUD heads-up digital display",
+        "param_value": "Optional equipment",
+        "idx": 98
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "ETC device",
+        "param_value": "Optional equipment",
+        "idx": 99
+      }
+    ],
+    "Seat configuration": [
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Electrically adjustable driver’s and passenger’s seats",
+        "param_value": "Main standard/auxiliary standard",
+        "idx": 100
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Rear adjustable button on the passenger side",
+        "param_value": "Standard equipment",
+        "idx": 101
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Front/Rear Center Armrest",
+        "param_value": "Front standard/rear standard",
+        "idx": 102
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Rear cup holder",
+        "param_value": "Standard equipment",
+        "idx": 103
+      }
+    ],
+    "Multimedia Configuration": [
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Satellite navigation system",
+        "param_value": "Standard equipment",
+        "idx": 104
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Navigation traffic information is displayed.",
+        "param_value": "Standard equipment",
+        "idx": 105
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Roadside assistance call",
+        "param_value": "Standard equipment",
+        "idx": 106
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Bluetooth/Voice Call",
+        "param_value": "Standard equipment",
+        "idx": 107
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Internet of Vehicles",
+        "param_value": "Standard equipment",
+        "idx": 108
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "OTA update",
+        "param_value": "Standard equipment",
+        "idx": 109
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Trunk 12V power outlet",
+        "param_value": "Standard equipment",
+        "idx": 110
+      }
+    ],
+    "Lighting configuration": [
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "LED daytime running lights",
+        "param_value": "Standard equipment",
+        "idx": 111
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Automatic headlights",
+        "param_value": "Standard equipment",
+        "idx": 112
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Headlight height is adjustable.",
+        "param_value": "Standard equipment",
+        "idx": 113
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Headlight delay-off",
+        "param_value": "Standard equipment",
+        "idx": 114
+      }
+    ],
+    "Glass/Rearview Mirror": [
+      {
+        "group_name": "Glass/Rearview Mirror",
+        "param_name": "Front/Rear Electric Window",
+        "param_value": "Front standard/rear standard",
+        "idx": 115
+      },
+      {
+        "group_name": "Glass/Rearview Mirror",
+        "param_name": "Window anti-pinch function",
+        "param_value": "Standard equipment",
+        "idx": 116
+      },
+      {
+        "group_name": "Glass/Rearview Mirror",
+        "param_name": "Rear wiper",
+        "param_value": "Standard equipment",
+        "idx": 117
+      }
+    ],
+    "Air conditioner/refrigerator": [
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Rear independent air conditioning",
+        "param_value": "Standard equipment",
+        "idx": 118
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Rear-seat air vent",
+        "param_value": "Standard equipment",
+        "idx": 119
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Temperature zoning control",
+        "param_value": "Standard equipment",
+        "idx": 120
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "In-car air purifier",
+        "param_value": "Optional equipment",
+        "idx": 121
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "In-vehicle PM2.5 filtration system",
+        "param_value": "Optional equipment",
+        "idx": 122
+      }
+    ]
+  },
+  "geo_meta": {
+    "sourceName": "jyt",
+    "cityZh": "商丘",
+    "coverUrl": "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_1-1280w.webp",
+    "updatetime": "2026-10-13 21:14:48",
+    "verifiedAt": "2026-10-13 21:14:48",
+    "updatedAt": "2026-10-13 21:35:24.013949",
+    "publishedAt": "2026-10-13"
+  },
+  "sales_manager": {
+    "name": "3325067593@qq.com",
+    "firstName": "Sofiya",
+    "fullName": "Sofiya",
+    "image": "https://img.autohaina.com/users/avatar/3325067593-qq.com/dealer-556349a.jpg",
+    "bio": "WeChat: +8618150219625",
+    "phone": "+8618150219625",
+    "jobTitle": "业务员",
+    "whatsapp": "+8618150219625",
+    "wechat": "https://img.autohaina.com/files/微信图片_20260408193336_676_14.png",
+    "telegram": "@Sofiya_HainaAuto"
+  },
+  "relatedVehicles": [
+    {
+      "id": "tc5bp0onc7",
+      "brandId": "s4033d85el",
+      "brandName": "Mercedes Benz",
+      "seriesId": "ua2h8508pb",
+      "seriesName": "GLC",
+      "registrationDate": "2022-12-14",
+      "title": "Mercedes Benz 2022 GLC 260 L 4MATIC 2.0T Luxury (Change 2) Automatic Gear",
+      "listedAt": "2026-10-14",
+      "price": 191800,
+      "fobPrice": 214300,
+      "horsepower": 197,
+      "year": "2022",
+      "mileage": "55,700 km",
+      "tag": "",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/tc5bp0onc7/tc5bp0onc7_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/tc5bp0onc7/tc5bp0onc7_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/tc5bp0onc7/tc5bp0onc7_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/tc5bp0onc7/tc5bp0onc7_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/tc5bp0onc7/tc5bp0onc7_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Sichuan Chengdu"
+      }
+    },
+    {
+      "id": "9moh08ne0q",
+      "brandId": "s4033d85el",
+      "brandName": "Mercedes Benz",
+      "seriesId": "ua2h8508pb",
+      "seriesName": "GLC",
+      "registrationDate": "2020-02-14",
+      "title": "Mercedes Benz 2020 GLC 300 L 4MATIC 2.0T Dynamic Automatic",
+      "listedAt": "2026-10-14",
+      "price": 129800,
+      "fobPrice": 149300,
+      "horsepower": 258,
+      "year": "2020",
+      "mileage": "70,000 km",
+      "tag": "",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/9moh08ne0q/9moh08ne0q_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/9moh08ne0q/9moh08ne0q_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/9moh08ne0q/9moh08ne0q_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/9moh08ne0q/9moh08ne0q_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/9moh08ne0q/9moh08ne0q_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Sichuan Chengdu"
+      }
+    },
+    {
+      "id": "4cg1l0362s",
+      "brandId": "s4033d85el",
+      "brandName": "Mercedes Benz",
+      "seriesId": "ua2h8508pb",
+      "seriesName": "GLC",
+      "registrationDate": "2023-09-08",
+      "title": "Mercedes Benz 2023 GLC 300 L 4MATIC 48V 2.0T dynamic 5-seat automatic gear",
+      "listedAt": "2026-10-14",
+      "price": 250000,
+      "fobPrice": 272500,
+      "horsepower": 0,
+      "year": "2023",
+      "mileage": "44,000 km",
+      "tag": "High value preservation",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/4cg1l0362s/4cg1l0362s_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/4cg1l0362s/4cg1l0362s_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/4cg1l0362s/4cg1l0362s_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/4cg1l0362s/4cg1l0362s_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/4cg1l0362s/4cg1l0362s_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Jiangsu Wuxi"
+      }
+    },
+    {
+      "id": "ln5bh9n36a",
+      "brandId": "s4033d85el",
+      "brandName": "Mercedes Benz",
+      "seriesId": "ua2h8508pb",
+      "seriesName": "GLC",
+      "registrationDate": "2020-06-03",
+      "title": "Mercedes Benz 2020 GLC 260 L 4MATIC 2.0T Dynamic (Modified) Automatic Gear",
+      "listedAt": "2026-10-14",
+      "price": 148800,
+      "fobPrice": 168300,
+      "horsepower": 197,
+      "year": "2020",
+      "mileage": "54,700 km",
+      "tag": "Non-operational",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/ln5bh9n36a/ln5bh9n36a_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/ln5bh9n36a/ln5bh9n36a_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/ln5bh9n36a/ln5bh9n36a_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/ln5bh9n36a/ln5bh9n36a_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/ln5bh9n36a/ln5bh9n36a_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Anhui Fuyang"
+      }
+    },
+    {
+      "id": "nteecbudaq",
+      "brandId": "s4033d85el",
+      "brandName": "Mercedes Benz",
+      "seriesId": "ua2h8508pb",
+      "seriesName": "GLC",
+      "registrationDate": "2022-01-14",
+      "title": "Mercedes Benz 2022 GLC 260 L 4MATIC 2.0T Luxury (Change 2) Automatic Gear",
+      "listedAt": "2026-10-14",
+      "price": 176000,
+      "fobPrice": 198500,
+      "horsepower": 197,
+      "year": "2022",
+      "mileage": "56,000 km",
+      "tag": "Original version throughout the vehicle",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/nteecbudaq/nteecbudaq_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/nteecbudaq/nteecbudaq_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/nteecbudaq/nteecbudaq_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/nteecbudaq/nteecbudaq_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/nteecbudaq/nteecbudaq_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Jiangsu Nanjing"
+      }
+    }
+  ]
+}

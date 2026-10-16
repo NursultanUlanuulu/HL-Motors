@@ -1,0 +1,124 @@
+新车|Новый автомобиль
+二手车|Подержанный автомобиль
+Gasoline 48V light mixing system|Бензин с мягким гибридом 48 В
+Other|Другое
+Pure electric|Электромобиль BEV
+Plug-in hybrid|Подключаемый гибрид PHEV
+plug-in hybrid|Подключаемый гибрид PHEV — дубль по регистру
+gasoline electric drive|Бензиноэлектрический привод — требуется уточнение схемы
+Diesel fuel|Дизель
+increasing program|Электромобиль с увеличителем запаса хода EREV — неудачный перевод
+Hybrid (oil-electric)|Неподключаемый гибрид HEV
+Gasoline|Бензин
+Electric all-wheel drive|Электрический полный привод
+2WD|Привод на два колеса без уточнения оси
+Dual-motor all-wheel drive|Полный привод с двумя электромоторами
+Four-wheel drive|Полный привод
+Rear-wheel drive|Задний привод
+Precursor|Предположительно передний привод — ошибочная подпись
+Front-engine, front-wheel drive|Переднее расположение двигателя и передний привод
+Mid-size SUV|Среднеразмерный SUV
+Mid-to-large SUV|Среднебольшой SUV
+Medium and large MPV|Среднебольшой минивэн
+Hatchback|Хетчбэк
+Large vehicle|Крупный легковой автомобиль
+Coupe|Купе
+Convertible|Кабриолет
+mini car|Миниавтомобиль
+Recreational vehicle|Автодом или кемпер
+Medium MPV|Среднеразмерный минивэн
+Pickup|Пикап
+Commercial Vehicle/MPV|Коммерческий автомобиль или минивэн
+Compact car|Компактный легковой автомобиль
+Compact SUV|Компактный SUV
+Compact MPV|Компактный минивэн
+Mid- to full-size cars|Среднебольшой легковой автомобиль
+SUV/SUV|SUV — дублирующая подпись
+Station wagon|Универсал
+Large SUV|Крупный SUV
+Mid-size car|Среднеразмерный легковой автомобиль
+Sports car|Спортивный автомобиль
+MPV|Минивэн
+SUV|SUV
+Passenger car|Легковой автомобиль
+Silver/Grey|Серебристый или серый
+Yellow/Orange|Жёлтый или оранжевый
+Champagne/Brown|Шампань или коричневый
+Unknown|Неизвестен
+Red/Purple|Красный или фиолетовый
+Brown/Black|Коричневый и чёрный
+Orange|Оранжевый
+Brown|Коричневый
+Red/Black|Красный и чёрный
+Green|Зелёный
+Blue|Синий
+Purple|Фиолетовый
+platinum just gray|Фирменный серый оттенок — название требует уточнения
+gray|Серый
+Champagne color|Шампань
+white|Белый
+Black|Чёрный
+Red|Красный
+Silver|Серебристый
+Beige/Black|Бежевый и чёрный
+White/Black|Белый и чёрный
+Beige|Бежевый
+Yellow|Жёлтый
+Golden|Золотистый
+Coffee color|Кофейный
+Pink|Розовый
+Purple/Black|Фиолетовый и чёрный
+Silver-white|Серебристо белый
+Gray/Black|Серый и чёрный
+Solid-state battery|Твердотельная батарея
+nickel cobalt manganese|Никель кобальт марганцевая батарея NMC
+Sodium ion|Натрий ионная батарея
+Lithium ternary battery|Тройная литиевая батарея
+lithium manganese iron phosphate|Литий марганец железо фосфатная батарея LMFP
+Lithium iron phosphate|Литий железо фосфатная батарея LFP
+Tri-element lithium|Тройная литиевая батарея — синоним
+Nickel-metal hydride|Никель металлогидридная батарея NiMH
+Lithium-ion|Литий ионная батарея без уточнения химии
+ternary lithium lithium manganese iron phosphate|Комбинация тройной литиевой и LMFP батареи
+Ternary lithium lithium iron phosphate|Комбинация тройной литиевой и LFP батареи
+Triple Turbo|Три турбокомпрессора
+Quad Turbo|Четыре турбокомпрессора
+Double mechanical booster|Два механических нагнетателя
+Other engines|Другой тип наддува или двигателя
+mechanical turbocharging|Комбинированный наддув — схема требует уточнения
+Mechanical Pressurization|Механический нагнетатель
+Twin-turbocharged|Два турбокомпрессора
+Natural inhalation|Атмосферный двигатель
+Turbocharging|Турбонаддув
+火烧车|Автомобиль после пожара
+New source|Новое поступление
+Original paintwork|Заводское лакокрасочное покрытие
+High value preservation|Высокая остаточная стоимость — рекламная метка
+Original version throughout the vehicle|Заводское состояние кузова — точный смысл требует проверки
+Cost-Effective|Выгодное предложение — рекламная метка
+Non-operational|Вероятно некоммерческая эксплуатация — не считать автоматически неисправным
+Vehicle Condition Premium|Хорошее состояние — оценка продавца
+Actual meter mileage|Заявленный достоверный пробег
+Value-added tax invoice|Наличие счёта с НДС
+180 days|Категория 180 дней
+Original factory paint throughout the vehicle|Заводская краска по всему кузову
+0 Transfer|Заявлено отсутствие перерегистраций
+defective car|Автомобиль с дефектами
+Parallel imported cars|Параллельный импорт
+Business-to-non-profit|Вероятно перевод из коммерческой эксплуатации в личную
+Flooded car|Автомобиль после затопления
+New car|Новый автомобиль
+Nearly new car|Почти новый автомобиль
+Accident vehicle|Автомобиль после ДТП
+Personal mobility vehicle|Автомобиль для личного использования
+Low fuel consumption|Низкий расход топлива — рекламная метка
+Selected Vehicle Sources|Отобранные предложения — рекламная метка
+Electric vehicle single speed gearbox|Одноступенчатый редуктор электромобиля
+CVT continuously variable|Вариатор CVT
+E-CVT stepless speed change|Гибридная трансмиссия e CVT
+fixed gear ratio gearbox|Редуктор с фиксированным передаточным отношением
+AMT (combined 10th gear)|Роботизированная коробка AMT с обозначением 10 передач
+Automatic gearbox (AT)|Гидромеханический автомат AT
+6-speed three-clutch electric drive transmission|Шестиступенчатая электрическая трансмиссия с тремя сцеплениями
+Automatic|Автоматическая коробка без уточнения типа
+Manual|Механическая коробка без уточнения числа передач

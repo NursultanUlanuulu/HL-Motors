@@ -12,13 +12,14 @@ import { useSiteData } from './SiteDataProvider';
 import { catalogOptions } from '@/lib/site-data';
 import { filterAdminCars, initialAdminFilters, type AdminFilters } from '@/lib/catalog-filters';
 import { CarTextEditor } from './CarTextEditor';
+import { CarSpecsEditor } from './CarSpecsEditor';
 import { normalizeCarText, localizeCar, brandLabel } from '@/lib/car-translations';
 import { ensureAdminSession } from '@/app/actions/auth';
 import { withDeadline, clientRequestTimeoutMs } from '@/lib/request-deadline';
 
 const statuses: CarStatus[] = ['В наличии', 'В пути', 'Под заказ'];
 const conditions: CarCondition[] = ['Новый', 'С пробегом'];
-const emptyCar = (): Car => ({ id: `HL-${crypto.randomUUID()}`, brand: '', model: '', trim: '', price: 0, year: new Date().getFullYear(), mileage: 'Новый', status: 'Под заказ', condition: 'Новый', city: 'Китай', power: '', drive: 'Полный', image: '', gallery: [] });
+const emptyCar = (): Car => ({ id: `HL-${crypto.randomUUID()}`, brand: '', model: '', trim: '', price: 0, year: new Date().getFullYear(), mileage: '', status: 'Под заказ', condition: 'Новый', city: 'Китай', power: '', drive: '', image: '', gallery: [] });
 
 export function AdminDashboard() {
   const { locale, t } = useLocale();
@@ -119,11 +120,15 @@ export function AdminDashboard() {
         <header><div><p>{t(original.current ? 'Редактирование объявления' : 'Новое объявление')}</p><h2>{draftDisplay?.brand && draftDisplay?.model ? `${draftDisplay.brand} ${draftDisplay.model}` : t('Автомобиль')}</h2></div><button type="button" className="admin-editor-close" disabled={busy} onClick={closeEditor} aria-label={t("Закрыть")}>×</button></header>
         <div className="admin-editor-body"><fieldset className="admin-editor-fields" disabled={saving}>
           <AdminMediaEditor key={`media-${draft.id}`} car={draft} onChange={media => setDraft(current => current ? { ...current, ...media } : current)} onBusy={setMediaBusy} onUploaded={sources => { pendingMedia.current.push(...sources); }} />
+          <CarSpecsEditor key={`specs-${draft.id}`} car={draft} onChange={setDraft} />
           <CarTextEditor key={`text-${draft.id}`} car={draft} onChange={setDraft} />
           <fieldset><legend>{t("Основные данные")}</legend><div className="admin-form-grid">
             <label>{t("Цена, USD")}<input type="number" min={carPriceMin} max={carPriceMax} step="1" value={draft.price || ''} onChange={event => updateDraft('price', Number(event.target.value))} required /><small>{t('Целое число от 1 до 100 000 000 USD.')}</small></label>
             <label>{t("Год выпуска")}<input type="number" list="admin-year-options" min="2000" max="2035" value={draft.year || ''} onChange={event => updateDraft('year', Number(event.target.value))} required /><datalist id="admin-year-options">{years.map(year => <option key={year} value={year} />)}</datalist></label>
             <label>VIN<input maxLength={64} value={draft.vin ?? ''} onChange={event => updateDraft('vin', event.target.value)} /></label>
+            <label>{t('Код автомобиля')}<input maxLength={160} value={draft.carCode ?? ''} onChange={event => updateDraft('carCode', event.target.value)} /></label>
+            <label>{t('Дата публикации')}<input type="date" value={draft.listedAt ?? ''} onChange={event => updateDraft('listedAt', event.target.value || undefined)} /></label>
+            <label>{t('Цена FOB, USD')}<input type="number" min={carPriceMin} max={carPriceMax} step="1" value={draft.fobPrice ?? ''} onChange={event => updateDraft('fobPrice', event.target.value === '' ? undefined : Number(event.target.value))} /></label>
             <label>{t("Тип оформления")}<select value={draft.customsType ?? ''} onChange={event => updateDraft('customsType', event.target.value ? event.target.value as CustomsType : undefined)}><option value="">{t("Не указано")}</option>{customsTypes.map(type => <option key={type} value={type}>{type}</option>)}</select></label>
           </div></fieldset>
           <fieldset><legend>{t("Публикация")}</legend><div className="admin-form-grid">

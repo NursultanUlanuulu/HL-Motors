@@ -1,0 +1,1011 @@
+{
+  "data": {
+    "id": "vn62mvjh5s",
+    "carCode": "aaf494885fdc4eb1 | 18533630",
+    "brandId": "s4gek046up",
+    "title": "Tesla 2022 Model 3 rear-wheel drive version of automatic transmission",
+    "titleZh": "特斯拉 2022款 Model 3 后轮驱动版 自动挡",
+    "metaTitle": "Tesla 2022 Model 3 rear-wheel drive version of automatic transmission",
+    "metaDescription": "One hand, can pass three parties, the original car, the Tesla Model 3 rear-wheel drive version in August 2023, the deep brand little sister one hand 20000 kilometers, pure electric endurance 556km, enjoy the original three-power warranty of 8 years 160000 kilometers, Ningde era battery, maintenance of new",
+    "remark": "One hand, can pass three parties, the original car, the Tesla Model 3 rear-wheel drive version in August 2023, the deep brand little sister one hand 20000 kilometers, pure electric endurance 556km, enjoy the original three-power warranty of 8 years 160000 kilometers, Ningde era battery, maintenance of new",
+    "featureTags": [
+      "0 Transfer",
+      "Original version throughout the vehicle",
+      "New car",
+      "Actual meter mileage",
+      "Non-operational"
+    ],
+    "highlights": [
+      "0 Transfer",
+      "Original version throughout the vehicle",
+      "New car",
+      "Actual meter mileage",
+      "Non-operational"
+    ],
+    "highlightItems": [
+      {
+        "name": "0 Transfer",
+        "source": "jyt"
+      },
+      {
+        "name": "Original version throughout the vehicle",
+        "source": "jyt"
+      },
+      {
+        "name": "New car",
+        "source": "jyt"
+      },
+      {
+        "name": "Actual meter mileage",
+        "source": "jyt"
+      },
+      {
+        "name": "Non-operational",
+        "source": "jyt"
+      }
+    ],
+    "price": 145000,
+    "fobPrice": 164500,
+    "listedAt": "2026-10-13",
+    "registrationDate": "2023-08-15",
+    "horsepower": 260,
+    "year": "2023",
+    "mileage": "27,000 km",
+    "tag": "0 Transfer",
+    "images": [
+      "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_1-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_2-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_3-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_4-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_5-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_6-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_7-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_8-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_9-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_10-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_11-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_12-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_13-1280w.webp"
+    ],
+    "specs": {
+      "transmission": "Automatic",
+      "fuelType": "Pure electric",
+      "driveType": "Rear-wheel drive",
+      "seats": "5",
+      "color": "Black",
+      "bodyType": "Passenger car",
+      "displacement": "New energy",
+      "acceleration": "6.1",
+      "batteryCapacity": "60",
+      "batteryType": "Lithium iron phosphate",
+      "range": "556",
+      "registrationDate": "2023-08-15",
+      "officialPrice": "266740",
+      "condition": "Used Car",
+      "location": "Guangdong Shenzhen"
+    }
+  },
+  "breadcrumb": {
+    "brandId": "s4gek046up",
+    "brandName": "Tesla",
+    "seriesId": "b0ladee1av",
+    "seriesName": "Model 3"
+  },
+  "parameters_by_group": {
+    "Basic Parameters": [
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Vehicle Model Name",
+        "param_value": "2022 Model 3 Rear-Wheel Drive Version",
+        "idx": 1
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Reference Price (CNY)",
+        "param_value": "From 291000",
+        "idx": 2
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Manufacturer’s Suggested Retail Price (RMB)",
+        "param_value": "290988",
+        "idx": 3
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Manufacturer",
+        "param_value": "Tesla China",
+        "idx": 4
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Level",
+        "param_value": "Mid-size car",
+        "idx": 5
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Energy type",
+        "param_value": "Pure electric",
+        "idx": 6
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Release date",
+        "param_value": "2021.11",
+        "idx": 7
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Maximum power (kW)",
+        "param_value": "194",
+        "idx": 8
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Maximum torque (N · m)",
+        "param_value": "340",
+        "idx": 9
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Length × Width × Height (mm)",
+        "param_value": "4694*1850*1443",
+        "idx": 10
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Body structure",
+        "param_value": "4-door 5-seat sedan",
+        "idx": 11
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Maximum speed (km/h)",
+        "param_value": "225",
+        "idx": 12
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Official 0–100 km/h acceleration (s)",
+        "param_value": "6.1",
+        "idx": 13
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Full-vehicle warranty",
+        "param_value": "Four years or 80000km",
+        "idx": 14
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "CLTC pure electric cruising range (km)",
+        "param_value": "556",
+        "idx": 15
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Fast charging time (hours)",
+        "param_value": "1",
+        "idx": 16
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Slow charging time (hours)",
+        "param_value": "10",
+        "idx": 17
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Motor (Ps)",
+        "param_value": "264",
+        "idx": 18
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Fuel consumption equivalent to electric energy (L/100 km)",
+        "param_value": "1.41",
+        "idx": 19
+      }
+    ],
+    "Car body": [
+      {
+        "group_name": "Car body",
+        "param_name": "Length (mm)",
+        "param_value": "4694",
+        "idx": 20
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Width (mm)",
+        "param_value": "1850",
+        "idx": 21
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Height (mm)",
+        "param_value": "1443",
+        "idx": 22
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Wheelbase (mm)",
+        "param_value": "2875",
+        "idx": 23
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Front track (mm)",
+        "param_value": "1580",
+        "idx": 24
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Rear track (mm)",
+        "param_value": "1580",
+        "idx": 25
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Minimum ground clearance under full load (mm)",
+        "param_value": "138",
+        "idx": 26
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Number of doors (units)",
+        "param_value": "4",
+        "idx": 27
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Number of seats (units)",
+        "param_value": "5",
+        "idx": 28
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Trunk capacity (L)",
+        "param_value": "425",
+        "idx": 29
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Curb weight (kg)",
+        "param_value": "1761",
+        "idx": 30
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Approach angle (°)",
+        "param_value": "15",
+        "idx": 31
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Departure angle (°)",
+        "param_value": "17",
+        "idx": 32
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Door opening method",
+        "param_value": "Swing door",
+        "idx": 33
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Maximum gross vehicle weight (kg)",
+        "param_value": "2170",
+        "idx": 34
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Drag coefficient (Cd)",
+        "param_value": "0.23",
+        "idx": 35
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Maximum climbing degree (%)",
+        "param_value": "30",
+        "idx": 36
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Maximum climbing angle (°)",
+        "param_value": "16.7",
+        "idx": 37
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Minimum turning radius (m)",
+        "param_value": "5.8",
+        "idx": 38
+      }
+    ],
+    "gearbox": [
+      {
+        "group_name": "gearbox",
+        "param_name": "Number of gears",
+        "param_value": "1",
+        "idx": 39
+      },
+      {
+        "group_name": "gearbox",
+        "param_name": "gearbox Type",
+        "param_value": "fixed gear ratio gearbox",
+        "idx": 40
+      },
+      {
+        "group_name": "gearbox",
+        "param_name": "Abbreviation",
+        "param_value": "Electric vehicle single speed gearbox",
+        "idx": 41
+      }
+    ],
+    "Chassis steering": [
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Drive method",
+        "param_value": "Rear Rear Drive",
+        "idx": 42
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Front suspension type",
+        "param_value": "Double wishbone independent suspension",
+        "idx": 43
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Rear suspension type",
+        "param_value": "Multi-link independent suspension",
+        "idx": 44
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Type of support",
+        "param_value": "Electric power assistance",
+        "idx": 45
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Vehicle Body Structure",
+        "param_value": "Load-bearing",
+        "idx": 46
+      }
+    ],
+    "Wheel brake": [
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Front brake type",
+        "param_value": "Ventilated disc",
+        "idx": 47
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Rear brake type",
+        "param_value": "Ventilated disc",
+        "idx": 48
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Parking brake type",
+        "param_value": "Electronic parking brake",
+        "idx": 49
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Front tire specifications",
+        "param_value": "235/45 R18",
+        "idx": 50
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Rear tire specifications",
+        "param_value": "235/45 R18",
+        "idx": 51
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Spare tire specifications",
+        "param_value": "None",
+        "idx": 52
+      }
+    ],
+    "Electric motor": [
+      {
+        "group_name": "Electric motor",
+        "param_name": "Motor type",
+        "param_value": "Permanent Magnet/Synchronous",
+        "idx": 53
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Total motor power (kW)",
+        "param_value": "194",
+        "idx": 54
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Total motor power (Ps)",
+        "param_value": "264",
+        "idx": 55
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Total motor torque (N·m)",
+        "param_value": "340",
+        "idx": 56
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Maximum power of the rear motor (kW)",
+        "param_value": "194",
+        "idx": 57
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Maximum torque of the rear motor (N·m)",
+        "param_value": "340",
+        "idx": 58
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Number of drive motors",
+        "param_value": "Single motor",
+        "idx": 59
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Motor layout",
+        "param_value": "Rear-mounted",
+        "idx": 60
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery type",
+        "param_value": "lithium iron phosphate battery",
+        "idx": 61
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery Cell Brand",
+        "param_value": "Contemporary Amperex Technology Co. Limited (CATL)",
+        "idx": 62
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery cooling method",
+        "param_value": "Liquid cooling",
+        "idx": 63
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery energy (kWh)",
+        "param_value": "60",
+        "idx": 64
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Electricity consumption per 100 kilometers (kWh/100 km)",
+        "param_value": "12.5",
+        "idx": 65
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery pack warranty",
+        "param_value": "Eight years or 160,000 kilometers",
+        "idx": 66
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Fast charging function",
+        "param_value": "Support",
+        "idx": 67
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery energy density (Wh/kg)",
+        "param_value": "126",
+        "idx": 68
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery swapping",
+        "param_value": "Not supported",
+        "idx": 69
+      }
+    ],
+    "Active/Passive Safety Equipment": [
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Driver’s and passenger’s airbags",
+        "param_value": "Main standard/auxiliary standard",
+        "idx": 70
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Front/rear side airbags",
+        "param_value": "Front standard/rear-",
+        "idx": 71
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Front/rear head airbags (curtain airbags)",
+        "param_value": "Front standard/rear standard",
+        "idx": 72
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "ISOFIX child seat anchorages",
+        "param_value": "Standard equipment",
+        "idx": 73
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "ABS anti-lock",
+        "param_value": "Standard equipment",
+        "idx": 74
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Braking force distribution (EBD/CBC, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 75
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Brake assist (EBA/BAS/BA, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 76
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Traction control (ASR/TCS/TRC, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 77
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Body stability control (ESC/ESP/DSC, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 78
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Lane Change Assist",
+        "param_value": "Standard equipment",
+        "idx": 79
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Lane Departure Warning System",
+        "param_value": "Standard equipment",
+        "idx": 80
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Lane Keeping Assist System",
+        "param_value": "Standard equipment",
+        "idx": 81
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Road Traffic Sign Recognition",
+        "param_value": "Optional equipment",
+        "idx": 82
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Automatic Braking/Advanced Safety System",
+        "param_value": "Standard equipment",
+        "idx": 83
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Forward Collision Warning",
+        "param_value": "Standard equipment",
+        "idx": 84
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Lane center hold",
+        "param_value": "Standard equipment",
+        "idx": 85
+      }
+    ],
+    "Auxiliary/Control Configuration": [
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Front/rear parking Radar",
+        "param_value": "Front standard/rear standard",
+        "idx": 86
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Automatic parking",
+        "param_value": "Optional equipment",
+        "idx": 87
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Auto Hold",
+        "param_value": "Standard equipment",
+        "idx": 88
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Hill-start assist",
+        "param_value": "Standard equipment",
+        "idx": 89
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "braking energy recovery system",
+        "param_value": "Standard equipment",
+        "idx": 90
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Remote parking",
+        "param_value": "Optional equipment",
+        "idx": 91
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "YuanChen Summon",
+        "param_value": "Optional equipment",
+        "idx": 92
+      }
+    ],
+    "Exterior/Security Features": [
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Electric trunk lid",
+        "param_value": "Standard equipment",
+        "idx": 93
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Electric trunk position memory",
+        "param_value": "Standard equipment",
+        "idx": 94
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "In-car central locking",
+        "param_value": "Standard equipment",
+        "idx": 95
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Keyless start system",
+        "param_value": "Standard equipment",
+        "idx": 96
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Battery pre-heating",
+        "param_value": "Standard equipment",
+        "idx": 97
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Low Speed Driving Warning",
+        "param_value": "Standard equipment",
+        "idx": 98
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Frameless design door",
+        "param_value": "Standard equipment",
+        "idx": 99
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Sentinel mode/clairvoyance",
+        "param_value": "Standard equipment",
+        "idx": 100
+      }
+    ],
+    "Internal configuration": [
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Multi-function steering wheel",
+        "param_value": "Standard equipment",
+        "idx": 101
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Steering wheel heating",
+        "param_value": "Standard equipment",
+        "idx": 102
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Steering wheel memory",
+        "param_value": "Standard equipment",
+        "idx": 103
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Built-in dashcam",
+        "param_value": "Standard equipment",
+        "idx": 104
+      }
+    ],
+    "Seat configuration": [
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Electrically adjustable driver’s and passenger’s seats",
+        "param_value": "Main standard/auxiliary standard",
+        "idx": 105
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Front/Rear Center Armrest",
+        "param_value": "Front standard/rear standard",
+        "idx": 106
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Rear cup holder",
+        "param_value": "Standard equipment",
+        "idx": 107
+      }
+    ],
+    "Multimedia Configuration": [
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Satellite navigation system",
+        "param_value": "Standard equipment",
+        "idx": 108
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Navigation traffic information is displayed.",
+        "param_value": "Standard equipment",
+        "idx": 109
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Bluetooth/Voice Call",
+        "param_value": "Standard equipment",
+        "idx": 110
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Internet of Vehicles",
+        "param_value": "Standard equipment",
+        "idx": 111
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "OTA update",
+        "param_value": "Standard equipment",
+        "idx": 112
+      }
+    ],
+    "Lighting configuration": [
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "LED daytime running lights",
+        "param_value": "Standard equipment",
+        "idx": 113
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Adaptive high/low beams",
+        "param_value": "Standard equipment",
+        "idx": 114
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Automatic headlights",
+        "param_value": "Standard equipment",
+        "idx": 115
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Headlight height is adjustable.",
+        "param_value": "Standard equipment",
+        "idx": 116
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Headlight delay-off",
+        "param_value": "Standard equipment",
+        "idx": 117
+      }
+    ],
+    "Glass/Rearview Mirror": [
+      {
+        "group_name": "Glass/Rearview Mirror",
+        "param_name": "Front/Rear Electric Window",
+        "param_value": "Front standard/rear standard",
+        "idx": 118
+      },
+      {
+        "group_name": "Glass/Rearview Mirror",
+        "param_name": "Window anti-pinch function",
+        "param_value": "Standard equipment",
+        "idx": 119
+      }
+    ],
+    "Air conditioner/refrigerator": [
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Rear-seat air vent",
+        "param_value": "Standard equipment",
+        "idx": 120
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Temperature zoning control",
+        "param_value": "Standard equipment",
+        "idx": 121
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "heat pump air conditioning",
+        "param_value": "Standard equipment",
+        "idx": 122
+      }
+    ]
+  },
+  "geo_meta": {
+    "sourceName": "jyt",
+    "cityZh": "深圳",
+    "coverUrl": "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_1-1280w.webp",
+    "updatetime": "2026-10-13 21:17:14",
+    "verifiedAt": "2026-10-13 21:17:14",
+    "updatedAt": "2026-10-13 21:33:52.525537",
+    "publishedAt": "2026-10-13"
+  },
+  "sales_manager": {
+    "name": "2743284534@qq.com",
+    "firstName": "Nastia",
+    "fullName": "Nastia",
+    "image": "https://img.autohaina.com/users/avatar/2743284534-qq.com/dealer-3305b17.jpg",
+    "bio": "Китайский автодилер, специализирующийся на экспорте новых и подержанных автомобилей.",
+    "phone": "+8618150258795",
+    "jobTitle": "业务员",
+    "whatsapp": "+8618150258795",
+    "wechat": "https://img.autohaina.com/files/be987518fae16bc44368ceb79851618c.jpg",
+    "telegram": "Nastya_HAINAAuto"
+  },
+  "relatedVehicles": [
+    {
+      "id": "f503tbs5u7",
+      "brandId": "s4gek046up",
+      "brandName": "Tesla",
+      "seriesId": "b0ladee1av",
+      "seriesName": "Model 3",
+      "registrationDate": "2024-07-09",
+      "title": "Tesla 2023 Model 3 Rejuvenation Edition Rear Wheel Drive Automatic Transmission",
+      "listedAt": "2026-10-14",
+      "price": 123800,
+      "fobPrice": 143300,
+      "horsepower": 260,
+      "year": "2024",
+      "mileage": "52,000 km",
+      "tag": "Non-operational",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/f503tbs5u7/f503tbs5u7_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/f503tbs5u7/f503tbs5u7_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/f503tbs5u7/f503tbs5u7_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/f503tbs5u7/f503tbs5u7_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/f503tbs5u7/f503tbs5u7_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Hubei Wuhan"
+      }
+    },
+    {
+      "id": "octf6ucm43",
+      "brandId": "s4gek046up",
+      "brandName": "Tesla",
+      "seriesId": "b0ladee1av",
+      "seriesName": "Model 3",
+      "registrationDate": "2021-12-23",
+      "title": "Tesla 2021 Model 3 Standard Endurance Rear Drive Upgraded Automatic Gear",
+      "listedAt": "2026-10-14",
+      "price": 113000,
+      "fobPrice": 130500,
+      "horsepower": 295,
+      "year": "2021",
+      "mileage": "69,000 km",
+      "tag": "Non-operational",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/octf6ucm43/octf6ucm43_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/octf6ucm43/octf6ucm43_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/octf6ucm43/octf6ucm43_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/octf6ucm43/octf6ucm43_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/octf6ucm43/octf6ucm43_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Guangdong Guangzhou"
+      }
+    },
+    {
+      "id": "3epu4k12ea",
+      "brandId": "s4gek046up",
+      "brandName": "Tesla",
+      "seriesId": "b0ladee1av",
+      "seriesName": "Model 3",
+      "registrationDate": "2025-05-08",
+      "title": "Tesla 2023 Model 3 Rejuvenation Edition Rear Wheel Drive Automatic Transmission",
+      "listedAt": "2026-10-14",
+      "price": 169000,
+      "fobPrice": 191500,
+      "horsepower": 260,
+      "year": "2025",
+      "mileage": "25,000 km",
+      "tag": "Original factory paint throughout the vehicle",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/3epu4k12ea/3epu4k12ea_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/3epu4k12ea/3epu4k12ea_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/3epu4k12ea/3epu4k12ea_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/3epu4k12ea/3epu4k12ea_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/3epu4k12ea/3epu4k12ea_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Shandong Dongying"
+      }
+    },
+    {
+      "id": "60dlk3j18r",
+      "brandId": "s4gek046up",
+      "brandName": "Tesla",
+      "seriesId": "b0ladee1av",
+      "seriesName": "Model 3",
+      "registrationDate": "2020-09-11",
+      "title": "Tesla 2020 Model 3 Standard Endurance Rear Drive Upgraded Automatic Gear",
+      "listedAt": "2026-10-14",
+      "price": 107000,
+      "fobPrice": 124500,
+      "horsepower": 271,
+      "year": "2020",
+      "mileage": "21,000 km",
+      "tag": "Non-operational",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/60dlk3j18r/60dlk3j18r_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/60dlk3j18r/60dlk3j18r_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/60dlk3j18r/60dlk3j18r_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/60dlk3j18r/60dlk3j18r_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/60dlk3j18r/60dlk3j18r_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Guangdong Guangzhou"
+      }
+    },
+    {
+      "id": "534i5ta2qk",
+      "brandId": "s4gek046up",
+      "brandName": "Tesla",
+      "seriesId": "b0ladee1av",
+      "seriesName": "Model 3",
+      "registrationDate": "2021-01-07",
+      "title": "Tesla 2020 Model 3 Standard Endurance Rear Drive Upgrade (Modified) Automatic Gear",
+      "listedAt": "2026-10-14",
+      "price": 108000,
+      "fobPrice": 125500,
+      "horsepower": 271,
+      "year": "2021",
+      "mileage": "56,000 km",
+      "tag": "High value preservation",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/534i5ta2qk/534i5ta2qk_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/534i5ta2qk/534i5ta2qk_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/534i5ta2qk/534i5ta2qk_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/534i5ta2qk/534i5ta2qk_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/534i5ta2qk/534i5ta2qk_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Shanghai Shanghai"
+      }
+    }
+  ]
+}

@@ -1,8 +1,9 @@
+import type { VehicleSpecs } from './vehicle-specs';
 export type CarStatus = 'В наличии' | 'В пути' | 'Под заказ';
 export type CarCondition = 'Новый' | 'С пробегом';
 export const customsTypes = ['ТПО', 'ГТД'] as const;
 export type CustomsType = typeof customsTypes[number];
-export const carTextFields = ['brand', 'model', 'trim', 'mileage', 'city', 'power', 'drive', 'body', 'color', 'transmission', 'engine'] as const;
+export const carTextFields = ['brand', 'model', 'trim', 'mileage', 'city', 'power', 'drive', 'body', 'color', 'transmission', 'engine', 'title', 'remark', 'metaTitle', 'metaDescription', 'highlights'] as const;
 export type CarTextField = typeof carTextFields[number];
 export type CarText = Partial<Record<CarTextField, string>>;
 export const carPriceMin = 1;
@@ -10,8 +11,9 @@ export const carPriceMax = 100_000_000;
 export const carTextLimits: Record<CarTextField, number> = {
   brand: 80, model: 80, trim: 160, mileage: 80, city: 120, power: 80,
   drive: 80, body: 80, color: 80, transmission: 80, engine: 80,
+  title: 240, remark: 5000, metaTitle: 240, metaDescription: 500, highlights: 1000,
 };
-export const carFields = ['id', 'version', ...carTextFields, 'price', 'year', 'status', 'condition', 'image', 'vin', 'customsType', 'translations', 'gallery', 'video'] as const;
+export const carFields = ['id', 'version', ...carTextFields, 'price', 'year', 'status', 'condition', 'image', 'vin', 'customsType', 'translations', 'gallery', 'video', 'specs', 'featureTags', 'carCode', 'listedAt', 'fobPrice'] as const;
 
 export type Car = {
   id: string;
@@ -34,7 +36,17 @@ export type Car = {
   engine?: string;
   vin?: string;
   customsType?: CustomsType;
-  translations?: { ru?: CarText; zh?: CarText };
+  translations?: { ru?: CarText; en?: CarText; zh?: CarText };
+  title?: string;
+  remark?: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  highlights?: string;
+  specs?: VehicleSpecs;
+  featureTags?: string[];
+  carCode?: string;
+  listedAt?: string;
+  fobPrice?: number;
   gallery?: string[];
   video?: string;
 };

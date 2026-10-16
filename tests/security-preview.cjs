@@ -27,7 +27,7 @@ function synthetic(id, maximum = false) {
   };
 }
 
-async function database() {
+async function database(initialCars = [synthetic('QA-NORMAL'), synthetic('QA-LONG', true)]) {
   const db = new PGlite(); await db.waitReady;
   await db.exec(`create role anon; create role authenticated; create role service_role bypassrls;
     grant usage on schema public to anon, authenticated, service_role;
@@ -36,7 +36,7 @@ async function database() {
   const migrations = fs.readdirSync(path.join(root, 'supabase/migrations')).filter(name => name.endsWith('.sql')).sort();
   for (const name of migrations) await db.exec(fs.readFileSync(path.join(root, 'supabase/migrations', name), 'utf8'));
   await db.query('update public.site_settings set contacts=$1 where id=$2', [{ whatsapp: '10000000000', telegram: 'qa_preview', email: 'qa@example.invalid' }, 'main']);
-  for (const car of [synthetic('QA-NORMAL'), synthetic('QA-LONG', true)]) {
+  for (const car of initialCars) {
     await db.query('insert into public.vehicles(id,data) values($1,$2)', [car.id, car]);
   }
   return db;
@@ -123,13 +123,13 @@ async function adapter(db) {
   return server;
 }
 
-async function main() {
+async function main(initialCars = [synthetic('QA-NORMAL'), synthetic('QA-LONG', true)]) {
   // Refuse to attach to or replace another local application.
   await new Promise((resolve, reject) => {
     const probe = net.createServer(); probe.once('error', reject);
     probe.listen(3107, '127.0.0.1', () => probe.close(resolve));
   });
-  const db = await database(); const server = await adapter(db);
+  const db = await database(initialCars); const server = await adapter(db);
   const logPath = path.join(os.tmpdir(), `motors-security-preview-${process.pid}.log`);
   const log = fs.openSync(logPath, 'w');
   const child = spawn(process.execPath, [path.join(root, 'node_modules/next/dist/bin/next'), 'start', '-p', '3107', '-H', '127.0.0.1'], {
@@ -151,7 +151,7 @@ async function main() {
       if (stopped) throw new Error('Preview child stopped');
       try {
         const response = await fetch(origin + '/api/site', { signal: AbortSignal.timeout(3000) });
-        if (response.ok && (await response.json()).cars?.length === 2) {
+        if (response.ok && (await response.json()).cars?.length === initialCars.length) {
           console.log(JSON.stringify({ ready: true, origin, database: dbOrigin, username: 'admin', password, logPath, storageUploads: 'not implemented; no external service contacted' }));
           return;
         }
@@ -163,4 +163,4 @@ async function main() {
 }
 
 if (require.main === module) main().catch(error => { console.error(error); process.exitCode = 1; });
-module.exports = { database, adapter, synthetic, origin, dbOrigin, password };
+module.exports = { database, adapter, synthetic, origin, dbOrigin, password, main };

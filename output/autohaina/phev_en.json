@@ -1,0 +1,1273 @@
+{
+  "data": {
+    "id": "rlfqgphcgp",
+    "carCode": "78826",
+    "brandId": "s4cb6jvqki",
+    "title": "2027 DM-i 230KM Comfortable",
+    "titleZh": "2027款 DM-i 230KM舒享型",
+    "metaTitle": "2027 DM-i 230KM Comfortable",
+    "featureTags": [],
+    "highlights": [],
+    "highlightItems": [],
+    "price": 99900,
+    "fobPrice": 117400,
+    "listedAt": "2026-08-11",
+    "horsepower": 101,
+    "year": "2027",
+    "mileage": "0 km",
+    "tag": "",
+    "images": [
+      "https://img.autohaina.com/vehicle/2026/08/11/rlfqgphcgp/rlfqgphcgp_1-1280w.webp"
+    ],
+    "specs": {
+      "engine": "1.5L 101 horsepower L4",
+      "driveType": "Precursor",
+      "seats": "5",
+      "bodyType": "Passenger car",
+      "displacement": "1.5",
+      "flowMode": "Natural inhalation",
+      "acceleration": "7.5",
+      "fuelConsumption": "0.77",
+      "batteryCapacity": "0",
+      "batteryType": "Lithium iron phosphate",
+      "range": "0",
+      "officialPrice": "99900",
+      "condition": "New car"
+    }
+  },
+  "breadcrumb": {
+    "brandId": "s4cb6jvqki",
+    "brandName": "BYD",
+    "seriesId": "bk6rmki3ha",
+    "seriesName": "Seal 06"
+  },
+  "parameters_by_group": {
+    "Parameter Information": [
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Vehicle Model Name",
+        "param_value": "Seal 06 2027 DM-i 230KM Comfortable",
+        "idx": 1
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Manufacturer’s Suggested Retail Price (RMB)",
+        "param_value": "99900",
+        "idx": 2
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Dealer Quotation",
+        "param_value": "No quotation available yet.",
+        "idx": 3
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Manufacturer",
+        "param_value": "BYD",
+        "idx": 4
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Level",
+        "param_value": "Mid-size car",
+        "idx": 5
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Energy type",
+        "param_value": "Plug-in hybrid",
+        "idx": 6
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Environmental standards",
+        "param_value": "China VI",
+        "idx": 7
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Release date",
+        "param_value": "2026-08-11",
+        "idx": 8
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "WLTC pure electric range (km)",
+        "param_value": "170",
+        "idx": 9
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "CLTC pure electric cruising range (km)",
+        "param_value": "230",
+        "idx": 10
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "gearbox",
+        "param_value": "E-CVT stepless speed change",
+        "idx": 11
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Body structure",
+        "param_value": "4-door 5-seat sedan",
+        "idx": 12
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Engine",
+        "param_value": "1.5L 101 horsepower L4",
+        "idx": 13
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Motor (Ps)",
+        "param_value": "238",
+        "idx": 14
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Length × Width × Height (mm)",
+        "param_value": "4870*1890*1495",
+        "idx": 15
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Official 0–100 km/h acceleration (s)",
+        "param_value": "7.5",
+        "idx": 16
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Maximum speed (km/h)",
+        "param_value": "185",
+        "idx": 17
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "WLTC combined fuel consumption (L/100 km)",
+        "param_value": "0.77",
+        "idx": 18
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Minimum SOC fuel consumption (L/100km)WLTC",
+        "param_value": "3.63",
+        "idx": 19
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Minimum state of charge fuel consumption (L/100km)NEDC",
+        "param_value": "2.59",
+        "idx": 20
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Comprehensive fuel consumption of oil and electricity (L/100km)",
+        "param_value": "2.36",
+        "idx": 21
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Full-vehicle warranty",
+        "param_value": "Six years or 150,000 kilometers",
+        "idx": 22
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Curb weight (kg)",
+        "param_value": "1685",
+        "idx": 23
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Maximum gross vehicle weight (kg)",
+        "param_value": "2110",
+        "idx": 24
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Length (mm)",
+        "param_value": "4870",
+        "idx": 25
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Width (mm)",
+        "param_value": "1890",
+        "idx": 26
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Height (mm)",
+        "param_value": "1495",
+        "idx": 27
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Wheelbase (mm)",
+        "param_value": "2820",
+        "idx": 28
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Front track (mm)",
+        "param_value": "1620",
+        "idx": 29
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Rear track (mm)",
+        "param_value": "1620",
+        "idx": 30
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Approach angle (°)",
+        "param_value": "13",
+        "idx": 31
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Departure angle (°)",
+        "param_value": "14",
+        "idx": 32
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Minimum turning radius (m)",
+        "param_value": "5.55",
+        "idx": 33
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Body structure",
+        "param_value": "Sedan",
+        "idx": 34
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Door opening method",
+        "param_value": "Swing door",
+        "idx": 35
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Number of doors (units)",
+        "param_value": "4",
+        "idx": 36
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Number of seats (units)",
+        "param_value": "5",
+        "idx": 37
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Fuel tank capacity (L)",
+        "param_value": "65",
+        "idx": 38
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Trunk capacity (L)",
+        "param_value": "550",
+        "idx": 39
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Engine model",
+        "param_value": "BYD472QC",
+        "idx": 40
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Displacement (mL)",
+        "param_value": "1498",
+        "idx": 41
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Displacement (L)",
+        "param_value": "1.5",
+        "idx": 42
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Intake mode",
+        "param_value": "Natural inhalation",
+        "idx": 43
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Engine layout",
+        "param_value": "Horizontal placement",
+        "idx": 44
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Cylinder arrangement",
+        "param_value": "L",
+        "idx": 45
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Number of cylinders (units)",
+        "param_value": "4",
+        "idx": 46
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Number of valves per cylinder (units)",
+        "param_value": "4",
+        "idx": 47
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Valve train",
+        "param_value": "DOHC",
+        "idx": 48
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Maximum horsepower (Ps)",
+        "param_value": "101",
+        "idx": 49
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Maximum power (kW)",
+        "param_value": "74",
+        "idx": 50
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Maximum torque (N · m)",
+        "param_value": "126",
+        "idx": 51
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Maximum net power (kW)",
+        "param_value": "70",
+        "idx": 52
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Energy type",
+        "param_value": "Plug-in hybrid",
+        "idx": 53
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Fuel octane rating",
+        "param_value": "92.",
+        "idx": 54
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Fuel supply method",
+        "param_value": "Multi-point EFI",
+        "idx": 55
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Cylinder head material",
+        "param_value": "Aluminum alloy",
+        "idx": 56
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Cylinder block material",
+        "param_value": "Aluminum alloy",
+        "idx": 57
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Environmental standards",
+        "param_value": "China VI",
+        "idx": 58
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Front motor brand",
+        "param_value": "BYD",
+        "idx": 59
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Front motor model",
+        "param_value": "TZ210QYC",
+        "idx": 60
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Motor type",
+        "param_value": "Permanent Magnet/Synchronous",
+        "idx": 61
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Total motor power (kW)",
+        "param_value": "175",
+        "idx": 62
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Total motor horsepower (Ps)",
+        "param_value": "238",
+        "idx": 63
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Total motor torque (N·m)",
+        "param_value": "270",
+        "idx": 64
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Max. power of front motor (kW)",
+        "param_value": "175",
+        "idx": 65
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Maximum torque of front motor (N · m)",
+        "param_value": "270",
+        "idx": 66
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Number of drive motors",
+        "param_value": "Single motor",
+        "idx": 67
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Motor layout",
+        "param_value": "Front-end",
+        "idx": 68
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Three electric first car owner warranty policy",
+        "param_value": "Lifetime Warranty/Non-operational (Liability Exemption Terms Subject to Official)",
+        "idx": 69
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Battery type",
+        "param_value": "lithium iron phosphate battery",
+        "idx": 70
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Battery Cell Brand",
+        "param_value": "Verdi.",
+        "idx": 71
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Battery Specific Technology",
+        "param_value": "Blade battery",
+        "idx": 72
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Battery cooling method",
+        "param_value": "Direct cooling",
+        "idx": 73
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "WLTC pure electric range (km)",
+        "param_value": "170",
+        "idx": 74
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "CLTC pure electric cruising range (km)",
+        "param_value": "230",
+        "idx": 75
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Battery energy (kWh)",
+        "param_value": "25.287",
+        "idx": 76
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Electricity consumption per 100 kilometers (kWh/100 km)",
+        "param_value": "13.7",
+        "idx": 77
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Fast charging function",
+        "param_value": "Support",
+        "idx": 78
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Fast charging power (kW)",
+        "param_value": "48",
+        "idx": 79
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Slow Charge Interface Location",
+        "param_value": "Rear right side of the car",
+        "idx": 80
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Fast charging interface position",
+        "param_value": "Rear right side of the car",
+        "idx": 81
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "External AC discharge power (kW)",
+        "param_value": "6",
+        "idx": 82
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Abbreviation",
+        "param_value": "E-CVT stepless speed change",
+        "idx": 83
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Number of gears",
+        "param_value": "Continuously variable transmission",
+        "idx": 84
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "gearbox Type",
+        "param_value": "Electronic stepless gearbox (E-CVT)",
+        "idx": 85
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Drive method",
+        "param_value": "Front-engine, front-wheel drive",
+        "idx": 86
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Front suspension type",
+        "param_value": "MacPherson independent suspension",
+        "idx": 87
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Rear suspension type",
+        "param_value": "Four-link independent suspension",
+        "idx": 88
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Type of support",
+        "param_value": "Electric power assistance",
+        "idx": 89
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Vehicle Body Structure",
+        "param_value": "Load-bearing",
+        "idx": 90
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Front brake type",
+        "param_value": "Ventilated disc",
+        "idx": 91
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Rear brake type",
+        "param_value": "Disc-type",
+        "idx": 92
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Parking brake type",
+        "param_value": "Electronic parking brake",
+        "idx": 93
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Front tire specifications",
+        "param_value": "225/55 R17",
+        "idx": 94
+      },
+      {
+        "group_name": "Parameter Information",
+        "param_name": "Rear tire specifications",
+        "param_value": "225/55 R17",
+        "idx": 95
+      }
+    ],
+    "Security Configuration": [
+      {
+        "group_name": "Security Configuration",
+        "param_name": "Driver’s and passenger’s airbags",
+        "param_value": "Main ●/Deputy ●",
+        "idx": 96
+      },
+      {
+        "group_name": "Security Configuration",
+        "param_name": "Front/rear side airbags",
+        "param_value": "Front ●/Rear-",
+        "idx": 97
+      },
+      {
+        "group_name": "Security Configuration",
+        "param_name": "Front/rear head airbags (curtain airbags)",
+        "param_value": "Front ●/Rear ●",
+        "idx": 98
+      },
+      {
+        "group_name": "Security Configuration",
+        "param_name": "ABS anti-lock",
+        "param_value": "●",
+        "idx": 99
+      },
+      {
+        "group_name": "Security Configuration",
+        "param_name": "Braking force distribution (EBD/CBC, etc.)",
+        "param_value": "●",
+        "idx": 100
+      },
+      {
+        "group_name": "Security Configuration",
+        "param_name": "Brake assist (EBA/BAS/BA, etc.)",
+        "param_value": "●",
+        "idx": 101
+      },
+      {
+        "group_name": "Security Configuration",
+        "param_name": "Traction control (ASR/TCS/TRC, etc.)",
+        "param_value": "●",
+        "idx": 102
+      },
+      {
+        "group_name": "Security Configuration",
+        "param_name": "Body stability control (ESC/ESP/DSC, etc.)",
+        "param_value": "●",
+        "idx": 103
+      },
+      {
+        "group_name": "Security Configuration",
+        "param_name": "Tire pressure monitoring function",
+        "param_value": "Tire pressure display",
+        "idx": 104
+      },
+      {
+        "group_name": "Security Configuration",
+        "param_name": "Seat belt reminder",
+        "param_value": "Front row",
+        "idx": 105
+      },
+      {
+        "group_name": "Security Configuration",
+        "param_name": "ISOFIX child seat anchorages",
+        "param_value": "●",
+        "idx": 106
+      },
+      {
+        "group_name": "Security Configuration",
+        "param_name": "Sentinel mode/clairvoyance",
+        "param_value": "●",
+        "idx": 107
+      },
+      {
+        "group_name": "Security Configuration",
+        "param_name": "Low Speed Driving Warning",
+        "param_value": "●",
+        "idx": 108
+      }
+    ],
+    "Control Configuration": [
+      {
+        "group_name": "Control Configuration",
+        "param_name": "Driving mode switching",
+        "param_value": "Sport/Economy/Standard/Comfort/Snow",
+        "idx": 109
+      },
+      {
+        "group_name": "Control Configuration",
+        "param_name": "Energy recovery system",
+        "param_value": "●",
+        "idx": 110
+      },
+      {
+        "group_name": "Control Configuration",
+        "param_name": "Auto Hold",
+        "param_value": "●",
+        "idx": 111
+      },
+      {
+        "group_name": "Control Configuration",
+        "param_name": "Hill-start assist",
+        "param_value": "●",
+        "idx": 112
+      }
+    ],
+    "Intelligent/Assisted Driving": [
+      {
+        "group_name": "Intelligent/Assisted Driving",
+        "param_name": "Front/rear parking Radar",
+        "param_value": "Front-/Rear ●",
+        "idx": 113
+      },
+      {
+        "group_name": "Intelligent/Assisted Driving",
+        "param_name": "Driver-assistance imaging",
+        "param_value": "360-degree panoramic view",
+        "idx": 114
+      },
+      {
+        "group_name": "Intelligent/Assisted Driving",
+        "param_name": "Transparent chassis/540-degree imaging",
+        "param_value": "●",
+        "idx": 115
+      },
+      {
+        "group_name": "Intelligent/Assisted Driving",
+        "param_name": "Number of cameras",
+        "param_value": "4 pieces",
+        "idx": 116
+      },
+      {
+        "group_name": "Intelligent/Assisted Driving",
+        "param_name": "Number of ultrasonic Radar",
+        "param_value": "4 pieces",
+        "idx": 117
+      },
+      {
+        "group_name": "Intelligent/Assisted Driving",
+        "param_name": "Cruise control system",
+        "param_value": "cruise control",
+        "idx": 118
+      },
+      {
+        "group_name": "Intelligent/Assisted Driving",
+        "param_name": "Satellite navigation system",
+        "param_value": "●",
+        "idx": 119
+      },
+      {
+        "group_name": "Intelligent/Assisted Driving",
+        "param_name": "Navigation traffic information is displayed.",
+        "param_value": "●",
+        "idx": 120
+      }
+    ],
+    "External Configuration": [
+      {
+        "group_name": "External Configuration",
+        "param_name": "Rim material",
+        "param_value": "Aluminum alloy",
+        "idx": 121
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "Engine electronic immobilizer",
+        "param_value": "●",
+        "idx": 122
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "In-car central locking",
+        "param_value": "●",
+        "idx": 123
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "Key type",
+        "param_value": "Remote Key/Bluetooth Key/NFC/RFID Key",
+        "idx": 124
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "Keyless start system",
+        "param_value": "●",
+        "idx": 125
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "Keyless entry function",
+        "param_value": "Front row",
+        "idx": 126
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "Battery pre-heating",
+        "param_value": "●",
+        "idx": 127
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "External discharge",
+        "param_value": "●",
+        "idx": 128
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "Low beam light source",
+        "param_value": "LED",
+        "idx": 129
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "High-beam light source",
+        "param_value": "LED",
+        "idx": 130
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "LED daytime running lights",
+        "param_value": "●",
+        "idx": 131
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "Automatic headlights",
+        "param_value": "●",
+        "idx": 132
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "Headlight height is adjustable.",
+        "param_value": "●",
+        "idx": 133
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "Headlight delay-off",
+        "param_value": "●",
+        "idx": 134
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "Front/Rear Electric Window",
+        "param_value": "Front ●/Rear ●",
+        "idx": 135
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "One-touch window lift function",
+        "param_value": "Entire vehicle",
+        "idx": 136
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "Window anti-pinch function",
+        "param_value": "●",
+        "idx": 137
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "In-car vanity mirror",
+        "param_value": "Pilot light/copilot light",
+        "idx": 138
+      },
+      {
+        "group_name": "External Configuration",
+        "param_name": "Rearview mirror functions",
+        "param_value": "Electric adjustment/mirror heating",
+        "idx": 139
+      }
+    ],
+    "Internal configuration": [
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Central control color screen",
+        "param_value": "Touch LCD screen",
+        "idx": 140
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Central control screen size",
+        "param_value": "12.8 inches",
+        "idx": 141
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Central control screen type",
+        "param_value": "LCD",
+        "idx": 142
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Bluetooth/Voice Call",
+        "param_value": "●",
+        "idx": 143
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Speech Recognition Control System",
+        "param_value": "multimedia system/navigation/telephone/air conditioning/windows",
+        "idx": 144
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Voice assistant wake word",
+        "param_value": "Hello, Di.",
+        "idx": 145
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Voice-based zone-specific wake-up recognition",
+        "param_value": "Dual Zone",
+        "idx": 146
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Continuous speech recognition",
+        "param_value": "●",
+        "idx": 147
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Visible to say",
+        "param_value": "●",
+        "idx": 148
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "App Store",
+        "param_value": "●",
+        "idx": 149
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "In-vehicle intelligent system",
+        "param_value": "DiLink",
+        "idx": 150
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Internet of Vehicles",
+        "param_value": "●",
+        "idx": 151
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "4G/5G networks",
+        "param_value": "5G",
+        "idx": 152
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "OTA update",
+        "param_value": "●",
+        "idx": 153
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Wi-Fi hotspot",
+        "param_value": "●",
+        "idx": 154
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Mobile APP YuanChen function",
+        "param_value": "Door control/vehicle start/charging management/light control/air conditioning control/vehicle condition inquiry/diagnosis/vehicle location/vehicle search/vehicle owner service (search for charging piles, gas stations, parking lots, etc.)/scheduled maintenance/repair",
+        "idx": 155
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "In-car KTV",
+        "param_value": "●",
+        "idx": 156
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Steering wheel material",
+        "param_value": "Cortex",
+        "idx": 157
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Steering wheel position adjustment",
+        "param_value": "Manual up and down front and rear adjustment",
+        "idx": 158
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Gear-shifting method",
+        "param_value": "Electronic gear shift",
+        "idx": 159
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Multi-function steering wheel",
+        "param_value": "●",
+        "idx": 160
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Vehicle computer display screen",
+        "param_value": "Colorful",
+        "idx": 161
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "All-digital instrument cluster",
+        "param_value": "●",
+        "idx": 162
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "LCD instrument cluster size",
+        "param_value": "8.8 inches",
+        "idx": 163
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Rearview mirror function",
+        "param_value": "Manual anti-glare",
+        "idx": 164
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Multimedia/Charging Port",
+        "param_value": "USB / Type-C",
+        "idx": 165
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Number of USB/Type-C ports",
+        "param_value": "2 in the front row/2 in the back row",
+        "idx": 166
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Seat material",
+        "param_value": "Faux leather",
+        "idx": 167
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Front seat adjustment method",
+        "param_value": "Front and rear adjustment/backrest adjustment/height adjustment (2-way)",
+        "idx": 168
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Rear seat adjustment method",
+        "param_value": "Front and rear adjustment/backrest adjustment",
+        "idx": 169
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Electrically adjustable driver’s and passenger’s seats",
+        "param_value": "Main/Deputy-",
+        "idx": 170
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Rear seat folding mechanism",
+        "param_value": "Proportional Down",
+        "idx": 171
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Front/Rear Center Armrest",
+        "param_value": "Front ●/Rear-",
+        "idx": 172
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Number of speakers",
+        "param_value": "6 speakers",
+        "idx": 173
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Touch‑activated reading light",
+        "param_value": "●",
+        "idx": 174
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Air conditioning temperature control method",
+        "param_value": "automatic air conditioning",
+        "idx": 175
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Rear-seat air vent",
+        "param_value": "●",
+        "idx": 176
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "In-vehicle PM2.5 filtration system",
+        "param_value": "●",
+        "idx": 177
+      }
+    ]
+  },
+  "geo_meta": {
+    "sourceName": "autohome",
+    "cityZh": null,
+    "coverUrl": "https://img.autohaina.com/vehicle/2026/08/11/rlfqgphcgp/rlfqgphcgp_1-1280w.webp",
+    "updatetime": "2026-08-11 00:00:00",
+    "verifiedAt": "2026-08-11 00:00:00",
+    "updatedAt": "2026-09-01 19:05:37.998723",
+    "publishedAt": "2026-08-11"
+  },
+  "sales_manager": {
+    "name": "2743284534@qq.com",
+    "firstName": "Nastia",
+    "fullName": "Nastia",
+    "image": "https://img.autohaina.com/users/avatar/2743284534-qq.com/dealer-3305b17.jpg",
+    "bio": "Китайский автодилер, специализирующийся на экспорте новых и подержанных автомобилей.",
+    "phone": "+8618150258795",
+    "jobTitle": "业务员",
+    "whatsapp": "+8618150258795",
+    "wechat": "https://img.autohaina.com/files/be987518fae16bc44368ceb79851618c.jpg",
+    "telegram": "Nastya_HAINAAuto"
+  },
+  "relatedVehicles": [
+    {
+      "id": "iiq43i6au3",
+      "brandId": "s4cb6jvqki",
+      "brandName": "BYD",
+      "seriesId": "bk6rmki3ha",
+      "seriesName": "Seal 06",
+      "registrationDate": "2024-11-20",
+      "title": "BYD 2024 seal 06 DM-i 1.5 stepless 80KM noble automatic gear",
+      "listedAt": "2026-10-14",
+      "price": 61800,
+      "fobPrice": 77300,
+      "horsepower": 101,
+      "year": "2024",
+      "mileage": "40,000 km",
+      "tag": "Non-operational",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/iiq43i6au3/iiq43i6au3_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/iiq43i6au3/iiq43i6au3_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/iiq43i6au3/iiq43i6au3_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/iiq43i6au3/iiq43i6au3_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/iiq43i6au3/iiq43i6au3_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Jiangsu Huai’an"
+      }
+    },
+    {
+      "id": "f1gme41v74",
+      "brandId": "s4cb6jvqki",
+      "brandName": "BYD",
+      "seriesId": "bk6rmki3ha",
+      "seriesName": "Seal 06",
+      "registrationDate": "2025-06-28",
+      "title": "BYD 2025 seals 06 DM-i 1.5 stepless smart driving version 120KM honorable automatic gear",
+      "listedAt": "2026-10-14",
+      "price": 73000,
+      "fobPrice": 88500,
+      "horsepower": 215,
+      "year": "2025",
+      "mileage": "9,000 km",
+      "tag": "Non-operational",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/f1gme41v74/f1gme41v74_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/f1gme41v74/f1gme41v74_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/f1gme41v74/f1gme41v74_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/f1gme41v74/f1gme41v74_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/f1gme41v74/f1gme41v74_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Guangdong Dongguan"
+      }
+    },
+    {
+      "id": "9ktvtdsugi",
+      "brandId": "s4cb6jvqki",
+      "brandName": "BYD",
+      "seriesId": "bk6rmki3ha",
+      "seriesName": "Seal 06",
+      "registrationDate": "2025-10-18",
+      "title": "BYD 2024 seal 06 DM-i 1.5 stepless 80KM noble automatic gear",
+      "listedAt": "2026-10-14",
+      "price": 79800,
+      "fobPrice": 95300,
+      "horsepower": 101,
+      "year": "2025",
+      "mileage": "8,000 km",
+      "tag": "Original factory paint throughout the vehicle",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/9ktvtdsugi/9ktvtdsugi_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/9ktvtdsugi/9ktvtdsugi_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/9ktvtdsugi/9ktvtdsugi_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/9ktvtdsugi/9ktvtdsugi_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/9ktvtdsugi/9ktvtdsugi_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Henan Shangqiu"
+      }
+    },
+    {
+      "id": "ufksbt8m99",
+      "brandId": "s4cb6jvqki",
+      "brandName": "BYD",
+      "seriesId": "bk6rmki3ha",
+      "seriesName": "Seal 06",
+      "registrationDate": "2025-07-14",
+      "title": "BYD 2025 seals 06 DM-i 1.5 stepless travel version 150KM exclusive automatic gear",
+      "listedAt": "2026-10-14",
+      "price": 101800,
+      "fobPrice": 119300,
+      "horsepower": 101,
+      "year": "2025",
+      "mileage": "2,000 km",
+      "tag": "",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/ufksbt8m99/ufksbt8m99_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/ufksbt8m99/ufksbt8m99_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/ufksbt8m99/ufksbt8m99_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/ufksbt8m99/ufksbt8m99_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/ufksbt8m99/ufksbt8m99_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Tianjin Tianjin"
+      }
+    },
+    {
+      "id": "4odpqbtk0o",
+      "brandId": "s4cb6jvqki",
+      "brandName": "BYD",
+      "seriesId": "bk6rmki3ha",
+      "seriesName": "Seal 06",
+      "registrationDate": "2025-03-13",
+      "title": "BYD 2025 seals 06 DM-i 1.5 stepless smart driving version 120KM exclusive automatic gear",
+      "listedAt": "2026-10-13",
+      "price": 85800,
+      "fobPrice": 103300,
+      "horsepower": 215,
+      "year": "2025",
+      "mileage": "7,700 km",
+      "tag": "",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/13/4odpqbtk0o/4odpqbtk0o_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/4odpqbtk0o/4odpqbtk0o_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/4odpqbtk0o/4odpqbtk0o_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/4odpqbtk0o/4odpqbtk0o_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/4odpqbtk0o/4odpqbtk0o_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Jiangxi Ganzhou"
+      }
+    }
+  ]
+}

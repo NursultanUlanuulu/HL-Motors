@@ -1,0 +1,7643 @@
+{
+  "groups": {
+    "Basic Parameters": {
+      "Vehicle Model Name": [
+        {
+          "value": "AITO M7 2022 1.5T Extended 4-wheel Drive Deluxe Edition",
+          "source": "erev_en"
+        },
+        {
+          "value": "Eπ007 2026 007 Pure Electric 650 Ultra Laser Radar Edition",
+          "source": "ev_en"
+        },
+        {
+          "value": "Voyah Taishan 2026 Model Max",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Mercedes Benz GLC 2022 model changed to GLC 260 L 4MATIC luxury model",
+          "source": "gas_en"
+        },
+        {
+          "value": "Century 2023 2.0T Six-seat World Edition",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Tank 500 New Energy 2023 Hi4-T",
+          "source": "tank_en"
+        },
+        {
+          "value": "2022 Model 3 Rear-Wheel Drive Version",
+          "source": "tesla_en"
+        }
+      ],
+      "Reference Price (CNY)": [
+        {
+          "value": "From 339800",
+          "source": "erev_en"
+        },
+        {
+          "value": "From 374200",
+          "source": "gas_en"
+        },
+        {
+          "value": "From 529900",
+          "source": "mpv_en"
+        },
+        {
+          "value": "From 335000",
+          "source": "tank_en"
+        },
+        {
+          "value": "From 291000",
+          "source": "tesla_en"
+        }
+      ],
+      "Manufacturer’s Suggested Retail Price (RMB)": [
+        {
+          "value": "339800",
+          "source": "erev_en"
+        },
+        {
+          "value": "144900",
+          "source": "ev_en"
+        },
+        {
+          "value": "379900",
+          "source": "flagship_en"
+        },
+        {
+          "value": "429200",
+          "source": "gas_en"
+        },
+        {
+          "value": "529900",
+          "source": "mpv_en"
+        },
+        {
+          "value": "335000",
+          "source": "tank_en"
+        },
+        {
+          "value": "290988",
+          "source": "tesla_en"
+        }
+      ],
+      "Manufacturer": [
+        {
+          "value": "SERES car",
+          "source": "erev_en"
+        },
+        {
+          "value": "奕派科技",
+          "source": "ev_en"
+        },
+        {
+          "value": "Voyah car",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Beijing Mercedes Benz",
+          "source": "gas_en"
+        },
+        {
+          "value": "SAIC GM Buick",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Great Wall car",
+          "source": "tank_en"
+        },
+        {
+          "value": "Tesla China",
+          "source": "tesla_en"
+        }
+      ],
+      "Level": [
+        {
+          "value": "Mid-to-large SUV",
+          "source": "erev_en"
+        },
+        {
+          "value": "Mid- to full-size cars",
+          "source": "ev_en"
+        },
+        {
+          "value": "Large SUV",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Mid-size SUV",
+          "source": "gas_en"
+        },
+        {
+          "value": "Medium and large MPV",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Mid-to-large SUV",
+          "source": "tank_en"
+        },
+        {
+          "value": "Mid-size car",
+          "source": "tesla_en"
+        }
+      ],
+      "Energy type": [
+        {
+          "value": "increasing program",
+          "source": "erev_en"
+        },
+        {
+          "value": "Pure electric",
+          "source": "ev_en"
+        },
+        {
+          "value": "Plug-in hybrid",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Gasoline",
+          "source": "gas_en"
+        },
+        {
+          "value": "Gasoline 48V light mixing system",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Plug-in hybrid",
+          "source": "tank_en"
+        },
+        {
+          "value": "Pure electric",
+          "source": "tesla_en"
+        }
+      ],
+      "Environmental standards": [
+        {
+          "value": "China VI",
+          "source": "erev_en"
+        },
+        {
+          "value": "China VI",
+          "source": "flagship_en"
+        },
+        {
+          "value": "China VI",
+          "source": "gas_en"
+        },
+        {
+          "value": "China VI",
+          "source": "mpv_en"
+        },
+        {
+          "value": "China VI",
+          "source": "tank_en"
+        }
+      ],
+      "Release date": [
+        {
+          "value": "2022.07",
+          "source": "erev_en"
+        },
+        {
+          "value": "2025-11-10",
+          "source": "ev_en"
+        },
+        {
+          "value": "2025-11-18",
+          "source": "flagship_en"
+        },
+        {
+          "value": "2022.03",
+          "source": "gas_en"
+        },
+        {
+          "value": "2022.11",
+          "source": "mpv_en"
+        },
+        {
+          "value": "2023.06",
+          "source": "tank_en"
+        },
+        {
+          "value": "2021.11",
+          "source": "tesla_en"
+        }
+      ],
+      "Maximum power (kW)": [
+        {
+          "value": "330",
+          "source": "erev_en"
+        },
+        {
+          "value": "200",
+          "source": "ev_en"
+        },
+        {
+          "value": "145",
+          "source": "gas_en"
+        },
+        {
+          "value": "174",
+          "source": "mpv_en"
+        },
+        {
+          "value": "300",
+          "source": "tank_en"
+        },
+        {
+          "value": "194",
+          "source": "tesla_en"
+        }
+      ],
+      "Maximum torque (N · m)": [
+        {
+          "value": "660",
+          "source": "erev_en"
+        },
+        {
+          "value": "310",
+          "source": "ev_en"
+        },
+        {
+          "value": "320",
+          "source": "gas_en"
+        },
+        {
+          "value": "350",
+          "source": "mpv_en"
+        },
+        {
+          "value": "750",
+          "source": "tank_en"
+        },
+        {
+          "value": "340",
+          "source": "tesla_en"
+        }
+      ],
+      "Engine": [
+        {
+          "value": "Extended range 125 horsepower",
+          "source": "erev_en"
+        },
+        {
+          "value": "1.5T 150 horsepower L4",
+          "source": "flagship_en"
+        },
+        {
+          "value": "2.0T 197 horsepower L4",
+          "source": "gas_en"
+        },
+        {
+          "value": "2.0T 237 horsepower L4",
+          "source": "mpv_en"
+        },
+        {
+          "value": "2.0T 252 horsepower L4",
+          "source": "tank_en"
+        }
+      ],
+      "gearbox": [
+        {
+          "value": "Electric vehicle single speed gearbox",
+          "source": "erev_en"
+        },
+        {
+          "value": "Electric vehicle single speed gearbox",
+          "source": "ev_en"
+        },
+        {
+          "value": "1st DHT",
+          "source": "flagship_en"
+        },
+        {
+          "value": "9-gear manual integration",
+          "source": "gas_en"
+        },
+        {
+          "value": "9-gear manual integration",
+          "source": "mpv_en"
+        },
+        {
+          "value": "9-gear manual integration",
+          "source": "tank_en"
+        }
+      ],
+      "Length × Width × Height (mm)": [
+        {
+          "value": "5020*1945*1775",
+          "source": "erev_en"
+        },
+        {
+          "value": "4880*1915*1476",
+          "source": "ev_en"
+        },
+        {
+          "value": "5230*2025*1817",
+          "source": "flagship_en"
+        },
+        {
+          "value": "4764*1898*1642",
+          "source": "gas_en"
+        },
+        {
+          "value": "5230*1980*1867",
+          "source": "mpv_en"
+        },
+        {
+          "value": "5078*1934*1905",
+          "source": "tank_en"
+        },
+        {
+          "value": "4694*1850*1443",
+          "source": "tesla_en"
+        }
+      ],
+      "Body structure": [
+        {
+          "value": "5-door, 6-seat SUV",
+          "source": "erev_en"
+        },
+        {
+          "value": "5-door 5-seater hatchback",
+          "source": "ev_en"
+        },
+        {
+          "value": "5-door, 6-seat SUV",
+          "source": "flagship_en"
+        },
+        {
+          "value": "5 door 5 seat SUV",
+          "source": "gas_en"
+        },
+        {
+          "value": "MPV with 5 doors and 6 seats",
+          "source": "mpv_en"
+        },
+        {
+          "value": "5 door 5 seat SUV",
+          "source": "tank_en"
+        },
+        {
+          "value": "4-door 5-seat sedan",
+          "source": "tesla_en"
+        }
+      ],
+      "Maximum speed (km/h)": [
+        {
+          "value": "190",
+          "source": "erev_en"
+        },
+        {
+          "value": "171",
+          "source": "ev_en"
+        },
+        {
+          "value": "200",
+          "source": "flagship_en"
+        },
+        {
+          "value": "213",
+          "source": "gas_en"
+        },
+        {
+          "value": "195",
+          "source": "mpv_en"
+        },
+        {
+          "value": "180",
+          "source": "tank_en"
+        },
+        {
+          "value": "225",
+          "source": "tesla_en"
+        }
+      ],
+      "Official 0–100 km/h acceleration (s)": [
+        {
+          "value": "4.8",
+          "source": "erev_en"
+        },
+        {
+          "value": "5.7",
+          "source": "ev_en"
+        },
+        {
+          "value": "5.2",
+          "source": "flagship_en"
+        },
+        {
+          "value": "8.4",
+          "source": "gas_en"
+        },
+        {
+          "value": "10.3",
+          "source": "mpv_en"
+        },
+        {
+          "value": "6.9",
+          "source": "tank_en"
+        },
+        {
+          "value": "6.1",
+          "source": "tesla_en"
+        }
+      ],
+      "Full-vehicle warranty": [
+        {
+          "value": "Four years or 100,000 kilometers",
+          "source": "erev_en"
+        },
+        {
+          "value": "Five years or 100000km",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Three years unlimited kilometers",
+          "source": "gas_en"
+        },
+        {
+          "value": "Three years or 100,000 kilometers",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Five years or 150000km",
+          "source": "tank_en"
+        },
+        {
+          "value": "Four years or 80000km",
+          "source": "tesla_en"
+        }
+      ],
+      "WLTC pure electric range (km)": [
+        {
+          "value": "135",
+          "source": "erev_en"
+        },
+        {
+          "value": "290",
+          "source": "flagship_en"
+        },
+        {
+          "value": "110",
+          "source": "tank_en"
+        }
+      ],
+      "CLTC pure electric cruising range (km)": [
+        {
+          "value": "200",
+          "source": "erev_en"
+        },
+        {
+          "value": "650",
+          "source": "ev_en"
+        },
+        {
+          "value": "350",
+          "source": "flagship_en"
+        },
+        {
+          "value": "556",
+          "source": "tesla_en"
+        }
+      ],
+      "Fast charging time (hours)": [
+        {
+          "value": "0.5",
+          "source": "erev_en"
+        },
+        {
+          "value": "0.4",
+          "source": "tank_en"
+        },
+        {
+          "value": "1",
+          "source": "tesla_en"
+        }
+      ],
+      "Slow charging time (hours)": [
+        {
+          "value": "5",
+          "source": "erev_en"
+        },
+        {
+          "value": "6.5",
+          "source": "tank_en"
+        },
+        {
+          "value": "10",
+          "source": "tesla_en"
+        }
+      ],
+      "Fast charge percentage": [
+        {
+          "value": "80",
+          "source": "erev_en"
+        },
+        {
+          "value": "30-80",
+          "source": "tank_en"
+        }
+      ],
+      "Motor (Ps)": [
+        {
+          "value": "449",
+          "source": "erev_en"
+        },
+        {
+          "value": "272",
+          "source": "ev_en"
+        },
+        {
+          "value": "517",
+          "source": "flagship_en"
+        },
+        {
+          "value": "163",
+          "source": "tank_en"
+        },
+        {
+          "value": "264",
+          "source": "tesla_en"
+        }
+      ],
+      "WLTC combined fuel consumption (L/100 km)": [
+        {
+          "value": "1.09",
+          "source": "erev_en"
+        },
+        {
+          "value": "0.40",
+          "source": "flagship_en"
+        },
+        {
+          "value": "8.55",
+          "source": "gas_en"
+        },
+        {
+          "value": "8.65",
+          "source": "mpv_en"
+        },
+        {
+          "value": "2.2",
+          "source": "tank_en"
+        }
+      ],
+      "Minimum state of charge fuel consumption (L/100km)": [
+        {
+          "value": "7.45",
+          "source": "erev_en"
+        },
+        {
+          "value": "9.55",
+          "source": "tank_en"
+        }
+      ],
+      "Fast battery charging time (hours)": [
+        {
+          "value": "0.27",
+          "source": "ev_en"
+        },
+        {
+          "value": "0.2",
+          "source": "flagship_en"
+        }
+      ],
+      "Battery fast charge range (%)": [
+        {
+          "value": "30-80",
+          "source": "ev_en"
+        },
+        {
+          "value": "20-80",
+          "source": "flagship_en"
+        }
+      ],
+      "Fuel consumption equivalent to electric energy (L/100 km)": [
+        {
+          "value": "1.46",
+          "source": "ev_en"
+        },
+        {
+          "value": "1.41",
+          "source": "tesla_en"
+        }
+      ],
+      "First-Owner Warranty Policy": [
+        {
+          "value": "Lifetime Warranty/Non-operational (Liability Exemption Terms Subject to Official)",
+          "source": "ev_en"
+        },
+        {
+          "value": "Lifetime warranty for core components of engine and transmission (the liability exemption clause shall be subject to the official)",
+          "source": "tank_en"
+        }
+      ],
+      "Curb weight (kg)": [
+        {
+          "value": "1852",
+          "source": "ev_en"
+        },
+        {
+          "value": "2760",
+          "source": "flagship_en"
+        }
+      ],
+      "Maximum gross vehicle weight (kg)": [
+        {
+          "value": "2279",
+          "source": "ev_en"
+        },
+        {
+          "value": "3210",
+          "source": "flagship_en"
+        }
+      ],
+      "Minimum SOC fuel consumption (L/100km)WLTC": [
+        {
+          "value": "6.9",
+          "source": "flagship_en"
+        }
+      ],
+      "Comprehensive fuel consumption of oil and electricity (L/100km)": [
+        {
+          "value": "2.91",
+          "source": "flagship_en"
+        }
+      ],
+      "NEDC pure electric cruising range (km)": [
+        {
+          "value": "120",
+          "source": "tank_en"
+        }
+      ]
+    },
+    "Car body": {
+      "Length (mm)": [
+        {
+          "value": "5020",
+          "source": "erev_en"
+        },
+        {
+          "value": "4880",
+          "source": "ev_en"
+        },
+        {
+          "value": "5230",
+          "source": "flagship_en"
+        },
+        {
+          "value": "4764",
+          "source": "gas_en"
+        },
+        {
+          "value": "5230",
+          "source": "mpv_en"
+        },
+        {
+          "value": "5078",
+          "source": "tank_en"
+        },
+        {
+          "value": "4694",
+          "source": "tesla_en"
+        }
+      ],
+      "Width (mm)": [
+        {
+          "value": "1945",
+          "source": "erev_en"
+        },
+        {
+          "value": "1915",
+          "source": "ev_en"
+        },
+        {
+          "value": "2025",
+          "source": "flagship_en"
+        },
+        {
+          "value": "1898",
+          "source": "gas_en"
+        },
+        {
+          "value": "1980",
+          "source": "mpv_en"
+        },
+        {
+          "value": "1934",
+          "source": "tank_en"
+        },
+        {
+          "value": "1850",
+          "source": "tesla_en"
+        }
+      ],
+      "Height (mm)": [
+        {
+          "value": "1775",
+          "source": "erev_en"
+        },
+        {
+          "value": "1476",
+          "source": "ev_en"
+        },
+        {
+          "value": "1817",
+          "source": "flagship_en"
+        },
+        {
+          "value": "1642",
+          "source": "gas_en"
+        },
+        {
+          "value": "1867",
+          "source": "mpv_en"
+        },
+        {
+          "value": "1905",
+          "source": "tank_en"
+        },
+        {
+          "value": "1443",
+          "source": "tesla_en"
+        }
+      ],
+      "Wheelbase (mm)": [
+        {
+          "value": "2820",
+          "source": "erev_en"
+        },
+        {
+          "value": "2915",
+          "source": "ev_en"
+        },
+        {
+          "value": "3120",
+          "source": "flagship_en"
+        },
+        {
+          "value": "2973",
+          "source": "gas_en"
+        },
+        {
+          "value": "3130",
+          "source": "mpv_en"
+        },
+        {
+          "value": "2850",
+          "source": "tank_en"
+        },
+        {
+          "value": "2875",
+          "source": "tesla_en"
+        }
+      ],
+      "Front track (mm)": [
+        {
+          "value": "1635",
+          "source": "erev_en"
+        },
+        {
+          "value": "1625",
+          "source": "ev_en"
+        },
+        {
+          "value": "1738",
+          "source": "flagship_en"
+        },
+        {
+          "value": "1614",
+          "source": "gas_en"
+        },
+        {
+          "value": "1715",
+          "source": "mpv_en"
+        },
+        {
+          "value": "1635",
+          "source": "tank_en"
+        },
+        {
+          "value": "1580",
+          "source": "tesla_en"
+        }
+      ],
+      "Rear track (mm)": [
+        {
+          "value": "1650",
+          "source": "erev_en"
+        },
+        {
+          "value": "1635",
+          "source": "ev_en"
+        },
+        {
+          "value": "1755",
+          "source": "flagship_en"
+        },
+        {
+          "value": "1611",
+          "source": "gas_en"
+        },
+        {
+          "value": "1725",
+          "source": "mpv_en"
+        },
+        {
+          "value": "1635",
+          "source": "tank_en"
+        },
+        {
+          "value": "1580",
+          "source": "tesla_en"
+        }
+      ],
+      "Minimum ground clearance under full load (mm)": [
+        {
+          "value": "150",
+          "source": "erev_en"
+        },
+        {
+          "value": "213",
+          "source": "tank_en"
+        },
+        {
+          "value": "138",
+          "source": "tesla_en"
+        }
+      ],
+      "Number of doors (units)": [
+        {
+          "value": "5",
+          "source": "erev_en"
+        },
+        {
+          "value": "5",
+          "source": "ev_en"
+        },
+        {
+          "value": "5",
+          "source": "flagship_en"
+        },
+        {
+          "value": "5",
+          "source": "gas_en"
+        },
+        {
+          "value": "5",
+          "source": "mpv_en"
+        },
+        {
+          "value": "5",
+          "source": "tank_en"
+        },
+        {
+          "value": "4",
+          "source": "tesla_en"
+        }
+      ],
+      "Number of seats (units)": [
+        {
+          "value": "6",
+          "source": "erev_en"
+        },
+        {
+          "value": "5",
+          "source": "ev_en"
+        },
+        {
+          "value": "6",
+          "source": "flagship_en"
+        },
+        {
+          "value": "5",
+          "source": "gas_en"
+        },
+        {
+          "value": "6",
+          "source": "mpv_en"
+        },
+        {
+          "value": "5",
+          "source": "tank_en"
+        },
+        {
+          "value": "5",
+          "source": "tesla_en"
+        }
+      ],
+      "Fuel tank capacity (L)": [
+        {
+          "value": "60",
+          "source": "erev_en"
+        },
+        {
+          "value": "65",
+          "source": "flagship_en"
+        },
+        {
+          "value": "66",
+          "source": "gas_en"
+        },
+        {
+          "value": "70",
+          "source": "mpv_en"
+        },
+        {
+          "value": "70",
+          "source": "tank_en"
+        }
+      ],
+      "Trunk capacity (L)": [
+        {
+          "value": "176-688",
+          "source": "erev_en"
+        },
+        {
+          "value": "452-1026",
+          "source": "ev_en"
+        },
+        {
+          "value": "305-1193",
+          "source": "flagship_en"
+        },
+        {
+          "value": "612-1850",
+          "source": "mpv_en"
+        },
+        {
+          "value": "425",
+          "source": "tesla_en"
+        }
+      ],
+      "Curb weight (kg)": [
+        {
+          "value": "2450",
+          "source": "erev_en"
+        },
+        {
+          "value": "1890",
+          "source": "gas_en"
+        },
+        {
+          "value": "2300",
+          "source": "mpv_en"
+        },
+        {
+          "value": "2810",
+          "source": "tank_en"
+        },
+        {
+          "value": "1761",
+          "source": "tesla_en"
+        }
+      ],
+      "Minimum ground clearance without load (mm)": [
+        {
+          "value": "188",
+          "source": "erev_en"
+        }
+      ],
+      "Approach angle (°)": [
+        {
+          "value": "19",
+          "source": "erev_en"
+        },
+        {
+          "value": "14",
+          "source": "ev_en"
+        },
+        {
+          "value": "19",
+          "source": "flagship_en"
+        },
+        {
+          "value": "23",
+          "source": "gas_en"
+        },
+        {
+          "value": "13",
+          "source": "mpv_en"
+        },
+        {
+          "value": "30",
+          "source": "tank_en"
+        },
+        {
+          "value": "15",
+          "source": "tesla_en"
+        }
+      ],
+      "Departure angle (°)": [
+        {
+          "value": "22",
+          "source": "erev_en"
+        },
+        {
+          "value": "15",
+          "source": "ev_en"
+        },
+        {
+          "value": "21",
+          "source": "flagship_en"
+        },
+        {
+          "value": "21",
+          "source": "gas_en"
+        },
+        {
+          "value": "14",
+          "source": "mpv_en"
+        },
+        {
+          "value": "24",
+          "source": "tank_en"
+        },
+        {
+          "value": "17",
+          "source": "tesla_en"
+        }
+      ],
+      "Door opening method": [
+        {
+          "value": "Swing door",
+          "source": "erev_en"
+        },
+        {
+          "value": "Swing door",
+          "source": "ev_en"
+        },
+        {
+          "value": "Swing door",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Swing door",
+          "source": "gas_en"
+        },
+        {
+          "value": "Side sliding door",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Swing door",
+          "source": "tank_en"
+        },
+        {
+          "value": "Swing door",
+          "source": "tesla_en"
+        }
+      ],
+      "Maximum gross vehicle weight (kg)": [
+        {
+          "value": "2900",
+          "source": "erev_en"
+        },
+        {
+          "value": "2370",
+          "source": "gas_en"
+        },
+        {
+          "value": "2868",
+          "source": "mpv_en"
+        },
+        {
+          "value": "3310",
+          "source": "tank_en"
+        },
+        {
+          "value": "2170",
+          "source": "tesla_en"
+        }
+      ],
+      "Minimum turning radius (m)": [
+        {
+          "value": "5.6",
+          "source": "ev_en"
+        },
+        {
+          "value": "6.2",
+          "source": "flagship_en"
+        },
+        {
+          "value": "5.8",
+          "source": "tesla_en"
+        }
+      ],
+      "Body structure": [
+        {
+          "value": "Hatchback",
+          "source": "ev_en"
+        },
+        {
+          "value": "SUV",
+          "source": "flagship_en"
+        }
+      ],
+      "Drag coefficient (Cd)": [
+        {
+          "value": "0.209",
+          "source": "ev_en"
+        },
+        {
+          "value": "0.23",
+          "source": "tesla_en"
+        }
+      ],
+      "Total mass of quasi-trailer (kg)": [
+        {
+          "value": "2500",
+          "source": "tank_en"
+        }
+      ],
+      "Maximum climbing degree (%)": [
+        {
+          "value": "30",
+          "source": "tesla_en"
+        }
+      ],
+      "Maximum climbing angle (°)": [
+        {
+          "value": "16.7",
+          "source": "tesla_en"
+        }
+      ]
+    },
+    "Engine": {
+      "Engine model": [
+        {
+          "value": "H15RT",
+          "source": "erev_en"
+        },
+        {
+          "value": "DFMC15TE3",
+          "source": "flagship_en"
+        },
+        {
+          "value": "264 920",
+          "source": "gas_en"
+        },
+        {
+          "value": "LXH",
+          "source": "mpv_en"
+        },
+        {
+          "value": "E20NA",
+          "source": "tank_en"
+        }
+      ],
+      "Displacement (mL)": [
+        {
+          "value": "1499",
+          "source": "erev_en"
+        },
+        {
+          "value": "1497",
+          "source": "flagship_en"
+        },
+        {
+          "value": "1991",
+          "source": "gas_en"
+        },
+        {
+          "value": "1998",
+          "source": "mpv_en"
+        },
+        {
+          "value": "1998",
+          "source": "tank_en"
+        }
+      ],
+      "Displacement (L)": [
+        {
+          "value": "1.5",
+          "source": "erev_en"
+        },
+        {
+          "value": "1.5",
+          "source": "flagship_en"
+        },
+        {
+          "value": "2.0",
+          "source": "gas_en"
+        },
+        {
+          "value": "2.0",
+          "source": "mpv_en"
+        },
+        {
+          "value": "2.0",
+          "source": "tank_en"
+        }
+      ],
+      "Intake mode": [
+        {
+          "value": "Turbocharging",
+          "source": "erev_en"
+        },
+        {
+          "value": "Turbocharging",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Turbocharging",
+          "source": "gas_en"
+        },
+        {
+          "value": "Turbocharging",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Turbocharging",
+          "source": "tank_en"
+        }
+      ],
+      "Cylinder arrangement": [
+        {
+          "value": "L",
+          "source": "erev_en"
+        },
+        {
+          "value": "L",
+          "source": "flagship_en"
+        },
+        {
+          "value": "L",
+          "source": "gas_en"
+        },
+        {
+          "value": "L",
+          "source": "mpv_en"
+        },
+        {
+          "value": "L",
+          "source": "tank_en"
+        }
+      ],
+      "Number of cylinders (units)": [
+        {
+          "value": "4",
+          "source": "erev_en"
+        },
+        {
+          "value": "4",
+          "source": "flagship_en"
+        },
+        {
+          "value": "4",
+          "source": "gas_en"
+        },
+        {
+          "value": "4",
+          "source": "mpv_en"
+        },
+        {
+          "value": "4",
+          "source": "tank_en"
+        }
+      ],
+      "Number of valves per cylinder (units)": [
+        {
+          "value": "4",
+          "source": "erev_en"
+        },
+        {
+          "value": "4",
+          "source": "flagship_en"
+        },
+        {
+          "value": "4",
+          "source": "gas_en"
+        },
+        {
+          "value": "4",
+          "source": "mpv_en"
+        },
+        {
+          "value": "4",
+          "source": "tank_en"
+        }
+      ],
+      "Compression ratio": [
+        {
+          "value": "15",
+          "source": "erev_en"
+        }
+      ],
+      "Valve train": [
+        {
+          "value": "DOHC",
+          "source": "erev_en"
+        },
+        {
+          "value": "DOHC",
+          "source": "flagship_en"
+        },
+        {
+          "value": "DOHC",
+          "source": "gas_en"
+        },
+        {
+          "value": "DOHC",
+          "source": "mpv_en"
+        },
+        {
+          "value": "DOHC",
+          "source": "tank_en"
+        }
+      ],
+      "Cylinder bore (mm)": [
+        {
+          "value": "73.5",
+          "source": "erev_en"
+        }
+      ],
+      "Stroke (mm)": [
+        {
+          "value": "88.32",
+          "source": "erev_en"
+        }
+      ],
+      "Maximum horsepower (Ps)": [
+        {
+          "value": "125",
+          "source": "erev_en"
+        },
+        {
+          "value": "150",
+          "source": "flagship_en"
+        },
+        {
+          "value": "197",
+          "source": "gas_en"
+        },
+        {
+          "value": "237",
+          "source": "mpv_en"
+        },
+        {
+          "value": "252",
+          "source": "tank_en"
+        }
+      ],
+      "Fuel form": [
+        {
+          "value": "increasing program",
+          "source": "erev_en"
+        },
+        {
+          "value": "Gasoline",
+          "source": "gas_en"
+        },
+        {
+          "value": "Gasoline 48V light mixing system",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Plug-in hybrid",
+          "source": "tank_en"
+        }
+      ],
+      "Fuel octane rating": [
+        {
+          "value": "No. 95",
+          "source": "erev_en"
+        },
+        {
+          "value": "No. 95",
+          "source": "flagship_en"
+        },
+        {
+          "value": "No. 95",
+          "source": "gas_en"
+        },
+        {
+          "value": "No. 95",
+          "source": "mpv_en"
+        },
+        {
+          "value": "92.",
+          "source": "tank_en"
+        }
+      ],
+      "Fuel supply method": [
+        {
+          "value": "Multi-point EFI",
+          "source": "erev_en"
+        },
+        {
+          "value": "Direct injection",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Direct injection",
+          "source": "gas_en"
+        },
+        {
+          "value": "Direct injection",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Direct injection",
+          "source": "tank_en"
+        }
+      ],
+      "Cylinder head material": [
+        {
+          "value": "Aluminum alloy",
+          "source": "erev_en"
+        },
+        {
+          "value": "Aluminum alloy",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Aluminum alloy",
+          "source": "gas_en"
+        },
+        {
+          "value": "Aluminum alloy",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Aluminum alloy",
+          "source": "tank_en"
+        }
+      ],
+      "Cylinder block material": [
+        {
+          "value": "Cast iron",
+          "source": "erev_en"
+        },
+        {
+          "value": "Aluminum alloy",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Aluminum alloy",
+          "source": "gas_en"
+        },
+        {
+          "value": "Aluminum alloy",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Aluminum alloy",
+          "source": "tank_en"
+        }
+      ],
+      "Engine layout": [
+        {
+          "value": "Horizontal placement",
+          "source": "erev_en"
+        },
+        {
+          "value": "Horizontal placement",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Longitudinal",
+          "source": "gas_en"
+        },
+        {
+          "value": "Horizontal placement",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Longitudinal",
+          "source": "tank_en"
+        }
+      ],
+      "Maximum net power (kW)": [
+        {
+          "value": "90",
+          "source": "erev_en"
+        },
+        {
+          "value": "105",
+          "source": "flagship_en"
+        },
+        {
+          "value": "145",
+          "source": "gas_en"
+        },
+        {
+          "value": "169",
+          "source": "mpv_en"
+        },
+        {
+          "value": "180",
+          "source": "tank_en"
+        }
+      ],
+      "Energy type": [
+        {
+          "value": "Pure electric",
+          "source": "ev_en"
+        },
+        {
+          "value": "Plug-in hybrid",
+          "source": "flagship_en"
+        }
+      ],
+      "Maximum power (kW)": [
+        {
+          "value": "110",
+          "source": "flagship_en"
+        }
+      ],
+      "Maximum power speed (rpm)": [
+        {
+          "value": "4500",
+          "source": "flagship_en"
+        },
+        {
+          "value": "6100",
+          "source": "gas_en"
+        },
+        {
+          "value": "5000",
+          "source": "mpv_en"
+        },
+        {
+          "value": "5500-6000",
+          "source": "tank_en"
+        }
+      ],
+      "Maximum torque (N · m)": [
+        {
+          "value": "220",
+          "source": "flagship_en"
+        }
+      ],
+      "Maximum torque speed (rpm)": [
+        {
+          "value": "2000-4500",
+          "source": "flagship_en"
+        },
+        {
+          "value": "1650-4000",
+          "source": "gas_en"
+        },
+        {
+          "value": "1500-4000",
+          "source": "mpv_en"
+        },
+        {
+          "value": "1700-4000",
+          "source": "tank_en"
+        }
+      ],
+      "Environmental standards": [
+        {
+          "value": "China VI",
+          "source": "flagship_en"
+        }
+      ],
+      "Engine Specific Technology": [
+        {
+          "value": "variable cylinder",
+          "source": "mpv_en"
+        }
+      ]
+    },
+    "gearbox": {
+      "Number of gears": [
+        {
+          "value": "1",
+          "source": "erev_en"
+        },
+        {
+          "value": "1",
+          "source": "ev_en"
+        },
+        {
+          "value": "1",
+          "source": "flagship_en"
+        },
+        {
+          "value": "9",
+          "source": "gas_en"
+        },
+        {
+          "value": "9",
+          "source": "mpv_en"
+        },
+        {
+          "value": "9",
+          "source": "tank_en"
+        },
+        {
+          "value": "1",
+          "source": "tesla_en"
+        }
+      ],
+      "gearbox Type": [
+        {
+          "value": "fixed gear ratio gearbox",
+          "source": "erev_en"
+        },
+        {
+          "value": "fixed gear ratio gearbox",
+          "source": "ev_en"
+        },
+        {
+          "value": "Hybrid Special gearbox (DHT)",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Hand-automatic integrated gearbox (AT)",
+          "source": "gas_en"
+        },
+        {
+          "value": "Hand-automatic integrated gearbox (AT)",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Hand-automatic integrated gearbox (AT)",
+          "source": "tank_en"
+        },
+        {
+          "value": "fixed gear ratio gearbox",
+          "source": "tesla_en"
+        }
+      ],
+      "Abbreviation": [
+        {
+          "value": "Electric vehicle single speed gearbox",
+          "source": "erev_en"
+        },
+        {
+          "value": "Electric vehicle single speed gearbox",
+          "source": "ev_en"
+        },
+        {
+          "value": "1st DHT",
+          "source": "flagship_en"
+        },
+        {
+          "value": "9-gear manual integration",
+          "source": "gas_en"
+        },
+        {
+          "value": "9-gear manual integration",
+          "source": "mpv_en"
+        },
+        {
+          "value": "9-gear manual integration",
+          "source": "tank_en"
+        },
+        {
+          "value": "Electric vehicle single speed gearbox",
+          "source": "tesla_en"
+        }
+      ]
+    },
+    "Chassis steering": {
+      "Drive method": [
+        {
+          "value": "Dual-motor all-wheel drive",
+          "source": "erev_en"
+        },
+        {
+          "value": "Rear Rear Drive",
+          "source": "ev_en"
+        },
+        {
+          "value": "Front-wheel drive with four-wheel drive",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Front-wheel drive with four-wheel drive",
+          "source": "gas_en"
+        },
+        {
+          "value": "Front-engine, front-wheel drive",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Front-wheel drive with four-wheel drive",
+          "source": "tank_en"
+        },
+        {
+          "value": "Rear Rear Drive",
+          "source": "tesla_en"
+        }
+      ],
+      "Front suspension type": [
+        {
+          "value": "MacPherson independent suspension",
+          "source": "erev_en"
+        },
+        {
+          "value": "MacPherson independent suspension",
+          "source": "ev_en"
+        },
+        {
+          "value": "Double wishbone independent suspension",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Multi-link independent suspension",
+          "source": "gas_en"
+        },
+        {
+          "value": "MacPherson independent suspension",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Double wishbone independent suspension",
+          "source": "tank_en"
+        },
+        {
+          "value": "Double wishbone independent suspension",
+          "source": "tesla_en"
+        }
+      ],
+      "Rear suspension type": [
+        {
+          "value": "Multi-link independent suspension",
+          "source": "erev_en"
+        },
+        {
+          "value": "Five-link independent suspension",
+          "source": "ev_en"
+        },
+        {
+          "value": "Multi-link independent suspension",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Multi-link independent suspension",
+          "source": "gas_en"
+        },
+        {
+          "value": "Five-link independent suspension",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Integral bridge type non-independent suspension",
+          "source": "tank_en"
+        },
+        {
+          "value": "Multi-link independent suspension",
+          "source": "tesla_en"
+        }
+      ],
+      "Type of support": [
+        {
+          "value": "Electric power assistance",
+          "source": "erev_en"
+        },
+        {
+          "value": "Electric power assistance",
+          "source": "ev_en"
+        },
+        {
+          "value": "Electric power assistance",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Electric power assistance",
+          "source": "gas_en"
+        },
+        {
+          "value": "Electric power assistance",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Electric power assistance",
+          "source": "tank_en"
+        },
+        {
+          "value": "Electric power assistance",
+          "source": "tesla_en"
+        }
+      ],
+      "Vehicle Body Structure": [
+        {
+          "value": "Load-bearing",
+          "source": "erev_en"
+        },
+        {
+          "value": "Load-bearing",
+          "source": "ev_en"
+        },
+        {
+          "value": "Load-bearing",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Load-bearing",
+          "source": "gas_en"
+        },
+        {
+          "value": "Load-bearing",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Non-bearing",
+          "source": "tank_en"
+        },
+        {
+          "value": "Load-bearing",
+          "source": "tesla_en"
+        }
+      ],
+      "Four-wheel drive form": [
+        {
+          "value": "Electric all-wheel drive",
+          "source": "erev_en"
+        },
+        {
+          "value": "Electric all-wheel drive",
+          "source": "flagship_en"
+        },
+        {
+          "value": "All-wheel drive",
+          "source": "gas_en"
+        },
+        {
+          "value": "Timely four-wheel drive",
+          "source": "tank_en"
+        }
+      ],
+      "Central differential structure": [
+        {
+          "value": "multi-plate clutch",
+          "source": "gas_en"
+        },
+        {
+          "value": "multi-plate clutch",
+          "source": "tank_en"
+        }
+      ]
+    },
+    "Wheel brake": {
+      "Front brake type": [
+        {
+          "value": "Ventilated disc",
+          "source": "erev_en"
+        },
+        {
+          "value": "Ventilated disc",
+          "source": "ev_en"
+        },
+        {
+          "value": "Ventilated disc",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Ventilated disc",
+          "source": "gas_en"
+        },
+        {
+          "value": "Ventilated disc",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Ventilated disc",
+          "source": "tank_en"
+        },
+        {
+          "value": "Ventilated disc",
+          "source": "tesla_en"
+        }
+      ],
+      "Rear brake type": [
+        {
+          "value": "Ventilated disc",
+          "source": "erev_en"
+        },
+        {
+          "value": "Disc-type",
+          "source": "ev_en"
+        },
+        {
+          "value": "Ventilated disc",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Ventilated disc",
+          "source": "gas_en"
+        },
+        {
+          "value": "Ventilated disc",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Ventilated disc",
+          "source": "tank_en"
+        },
+        {
+          "value": "Ventilated disc",
+          "source": "tesla_en"
+        }
+      ],
+      "Parking brake type": [
+        {
+          "value": "Electronic parking brake",
+          "source": "erev_en"
+        },
+        {
+          "value": "Electronic parking brake",
+          "source": "ev_en"
+        },
+        {
+          "value": "Electronic parking brake",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Electronic parking brake",
+          "source": "gas_en"
+        },
+        {
+          "value": "Electronic parking brake",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Electronic parking brake",
+          "source": "tank_en"
+        },
+        {
+          "value": "Electronic parking brake",
+          "source": "tesla_en"
+        }
+      ],
+      "Front tire specifications": [
+        {
+          "value": "255/50 R20",
+          "source": "erev_en"
+        },
+        {
+          "value": "245/45 R19",
+          "source": "ev_en"
+        },
+        {
+          "value": "275/45 R22",
+          "source": "flagship_en"
+        },
+        {
+          "value": "235/55 R19",
+          "source": "gas_en"
+        },
+        {
+          "value": "225/55 R19",
+          "source": "mpv_en"
+        },
+        {
+          "value": "265/55 R19",
+          "source": "tank_en"
+        },
+        {
+          "value": "235/45 R18",
+          "source": "tesla_en"
+        }
+      ],
+      "Rear tire specifications": [
+        {
+          "value": "255/50 R20",
+          "source": "erev_en"
+        },
+        {
+          "value": "245/45 R19",
+          "source": "ev_en"
+        },
+        {
+          "value": "275/45 R22",
+          "source": "flagship_en"
+        },
+        {
+          "value": "235/55 R19",
+          "source": "gas_en"
+        },
+        {
+          "value": "225/55 R19",
+          "source": "mpv_en"
+        },
+        {
+          "value": "265/55 R19",
+          "source": "tank_en"
+        },
+        {
+          "value": "235/45 R18",
+          "source": "tesla_en"
+        }
+      ],
+      "Spare tire specifications": [
+        {
+          "value": "Tire Repair Tool Only",
+          "source": "erev_en"
+        },
+        {
+          "value": "Tire repair tools",
+          "source": "ev_en"
+        },
+        {
+          "value": "None",
+          "source": "gas_en"
+        },
+        {
+          "value": "None",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Full size",
+          "source": "tank_en"
+        },
+        {
+          "value": "None",
+          "source": "tesla_en"
+        }
+      ]
+    },
+    "Electric motor": {
+      "Motor type": [
+        {
+          "value": "Permanent Magnet/Synchronous",
+          "source": "erev_en"
+        },
+        {
+          "value": "Permanent Magnet/Synchronous",
+          "source": "ev_en"
+        },
+        {
+          "value": "Permanent Magnet/Synchronous",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Permanent Magnet/Synchronous",
+          "source": "tank_en"
+        },
+        {
+          "value": "Permanent Magnet/Synchronous",
+          "source": "tesla_en"
+        }
+      ],
+      "Total motor power (kW)": [
+        {
+          "value": "330",
+          "source": "erev_en"
+        },
+        {
+          "value": "200",
+          "source": "ev_en"
+        },
+        {
+          "value": "380",
+          "source": "flagship_en"
+        },
+        {
+          "value": "120",
+          "source": "tank_en"
+        },
+        {
+          "value": "194",
+          "source": "tesla_en"
+        }
+      ],
+      "Total motor power (Ps)": [
+        {
+          "value": "449",
+          "source": "erev_en"
+        },
+        {
+          "value": "264",
+          "source": "tesla_en"
+        }
+      ],
+      "Total motor torque (N·m)": [
+        {
+          "value": "660",
+          "source": "erev_en"
+        },
+        {
+          "value": "310",
+          "source": "ev_en"
+        },
+        {
+          "value": "705",
+          "source": "flagship_en"
+        },
+        {
+          "value": "400",
+          "source": "tank_en"
+        },
+        {
+          "value": "340",
+          "source": "tesla_en"
+        }
+      ],
+      "Maximum power of the rear motor (kW)": [
+        {
+          "value": "200",
+          "source": "erev_en"
+        },
+        {
+          "value": "200",
+          "source": "ev_en"
+        },
+        {
+          "value": "230",
+          "source": "flagship_en"
+        },
+        {
+          "value": "194",
+          "source": "tesla_en"
+        }
+      ],
+      "Maximum torque of the rear motor (N·m)": [
+        {
+          "value": "360",
+          "source": "erev_en"
+        },
+        {
+          "value": "310",
+          "source": "ev_en"
+        },
+        {
+          "value": "395",
+          "source": "flagship_en"
+        },
+        {
+          "value": "340",
+          "source": "tesla_en"
+        }
+      ],
+      "Number of drive motors": [
+        {
+          "value": "Dual motors",
+          "source": "erev_en"
+        },
+        {
+          "value": "Single motor",
+          "source": "ev_en"
+        },
+        {
+          "value": "Dual motors",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Single motor",
+          "source": "tesla_en"
+        }
+      ],
+      "Motor layout": [
+        {
+          "value": "Front-mounted Rear-mounted",
+          "source": "erev_en"
+        },
+        {
+          "value": "Rear-mounted",
+          "source": "ev_en"
+        },
+        {
+          "value": "Front-mounted Rear-mounted",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Rear-mounted",
+          "source": "tesla_en"
+        }
+      ],
+      "Battery type": [
+        {
+          "value": "Lithium ternary battery",
+          "source": "erev_en"
+        },
+        {
+          "value": "Lithium ternary battery",
+          "source": "tank_en"
+        },
+        {
+          "value": "lithium iron phosphate battery",
+          "source": "tesla_en"
+        }
+      ],
+      "Battery Cell Brand": [
+        {
+          "value": "Contemporary Amperex Technology Co. Limited (CATL)",
+          "source": "erev_en"
+        },
+        {
+          "value": "SVOLT Energy",
+          "source": "tank_en"
+        },
+        {
+          "value": "Contemporary Amperex Technology Co. Limited (CATL)",
+          "source": "tesla_en"
+        }
+      ],
+      "Battery cooling method": [
+        {
+          "value": "Liquid cooling",
+          "source": "erev_en"
+        },
+        {
+          "value": "Liquid cooling",
+          "source": "tank_en"
+        },
+        {
+          "value": "Liquid cooling",
+          "source": "tesla_en"
+        }
+      ],
+      "WLTC Comprehensive Endurance (km)": [
+        {
+          "value": "1000",
+          "source": "erev_en"
+        },
+        {
+          "value": "790",
+          "source": "tank_en"
+        }
+      ],
+      "Battery energy (kWh)": [
+        {
+          "value": "40",
+          "source": "erev_en"
+        },
+        {
+          "value": "37.1",
+          "source": "tank_en"
+        },
+        {
+          "value": "60",
+          "source": "tesla_en"
+        }
+      ],
+      "Electricity consumption per 100 kilometers (kWh/100 km)": [
+        {
+          "value": "24",
+          "source": "erev_en"
+        },
+        {
+          "value": "12.5",
+          "source": "tesla_en"
+        }
+      ],
+      "Battery pack warranty": [
+        {
+          "value": "Eight years or 160,000 kilometers",
+          "source": "erev_en"
+        },
+        {
+          "value": "The first owner is not limited to years/mileage (liability exemption clause is subject to the official)",
+          "source": "tank_en"
+        },
+        {
+          "value": "Eight years or 160,000 kilometers",
+          "source": "tesla_en"
+        }
+      ],
+      "Fast charging function": [
+        {
+          "value": "Support",
+          "source": "erev_en"
+        },
+        {
+          "value": "Support",
+          "source": "tank_en"
+        },
+        {
+          "value": "Support",
+          "source": "tesla_en"
+        }
+      ],
+      "Fast charging power (kW)": [
+        {
+          "value": "100",
+          "source": "erev_en"
+        },
+        {
+          "value": "50",
+          "source": "tank_en"
+        }
+      ],
+      "Fast charge percentage (%)": [
+        {
+          "value": "80",
+          "source": "erev_en"
+        },
+        {
+          "value": "30-80",
+          "source": "tank_en"
+        }
+      ],
+      "Max. power of front motor (kW)": [
+        {
+          "value": "130",
+          "source": "erev_en"
+        },
+        {
+          "value": "150",
+          "source": "flagship_en"
+        }
+      ],
+      "Maximum torque of front motor (N · m)": [
+        {
+          "value": "300",
+          "source": "erev_en"
+        },
+        {
+          "value": "310",
+          "source": "flagship_en"
+        }
+      ],
+      "Rear motor brand": [
+        {
+          "value": "智新科技",
+          "source": "ev_en"
+        }
+      ],
+      "Rear motor model": [
+        {
+          "value": "TZ200XS3F1",
+          "source": "ev_en"
+        },
+        {
+          "value": "TZ225XYH01",
+          "source": "flagship_en"
+        }
+      ],
+      "Total motor horsepower (Ps)": [
+        {
+          "value": "272",
+          "source": "ev_en"
+        },
+        {
+          "value": "517",
+          "source": "flagship_en"
+        }
+      ],
+      "Three electric first car owner warranty policy": [
+        {
+          "value": "Lifetime Warranty/Non-operational (Liability Exemption Terms Subject to Official)",
+          "source": "ev_en"
+        },
+        {
+          "value": "Lifetime Warranty/Non-operational (Liability Exemption Terms Subject to Official)",
+          "source": "flagship_en"
+        }
+      ],
+      "Front motor model": [
+        {
+          "value": "DY60YS225150",
+          "source": "flagship_en"
+        }
+      ],
+      "System integrated power (kW)": [
+        {
+          "value": "300",
+          "source": "tank_en"
+        }
+      ],
+      "System integrated power (Ps)": [
+        {
+          "value": "408",
+          "source": "tank_en"
+        }
+      ],
+      "Comprehensive system torque (N · m)": [
+        {
+          "value": "750",
+          "source": "tank_en"
+        }
+      ],
+      "Battery energy density (Wh/kg)": [
+        {
+          "value": "126",
+          "source": "tesla_en"
+        }
+      ],
+      "Battery swapping": [
+        {
+          "value": "Not supported",
+          "source": "tesla_en"
+        }
+      ]
+    },
+    "Active/Passive Safety Equipment": {
+      "Driver’s and passenger’s airbags": [
+        {
+          "value": "Main standard/auxiliary standard",
+          "source": "erev_en"
+        },
+        {
+          "value": "Main standard/auxiliary standard",
+          "source": "gas_en"
+        },
+        {
+          "value": "Main standard/auxiliary standard",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Main standard/auxiliary standard",
+          "source": "tank_en"
+        },
+        {
+          "value": "Main standard/auxiliary standard",
+          "source": "tesla_en"
+        }
+      ],
+      "Front/rear side airbags": [
+        {
+          "value": "Front standard/rear standard",
+          "source": "erev_en"
+        },
+        {
+          "value": "Front standard/rear optional",
+          "source": "gas_en"
+        },
+        {
+          "value": "Front standard/rear-",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Front standard/rear-",
+          "source": "tank_en"
+        },
+        {
+          "value": "Front standard/rear-",
+          "source": "tesla_en"
+        }
+      ],
+      "Front/rear head airbags (curtain airbags)": [
+        {
+          "value": "Front standard/rear standard",
+          "source": "erev_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "gas_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "tank_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "tesla_en"
+        }
+      ],
+      "ISOFIX child seat anchorages": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "ABS anti-lock": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Braking force distribution (EBD/CBC, etc.)": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Brake assist (EBA/BAS/BA, etc.)": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Traction control (ASR/TCS/TRC, etc.)": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Body stability control (ESC/ESP/DSC, etc.)": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Lane Change Assist": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Lane Departure Warning System": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Lane Keeping Assist System": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Road Traffic Sign Recognition": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Optional equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Automatic Braking/Advanced Safety System": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Fatigue Driving Alert": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "DOW opening alert": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Forward Collision Warning": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "knee airbag": [
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        }
+      ],
+      "run-flat tire": [
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        }
+      ],
+      "Lane center hold": [
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Rear Collision Warning": [
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ]
+    },
+    "Auxiliary/Control Configuration": {
+      "Front/rear parking Radar": [
+        {
+          "value": "Front standard/rear standard",
+          "source": "erev_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "gas_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "tank_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "tesla_en"
+        }
+      ],
+      "Rear Side Vehicle Warning System": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Automatic parking": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Optional equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Auto Hold": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Hill-start assist": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Hill descent control": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "braking energy recovery system": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Engine start-stop technology": [
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Variable steering ratio": [
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        }
+      ],
+      "Transparent chassis/540-degree imaging": [
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Remote parking": [
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Optional equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "automatic lane change assist": [
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        }
+      ],
+      "Central differential locking function": [
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Tracking reversing": [
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Low-speed four-wheel drive": [
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "creep mode": [
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Tank Turn": [
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "YuanChen Summon": [
+        {
+          "value": "Optional equipment",
+          "source": "tesla_en"
+        }
+      ]
+    },
+    "Exterior/Security Features": {
+      "Electric trunk lid": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Sensing trunk": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Optional equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        }
+      ],
+      "Electric trunk position memory": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Roof rack": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Engine electronic immobilizer": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "In-car central locking": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Keyless start system": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Hide electric door handle": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        }
+      ],
+      "Battery pre-heating": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "External discharge": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Low Speed Driving Warning": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Sport Appearance Kit": [
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        }
+      ],
+      "Frameless design door": [
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Sentinel mode/clairvoyance": [
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ]
+    },
+    "Internal configuration": {
+      "Multi-function steering wheel": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "●",
+          "source": "phev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "All-digital instrument cluster": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "●",
+          "source": "phev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "HUD heads-up digital display": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Optional equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Built-in dashcam": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Steering wheel shift paddles": [
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Steering wheel memory": [
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "ETC device": [
+        {
+          "value": "Optional equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Steering wheel heating": [
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Active noise cancellation": [
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Central control color screen": [
+        {
+          "value": "Touch LCD screen",
+          "source": "phev_en"
+        }
+      ],
+      "Central control screen size": [
+        {
+          "value": "12.8 inches",
+          "source": "phev_en"
+        }
+      ],
+      "Central control screen type": [
+        {
+          "value": "LCD",
+          "source": "phev_en"
+        }
+      ],
+      "Bluetooth/Voice Call": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Speech Recognition Control System": [
+        {
+          "value": "multimedia system/navigation/telephone/air conditioning/windows",
+          "source": "phev_en"
+        }
+      ],
+      "Voice assistant wake word": [
+        {
+          "value": "Hello, Di.",
+          "source": "phev_en"
+        }
+      ],
+      "Voice-based zone-specific wake-up recognition": [
+        {
+          "value": "Dual Zone",
+          "source": "phev_en"
+        }
+      ],
+      "Continuous speech recognition": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Visible to say": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "App Store": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "In-vehicle intelligent system": [
+        {
+          "value": "DiLink",
+          "source": "phev_en"
+        }
+      ],
+      "Internet of Vehicles": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "4G/5G networks": [
+        {
+          "value": "5G",
+          "source": "phev_en"
+        }
+      ],
+      "OTA update": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Wi-Fi hotspot": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Mobile APP YuanChen function": [
+        {
+          "value": "Door control/vehicle start/charging management/light control/air conditioning control/vehicle condition inquiry/diagnosis/vehicle location/vehicle search/vehicle owner service (search for charging piles, gas stations, parking lots, etc.)/scheduled maintenance/repair",
+          "source": "phev_en"
+        }
+      ],
+      "In-car KTV": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Steering wheel material": [
+        {
+          "value": "Cortex",
+          "source": "phev_en"
+        }
+      ],
+      "Steering wheel position adjustment": [
+        {
+          "value": "Manual up and down front and rear adjustment",
+          "source": "phev_en"
+        }
+      ],
+      "Gear-shifting method": [
+        {
+          "value": "Electronic gear shift",
+          "source": "phev_en"
+        }
+      ],
+      "Vehicle computer display screen": [
+        {
+          "value": "Colorful",
+          "source": "phev_en"
+        }
+      ],
+      "LCD instrument cluster size": [
+        {
+          "value": "8.8 inches",
+          "source": "phev_en"
+        }
+      ],
+      "Rearview mirror function": [
+        {
+          "value": "Manual anti-glare",
+          "source": "phev_en"
+        }
+      ],
+      "Multimedia/Charging Port": [
+        {
+          "value": "USB / Type-C",
+          "source": "phev_en"
+        }
+      ],
+      "Number of USB/Type-C ports": [
+        {
+          "value": "2 in the front row/2 in the back row",
+          "source": "phev_en"
+        }
+      ],
+      "Seat material": [
+        {
+          "value": "Faux leather",
+          "source": "phev_en"
+        }
+      ],
+      "Front seat adjustment method": [
+        {
+          "value": "Front and rear adjustment/backrest adjustment/height adjustment (2-way)",
+          "source": "phev_en"
+        }
+      ],
+      "Rear seat adjustment method": [
+        {
+          "value": "Front and rear adjustment/backrest adjustment",
+          "source": "phev_en"
+        }
+      ],
+      "Electrically adjustable driver’s and passenger’s seats": [
+        {
+          "value": "Main/Deputy-",
+          "source": "phev_en"
+        }
+      ],
+      "Rear seat folding mechanism": [
+        {
+          "value": "Proportional Down",
+          "source": "phev_en"
+        }
+      ],
+      "Front/Rear Center Armrest": [
+        {
+          "value": "Front ●/Rear-",
+          "source": "phev_en"
+        }
+      ],
+      "Number of speakers": [
+        {
+          "value": "6 speakers",
+          "source": "phev_en"
+        }
+      ],
+      "Touch‑activated reading light": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Air conditioning temperature control method": [
+        {
+          "value": "automatic air conditioning",
+          "source": "phev_en"
+        }
+      ],
+      "Rear-seat air vent": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "In-vehicle PM2.5 filtration system": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ]
+    },
+    "Seat configuration": {
+      "Electrically adjustable driver’s and passenger’s seats": [
+        {
+          "value": "Main standard/auxiliary standard",
+          "source": "erev_en"
+        },
+        {
+          "value": "Main ●/Deputy ●",
+          "source": "ev_en"
+        },
+        {
+          "value": "Main ●/Deputy ●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Main standard/auxiliary standard",
+          "source": "gas_en"
+        },
+        {
+          "value": "Main standard/auxiliary standard",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Main standard/auxiliary standard",
+          "source": "tank_en"
+        },
+        {
+          "value": "Main standard/auxiliary standard",
+          "source": "tesla_en"
+        }
+      ],
+      "Rear adjustable button on the passenger side": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        }
+      ],
+      "Second-row seats with electric adjustment": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        }
+      ],
+      "Second row of independent seats": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        }
+      ],
+      "Front/Rear Center Armrest": [
+        {
+          "value": "Front standard/rear standard",
+          "source": "erev_en"
+        },
+        {
+          "value": "Front ●/Rear ●",
+          "source": "ev_en"
+        },
+        {
+          "value": "Front ●/Rear ●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "gas_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "tank_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "tesla_en"
+        }
+      ],
+      "Rear cup holder": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Seat material": [
+        {
+          "value": "Faux leather",
+          "source": "ev_en"
+        },
+        {
+          "value": "Faux leather",
+          "source": "flagship_en"
+        }
+      ],
+      "Front seat adjustment method": [
+        {
+          "value": "前后调节 / 靠背调节 / 高低调节(2向) / 腰部支撑(4向)",
+          "source": "ev_en"
+        },
+        {
+          "value": "前后调节 / 靠背调节 / 高低调节(4向) / 腰部支撑(4向)",
+          "source": "flagship_en"
+        }
+      ],
+      "Rear seat adjustment method": [
+        {
+          "value": "Front and rear adjustment/backrest adjustment",
+          "source": "ev_en"
+        },
+        {
+          "value": "前后调节 / 靠背调节 / 高低调节(4向) / 腰部支撑(4向)",
+          "source": "flagship_en"
+        }
+      ],
+      "Front seat functions": [
+        {
+          "value": "加热 / 通风 / 按摩(仅驾驶位) / 头枕扬声器",
+          "source": "ev_en"
+        },
+        {
+          "value": "加热 / 通风 / 按摩 / 头枕扬声器(仅驾驶位)",
+          "source": "flagship_en"
+        }
+      ],
+      "Electric seat memory function": [
+        {
+          "value": "驾驶位",
+          "source": "ev_en"
+        },
+        {
+          "value": "驾驶位 / 副驾驶位 / 后排",
+          "source": "flagship_en"
+        }
+      ],
+      "Rear seat folding mechanism": [
+        {
+          "value": "整体放倒",
+          "source": "ev_en"
+        },
+        {
+          "value": "Proportional Down",
+          "source": "flagship_en"
+        }
+      ],
+      "Second row seat adjustment": [
+        {
+          "value": "前后调节 / 靠背调节 / 腰部调节 / 腿托调节",
+          "source": "flagship_en"
+        }
+      ],
+      "Second row seat function": [
+        {
+          "value": "Heating/ventilation/massage",
+          "source": "flagship_en"
+        }
+      ],
+      "Rear-seat tray table": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        }
+      ],
+      "Third-row seat adjustment": [
+        {
+          "value": "Front and rear adjustment/backrest adjustment",
+          "source": "flagship_en"
+        }
+      ],
+      "Third-row seat electric adjustment": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        }
+      ],
+      "Third row seat function": [
+        {
+          "value": "加热 / 通风",
+          "source": "flagship_en"
+        }
+      ],
+      "Seat layout": [
+        {
+          "value": "2-2-2",
+          "source": "flagship_en"
+        }
+      ],
+      "Rear seats electrically fold down": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        }
+      ]
+    },
+    "Multimedia Configuration": {
+      "Satellite navigation system": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Navigation traffic information is displayed.": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Roadside assistance call": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Bluetooth/Voice Call": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Facial recognition": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        }
+      ],
+      "Internet of Vehicles": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "OTA update": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "220V/230V power supply": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Trunk 12V power outlet": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Wi-Fi hotspot": [
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Rear control multimedia": [
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ]
+    },
+    "Lighting configuration": {
+      "LED daytime running lights": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Adaptive high/low beams": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Automatic headlights": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Headlight height is adjustable.": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Headlight delay-off": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Touch‑activated reading light": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Steering-assisted lights": [
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ]
+    },
+    "Glass/Rearview Mirror": {
+      "Front/Rear Electric Window": [
+        {
+          "value": "Front standard/rear standard",
+          "source": "erev_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "gas_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "tank_en"
+        },
+        {
+          "value": "Front standard/rear standard",
+          "source": "tesla_en"
+        }
+      ],
+      "Window anti-pinch function": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Rear side privacy glass": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Rear wiper": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ]
+    },
+    "Air conditioner/refrigerator": {
+      "Rear-seat air vent": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Temperature zoning control": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "In-car air purifier": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Optional equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "In-vehicle PM2.5 filtration system": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Optional equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Negative ion generator": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        }
+      ],
+      "Interior fragrance device": [
+        {
+          "value": "Standard equipment",
+          "source": "erev_en"
+        },
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Air conditioning temperature control method": [
+        {
+          "value": "automatic air conditioning",
+          "source": "ev_en"
+        },
+        {
+          "value": "automatic air conditioning",
+          "source": "flagship_en"
+        }
+      ],
+      "heat pump air conditioning": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tesla_en"
+        }
+      ],
+      "Rear independent air conditioning": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "gas_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Air quality monitoring": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Car refrigerator": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        }
+      ]
+    },
+    "Battery/Charging": {
+      "Battery type": [
+        {
+          "value": "lithium iron phosphate battery",
+          "source": "ev_en"
+        },
+        {
+          "value": "Lithium ternary battery",
+          "source": "flagship_en"
+        }
+      ],
+      "Battery Cell Brand": [
+        {
+          "value": "Dongyu Xinsheng",
+          "source": "ev_en"
+        },
+        {
+          "value": "Times FAW/Hive Energy",
+          "source": "flagship_en"
+        }
+      ],
+      "Battery Specific Technology": [
+        {
+          "value": "马赫电池",
+          "source": "ev_en"
+        }
+      ],
+      "Battery cooling method": [
+        {
+          "value": "Direct cooling",
+          "source": "ev_en"
+        },
+        {
+          "value": "Liquid cooling",
+          "source": "flagship_en"
+        }
+      ],
+      "CLTC pure electric cruising range (km)": [
+        {
+          "value": "650",
+          "source": "ev_en"
+        },
+        {
+          "value": "350",
+          "source": "flagship_en"
+        }
+      ],
+      "Battery energy (kWh)": [
+        {
+          "value": "73.5",
+          "source": "ev_en"
+        },
+        {
+          "value": "65",
+          "source": "flagship_en"
+        }
+      ],
+      "Electricity consumption per 100 kilometers (kWh/100 km)": [
+        {
+          "value": "12.6",
+          "source": "ev_en"
+        },
+        {
+          "value": "21.6",
+          "source": "flagship_en"
+        }
+      ],
+      "Fast charging function": [
+        {
+          "value": "Support",
+          "source": "ev_en"
+        },
+        {
+          "value": "Support",
+          "source": "flagship_en"
+        }
+      ],
+      "Fast charging power (kW)": [
+        {
+          "value": "245",
+          "source": "ev_en"
+        },
+        {
+          "value": "320",
+          "source": "flagship_en"
+        }
+      ],
+      "Fast battery charging time (hours)": [
+        {
+          "value": "0.27",
+          "source": "ev_en"
+        },
+        {
+          "value": "0.2",
+          "source": "flagship_en"
+        }
+      ],
+      "Battery fast charge range (%)": [
+        {
+          "value": "30-80",
+          "source": "ev_en"
+        },
+        {
+          "value": "20-80",
+          "source": "flagship_en"
+        }
+      ],
+      "Slow Charge Interface Location": [
+        {
+          "value": "Rear left side of the car",
+          "source": "ev_en"
+        },
+        {
+          "value": "Rear right side of the car",
+          "source": "flagship_en"
+        }
+      ],
+      "Fast charging interface position": [
+        {
+          "value": "Rear left side of the car",
+          "source": "ev_en"
+        },
+        {
+          "value": "Rear right side of the car",
+          "source": "flagship_en"
+        }
+      ],
+      "External AC discharge power (kW)": [
+        {
+          "value": "3.3",
+          "source": "ev_en"
+        },
+        {
+          "value": "6.6",
+          "source": "flagship_en"
+        }
+      ],
+      "WLTC pure electric range (km)": [
+        {
+          "value": "290",
+          "source": "flagship_en"
+        }
+      ],
+      "CLTC综合续航(km)": [
+        {
+          "value": "1430",
+          "source": "flagship_en"
+        }
+      ],
+      "High-voltage fast charging": [
+        {
+          "value": "Support",
+          "source": "flagship_en"
+        }
+      ],
+      "HV Platform (V)": [
+        {
+          "value": "800",
+          "source": "flagship_en"
+        }
+      ]
+    },
+    "Passive Safety": {
+      "Driver’s and passenger’s airbags": [
+        {
+          "value": "Main ●/Deputy ●",
+          "source": "ev_en"
+        },
+        {
+          "value": "Main ●/Deputy ●",
+          "source": "flagship_en"
+        }
+      ],
+      "Front/rear side airbags": [
+        {
+          "value": "Front ●/Rear-",
+          "source": "ev_en"
+        },
+        {
+          "value": "Front ●/Rear ●",
+          "source": "flagship_en"
+        }
+      ],
+      "Front/rear head airbags (curtain airbags)": [
+        {
+          "value": "Front ●/Rear ●",
+          "source": "ev_en"
+        },
+        {
+          "value": "Front ●/Rear ●",
+          "source": "flagship_en"
+        }
+      ],
+      "Front middle airbag": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ]
+    },
+    "Active Safety": {
+      "ABS anti-lock": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Braking force distribution (EBD/CBC, etc.)": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Brake assist (EBA/BAS/BA, etc.)": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Traction control (ASR/TCS/TRC, etc.)": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Body stability control (ESC/ESP/DSC, etc.)": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Tire pressure monitoring function": [
+        {
+          "value": "Tire pressure display",
+          "source": "ev_en"
+        },
+        {
+          "value": "Tire pressure display",
+          "source": "flagship_en"
+        }
+      ],
+      "Seat belt reminder": [
+        {
+          "value": "Entire vehicle",
+          "source": "ev_en"
+        },
+        {
+          "value": "Entire vehicle",
+          "source": "flagship_en"
+        }
+      ],
+      "ISOFIX child seat anchorages": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Lane Departure Warning System": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Automatic Braking/Advanced Safety System": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Fatigue Driving Alert": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "DOW opening alert": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Forward Collision Warning": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Rear Collision Warning": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Sentinel mode/clairvoyance": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Low Speed Driving Warning": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Built-in dashcam": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Roadside assistance call": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Rollover prevention system": [
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ]
+    },
+    "Driving Control": {
+      "Driving mode switching": [
+        {
+          "value": "运动 / 经济 / 标准/舒适 / 自定义/个性化",
+          "source": "ev_en"
+        },
+        {
+          "value": "Sport/economy/standard/comfort/off-road/snow/custom/personalization",
+          "source": "flagship_en"
+        }
+      ],
+      "Energy recovery system": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Auto Hold": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Hill-start assist": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Hill descent control": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Variable suspension function": [
+        {
+          "value": "Suspension soft and hard adjustment/suspension height adjustment",
+          "source": "flagship_en"
+        }
+      ],
+      "Air suspension": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Air suspension type": [
+        {
+          "value": "三腔",
+          "source": "flagship_en"
+        }
+      ],
+      "Magic Carpet Smart Suspension": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ]
+    },
+    "Driving hardware": {
+      "Front/rear parking Radar": [
+        {
+          "value": "Front ●/Rear ●",
+          "source": "ev_en"
+        },
+        {
+          "value": "Front ●/Rear ●",
+          "source": "flagship_en"
+        }
+      ],
+      "Driver-assistance imaging": [
+        {
+          "value": "360-degree panoramic view",
+          "source": "ev_en"
+        },
+        {
+          "value": "360度全景影像 / 车侧盲区影像",
+          "source": "flagship_en"
+        }
+      ],
+      "Transparent chassis/540-degree imaging": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Assisted driving chip": [
+        {
+          "value": "地平线征程J6M",
+          "source": "ev_en"
+        }
+      ],
+      "Chip Total Power": [
+        {
+          "value": "128 TOPS",
+          "source": "ev_en"
+        }
+      ],
+      "Front-facing perception camera": [
+        {
+          "value": "Both eyes",
+          "source": "ev_en"
+        },
+        {
+          "value": "Both eyes",
+          "source": "flagship_en"
+        }
+      ],
+      "Number of cameras": [
+        {
+          "value": "11 pieces",
+          "source": "ev_en"
+        },
+        {
+          "value": "11 pieces",
+          "source": "flagship_en"
+        }
+      ],
+      "Front perception camera pixels": [
+        {
+          "value": "8 million",
+          "source": "ev_en"
+        }
+      ],
+      "Environment-aware camera pixels": [
+        {
+          "value": "250万",
+          "source": "ev_en"
+        }
+      ],
+      "Surround View Camera Pixel": [
+        {
+          "value": "300万",
+          "source": "ev_en"
+        }
+      ],
+      "Number of in-vehicle cameras": [
+        {
+          "value": "2个",
+          "source": "ev_en"
+        },
+        {
+          "value": "2个",
+          "source": "flagship_en"
+        }
+      ],
+      "Number of ultrasonic Radar": [
+        {
+          "value": "12 pieces",
+          "source": "ev_en"
+        },
+        {
+          "value": "12 pieces",
+          "source": "flagship_en"
+        }
+      ],
+      "Millimeter wave Radar quantity": [
+        {
+          "value": "1 piece",
+          "source": "ev_en"
+        },
+        {
+          "value": "3个",
+          "source": "flagship_en"
+        }
+      ],
+      "Laser Radar Brand": [
+        {
+          "value": "HESAI禾赛科技",
+          "source": "ev_en"
+        },
+        {
+          "value": "HUAWEI华为",
+          "source": "flagship_en"
+        }
+      ],
+      "Laser Radar Model": [
+        {
+          "value": "ATX",
+          "source": "ev_en"
+        }
+      ],
+      "Number of laser Radar": [
+        {
+          "value": "1 piece",
+          "source": "ev_en"
+        },
+        {
+          "value": "1 piece",
+          "source": "flagship_en"
+        }
+      ],
+      "Number of laser Radar lines": [
+        {
+          "value": "192线",
+          "source": "flagship_en"
+        }
+      ]
+    },
+    "Driving function": {
+      "Cruise control system": [
+        {
+          "value": "Full-speed adaptive cruise control",
+          "source": "ev_en"
+        },
+        {
+          "value": "Full-speed adaptive cruise control",
+          "source": "flagship_en"
+        }
+      ],
+      "Advanced Driver Assistance System": [
+        {
+          "value": "eπ Pilot",
+          "source": "ev_en"
+        },
+        {
+          "value": "华为乾崑智驾ADS",
+          "source": "flagship_en"
+        }
+      ],
+      "Levels of Advanced Driver Assistance Systems": [
+        {
+          "value": "L2",
+          "source": "ev_en"
+        },
+        {
+          "value": "L2",
+          "source": "flagship_en"
+        }
+      ],
+      "Rear Side Vehicle Warning System": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Satellite navigation system": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Navigation traffic information is displayed.": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Map brand": [
+        {
+          "value": "Amap",
+          "source": "ev_en"
+        },
+        {
+          "value": "Amap",
+          "source": "flagship_en"
+        }
+      ],
+      "Lane Change Assist": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Lane Keeping Assist System": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Lane center hold": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Road Traffic Sign Recognition": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Parking assist": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Remote parking": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Memory parking": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "○",
+          "source": "flagship_en"
+        }
+      ],
+      "Tracking reversing": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Auxiliary lane change": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Automatic exit (entry) of auxiliary ramp": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Signal light identification": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Steering wheel hands-off detection": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        },
+        {
+          "value": "Standard equipment",
+          "source": "mpv_en"
+        }
+      ],
+      "Auxiliary driving section": [
+        {
+          "value": "Urban Section/Expressway Section",
+          "source": "ev_en"
+        },
+        {
+          "value": "Urban Section/Expressway Section",
+          "source": "flagship_en"
+        }
+      ],
+      "high precision positioning": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Start Reminder": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ]
+    },
+    "Appearance/Anti-theft": {
+      "Electric spoiler": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        }
+      ],
+      "Rim material": [
+        {
+          "value": "Aluminum alloy",
+          "source": "ev_en"
+        },
+        {
+          "value": "Aluminum alloy",
+          "source": "flagship_en"
+        }
+      ],
+      "Frameless design door": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        }
+      ],
+      "Electric trunk lid": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Electric trunk position memory": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "In-car central locking": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Key type": [
+        {
+          "value": "遥控钥匙 / 蓝牙钥匙",
+          "source": "ev_en"
+        },
+        {
+          "value": "蓝牙钥匙 / NFC/RFID钥匙",
+          "source": "flagship_en"
+        }
+      ],
+      "Keyless start system": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Keyless entry function": [
+        {
+          "value": "驾驶位",
+          "source": "ev_en"
+        },
+        {
+          "value": "Entire vehicle",
+          "source": "flagship_en"
+        }
+      ],
+      "Hide electric door handle": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        }
+      ],
+      "Active closed air intake grille": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Battery pre-heating": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "External discharge": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Electric suction door": [
+        {
+          "value": "Entire vehicle",
+          "source": "flagship_en"
+        }
+      ],
+      "Automatic door opening and closing": [
+        {
+          "value": "○",
+          "source": "flagship_en"
+        }
+      ],
+      "Sensing trunk": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Engine electronic immobilizer": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ]
+    },
+    "Exterior lighting": {
+      "Low beam light source": [
+        {
+          "value": "LED",
+          "source": "ev_en"
+        },
+        {
+          "value": "LED",
+          "source": "flagship_en"
+        }
+      ],
+      "High-beam light source": [
+        {
+          "value": "LED",
+          "source": "ev_en"
+        },
+        {
+          "value": "LED",
+          "source": "flagship_en"
+        }
+      ],
+      "LED daytime running lights": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Adaptive high/low beams": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Automatic headlights": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Headlight height is adjustable.": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Headlight delay-off": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Scene Light Language": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        }
+      ],
+      "Auxiliary driving lamp": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Steering-assisted lights": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ]
+    },
+    "Sunroof/Glass": {
+      "Skylight type": [
+        {
+          "value": "Panoramic sunroof cannot be opened.",
+          "source": "ev_en"
+        },
+        {
+          "value": "分段式不可开启天窗",
+          "source": "flagship_en"
+        }
+      ],
+      "Front/Rear Electric Window": [
+        {
+          "value": "Front ●/Rear ●",
+          "source": "ev_en"
+        },
+        {
+          "value": "Front ●/Rear ●",
+          "source": "flagship_en"
+        }
+      ],
+      "One-touch window lift function": [
+        {
+          "value": "Entire vehicle",
+          "source": "ev_en"
+        },
+        {
+          "value": "Entire vehicle",
+          "source": "flagship_en"
+        }
+      ],
+      "Window anti-pinch function": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "In-car vanity mirror": [
+        {
+          "value": "Pilot light/copilot light",
+          "source": "ev_en"
+        },
+        {
+          "value": "Pilot light/copilot light",
+          "source": "flagship_en"
+        }
+      ],
+      "Rain-sensing wiper function": [
+        {
+          "value": "Rainfall-sensing",
+          "source": "ev_en"
+        },
+        {
+          "value": "Rainfall-sensing",
+          "source": "flagship_en"
+        }
+      ],
+      "Side window multi-layer soundproof glass": [
+        {
+          "value": "前排 / 后排",
+          "source": "flagship_en"
+        }
+      ],
+      "Rear side privacy glass": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Rear wiper": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ]
+    },
+    "Outside rearview mirror": {
+      "Rearview mirror functions": [
+        {
+          "value": "电动调节 / 电动折叠 / 后视镜加热 / 锁车自动折叠",
+          "source": "ev_en"
+        },
+        {
+          "value": "电动调节 / 电动折叠 / 后视镜记忆 / 后视镜加热 / 倒车自动下翻 / 锁车自动折叠",
+          "source": "flagship_en"
+        }
+      ]
+    },
+    "Interconnection/Intelligentization": {
+      "Central control color screen": [
+        {
+          "value": "Touch LCD screen",
+          "source": "ev_en"
+        },
+        {
+          "value": "Touch LCD screen",
+          "source": "flagship_en"
+        }
+      ],
+      "Central control screen size": [
+        {
+          "value": "15.6英寸",
+          "source": "ev_en"
+        },
+        {
+          "value": "16.1英寸",
+          "source": "flagship_en"
+        }
+      ],
+      "Central control screen type": [
+        {
+          "value": "LCD",
+          "source": "ev_en"
+        },
+        {
+          "value": "LCD",
+          "source": "flagship_en"
+        }
+      ],
+      "Central control screen resolution": [
+        {
+          "value": "2.5K",
+          "source": "ev_en"
+        },
+        {
+          "value": "3K",
+          "source": "flagship_en"
+        }
+      ],
+      "Central control LCD screen split screen display": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        }
+      ],
+      "Bluetooth/Voice Call": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Phone connectivity/mirroring": [
+        {
+          "value": "支持CarPlay / 支持HUAWEI HiCar / 支持Carlink",
+          "source": "ev_en"
+        },
+        {
+          "value": "支持HUAWEI HiCar",
+          "source": "flagship_en"
+        }
+      ],
+      "Speech Recognition Control System": [
+        {
+          "value": "Multimedia system/Navigation/Telephone/Air conditioning/Windows/Seat heating/Seat ventilation/Seat massage",
+          "source": "ev_en"
+        },
+        {
+          "value": "Multimedia system/Navigation/Telephone/Air conditioning/Windows/Seat heating/Seat ventilation/Seat massage",
+          "source": "flagship_en"
+        }
+      ],
+      "Voice assistant wake word": [
+        {
+          "value": "你好，奕派",
+          "source": "ev_en"
+        },
+        {
+          "value": "你好，岚图",
+          "source": "flagship_en"
+        }
+      ],
+      "Voice activation without a wake word": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Voice-based zone-specific wake-up recognition": [
+        {
+          "value": "Dual Zone",
+          "source": "ev_en"
+        },
+        {
+          "value": "Four regions",
+          "source": "flagship_en"
+        }
+      ],
+      "Continuous speech recognition": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Visible to say": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Gesture Control": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        }
+      ],
+      "Facial recognition": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "App Store": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "In-vehicle intelligent system": [
+        {
+          "value": "eπ OS",
+          "source": "ev_en"
+        },
+        {
+          "value": "HarmonySpace",
+          "source": "flagship_en"
+        }
+      ],
+      "In-vehicle intelligent chip": [
+        {
+          "value": "高通骁龙8295P",
+          "source": "ev_en"
+        }
+      ],
+      "Vehicle system memory (GB)": [
+        {
+          "value": "24",
+          "source": "ev_en"
+        }
+      ],
+      "Vehicle system storage (GB)": [
+        {
+          "value": "256",
+          "source": "ev_en"
+        }
+      ],
+      "Internet of Vehicles": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "4G/5G networks": [
+        {
+          "value": "4G",
+          "source": "ev_en"
+        },
+        {
+          "value": "5G",
+          "source": "flagship_en"
+        }
+      ],
+      "OTA update": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Wi-Fi hotspot": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "In-vehicle biological monitoring system": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        }
+      ],
+      "Mobile APP YuanChen function": [
+        {
+          "value": "车门控制 / 车窗控制 / 车辆启动 / 充电管理 / 车灯控制 / 空调控制 / 方向盘加热 / 座椅加热 / 座椅通风 / 车况查询/诊断 / 车辆定位/寻车 / 多媒体控制 / 车主服务（查找充电桩、加油站、停车场等） / 预约保养/维修",
+          "source": "ev_en"
+        }
+      ],
+      "Simulated sound waves": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        }
+      ],
+      "In-car KTV": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        }
+      ],
+      "Rear LCD screen size": [
+        {
+          "value": "21.4英寸",
+          "source": "flagship_en"
+        }
+      ],
+      "Rear LCD screen resolution": [
+        {
+          "value": "3K",
+          "source": "flagship_en"
+        }
+      ],
+      "Number of rear multimedia screens": [
+        {
+          "value": "1 piece",
+          "source": "flagship_en"
+        }
+      ],
+      "Rear control multimedia": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ]
+    },
+    "Steering wheel/Interior rearview mirror": {
+      "Steering wheel material": [
+        {
+          "value": "Genuine leather",
+          "source": "ev_en"
+        },
+        {
+          "value": "Cortex",
+          "source": "flagship_en"
+        }
+      ],
+      "Steering wheel position adjustment": [
+        {
+          "value": "Manual up and down front and rear adjustment",
+          "source": "ev_en"
+        },
+        {
+          "value": "Electric up and down front and rear adjustment",
+          "source": "flagship_en"
+        }
+      ],
+      "Gear-shifting method": [
+        {
+          "value": "Electronic gear shift",
+          "source": "ev_en"
+        },
+        {
+          "value": "Electronic gear shift",
+          "source": "flagship_en"
+        }
+      ],
+      "Multi-function steering wheel": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Steering wheel heating": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Vehicle computer display screen": [
+        {
+          "value": "Colorful",
+          "source": "ev_en"
+        },
+        {
+          "value": "Colorful",
+          "source": "flagship_en"
+        }
+      ],
+      "All-digital instrument cluster": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "LCD instrument cluster size": [
+        {
+          "value": "10.25英寸",
+          "source": "ev_en"
+        },
+        {
+          "value": "10.25英寸",
+          "source": "flagship_en"
+        }
+      ],
+      "HUD heads-up digital display": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        }
+      ],
+      "HUD Head Size": [
+        {
+          "value": "10.9英寸",
+          "source": "ev_en"
+        },
+        {
+          "value": "55英寸",
+          "source": "flagship_en"
+        }
+      ],
+      "Rearview mirror function": [
+        {
+          "value": "Manual anti-glare",
+          "source": "ev_en"
+        },
+        {
+          "value": "Automatic anti-glare",
+          "source": "flagship_en"
+        }
+      ],
+      "Steering wheel memory": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "AR-HUD augmented reality head-up display": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ]
+    },
+    "In-car charging": {
+      "Multimedia/Charging Port": [
+        {
+          "value": "USB / Type-C",
+          "source": "ev_en"
+        },
+        {
+          "value": "USB / Type-C",
+          "source": "flagship_en"
+        }
+      ],
+      "Number of USB/Type-C ports": [
+        {
+          "value": "2 in the front row/2 in the back row",
+          "source": "ev_en"
+        },
+        {
+          "value": "前排2个/后排4个",
+          "source": "flagship_en"
+        }
+      ],
+      "USB/Type-C maximum charging power": [
+        {
+          "value": "18W",
+          "source": "ev_en"
+        },
+        {
+          "value": "60W",
+          "source": "flagship_en"
+        }
+      ],
+      "Wireless charging feature for mobile phones": [
+        {
+          "value": "Front row",
+          "source": "ev_en"
+        },
+        {
+          "value": "Front row",
+          "source": "flagship_en"
+        }
+      ],
+      "Wireless charging power for mobile phones": [
+        {
+          "value": "50W",
+          "source": "ev_en"
+        },
+        {
+          "value": "50W",
+          "source": "flagship_en"
+        }
+      ],
+      "220V/230V power supply": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ],
+      "Trunk 12V power outlet": [
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ]
+    },
+    "Audio/Interior Lighting": {
+      "Number of speakers": [
+        {
+          "value": "20喇叭",
+          "source": "ev_en"
+        },
+        {
+          "value": "26喇叭",
+          "source": "flagship_en"
+        }
+      ],
+      "Number of external speakers": [
+        {
+          "value": "1喇叭",
+          "source": "ev_en"
+        }
+      ],
+      "WANOS Panoramic Sound": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        }
+      ],
+      "Touch‑activated reading light": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        }
+      ],
+      "Interior ambient lighting": [
+        {
+          "value": "64色",
+          "source": "ev_en"
+        },
+        {
+          "value": "256色",
+          "source": "flagship_en"
+        }
+      ],
+      "Active ambient atmosphere lamp": [
+        {
+          "value": "●",
+          "source": "ev_en"
+        },
+        {
+          "value": "●",
+          "source": "flagship_en"
+        }
+      ]
+    },
+    "Optional package": {
+      "流光星辰把手": [
+        {
+          "value": "包含：流光星辰把手",
+          "source": "flagship_en"
+        }
+      ],
+      "天地之镜轮毂": [
+        {
+          "value": "包含：天地之镜轮毂",
+          "source": "flagship_en"
+        }
+      ]
+    },
+    "Parameter Information": {
+      "Vehicle Model Name": [
+        {
+          "value": "Seal 06 2027 DM-i 230KM Comfortable",
+          "source": "phev_en"
+        }
+      ],
+      "Manufacturer’s Suggested Retail Price (RMB)": [
+        {
+          "value": "99900",
+          "source": "phev_en"
+        }
+      ],
+      "Dealer Quotation": [
+        {
+          "value": "No quotation available yet.",
+          "source": "phev_en"
+        }
+      ],
+      "Manufacturer": [
+        {
+          "value": "BYD",
+          "source": "phev_en"
+        }
+      ],
+      "Level": [
+        {
+          "value": "Mid-size car",
+          "source": "phev_en"
+        }
+      ],
+      "Energy type": [
+        {
+          "value": "Plug-in hybrid",
+          "source": "phev_en"
+        },
+        {
+          "value": "Plug-in hybrid",
+          "source": "phev_en"
+        }
+      ],
+      "Environmental standards": [
+        {
+          "value": "China VI",
+          "source": "phev_en"
+        },
+        {
+          "value": "China VI",
+          "source": "phev_en"
+        }
+      ],
+      "Release date": [
+        {
+          "value": "2026-08-11",
+          "source": "phev_en"
+        }
+      ],
+      "WLTC pure electric range (km)": [
+        {
+          "value": "170",
+          "source": "phev_en"
+        },
+        {
+          "value": "170",
+          "source": "phev_en"
+        }
+      ],
+      "CLTC pure electric cruising range (km)": [
+        {
+          "value": "230",
+          "source": "phev_en"
+        },
+        {
+          "value": "230",
+          "source": "phev_en"
+        }
+      ],
+      "gearbox": [
+        {
+          "value": "E-CVT stepless speed change",
+          "source": "phev_en"
+        }
+      ],
+      "Body structure": [
+        {
+          "value": "4-door 5-seat sedan",
+          "source": "phev_en"
+        },
+        {
+          "value": "Sedan",
+          "source": "phev_en"
+        }
+      ],
+      "Engine": [
+        {
+          "value": "1.5L 101 horsepower L4",
+          "source": "phev_en"
+        }
+      ],
+      "Motor (Ps)": [
+        {
+          "value": "238",
+          "source": "phev_en"
+        }
+      ],
+      "Length × Width × Height (mm)": [
+        {
+          "value": "4870*1890*1495",
+          "source": "phev_en"
+        }
+      ],
+      "Official 0–100 km/h acceleration (s)": [
+        {
+          "value": "7.5",
+          "source": "phev_en"
+        }
+      ],
+      "Maximum speed (km/h)": [
+        {
+          "value": "185",
+          "source": "phev_en"
+        }
+      ],
+      "WLTC combined fuel consumption (L/100 km)": [
+        {
+          "value": "0.77",
+          "source": "phev_en"
+        }
+      ],
+      "Minimum SOC fuel consumption (L/100km)WLTC": [
+        {
+          "value": "3.63",
+          "source": "phev_en"
+        }
+      ],
+      "Minimum state of charge fuel consumption (L/100km)NEDC": [
+        {
+          "value": "2.59",
+          "source": "phev_en"
+        }
+      ],
+      "Comprehensive fuel consumption of oil and electricity (L/100km)": [
+        {
+          "value": "2.36",
+          "source": "phev_en"
+        }
+      ],
+      "Full-vehicle warranty": [
+        {
+          "value": "Six years or 150,000 kilometers",
+          "source": "phev_en"
+        }
+      ],
+      "Curb weight (kg)": [
+        {
+          "value": "1685",
+          "source": "phev_en"
+        }
+      ],
+      "Maximum gross vehicle weight (kg)": [
+        {
+          "value": "2110",
+          "source": "phev_en"
+        }
+      ],
+      "Length (mm)": [
+        {
+          "value": "4870",
+          "source": "phev_en"
+        }
+      ],
+      "Width (mm)": [
+        {
+          "value": "1890",
+          "source": "phev_en"
+        }
+      ],
+      "Height (mm)": [
+        {
+          "value": "1495",
+          "source": "phev_en"
+        }
+      ],
+      "Wheelbase (mm)": [
+        {
+          "value": "2820",
+          "source": "phev_en"
+        }
+      ],
+      "Front track (mm)": [
+        {
+          "value": "1620",
+          "source": "phev_en"
+        }
+      ],
+      "Rear track (mm)": [
+        {
+          "value": "1620",
+          "source": "phev_en"
+        }
+      ],
+      "Approach angle (°)": [
+        {
+          "value": "13",
+          "source": "phev_en"
+        }
+      ],
+      "Departure angle (°)": [
+        {
+          "value": "14",
+          "source": "phev_en"
+        }
+      ],
+      "Minimum turning radius (m)": [
+        {
+          "value": "5.55",
+          "source": "phev_en"
+        }
+      ],
+      "Door opening method": [
+        {
+          "value": "Swing door",
+          "source": "phev_en"
+        }
+      ],
+      "Number of doors (units)": [
+        {
+          "value": "4",
+          "source": "phev_en"
+        }
+      ],
+      "Number of seats (units)": [
+        {
+          "value": "5",
+          "source": "phev_en"
+        }
+      ],
+      "Fuel tank capacity (L)": [
+        {
+          "value": "65",
+          "source": "phev_en"
+        }
+      ],
+      "Trunk capacity (L)": [
+        {
+          "value": "550",
+          "source": "phev_en"
+        }
+      ],
+      "Engine model": [
+        {
+          "value": "BYD472QC",
+          "source": "phev_en"
+        }
+      ],
+      "Displacement (mL)": [
+        {
+          "value": "1498",
+          "source": "phev_en"
+        }
+      ],
+      "Displacement (L)": [
+        {
+          "value": "1.5",
+          "source": "phev_en"
+        }
+      ],
+      "Intake mode": [
+        {
+          "value": "Natural inhalation",
+          "source": "phev_en"
+        }
+      ],
+      "Engine layout": [
+        {
+          "value": "Horizontal placement",
+          "source": "phev_en"
+        }
+      ],
+      "Cylinder arrangement": [
+        {
+          "value": "L",
+          "source": "phev_en"
+        }
+      ],
+      "Number of cylinders (units)": [
+        {
+          "value": "4",
+          "source": "phev_en"
+        }
+      ],
+      "Number of valves per cylinder (units)": [
+        {
+          "value": "4",
+          "source": "phev_en"
+        }
+      ],
+      "Valve train": [
+        {
+          "value": "DOHC",
+          "source": "phev_en"
+        }
+      ],
+      "Maximum horsepower (Ps)": [
+        {
+          "value": "101",
+          "source": "phev_en"
+        }
+      ],
+      "Maximum power (kW)": [
+        {
+          "value": "74",
+          "source": "phev_en"
+        }
+      ],
+      "Maximum torque (N · m)": [
+        {
+          "value": "126",
+          "source": "phev_en"
+        }
+      ],
+      "Maximum net power (kW)": [
+        {
+          "value": "70",
+          "source": "phev_en"
+        }
+      ],
+      "Fuel octane rating": [
+        {
+          "value": "92.",
+          "source": "phev_en"
+        }
+      ],
+      "Fuel supply method": [
+        {
+          "value": "Multi-point EFI",
+          "source": "phev_en"
+        }
+      ],
+      "Cylinder head material": [
+        {
+          "value": "Aluminum alloy",
+          "source": "phev_en"
+        }
+      ],
+      "Cylinder block material": [
+        {
+          "value": "Aluminum alloy",
+          "source": "phev_en"
+        }
+      ],
+      "Front motor brand": [
+        {
+          "value": "BYD",
+          "source": "phev_en"
+        }
+      ],
+      "Front motor model": [
+        {
+          "value": "TZ210QYC",
+          "source": "phev_en"
+        }
+      ],
+      "Motor type": [
+        {
+          "value": "Permanent Magnet/Synchronous",
+          "source": "phev_en"
+        }
+      ],
+      "Total motor power (kW)": [
+        {
+          "value": "175",
+          "source": "phev_en"
+        }
+      ],
+      "Total motor horsepower (Ps)": [
+        {
+          "value": "238",
+          "source": "phev_en"
+        }
+      ],
+      "Total motor torque (N·m)": [
+        {
+          "value": "270",
+          "source": "phev_en"
+        }
+      ],
+      "Max. power of front motor (kW)": [
+        {
+          "value": "175",
+          "source": "phev_en"
+        }
+      ],
+      "Maximum torque of front motor (N · m)": [
+        {
+          "value": "270",
+          "source": "phev_en"
+        }
+      ],
+      "Number of drive motors": [
+        {
+          "value": "Single motor",
+          "source": "phev_en"
+        }
+      ],
+      "Motor layout": [
+        {
+          "value": "Front-end",
+          "source": "phev_en"
+        }
+      ],
+      "Three electric first car owner warranty policy": [
+        {
+          "value": "Lifetime Warranty/Non-operational (Liability Exemption Terms Subject to Official)",
+          "source": "phev_en"
+        }
+      ],
+      "Battery type": [
+        {
+          "value": "lithium iron phosphate battery",
+          "source": "phev_en"
+        }
+      ],
+      "Battery Cell Brand": [
+        {
+          "value": "Verdi.",
+          "source": "phev_en"
+        }
+      ],
+      "Battery Specific Technology": [
+        {
+          "value": "Blade battery",
+          "source": "phev_en"
+        }
+      ],
+      "Battery cooling method": [
+        {
+          "value": "Direct cooling",
+          "source": "phev_en"
+        }
+      ],
+      "Battery energy (kWh)": [
+        {
+          "value": "25.287",
+          "source": "phev_en"
+        }
+      ],
+      "Electricity consumption per 100 kilometers (kWh/100 km)": [
+        {
+          "value": "13.7",
+          "source": "phev_en"
+        }
+      ],
+      "Fast charging function": [
+        {
+          "value": "Support",
+          "source": "phev_en"
+        }
+      ],
+      "Fast charging power (kW)": [
+        {
+          "value": "48",
+          "source": "phev_en"
+        }
+      ],
+      "Slow Charge Interface Location": [
+        {
+          "value": "Rear right side of the car",
+          "source": "phev_en"
+        }
+      ],
+      "Fast charging interface position": [
+        {
+          "value": "Rear right side of the car",
+          "source": "phev_en"
+        }
+      ],
+      "External AC discharge power (kW)": [
+        {
+          "value": "6",
+          "source": "phev_en"
+        }
+      ],
+      "Abbreviation": [
+        {
+          "value": "E-CVT stepless speed change",
+          "source": "phev_en"
+        }
+      ],
+      "Number of gears": [
+        {
+          "value": "Continuously variable transmission",
+          "source": "phev_en"
+        }
+      ],
+      "gearbox Type": [
+        {
+          "value": "Electronic stepless gearbox (E-CVT)",
+          "source": "phev_en"
+        }
+      ],
+      "Drive method": [
+        {
+          "value": "Front-engine, front-wheel drive",
+          "source": "phev_en"
+        }
+      ],
+      "Front suspension type": [
+        {
+          "value": "MacPherson independent suspension",
+          "source": "phev_en"
+        }
+      ],
+      "Rear suspension type": [
+        {
+          "value": "Four-link independent suspension",
+          "source": "phev_en"
+        }
+      ],
+      "Type of support": [
+        {
+          "value": "Electric power assistance",
+          "source": "phev_en"
+        }
+      ],
+      "Vehicle Body Structure": [
+        {
+          "value": "Load-bearing",
+          "source": "phev_en"
+        }
+      ],
+      "Front brake type": [
+        {
+          "value": "Ventilated disc",
+          "source": "phev_en"
+        }
+      ],
+      "Rear brake type": [
+        {
+          "value": "Disc-type",
+          "source": "phev_en"
+        }
+      ],
+      "Parking brake type": [
+        {
+          "value": "Electronic parking brake",
+          "source": "phev_en"
+        }
+      ],
+      "Front tire specifications": [
+        {
+          "value": "225/55 R17",
+          "source": "phev_en"
+        }
+      ],
+      "Rear tire specifications": [
+        {
+          "value": "225/55 R17",
+          "source": "phev_en"
+        }
+      ]
+    },
+    "Security Configuration": {
+      "Driver’s and passenger’s airbags": [
+        {
+          "value": "Main ●/Deputy ●",
+          "source": "phev_en"
+        }
+      ],
+      "Front/rear side airbags": [
+        {
+          "value": "Front ●/Rear-",
+          "source": "phev_en"
+        }
+      ],
+      "Front/rear head airbags (curtain airbags)": [
+        {
+          "value": "Front ●/Rear ●",
+          "source": "phev_en"
+        }
+      ],
+      "ABS anti-lock": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Braking force distribution (EBD/CBC, etc.)": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Brake assist (EBA/BAS/BA, etc.)": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Traction control (ASR/TCS/TRC, etc.)": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Body stability control (ESC/ESP/DSC, etc.)": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Tire pressure monitoring function": [
+        {
+          "value": "Tire pressure display",
+          "source": "phev_en"
+        }
+      ],
+      "Seat belt reminder": [
+        {
+          "value": "Front row",
+          "source": "phev_en"
+        }
+      ],
+      "ISOFIX child seat anchorages": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Sentinel mode/clairvoyance": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Low Speed Driving Warning": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ]
+    },
+    "Control Configuration": {
+      "Driving mode switching": [
+        {
+          "value": "Sport/Economy/Standard/Comfort/Snow",
+          "source": "phev_en"
+        }
+      ],
+      "Energy recovery system": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Auto Hold": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Hill-start assist": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ]
+    },
+    "Intelligent/Assisted Driving": {
+      "Front/rear parking Radar": [
+        {
+          "value": "Front-/Rear ●",
+          "source": "phev_en"
+        }
+      ],
+      "Driver-assistance imaging": [
+        {
+          "value": "360-degree panoramic view",
+          "source": "phev_en"
+        }
+      ],
+      "Transparent chassis/540-degree imaging": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Number of cameras": [
+        {
+          "value": "4 pieces",
+          "source": "phev_en"
+        }
+      ],
+      "Number of ultrasonic Radar": [
+        {
+          "value": "4 pieces",
+          "source": "phev_en"
+        }
+      ],
+      "Cruise control system": [
+        {
+          "value": "cruise control",
+          "source": "phev_en"
+        }
+      ],
+      "Satellite navigation system": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Navigation traffic information is displayed.": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ]
+    },
+    "External Configuration": {
+      "Rim material": [
+        {
+          "value": "Aluminum alloy",
+          "source": "phev_en"
+        }
+      ],
+      "Engine electronic immobilizer": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "In-car central locking": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Key type": [
+        {
+          "value": "Remote Key/Bluetooth Key/NFC/RFID Key",
+          "source": "phev_en"
+        }
+      ],
+      "Keyless start system": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Keyless entry function": [
+        {
+          "value": "Front row",
+          "source": "phev_en"
+        }
+      ],
+      "Battery pre-heating": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "External discharge": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Low beam light source": [
+        {
+          "value": "LED",
+          "source": "phev_en"
+        }
+      ],
+      "High-beam light source": [
+        {
+          "value": "LED",
+          "source": "phev_en"
+        }
+      ],
+      "LED daytime running lights": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Automatic headlights": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Headlight height is adjustable.": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Headlight delay-off": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "Front/Rear Electric Window": [
+        {
+          "value": "Front ●/Rear ●",
+          "source": "phev_en"
+        }
+      ],
+      "One-touch window lift function": [
+        {
+          "value": "Entire vehicle",
+          "source": "phev_en"
+        }
+      ],
+      "Window anti-pinch function": [
+        {
+          "value": "●",
+          "source": "phev_en"
+        }
+      ],
+      "In-car vanity mirror": [
+        {
+          "value": "Pilot light/copilot light",
+          "source": "phev_en"
+        }
+      ],
+      "Rearview mirror functions": [
+        {
+          "value": "Electric adjustment/mirror heating",
+          "source": "phev_en"
+        }
+      ]
+    },
+    "Screen/System": {
+      "App Store": [
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Voice activation without a wake word": [
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ],
+      "Continuous speech recognition": [
+        {
+          "value": "Standard equipment",
+          "source": "tank_en"
+        }
+      ]
+    }
+  },
+  "top": {
+    "id": [
+      "u7rg4duded",
+      "i0f2vdtu78",
+      "1gvt4f0acu",
+      "0md6fj8ctt",
+      "qfsavlr2no",
+      "rlfqgphcgp",
+      "q2pors2cmk",
+      "qfcs22ib3c",
+      "vn62mvjh5s"
+    ],
+    "carCode": [
+      "da01a3e559cdaead | 18533748",
+      "75525",
+      "75741",
+      "0c9fee41b0dfa47a | 18533498",
+      "0b05550eee2d57df | 18533397",
+      "78826",
+      "531ed2feff92f51a | 18533575",
+      "4a3f12cf3062efe4 | 18533433",
+      "aaf494885fdc4eb1 | 18533630"
+    ],
+    "brandId": [
+      "s2rtgpo17h",
+      "s3iae856b9",
+      "s434pg5nut",
+      "s4033d85el",
+      "s3ordircrn",
+      "s4cb6jvqki",
+      "s3kbh97dkg",
+      "s3u86vg679",
+      "s4gek046up"
+    ],
+    "title": [
+      "AITO 2022 AITO M7 1.5T 4-wheel drive deluxe automatic gear",
+      "Eπ007 2026 007 Pure Electric 650 Ultra Laser Radar Edition",
+      "Voyah Taishan 2026 Model Max",
+      "Mercedes Benz 2022 GLC 260 L 4MATIC 2.0T Luxury (Change 2) Automatic Gear",
+      "Buick 2023 Century 48V 2.0T Yunshi Edition 6-seat Automatic Gear",
+      "2027 DM-i 230KM Comfortable",
+      "Toyota Prado (Imported) 2023 Prado 4.0 Automatic",
+      "Tank 500 New Energy 2023 Tank 500 Hi4-T 2.0T Hi4-T Automatic",
+      "Tesla 2022 Model 3 rear-wheel drive version of automatic transmission"
+    ],
+    "titleZh": [
+      "AITO 2022款 问界M7 1.5T 四驱豪华版 自动挡",
+      "eπ007 2026款 007+ 纯电 650 Ultra+激光雷达版",
+      "岚图泰山 2026款 Max",
+      "奔驰 2022款 GLC 260 L 4MATIC 2.0T 豪华型(改款二) 自动挡",
+      "别克 2023款 世纪 48V 2.0T 蕴世版6座 自动挡",
+      "2027款 DM-i 230KM舒享型",
+      "丰田 普拉多(进口) 2023款 普拉多 4.0 自动挡",
+      "坦克 500新能源 2023款 坦克500 Hi4-T 2.0T Hi4-T 自动挡",
+      "特斯拉 2022款 Model 3 后轮驱动版 自动挡"
+    ],
+    "metaTitle": [
+      "AITO 2022 AITO M7 1.5T 4-wheel drive deluxe automatic gear",
+      "Eπ007 2026 007 Pure Electric 650 Ultra Laser Radar Edition",
+      "Voyah Taishan 2026 Model Max",
+      "Mercedes Benz 2022 GLC 260 L 4MATIC 2.0T Luxury (Change 2) Automatic Gear",
+      "Buick 2023 Century 48V 2.0T Yunshi Edition 6-seat Automatic Gear",
+      "2027 DM-i 230KM Comfortable",
+      "Toyota Prado (Imported) 2023 Prado 4.0 Automatic",
+      "Tank 500 New Energy 2023 Tank 500 Hi4-T 2.0T Hi4-T Automatic",
+      "Tesla 2022 Model 3 rear-wheel drive version of automatic transmission"
+    ],
+    "metaDescription": [
+      "Original car, front bar painted, remaining original paint with coat",
+      "The license was licensed in 23 years, with a real meter of more than 60000 kilometers. The headlight cover was replaced in vehicle condition. Posterior lobe cutting.",
+      "The original original paint has zero risk, one hand has entered, the brand has all the clothes, without any investment, and the new car standard.",
+      "The original car, one hand, one left rear leaf painted, half done, kilometers packed with real watches.",
+      "Simply change the two doors to Dr. Cha SS",
+      "One hand, can pass three parties, the original car, the Tesla Model 3 rear-wheel drive version in August 2023, the deep brand little sister one hand 20000 kilometers, pure electric endurance 556km, enjoy the original three-power warranty of 8 years 160000 kilometers, Ningde era battery, maintenance of new"
+    ],
+    "remark": [
+      "Original car, front bar painted, remaining original paint with coat",
+      "The license was licensed in 23 years, with a real meter of more than 60000 kilometers. The headlight cover was replaced in vehicle condition. Posterior lobe cutting.",
+      "The original original paint has zero risk, one hand has entered, the brand has all the clothes, without any investment, and the new car standard.",
+      "The original car, one hand, one left rear leaf painted, half done, kilometers packed with real watches.",
+      "Simply change the two doors to Dr. Cha SS",
+      "One hand, can pass three parties, the original car, the Tesla Model 3 rear-wheel drive version in August 2023, the deep brand little sister one hand 20000 kilometers, pure electric endurance 556km, enjoy the original three-power warranty of 8 years 160000 kilometers, Ningde era battery, maintenance of new"
+    ],
+    "featureTags": [
+      [
+        "Non-operational"
+      ],
+      [],
+      [],
+      [],
+      [
+        "Non-operational"
+      ],
+      [],
+      [
+        "0 Transfer",
+        "Actual meter mileage",
+        "Non-operational"
+      ],
+      [
+        "Non-operational"
+      ],
+      [
+        "0 Transfer",
+        "Original version throughout the vehicle",
+        "New car",
+        "Actual meter mileage",
+        "Non-operational"
+      ]
+    ],
+    "highlights": [
+      [
+        "Non-operational"
+      ],
+      [],
+      [],
+      [],
+      [
+        "Non-operational"
+      ],
+      [],
+      [
+        "0 Transfer",
+        "Actual meter mileage",
+        "Non-operational"
+      ],
+      [
+        "Non-operational"
+      ],
+      [
+        "0 Transfer",
+        "Original version throughout the vehicle",
+        "New car",
+        "Actual meter mileage",
+        "Non-operational"
+      ]
+    ],
+    "highlightItems": [
+      [
+        {
+          "name": "Non-operational",
+          "source": "jyt"
+        }
+      ],
+      [],
+      [],
+      [],
+      [
+        {
+          "name": "Non-operational",
+          "source": "jyt"
+        }
+      ],
+      [],
+      [
+        {
+          "name": "0 Transfer",
+          "source": "jyt"
+        },
+        {
+          "name": "Actual meter mileage",
+          "source": "jyt"
+        },
+        {
+          "name": "Non-operational",
+          "source": "jyt"
+        }
+      ],
+      [
+        {
+          "name": "Non-operational",
+          "source": "jyt"
+        }
+      ],
+      [
+        {
+          "name": "0 Transfer",
+          "source": "jyt"
+        },
+        {
+          "name": "Original version throughout the vehicle",
+          "source": "jyt"
+        },
+        {
+          "name": "New car",
+          "source": "jyt"
+        },
+        {
+          "name": "Actual meter mileage",
+          "source": "jyt"
+        },
+        {
+          "name": "Non-operational",
+          "source": "jyt"
+        }
+      ]
+    ],
+    "price": [
+      133000,
+      144900,
+      379900,
+      145000,
+      335000,
+      99900,
+      455000,
+      209800,
+      145000
+    ],
+    "fobPrice": [
+      152500,
+      164400,
+      402400,
+      164500,
+      357500,
+      117400,
+      477500,
+      232300,
+      164500
+    ],
+    "listedAt": [
+      "2026-10-13",
+      "2026-06-22",
+      "2026-06-22",
+      "2026-10-13",
+      "2026-10-13",
+      "2026-08-11",
+      "2026-10-13",
+      "2026-10-13",
+      "2026-10-13"
+    ],
+    "registrationDate": [
+      "2022-11-15",
+      "2023-02-13",
+      "2023-04-18",
+      "2024-04-29",
+      "2023-09-14",
+      "2023-08-15"
+    ],
+    "horsepower": [
+      125,
+      272,
+      150,
+      197,
+      237,
+      101,
+      0,
+      252,
+      260
+    ],
+    "year": [
+      "2022",
+      "2026",
+      "2026",
+      "2023",
+      "2023",
+      "2027",
+      "2024",
+      "2023",
+      "2023"
+    ],
+    "mileage": [
+      "42,000 km",
+      "0 km",
+      "0 km",
+      "60,000 km",
+      "21,000 km",
+      "0 km",
+      "45,000 km",
+      "44,000 km",
+      "27,000 km"
+    ],
+    "tag": [
+      "Non-operational",
+      "",
+      "",
+      "",
+      "Non-operational",
+      "",
+      "0 Transfer",
+      "Non-operational",
+      "0 Transfer"
+    ],
+    "images": [
+      [
+        "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_5-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_6-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_7-1280w.webp"
+      ],
+      [
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249395_14-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249394_15-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249390_19-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249392_17-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249391_18-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249264_136-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249224_176-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249252_148-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249387_97-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249372_112-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249341_143-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249385_99-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249382_102-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249337_112-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/i0f2vdtu78/12249336_113-1280w.webp"
+      ],
+      [
+        "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_8-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_9-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_6-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_7-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_5-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_12-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/1gvt4f0acu/12450028_91-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/1gvt4f0acu/12449987_132-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/22/1gvt4f0acu/12450044_75-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_11-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_10-1280w.webp"
+      ],
+      [
+        "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_5-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_6-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_7-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_8-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/0md6fj8ctt/0md6fj8ctt_9-1280w.webp"
+      ],
+      [
+        "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_5-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_6-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_7-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_8-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_9-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/qfsavlr2no/qfsavlr2no_10-1280w.webp"
+      ],
+      [
+        "https://img.autohaina.com/vehicle/2026/08/11/rlfqgphcgp/rlfqgphcgp_1-1280w.webp"
+      ],
+      [
+        "https://img.autohaina.com/vehicle/2026/10/13/q2pors2cmk/q2pors2cmk_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/q2pors2cmk/q2pors2cmk_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/q2pors2cmk/q2pors2cmk_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/q2pors2cmk/q2pors2cmk_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/q2pors2cmk/q2pors2cmk_5-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/q2pors2cmk/q2pors2cmk_6-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/q2pors2cmk/q2pors2cmk_7-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/q2pors2cmk/q2pors2cmk_8-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/q2pors2cmk/q2pors2cmk_9-1280w.webp"
+      ],
+      [
+        "https://img.autohaina.com/vehicle/2026/10/13/qfcs22ib3c/qfcs22ib3c_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/qfcs22ib3c/qfcs22ib3c_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/qfcs22ib3c/qfcs22ib3c_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/qfcs22ib3c/qfcs22ib3c_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/qfcs22ib3c/qfcs22ib3c_5-1280w.webp"
+      ],
+      [
+        "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_5-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_6-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_7-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_8-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_9-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_10-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_11-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_12-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/vn62mvjh5s/vn62mvjh5s_13-1280w.webp"
+      ]
+    ],
+    "specs": [
+      {
+        "engine": "Extended range 125 horsepower",
+        "transmission": "Automatic",
+        "fuelType": "increasing program",
+        "driveType": "Dual-motor all-wheel drive",
+        "seats": "6",
+        "color": "white",
+        "bodyType": "SUV",
+        "displacement": "1.5T",
+        "flowMode": "Turbocharging",
+        "acceleration": "4.8",
+        "fuelConsumption": "1.09",
+        "batteryCapacity": "40",
+        "batteryType": "Tri-element lithium",
+        "range": "200",
+        "registrationDate": "2022-11-15",
+        "officialPrice": "339800",
+        "condition": "Used Car",
+        "location": "Shanghai Shanghai"
+      },
+      {
+        "transmission": "Electric vehicle single speed gearbox",
+        "fuelType": "Pure electric",
+        "driveType": "Rear-wheel drive",
+        "seats": "5",
+        "bodyType": "Mid- to full-size cars",
+        "acceleration": "5.7",
+        "batteryCapacity": "0",
+        "batteryType": "Lithium iron phosphate",
+        "range": "650",
+        "officialPrice": "144900",
+        "condition": "New car"
+      },
+      {
+        "engine": "1.5T 150 horsepower L4",
+        "transmission": "Automatic",
+        "fuelType": "Plug-in hybrid",
+        "driveType": "Four-wheel drive",
+        "seats": "6",
+        "bodyType": "SUV",
+        "displacement": "1.5",
+        "acceleration": "5.2",
+        "fuelConsumption": "0.40",
+        "batteryCapacity": "65",
+        "batteryType": "Tri-element lithium",
+        "range": "350",
+        "officialPrice": "379900",
+        "condition": "New car"
+      },
+      {
+        "engine": "2.0T 197 horsepower L4",
+        "transmission": "Automatic",
+        "fuelType": "Gasoline",
+        "driveType": "Four-wheel drive",
+        "seats": "5",
+        "color": "Black",
+        "bodyType": "SUV",
+        "displacement": "2.0T",
+        "flowMode": "Turbocharging",
+        "acceleration": "8.4",
+        "fuelConsumption": "8.55",
+        "batteryCapacity": "0",
+        "range": "0",
+        "registrationDate": "2023-02-13",
+        "officialPrice": "429200",
+        "condition": "Used Car",
+        "location": "Henan Shangqiu"
+      },
+      {
+        "engine": "2.0T 237 horsepower L4",
+        "transmission": "Automatic",
+        "fuelType": "Gasoline",
+        "driveType": "Precursor",
+        "seats": "6",
+        "color": "white",
+        "bodyType": "MPV",
+        "displacement": "2.0T",
+        "flowMode": "Turbocharging",
+        "acceleration": "10.3",
+        "fuelConsumption": "8.65",
+        "batteryCapacity": "0",
+        "range": "0",
+        "registrationDate": "2023-04-18",
+        "officialPrice": "529900",
+        "condition": "Used Car",
+        "location": "Jiangsu Nanjing"
+      },
+      {
+        "engine": "1.5L 101 horsepower L4",
+        "driveType": "Precursor",
+        "seats": "5",
+        "bodyType": "Passenger car",
+        "displacement": "1.5",
+        "flowMode": "Natural inhalation",
+        "acceleration": "7.5",
+        "fuelConsumption": "0.77",
+        "batteryCapacity": "0",
+        "batteryType": "Lithium iron phosphate",
+        "range": "0",
+        "officialPrice": "99900",
+        "condition": "New car"
+      },
+      {
+        "transmission": "Automatic",
+        "fuelType": "Gasoline",
+        "seats": "0",
+        "color": "gray",
+        "bodyType": "SUV",
+        "displacement": "4.0L",
+        "batteryCapacity": "0",
+        "range": "0",
+        "registrationDate": "2024-04-29",
+        "officialPrice": "699000",
+        "condition": "Used Car",
+        "location": "Yunnan Zhaotong"
+      },
+      {
+        "engine": "2.0T 252 horsepower L4",
+        "transmission": "Automatic",
+        "fuelType": "plug-in hybrid",
+        "driveType": "Four-wheel drive",
+        "seats": "5",
+        "color": "gray",
+        "bodyType": "SUV",
+        "displacement": "2.0T",
+        "flowMode": "Turbocharging",
+        "acceleration": "6.9",
+        "fuelConsumption": "2.2",
+        "batteryCapacity": "37.1",
+        "batteryType": "Tri-element lithium",
+        "range": "150",
+        "registrationDate": "2023-09-14",
+        "officialPrice": "335000",
+        "condition": "Used Car",
+        "location": "Tianjin Tianjin"
+      },
+      {
+        "transmission": "Automatic",
+        "fuelType": "Pure electric",
+        "driveType": "Rear-wheel drive",
+        "seats": "5",
+        "color": "Black",
+        "bodyType": "Passenger car",
+        "displacement": "New energy",
+        "acceleration": "6.1",
+        "batteryCapacity": "60",
+        "batteryType": "Lithium iron phosphate",
+        "range": "556",
+        "registrationDate": "2023-08-15",
+        "officialPrice": "266740",
+        "condition": "Used Car",
+        "location": "Guangdong Shenzhen"
+      }
+    ]
+  },
+  "specs": {
+    "engine": [
+      "Extended range 125 horsepower",
+      "1.5T 150 horsepower L4",
+      "2.0T 197 horsepower L4",
+      "2.0T 237 horsepower L4",
+      "1.5L 101 horsepower L4",
+      "2.0T 252 horsepower L4"
+    ],
+    "transmission": [
+      "Automatic",
+      "Electric vehicle single speed gearbox",
+      "Automatic",
+      "Automatic",
+      "Automatic",
+      "Automatic",
+      "Automatic",
+      "Automatic"
+    ],
+    "fuelType": [
+      "increasing program",
+      "Pure electric",
+      "Plug-in hybrid",
+      "Gasoline",
+      "Gasoline",
+      "Gasoline",
+      "plug-in hybrid",
+      "Pure electric"
+    ],
+    "driveType": [
+      "Dual-motor all-wheel drive",
+      "Rear-wheel drive",
+      "Four-wheel drive",
+      "Four-wheel drive",
+      "Precursor",
+      "Precursor",
+      "Four-wheel drive",
+      "Rear-wheel drive"
+    ],
+    "seats": [
+      "6",
+      "5",
+      "6",
+      "5",
+      "6",
+      "5",
+      "0",
+      "5",
+      "5"
+    ],
+    "color": [
+      "white",
+      "Black",
+      "white",
+      "gray",
+      "gray",
+      "Black"
+    ],
+    "bodyType": [
+      "SUV",
+      "Mid- to full-size cars",
+      "SUV",
+      "SUV",
+      "MPV",
+      "Passenger car",
+      "SUV",
+      "SUV",
+      "Passenger car"
+    ],
+    "displacement": [
+      "1.5T",
+      "1.5",
+      "2.0T",
+      "2.0T",
+      "1.5",
+      "4.0L",
+      "2.0T",
+      "New energy"
+    ],
+    "flowMode": [
+      "Turbocharging",
+      "Turbocharging",
+      "Turbocharging",
+      "Natural inhalation",
+      "Turbocharging"
+    ],
+    "acceleration": [
+      "4.8",
+      "5.7",
+      "5.2",
+      "8.4",
+      "10.3",
+      "7.5",
+      "6.9",
+      "6.1"
+    ],
+    "fuelConsumption": [
+      "1.09",
+      "0.40",
+      "8.55",
+      "8.65",
+      "0.77",
+      "2.2"
+    ],
+    "batteryCapacity": [
+      "40",
+      "0",
+      "65",
+      "0",
+      "0",
+      "0",
+      "0",
+      "37.1",
+      "60"
+    ],
+    "batteryType": [
+      "Tri-element lithium",
+      "Lithium iron phosphate",
+      "Tri-element lithium",
+      "Lithium iron phosphate",
+      "Tri-element lithium",
+      "Lithium iron phosphate"
+    ],
+    "range": [
+      "200",
+      "650",
+      "350",
+      "0",
+      "0",
+      "0",
+      "0",
+      "150",
+      "556"
+    ],
+    "registrationDate": [
+      "2022-11-15",
+      "2023-02-13",
+      "2023-04-18",
+      "2024-04-29",
+      "2023-09-14",
+      "2023-08-15"
+    ],
+    "officialPrice": [
+      "339800",
+      "144900",
+      "379900",
+      "429200",
+      "529900",
+      "99900",
+      "699000",
+      "335000",
+      "266740"
+    ],
+    "condition": [
+      "Used Car",
+      "New car",
+      "New car",
+      "Used Car",
+      "Used Car",
+      "New car",
+      "Used Car",
+      "Used Car",
+      "Used Car"
+    ],
+    "location": [
+      "Shanghai Shanghai",
+      "Henan Shangqiu",
+      "Jiangsu Nanjing",
+      "Yunnan Zhaotong",
+      "Tianjin Tianjin",
+      "Guangdong Shenzhen"
+    ]
+  }
+}

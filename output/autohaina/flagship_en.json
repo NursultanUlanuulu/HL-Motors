@@ -1,0 +1,1829 @@
+{
+  "data": {
+    "id": "1gvt4f0acu",
+    "carCode": "75741",
+    "brandId": "s434pg5nut",
+    "title": "Voyah Taishan 2026 Model Max",
+    "titleZh": "岚图泰山 2026款 Max",
+    "metaTitle": "Voyah Taishan 2026 Model Max",
+    "featureTags": [],
+    "highlights": [],
+    "highlightItems": [],
+    "price": 379900,
+    "fobPrice": 402400,
+    "listedAt": "2026-06-22",
+    "horsepower": 150,
+    "year": "2026",
+    "mileage": "0 km",
+    "tag": "",
+    "images": [
+      "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_3-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_4-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_8-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_9-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_6-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_7-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_5-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_12-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_2-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/22/1gvt4f0acu/12450028_91-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/22/1gvt4f0acu/12449987_132-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/22/1gvt4f0acu/12450044_75-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_11-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_1-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_10-1280w.webp"
+    ],
+    "specs": {
+      "engine": "1.5T 150 horsepower L4",
+      "transmission": "Automatic",
+      "fuelType": "Plug-in hybrid",
+      "driveType": "Four-wheel drive",
+      "seats": "6",
+      "bodyType": "SUV",
+      "displacement": "1.5",
+      "acceleration": "5.2",
+      "fuelConsumption": "0.40",
+      "batteryCapacity": "65",
+      "batteryType": "Tri-element lithium",
+      "range": "350",
+      "officialPrice": "379900",
+      "condition": "New car"
+    }
+  },
+  "breadcrumb": {
+    "brandId": "s434pg5nut",
+    "brandName": "Voyah car",
+    "seriesId": "1fdk3ncn7t",
+    "seriesName": "Voyah Taishan"
+  },
+  "parameters_by_group": {
+    "Basic Parameters": [
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Vehicle Model Name",
+        "param_value": "Voyah Taishan 2026 Model Max",
+        "idx": 1
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Manufacturer’s Suggested Retail Price (RMB)",
+        "param_value": "379900",
+        "idx": 2
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Manufacturer",
+        "param_value": "Voyah car",
+        "idx": 3
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Level",
+        "param_value": "Large SUV",
+        "idx": 4
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Energy type",
+        "param_value": "Plug-in hybrid",
+        "idx": 5
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Environmental standards",
+        "param_value": "China VI",
+        "idx": 6
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Release date",
+        "param_value": "2025-11-18",
+        "idx": 7
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "WLTC pure electric range (km)",
+        "param_value": "290",
+        "idx": 8
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "CLTC pure electric cruising range (km)",
+        "param_value": "350",
+        "idx": 9
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Fast battery charging time (hours)",
+        "param_value": "0.2",
+        "idx": 10
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Battery fast charge range (%)",
+        "param_value": "20-80",
+        "idx": 11
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "gearbox",
+        "param_value": "1st DHT",
+        "idx": 12
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Body structure",
+        "param_value": "5-door, 6-seat SUV",
+        "idx": 13
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Engine",
+        "param_value": "1.5T 150 horsepower L4",
+        "idx": 14
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Motor (Ps)",
+        "param_value": "517",
+        "idx": 15
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Length × Width × Height (mm)",
+        "param_value": "5230*2025*1817",
+        "idx": 16
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Official 0–100 km/h acceleration (s)",
+        "param_value": "5.2",
+        "idx": 17
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Maximum speed (km/h)",
+        "param_value": "200",
+        "idx": 18
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "WLTC combined fuel consumption (L/100 km)",
+        "param_value": "0.40",
+        "idx": 19
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Minimum SOC fuel consumption (L/100km)WLTC",
+        "param_value": "6.9",
+        "idx": 20
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Comprehensive fuel consumption of oil and electricity (L/100km)",
+        "param_value": "2.91",
+        "idx": 21
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Full-vehicle warranty",
+        "param_value": "Five years or 100000km",
+        "idx": 22
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Curb weight (kg)",
+        "param_value": "2760",
+        "idx": 23
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Maximum gross vehicle weight (kg)",
+        "param_value": "3210",
+        "idx": 24
+      }
+    ],
+    "Car body": [
+      {
+        "group_name": "Car body",
+        "param_name": "Length (mm)",
+        "param_value": "5230",
+        "idx": 25
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Width (mm)",
+        "param_value": "2025",
+        "idx": 26
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Height (mm)",
+        "param_value": "1817",
+        "idx": 27
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Wheelbase (mm)",
+        "param_value": "3120",
+        "idx": 28
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Front track (mm)",
+        "param_value": "1738",
+        "idx": 29
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Rear track (mm)",
+        "param_value": "1755",
+        "idx": 30
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Approach angle (°)",
+        "param_value": "19",
+        "idx": 31
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Departure angle (°)",
+        "param_value": "21",
+        "idx": 32
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Minimum turning radius (m)",
+        "param_value": "6.2",
+        "idx": 33
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Body structure",
+        "param_value": "SUV",
+        "idx": 34
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Door opening method",
+        "param_value": "Swing door",
+        "idx": 35
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Number of doors (units)",
+        "param_value": "5",
+        "idx": 36
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Number of seats (units)",
+        "param_value": "6",
+        "idx": 37
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Fuel tank capacity (L)",
+        "param_value": "65",
+        "idx": 38
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Trunk capacity (L)",
+        "param_value": "305-1193",
+        "idx": 39
+      }
+    ],
+    "Engine": [
+      {
+        "group_name": "Engine",
+        "param_name": "Engine model",
+        "param_value": "DFMC15TE3",
+        "idx": 40
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Displacement (mL)",
+        "param_value": "1497",
+        "idx": 41
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Displacement (L)",
+        "param_value": "1.5",
+        "idx": 42
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Intake mode",
+        "param_value": "Turbocharging",
+        "idx": 43
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Engine layout",
+        "param_value": "Horizontal placement",
+        "idx": 44
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Cylinder arrangement",
+        "param_value": "L",
+        "idx": 45
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Number of cylinders (units)",
+        "param_value": "4",
+        "idx": 46
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Number of valves per cylinder (units)",
+        "param_value": "4",
+        "idx": 47
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Valve train",
+        "param_value": "DOHC",
+        "idx": 48
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum horsepower (Ps)",
+        "param_value": "150",
+        "idx": 49
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum power (kW)",
+        "param_value": "110",
+        "idx": 50
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum power speed (rpm)",
+        "param_value": "4500",
+        "idx": 51
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum torque (N · m)",
+        "param_value": "220",
+        "idx": 52
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum torque speed (rpm)",
+        "param_value": "2000-4500",
+        "idx": 53
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum net power (kW)",
+        "param_value": "105",
+        "idx": 54
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Energy type",
+        "param_value": "Plug-in hybrid",
+        "idx": 55
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Fuel octane rating",
+        "param_value": "No. 95",
+        "idx": 56
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Fuel supply method",
+        "param_value": "Direct injection",
+        "idx": 57
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Cylinder head material",
+        "param_value": "Aluminum alloy",
+        "idx": 58
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Cylinder block material",
+        "param_value": "Aluminum alloy",
+        "idx": 59
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Environmental standards",
+        "param_value": "China VI",
+        "idx": 60
+      }
+    ],
+    "Electric motor": [
+      {
+        "group_name": "Electric motor",
+        "param_name": "Front motor model",
+        "param_value": "DY60YS225150",
+        "idx": 61
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Rear motor model",
+        "param_value": "TZ225XYH01",
+        "idx": 62
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Motor type",
+        "param_value": "Permanent Magnet/Synchronous",
+        "idx": 63
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Total motor power (kW)",
+        "param_value": "380",
+        "idx": 64
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Total motor horsepower (Ps)",
+        "param_value": "517",
+        "idx": 65
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Total motor torque (N·m)",
+        "param_value": "705",
+        "idx": 66
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Max. power of front motor (kW)",
+        "param_value": "150",
+        "idx": 67
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Maximum torque of front motor (N · m)",
+        "param_value": "310",
+        "idx": 68
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Maximum power of the rear motor (kW)",
+        "param_value": "230",
+        "idx": 69
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Maximum torque of the rear motor (N·m)",
+        "param_value": "395",
+        "idx": 70
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Number of drive motors",
+        "param_value": "Dual motors",
+        "idx": 71
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Motor layout",
+        "param_value": "Front-mounted Rear-mounted",
+        "idx": 72
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Three electric first car owner warranty policy",
+        "param_value": "Lifetime Warranty/Non-operational (Liability Exemption Terms Subject to Official)",
+        "idx": 73
+      }
+    ],
+    "Battery/Charging": [
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "Battery type",
+        "param_value": "Lithium ternary battery",
+        "idx": 74
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "Battery Cell Brand",
+        "param_value": "Times FAW/Hive Energy",
+        "idx": 75
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "Battery cooling method",
+        "param_value": "Liquid cooling",
+        "idx": 76
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "WLTC pure electric range (km)",
+        "param_value": "290",
+        "idx": 77
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "CLTC pure electric cruising range (km)",
+        "param_value": "350",
+        "idx": 78
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "CLTC综合续航(km)",
+        "param_value": "1430",
+        "idx": 79
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "Battery energy (kWh)",
+        "param_value": "65",
+        "idx": 80
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "Electricity consumption per 100 kilometers (kWh/100 km)",
+        "param_value": "21.6",
+        "idx": 81
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "Fast charging function",
+        "param_value": "Support",
+        "idx": 82
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "Fast charging power (kW)",
+        "param_value": "320",
+        "idx": 83
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "High-voltage fast charging",
+        "param_value": "Support",
+        "idx": 84
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "HV Platform (V)",
+        "param_value": "800",
+        "idx": 85
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "Fast battery charging time (hours)",
+        "param_value": "0.2",
+        "idx": 86
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "Battery fast charge range (%)",
+        "param_value": "20-80",
+        "idx": 87
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "Slow Charge Interface Location",
+        "param_value": "Rear right side of the car",
+        "idx": 88
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "Fast charging interface position",
+        "param_value": "Rear right side of the car",
+        "idx": 89
+      },
+      {
+        "group_name": "Battery/Charging",
+        "param_name": "External AC discharge power (kW)",
+        "param_value": "6.6",
+        "idx": 90
+      }
+    ],
+    "gearbox": [
+      {
+        "group_name": "gearbox",
+        "param_name": "Abbreviation",
+        "param_value": "1st DHT",
+        "idx": 91
+      },
+      {
+        "group_name": "gearbox",
+        "param_name": "Number of gears",
+        "param_value": "1",
+        "idx": 92
+      },
+      {
+        "group_name": "gearbox",
+        "param_name": "gearbox Type",
+        "param_value": "Hybrid Special gearbox (DHT)",
+        "idx": 93
+      }
+    ],
+    "Chassis steering": [
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Drive method",
+        "param_value": "Front-wheel drive with four-wheel drive",
+        "idx": 94
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Four-wheel drive form",
+        "param_value": "Electric all-wheel drive",
+        "idx": 95
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Front suspension type",
+        "param_value": "Double wishbone independent suspension",
+        "idx": 96
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Rear suspension type",
+        "param_value": "Multi-link independent suspension",
+        "idx": 97
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Type of support",
+        "param_value": "Electric power assistance",
+        "idx": 98
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Vehicle Body Structure",
+        "param_value": "Load-bearing",
+        "idx": 99
+      }
+    ],
+    "Wheel brake": [
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Front brake type",
+        "param_value": "Ventilated disc",
+        "idx": 100
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Rear brake type",
+        "param_value": "Ventilated disc",
+        "idx": 101
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Parking brake type",
+        "param_value": "Electronic parking brake",
+        "idx": 102
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Front tire specifications",
+        "param_value": "275/45 R22",
+        "idx": 103
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Rear tire specifications",
+        "param_value": "275/45 R22",
+        "idx": 104
+      }
+    ],
+    "Passive Safety": [
+      {
+        "group_name": "Passive Safety",
+        "param_name": "Driver’s and passenger’s airbags",
+        "param_value": "Main ●/Deputy ●",
+        "idx": 105
+      },
+      {
+        "group_name": "Passive Safety",
+        "param_name": "Front/rear side airbags",
+        "param_value": "Front ●/Rear ●",
+        "idx": 106
+      },
+      {
+        "group_name": "Passive Safety",
+        "param_name": "Front/rear head airbags (curtain airbags)",
+        "param_value": "Front ●/Rear ●",
+        "idx": 107
+      },
+      {
+        "group_name": "Passive Safety",
+        "param_name": "Front middle airbag",
+        "param_value": "●",
+        "idx": 108
+      }
+    ],
+    "Active Safety": [
+      {
+        "group_name": "Active Safety",
+        "param_name": "ABS anti-lock",
+        "param_value": "●",
+        "idx": 109
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Braking force distribution (EBD/CBC, etc.)",
+        "param_value": "●",
+        "idx": 110
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Brake assist (EBA/BAS/BA, etc.)",
+        "param_value": "●",
+        "idx": 111
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Traction control (ASR/TCS/TRC, etc.)",
+        "param_value": "●",
+        "idx": 112
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Body stability control (ESC/ESP/DSC, etc.)",
+        "param_value": "●",
+        "idx": 113
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Tire pressure monitoring function",
+        "param_value": "Tire pressure display",
+        "idx": 114
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Seat belt reminder",
+        "param_value": "Entire vehicle",
+        "idx": 115
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "ISOFIX child seat anchorages",
+        "param_value": "●",
+        "idx": 116
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Lane Departure Warning System",
+        "param_value": "●",
+        "idx": 117
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Automatic Braking/Advanced Safety System",
+        "param_value": "●",
+        "idx": 118
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Fatigue Driving Alert",
+        "param_value": "●",
+        "idx": 119
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "DOW opening alert",
+        "param_value": "●",
+        "idx": 120
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Forward Collision Warning",
+        "param_value": "●",
+        "idx": 121
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Rear Collision Warning",
+        "param_value": "●",
+        "idx": 122
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Sentinel mode/clairvoyance",
+        "param_value": "●",
+        "idx": 123
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Low Speed Driving Warning",
+        "param_value": "●",
+        "idx": 124
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Built-in dashcam",
+        "param_value": "●",
+        "idx": 125
+      },
+      {
+        "group_name": "Active Safety",
+        "param_name": "Roadside assistance call",
+        "param_value": "●",
+        "idx": 126
+      }
+    ],
+    "Driving Control": [
+      {
+        "group_name": "Driving Control",
+        "param_name": "Driving mode switching",
+        "param_value": "Sport/economy/standard/comfort/off-road/snow/custom/personalization",
+        "idx": 127
+      },
+      {
+        "group_name": "Driving Control",
+        "param_name": "Energy recovery system",
+        "param_value": "●",
+        "idx": 128
+      },
+      {
+        "group_name": "Driving Control",
+        "param_name": "Auto Hold",
+        "param_value": "●",
+        "idx": 129
+      },
+      {
+        "group_name": "Driving Control",
+        "param_name": "Hill-start assist",
+        "param_value": "●",
+        "idx": 130
+      },
+      {
+        "group_name": "Driving Control",
+        "param_name": "Hill descent control",
+        "param_value": "●",
+        "idx": 131
+      },
+      {
+        "group_name": "Driving Control",
+        "param_name": "Variable suspension function",
+        "param_value": "Suspension soft and hard adjustment/suspension height adjustment",
+        "idx": 132
+      },
+      {
+        "group_name": "Driving Control",
+        "param_name": "Air suspension",
+        "param_value": "●",
+        "idx": 133
+      },
+      {
+        "group_name": "Driving Control",
+        "param_name": "Air suspension type",
+        "param_value": "三腔",
+        "idx": 134
+      },
+      {
+        "group_name": "Driving Control",
+        "param_name": "Magic Carpet Smart Suspension",
+        "param_value": "●",
+        "idx": 135
+      }
+    ],
+    "Driving hardware": [
+      {
+        "group_name": "Driving hardware",
+        "param_name": "Front/rear parking Radar",
+        "param_value": "Front ●/Rear ●",
+        "idx": 136
+      },
+      {
+        "group_name": "Driving hardware",
+        "param_name": "Driver-assistance imaging",
+        "param_value": "360度全景影像 / 车侧盲区影像",
+        "idx": 137
+      },
+      {
+        "group_name": "Driving hardware",
+        "param_name": "Transparent chassis/540-degree imaging",
+        "param_value": "●",
+        "idx": 138
+      },
+      {
+        "group_name": "Driving hardware",
+        "param_name": "Front-facing perception camera",
+        "param_value": "Both eyes",
+        "idx": 139
+      },
+      {
+        "group_name": "Driving hardware",
+        "param_name": "Number of cameras",
+        "param_value": "11 pieces",
+        "idx": 140
+      },
+      {
+        "group_name": "Driving hardware",
+        "param_name": "Number of in-vehicle cameras",
+        "param_value": "2个",
+        "idx": 141
+      },
+      {
+        "group_name": "Driving hardware",
+        "param_name": "Number of ultrasonic Radar",
+        "param_value": "12 pieces",
+        "idx": 142
+      },
+      {
+        "group_name": "Driving hardware",
+        "param_name": "Millimeter wave Radar quantity",
+        "param_value": "3个",
+        "idx": 143
+      },
+      {
+        "group_name": "Driving hardware",
+        "param_name": "Laser Radar Brand",
+        "param_value": "HUAWEI华为",
+        "idx": 144
+      },
+      {
+        "group_name": "Driving hardware",
+        "param_name": "Number of laser Radar",
+        "param_value": "1 piece",
+        "idx": 145
+      },
+      {
+        "group_name": "Driving hardware",
+        "param_name": "Number of laser Radar lines",
+        "param_value": "192线",
+        "idx": 146
+      }
+    ],
+    "Driving function": [
+      {
+        "group_name": "Driving function",
+        "param_name": "Cruise control system",
+        "param_value": "Full-speed adaptive cruise control",
+        "idx": 147
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Advanced Driver Assistance System",
+        "param_value": "华为乾崑智驾ADS",
+        "idx": 148
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Levels of Advanced Driver Assistance Systems",
+        "param_value": "L2",
+        "idx": 149
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Rear Side Vehicle Warning System",
+        "param_value": "●",
+        "idx": 150
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Satellite navigation system",
+        "param_value": "●",
+        "idx": 151
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Navigation traffic information is displayed.",
+        "param_value": "●",
+        "idx": 152
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Map brand",
+        "param_value": "Amap",
+        "idx": 153
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "high precision positioning",
+        "param_value": "●",
+        "idx": 154
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Lane Change Assist",
+        "param_value": "●",
+        "idx": 155
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Lane Keeping Assist System",
+        "param_value": "●",
+        "idx": 156
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Lane center hold",
+        "param_value": "●",
+        "idx": 157
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Road Traffic Sign Recognition",
+        "param_value": "●",
+        "idx": 158
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Parking assist",
+        "param_value": "●",
+        "idx": 159
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Remote parking",
+        "param_value": "●",
+        "idx": 160
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Memory parking",
+        "param_value": "○",
+        "idx": 161
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Tracking reversing",
+        "param_value": "●",
+        "idx": 162
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Auxiliary lane change",
+        "param_value": "●",
+        "idx": 163
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Automatic exit (entry) of auxiliary ramp",
+        "param_value": "●",
+        "idx": 164
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Signal light identification",
+        "param_value": "●",
+        "idx": 165
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Steering wheel hands-off detection",
+        "param_value": "●",
+        "idx": 166
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Start Reminder",
+        "param_value": "●",
+        "idx": 167
+      },
+      {
+        "group_name": "Driving function",
+        "param_name": "Auxiliary driving section",
+        "param_value": "Urban Section/Expressway Section",
+        "idx": 168
+      }
+    ],
+    "Appearance/Anti-theft": [
+      {
+        "group_name": "Appearance/Anti-theft",
+        "param_name": "Rim material",
+        "param_value": "Aluminum alloy",
+        "idx": 169
+      },
+      {
+        "group_name": "Appearance/Anti-theft",
+        "param_name": "Electric suction door",
+        "param_value": "Entire vehicle",
+        "idx": 170
+      },
+      {
+        "group_name": "Appearance/Anti-theft",
+        "param_name": "Automatic door opening and closing",
+        "param_value": "○",
+        "idx": 171
+      },
+      {
+        "group_name": "Appearance/Anti-theft",
+        "param_name": "Electric trunk lid",
+        "param_value": "●",
+        "idx": 172
+      },
+      {
+        "group_name": "Appearance/Anti-theft",
+        "param_name": "Sensing trunk",
+        "param_value": "●",
+        "idx": 173
+      },
+      {
+        "group_name": "Appearance/Anti-theft",
+        "param_name": "Electric trunk position memory",
+        "param_value": "●",
+        "idx": 174
+      },
+      {
+        "group_name": "Appearance/Anti-theft",
+        "param_name": "Engine electronic immobilizer",
+        "param_value": "●",
+        "idx": 175
+      },
+      {
+        "group_name": "Appearance/Anti-theft",
+        "param_name": "In-car central locking",
+        "param_value": "●",
+        "idx": 176
+      },
+      {
+        "group_name": "Appearance/Anti-theft",
+        "param_name": "Key type",
+        "param_value": "蓝牙钥匙 / NFC/RFID钥匙",
+        "idx": 177
+      },
+      {
+        "group_name": "Appearance/Anti-theft",
+        "param_name": "Keyless start system",
+        "param_value": "●",
+        "idx": 178
+      },
+      {
+        "group_name": "Appearance/Anti-theft",
+        "param_name": "Keyless entry function",
+        "param_value": "Entire vehicle",
+        "idx": 179
+      },
+      {
+        "group_name": "Appearance/Anti-theft",
+        "param_name": "Active closed air intake grille",
+        "param_value": "●",
+        "idx": 180
+      },
+      {
+        "group_name": "Appearance/Anti-theft",
+        "param_name": "Battery pre-heating",
+        "param_value": "●",
+        "idx": 181
+      },
+      {
+        "group_name": "Appearance/Anti-theft",
+        "param_name": "External discharge",
+        "param_value": "●",
+        "idx": 182
+      }
+    ],
+    "Exterior lighting": [
+      {
+        "group_name": "Exterior lighting",
+        "param_name": "Low beam light source",
+        "param_value": "LED",
+        "idx": 183
+      },
+      {
+        "group_name": "Exterior lighting",
+        "param_name": "High-beam light source",
+        "param_value": "LED",
+        "idx": 184
+      },
+      {
+        "group_name": "Exterior lighting",
+        "param_name": "LED daytime running lights",
+        "param_value": "●",
+        "idx": 185
+      },
+      {
+        "group_name": "Exterior lighting",
+        "param_name": "Adaptive high/low beams",
+        "param_value": "●",
+        "idx": 186
+      },
+      {
+        "group_name": "Exterior lighting",
+        "param_name": "Automatic headlights",
+        "param_value": "●",
+        "idx": 187
+      },
+      {
+        "group_name": "Exterior lighting",
+        "param_name": "Steering-assisted lights",
+        "param_value": "●",
+        "idx": 188
+      },
+      {
+        "group_name": "Exterior lighting",
+        "param_name": "Headlight height is adjustable.",
+        "param_value": "●",
+        "idx": 189
+      },
+      {
+        "group_name": "Exterior lighting",
+        "param_name": "Headlight delay-off",
+        "param_value": "●",
+        "idx": 190
+      },
+      {
+        "group_name": "Exterior lighting",
+        "param_name": "Auxiliary driving lamp",
+        "param_value": "●",
+        "idx": 191
+      }
+    ],
+    "Sunroof/Glass": [
+      {
+        "group_name": "Sunroof/Glass",
+        "param_name": "Skylight type",
+        "param_value": "分段式不可开启天窗",
+        "idx": 192
+      },
+      {
+        "group_name": "Sunroof/Glass",
+        "param_name": "Front/Rear Electric Window",
+        "param_value": "Front ●/Rear ●",
+        "idx": 193
+      },
+      {
+        "group_name": "Sunroof/Glass",
+        "param_name": "One-touch window lift function",
+        "param_value": "Entire vehicle",
+        "idx": 194
+      },
+      {
+        "group_name": "Sunroof/Glass",
+        "param_name": "Window anti-pinch function",
+        "param_value": "●",
+        "idx": 195
+      },
+      {
+        "group_name": "Sunroof/Glass",
+        "param_name": "Side window multi-layer soundproof glass",
+        "param_value": "前排 / 后排",
+        "idx": 196
+      },
+      {
+        "group_name": "Sunroof/Glass",
+        "param_name": "Rear side privacy glass",
+        "param_value": "●",
+        "idx": 197
+      },
+      {
+        "group_name": "Sunroof/Glass",
+        "param_name": "In-car vanity mirror",
+        "param_value": "Pilot light/copilot light",
+        "idx": 198
+      },
+      {
+        "group_name": "Sunroof/Glass",
+        "param_name": "Rear wiper",
+        "param_value": "●",
+        "idx": 199
+      },
+      {
+        "group_name": "Sunroof/Glass",
+        "param_name": "Rain-sensing wiper function",
+        "param_value": "Rainfall-sensing",
+        "idx": 200
+      }
+    ],
+    "Outside rearview mirror": [
+      {
+        "group_name": "Outside rearview mirror",
+        "param_name": "Rearview mirror functions",
+        "param_value": "电动调节 / 电动折叠 / 后视镜记忆 / 后视镜加热 / 倒车自动下翻 / 锁车自动折叠",
+        "idx": 201
+      }
+    ],
+    "Interconnection/Intelligentization": [
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Central control color screen",
+        "param_value": "Touch LCD screen",
+        "idx": 202
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Central control screen size",
+        "param_value": "16.1英寸",
+        "idx": 203
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Central control screen type",
+        "param_value": "LCD",
+        "idx": 204
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Central control screen resolution",
+        "param_value": "3K",
+        "idx": 205
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Bluetooth/Voice Call",
+        "param_value": "●",
+        "idx": 206
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Phone connectivity/mirroring",
+        "param_value": "支持HUAWEI HiCar",
+        "idx": 207
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Speech Recognition Control System",
+        "param_value": "Multimedia system/Navigation/Telephone/Air conditioning/Windows/Seat heating/Seat ventilation/Seat massage",
+        "idx": 208
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Voice assistant wake word",
+        "param_value": "你好，岚图",
+        "idx": 209
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Voice activation without a wake word",
+        "param_value": "●",
+        "idx": 210
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Voice-based zone-specific wake-up recognition",
+        "param_value": "Four regions",
+        "idx": 211
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Continuous speech recognition",
+        "param_value": "●",
+        "idx": 212
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Visible to say",
+        "param_value": "●",
+        "idx": 213
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Facial recognition",
+        "param_value": "●",
+        "idx": 214
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "App Store",
+        "param_value": "●",
+        "idx": 215
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "In-vehicle intelligent system",
+        "param_value": "HarmonySpace",
+        "idx": 216
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Rear LCD screen size",
+        "param_value": "21.4英寸",
+        "idx": 217
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Rear LCD screen resolution",
+        "param_value": "3K",
+        "idx": 218
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Number of rear multimedia screens",
+        "param_value": "1 piece",
+        "idx": 219
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Rear control multimedia",
+        "param_value": "●",
+        "idx": 220
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Internet of Vehicles",
+        "param_value": "●",
+        "idx": 221
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "4G/5G networks",
+        "param_value": "5G",
+        "idx": 222
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "OTA update",
+        "param_value": "●",
+        "idx": 223
+      },
+      {
+        "group_name": "Interconnection/Intelligentization",
+        "param_name": "Wi-Fi hotspot",
+        "param_value": "●",
+        "idx": 224
+      }
+    ],
+    "Steering wheel/Interior rearview mirror": [
+      {
+        "group_name": "Steering wheel/Interior rearview mirror",
+        "param_name": "Steering wheel material",
+        "param_value": "Cortex",
+        "idx": 225
+      },
+      {
+        "group_name": "Steering wheel/Interior rearview mirror",
+        "param_name": "Steering wheel position adjustment",
+        "param_value": "Electric up and down front and rear adjustment",
+        "idx": 226
+      },
+      {
+        "group_name": "Steering wheel/Interior rearview mirror",
+        "param_name": "Gear-shifting method",
+        "param_value": "Electronic gear shift",
+        "idx": 227
+      },
+      {
+        "group_name": "Steering wheel/Interior rearview mirror",
+        "param_name": "Multi-function steering wheel",
+        "param_value": "●",
+        "idx": 228
+      },
+      {
+        "group_name": "Steering wheel/Interior rearview mirror",
+        "param_name": "Steering wheel heating",
+        "param_value": "●",
+        "idx": 229
+      },
+      {
+        "group_name": "Steering wheel/Interior rearview mirror",
+        "param_name": "Steering wheel memory",
+        "param_value": "●",
+        "idx": 230
+      },
+      {
+        "group_name": "Steering wheel/Interior rearview mirror",
+        "param_name": "Vehicle computer display screen",
+        "param_value": "Colorful",
+        "idx": 231
+      },
+      {
+        "group_name": "Steering wheel/Interior rearview mirror",
+        "param_name": "All-digital instrument cluster",
+        "param_value": "●",
+        "idx": 232
+      },
+      {
+        "group_name": "Steering wheel/Interior rearview mirror",
+        "param_name": "LCD instrument cluster size",
+        "param_value": "10.25英寸",
+        "idx": 233
+      },
+      {
+        "group_name": "Steering wheel/Interior rearview mirror",
+        "param_name": "AR-HUD augmented reality head-up display",
+        "param_value": "●",
+        "idx": 234
+      },
+      {
+        "group_name": "Steering wheel/Interior rearview mirror",
+        "param_name": "HUD Head Size",
+        "param_value": "55英寸",
+        "idx": 235
+      },
+      {
+        "group_name": "Steering wheel/Interior rearview mirror",
+        "param_name": "Rearview mirror function",
+        "param_value": "Automatic anti-glare",
+        "idx": 236
+      }
+    ],
+    "In-car charging": [
+      {
+        "group_name": "In-car charging",
+        "param_name": "Multimedia/Charging Port",
+        "param_value": "USB / Type-C",
+        "idx": 237
+      },
+      {
+        "group_name": "In-car charging",
+        "param_name": "Number of USB/Type-C ports",
+        "param_value": "前排2个/后排4个",
+        "idx": 238
+      },
+      {
+        "group_name": "In-car charging",
+        "param_name": "USB/Type-C maximum charging power",
+        "param_value": "60W",
+        "idx": 239
+      },
+      {
+        "group_name": "In-car charging",
+        "param_name": "220V/230V power supply",
+        "param_value": "●",
+        "idx": 240
+      },
+      {
+        "group_name": "In-car charging",
+        "param_name": "Wireless charging feature for mobile phones",
+        "param_value": "Front row",
+        "idx": 241
+      },
+      {
+        "group_name": "In-car charging",
+        "param_name": "Wireless charging power for mobile phones",
+        "param_value": "50W",
+        "idx": 242
+      },
+      {
+        "group_name": "In-car charging",
+        "param_name": "Trunk 12V power outlet",
+        "param_value": "●",
+        "idx": 243
+      }
+    ],
+    "Seat configuration": [
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Seat material",
+        "param_value": "Faux leather",
+        "idx": 244
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Front seat adjustment method",
+        "param_value": "前后调节 / 靠背调节 / 高低调节(4向) / 腰部支撑(4向)",
+        "idx": 245
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Rear seat adjustment method",
+        "param_value": "前后调节 / 靠背调节 / 高低调节(4向) / 腰部支撑(4向)",
+        "idx": 246
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Electrically adjustable driver’s and passenger’s seats",
+        "param_value": "Main ●/Deputy ●",
+        "idx": 247
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Front seat functions",
+        "param_value": "加热 / 通风 / 按摩 / 头枕扬声器(仅驾驶位)",
+        "idx": 248
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Electric seat memory function",
+        "param_value": "驾驶位 / 副驾驶位 / 后排",
+        "idx": 249
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Rear adjustable button on the passenger side",
+        "param_value": "●",
+        "idx": 250
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Second row seat adjustment",
+        "param_value": "前后调节 / 靠背调节 / 腰部调节 / 腿托调节",
+        "idx": 251
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Second-row seats with electric adjustment",
+        "param_value": "●",
+        "idx": 252
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Second row seat function",
+        "param_value": "Heating/ventilation/massage",
+        "idx": 253
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Rear-seat tray table",
+        "param_value": "●",
+        "idx": 254
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Second row of independent seats",
+        "param_value": "●",
+        "idx": 255
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Third-row seat adjustment",
+        "param_value": "Front and rear adjustment/backrest adjustment",
+        "idx": 256
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Third-row seat electric adjustment",
+        "param_value": "●",
+        "idx": 257
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Third row seat function",
+        "param_value": "加热 / 通风",
+        "idx": 258
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Seat layout",
+        "param_value": "2-2-2",
+        "idx": 259
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Rear seat folding mechanism",
+        "param_value": "Proportional Down",
+        "idx": 260
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Rear seats electrically fold down",
+        "param_value": "●",
+        "idx": 261
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Front/Rear Center Armrest",
+        "param_value": "Front ●/Rear ●",
+        "idx": 262
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Rear cup holder",
+        "param_value": "●",
+        "idx": 263
+      }
+    ],
+    "Audio/Interior Lighting": [
+      {
+        "group_name": "Audio/Interior Lighting",
+        "param_name": "Number of speakers",
+        "param_value": "26喇叭",
+        "idx": 264
+      },
+      {
+        "group_name": "Audio/Interior Lighting",
+        "param_name": "Interior ambient lighting",
+        "param_value": "256色",
+        "idx": 265
+      },
+      {
+        "group_name": "Audio/Interior Lighting",
+        "param_name": "Active ambient atmosphere lamp",
+        "param_value": "●",
+        "idx": 266
+      }
+    ],
+    "Air conditioner/refrigerator": [
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Air conditioning temperature control method",
+        "param_value": "automatic air conditioning",
+        "idx": 267
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "heat pump air conditioning",
+        "param_value": "●",
+        "idx": 268
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Rear independent air conditioning",
+        "param_value": "●",
+        "idx": 269
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Rear-seat air vent",
+        "param_value": "●",
+        "idx": 270
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Temperature zoning control",
+        "param_value": "●",
+        "idx": 271
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "In-car air purifier",
+        "param_value": "●",
+        "idx": 272
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "In-vehicle PM2.5 filtration system",
+        "param_value": "●",
+        "idx": 273
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Negative ion generator",
+        "param_value": "●",
+        "idx": 274
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Interior fragrance device",
+        "param_value": "●",
+        "idx": 275
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Air quality monitoring",
+        "param_value": "●",
+        "idx": 276
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Car refrigerator",
+        "param_value": "●",
+        "idx": 277
+      }
+    ],
+    "Optional package": [
+      {
+        "group_name": "Optional package",
+        "param_name": "流光星辰把手",
+        "param_value": "包含：流光星辰把手",
+        "idx": 278
+      },
+      {
+        "group_name": "Optional package",
+        "param_name": "天地之镜轮毂",
+        "param_value": "包含：天地之镜轮毂",
+        "idx": 279
+      }
+    ]
+  },
+  "geo_meta": {
+    "sourceName": "autohome",
+    "cityZh": null,
+    "coverUrl": "https://img.autohaina.com/vehicle/2026/06/12/1gvt4f0acu/1gvt4f0acu_3-1280w.webp",
+    "updatetime": "2026-06-22 20:59:37",
+    "verifiedAt": "2026-06-22 20:59:37",
+    "updatedAt": "2026-06-29 10:11:44.720521",
+    "publishedAt": "2026-06-22"
+  },
+  "sales_manager": {
+    "name": "1260903823@qq.com",
+    "firstName": "Kayla",
+    "fullName": "Kayla 卓颖",
+    "image": "https://img.autohaina.com/users/avatar/1260903823-qq.com/33192a7cfbf20acdf6f8e8e6b857d9df.jpg",
+    "bio": null,
+    "phone": "+86-18150273276",
+    "jobTitle": "业务员",
+    "whatsapp": "+8618150273276",
+    "wechat": "https://img.autohaina.com/files/51b9bf898b789a15fc1c47608b6865ee.jpg",
+    "telegram": "HaiNaAUTO_Kayla"
+  },
+  "relatedVehicles": [
+    {
+      "id": "9flj6oj6p0",
+      "brandId": "s434pg5nut",
+      "brandName": "Voyah car",
+      "seriesId": "1fdk3ncn7t",
+      "seriesName": "Voyah Taishan",
+      "title": "The 2026 Max",
+      "listedAt": "2025-11-18",
+      "price": 409900,
+      "fobPrice": 432400,
+      "horsepower": 150,
+      "year": "2026",
+      "mileage": "0 km",
+      "tag": "",
+      "images": [
+        "https://img.autohaina.com/vehicle/2025/11/18/9flj6oj6p0/9flj6oj6p0_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2025/11/18/9flj6oj6p0/9flj6oj6p0_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2025/11/18/9flj6oj6p0/9flj6oj6p0_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2025/11/18/9flj6oj6p0/9flj6oj6p0_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2025/11/18/9flj6oj6p0/9flj6oj6p0_5-1280w.webp"
+      ],
+      "specs": {}
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { cars as seedCars, carFields, carTextFields, carTextLimits, carPriceMin, carPriceMax, customsTypes, type Car, type CarTextField } from './cars';
+import { validSpecs, validFeatureTags, validDate, selectableBrands, canonicalBrand } from './vehicle-specs';
 
 export const carsKey = 'hl-motors-admin-cars';
 export const contactsKey = 'hl-motors-contacts';
@@ -28,6 +29,10 @@ export function isCar(value: unknown): value is Car {
     && (car.version === undefined || (typeof car.version === 'number' && Number.isSafeInteger(car.version) && car.version >= 1))
     && (car.customsType === undefined || customsTypes.some(type => type === car.customsType))
     && validTranslations(car.translations)
+    && validSpecs(car.specs) && validFeatureTags(car.featureTags)
+    && (car.carCode === undefined || boundedText(car.carCode, 160))
+    && (car.listedAt === undefined || validDate(car.listedAt))
+    && (car.fobPrice === undefined || (typeof car.fobPrice === 'number' && Number.isSafeInteger(car.fobPrice) && car.fobPrice >= carPriceMin && car.fobPrice <= carPriceMax))
     && (car.vin === undefined || boundedText(car.vin, 64))
     && boundedText(car.image, 4096) && (car.video === undefined || boundedText(car.video, 4096))
     && (car.gallery === undefined || (Array.isArray(car.gallery) && car.gallery.length <= 100 && car.gallery.every(source => boundedText(source, 4096))));
@@ -36,7 +41,7 @@ export function isCar(value: unknown): value is Car {
 function validTranslations(value: unknown): boolean {
   if (value === undefined) return true;
   if (!isRecord(value)) return false;
-  return Object.entries(value).every(([locale, fields]) => ['ru', 'zh'].includes(locale)
+  return Object.entries(value).every(([locale, fields]) => ['ru', 'en', 'zh'].includes(locale)
     && isRecord(fields)
     && Object.entries(fields).every(([key, text]) => carTextFields.some(field => field === key) && boundedText(text, carTextLimits[key as CarTextField])));
 }
@@ -49,7 +54,7 @@ export function publicCar(value: unknown): Car | null {
   for (const key of carFields) if (Object.hasOwn(value, key)) projected[key] = value[key];
   if (isRecord(projected.translations)) {
     const translations: Record<string, unknown> = {};
-    for (const locale of ['ru', 'zh']) {
+    for (const locale of ['ru', 'en', 'zh']) {
       const fields = projected.translations[locale];
       if (fields === undefined) continue;
       translations[locale] = isRecord(fields)
@@ -125,9 +130,10 @@ export function writeContacts(value: Contacts, previous: Contacts): Contacts {
 export const whatsappLink = (contacts: Contacts, text?: string) => `https://wa.me/${contacts.whatsapp}${text ? `?text=${encodeURIComponent(text)}` : ''}`;
 export const telegramLink = (contacts: Contacts) => `https://t.me/${contacts.telegram}`;
 
-export function catalogOptions(cars: Car[]) {
+export function catalogOptions(cars: Car[], brand = '') {
   return {
-    brands: [...new Set(cars.map(car => car.brand))].sort((a, b) => a.localeCompare(b)),
+    brands: [...new Set([...selectableBrands, ...cars.map(car => canonicalBrand(car.brand))])].sort((a, b) => a.localeCompare(b)),
     years: [...new Set(cars.map(car => car.year))].sort((a, b) => b - a),
+    models: [...new Set(cars.filter(car => !brand || canonicalBrand(car.brand) === canonicalBrand(brand)).map(car => car.model))].sort((a, b) => a.localeCompare(b)),
   };
 }

@@ -1,0 +1,1250 @@
+{
+  "data": {
+    "id": "u7rg4duded",
+    "carCode": "da01a3e559cdaead | 18533748",
+    "brandId": "s2rtgpo17h",
+    "title": "AITO 2022 AITO M7 1.5T 4-wheel drive deluxe automatic gear",
+    "titleZh": "AITO 2022款 问界M7 1.5T 四驱豪华版 自动挡",
+    "metaTitle": "AITO 2022 AITO M7 1.5T 4-wheel drive deluxe automatic gear",
+    "metaDescription": "Original car, front bar painted, remaining original paint with coat",
+    "remark": "Original car, front bar painted, remaining original paint with coat",
+    "featureTags": [
+      "Non-operational"
+    ],
+    "highlights": [
+      "Non-operational"
+    ],
+    "highlightItems": [
+      {
+        "name": "Non-operational",
+        "source": "jyt"
+      }
+    ],
+    "price": 133000,
+    "fobPrice": 152500,
+    "listedAt": "2026-10-13",
+    "registrationDate": "2022-11-15",
+    "horsepower": 125,
+    "year": "2022",
+    "mileage": "42,000 km",
+    "tag": "Non-operational",
+    "images": [
+      "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_1-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_2-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_3-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_4-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_5-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_6-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_7-1280w.webp"
+    ],
+    "specs": {
+      "engine": "Extended range 125 horsepower",
+      "transmission": "Automatic",
+      "fuelType": "increasing program",
+      "driveType": "Dual-motor all-wheel drive",
+      "seats": "6",
+      "color": "white",
+      "bodyType": "SUV",
+      "displacement": "1.5T",
+      "flowMode": "Turbocharging",
+      "acceleration": "4.8",
+      "fuelConsumption": "1.09",
+      "batteryCapacity": "40",
+      "batteryType": "Tri-element lithium",
+      "range": "200",
+      "registrationDate": "2022-11-15",
+      "officialPrice": "339800",
+      "condition": "Used Car",
+      "location": "Shanghai Shanghai"
+    }
+  },
+  "breadcrumb": {
+    "brandId": "s2rtgpo17h",
+    "brandName": "AITO AITO",
+    "seriesId": "37aske3bu9",
+    "seriesName": "AITO M7"
+  },
+  "parameters_by_group": {
+    "Basic Parameters": [
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Vehicle Model Name",
+        "param_value": "AITO M7 2022 1.5T Extended 4-wheel Drive Deluxe Edition",
+        "idx": 1
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Reference Price (CNY)",
+        "param_value": "From 339800",
+        "idx": 2
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Manufacturer’s Suggested Retail Price (RMB)",
+        "param_value": "339800",
+        "idx": 3
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Manufacturer",
+        "param_value": "SERES car",
+        "idx": 4
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Level",
+        "param_value": "Mid-to-large SUV",
+        "idx": 5
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Energy type",
+        "param_value": "increasing program",
+        "idx": 6
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Environmental standards",
+        "param_value": "China VI",
+        "idx": 7
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Release date",
+        "param_value": "2022.07",
+        "idx": 8
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Maximum power (kW)",
+        "param_value": "330",
+        "idx": 9
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Maximum torque (N · m)",
+        "param_value": "660",
+        "idx": 10
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Engine",
+        "param_value": "Extended range 125 horsepower",
+        "idx": 11
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "gearbox",
+        "param_value": "Electric vehicle single speed gearbox",
+        "idx": 12
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Length × Width × Height (mm)",
+        "param_value": "5020*1945*1775",
+        "idx": 13
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Body structure",
+        "param_value": "5-door, 6-seat SUV",
+        "idx": 14
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Maximum speed (km/h)",
+        "param_value": "190",
+        "idx": 15
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Official 0–100 km/h acceleration (s)",
+        "param_value": "4.8",
+        "idx": 16
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Full-vehicle warranty",
+        "param_value": "Four years or 100,000 kilometers",
+        "idx": 17
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "WLTC pure electric range (km)",
+        "param_value": "135",
+        "idx": 18
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "CLTC pure electric cruising range (km)",
+        "param_value": "200",
+        "idx": 19
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Fast charging time (hours)",
+        "param_value": "0.5",
+        "idx": 20
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Slow charging time (hours)",
+        "param_value": "5",
+        "idx": 21
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Fast charge percentage",
+        "param_value": "80",
+        "idx": 22
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Motor (Ps)",
+        "param_value": "449",
+        "idx": 23
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "WLTC combined fuel consumption (L/100 km)",
+        "param_value": "1.09",
+        "idx": 24
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Minimum state of charge fuel consumption (L/100km)",
+        "param_value": "7.45",
+        "idx": 25
+      }
+    ],
+    "Car body": [
+      {
+        "group_name": "Car body",
+        "param_name": "Length (mm)",
+        "param_value": "5020",
+        "idx": 26
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Width (mm)",
+        "param_value": "1945",
+        "idx": 27
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Height (mm)",
+        "param_value": "1775",
+        "idx": 28
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Wheelbase (mm)",
+        "param_value": "2820",
+        "idx": 29
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Front track (mm)",
+        "param_value": "1635",
+        "idx": 30
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Rear track (mm)",
+        "param_value": "1650",
+        "idx": 31
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Minimum ground clearance under full load (mm)",
+        "param_value": "150",
+        "idx": 32
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Number of doors (units)",
+        "param_value": "5",
+        "idx": 33
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Number of seats (units)",
+        "param_value": "6",
+        "idx": 34
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Fuel tank capacity (L)",
+        "param_value": "60",
+        "idx": 35
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Trunk capacity (L)",
+        "param_value": "176-688",
+        "idx": 36
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Curb weight (kg)",
+        "param_value": "2450",
+        "idx": 37
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Minimum ground clearance without load (mm)",
+        "param_value": "188",
+        "idx": 38
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Approach angle (°)",
+        "param_value": "19",
+        "idx": 39
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Departure angle (°)",
+        "param_value": "22",
+        "idx": 40
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Door opening method",
+        "param_value": "Swing door",
+        "idx": 41
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Maximum gross vehicle weight (kg)",
+        "param_value": "2900",
+        "idx": 42
+      }
+    ],
+    "Engine": [
+      {
+        "group_name": "Engine",
+        "param_name": "Engine model",
+        "param_value": "H15RT",
+        "idx": 43
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Displacement (mL)",
+        "param_value": "1499",
+        "idx": 44
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Displacement (L)",
+        "param_value": "1.5",
+        "idx": 45
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Intake mode",
+        "param_value": "Turbocharging",
+        "idx": 46
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Cylinder arrangement",
+        "param_value": "L",
+        "idx": 47
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Number of cylinders (units)",
+        "param_value": "4",
+        "idx": 48
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Number of valves per cylinder (units)",
+        "param_value": "4",
+        "idx": 49
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Compression ratio",
+        "param_value": "15",
+        "idx": 50
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Valve train",
+        "param_value": "DOHC",
+        "idx": 51
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Cylinder bore (mm)",
+        "param_value": "73.5",
+        "idx": 52
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Stroke (mm)",
+        "param_value": "88.32",
+        "idx": 53
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum horsepower (Ps)",
+        "param_value": "125",
+        "idx": 54
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Fuel form",
+        "param_value": "increasing program",
+        "idx": 55
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Fuel octane rating",
+        "param_value": "No. 95",
+        "idx": 56
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Fuel supply method",
+        "param_value": "Multi-point EFI",
+        "idx": 57
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Cylinder head material",
+        "param_value": "Aluminum alloy",
+        "idx": 58
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Cylinder block material",
+        "param_value": "Cast iron",
+        "idx": 59
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Engine layout",
+        "param_value": "Horizontal placement",
+        "idx": 60
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum net power (kW)",
+        "param_value": "90",
+        "idx": 61
+      }
+    ],
+    "gearbox": [
+      {
+        "group_name": "gearbox",
+        "param_name": "Number of gears",
+        "param_value": "1",
+        "idx": 62
+      },
+      {
+        "group_name": "gearbox",
+        "param_name": "gearbox Type",
+        "param_value": "fixed gear ratio gearbox",
+        "idx": 63
+      },
+      {
+        "group_name": "gearbox",
+        "param_name": "Abbreviation",
+        "param_value": "Electric vehicle single speed gearbox",
+        "idx": 64
+      }
+    ],
+    "Chassis steering": [
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Drive method",
+        "param_value": "Dual-motor all-wheel drive",
+        "idx": 65
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Front suspension type",
+        "param_value": "MacPherson independent suspension",
+        "idx": 66
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Rear suspension type",
+        "param_value": "Multi-link independent suspension",
+        "idx": 67
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Type of support",
+        "param_value": "Electric power assistance",
+        "idx": 68
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Vehicle Body Structure",
+        "param_value": "Load-bearing",
+        "idx": 69
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Four-wheel drive form",
+        "param_value": "Electric all-wheel drive",
+        "idx": 70
+      }
+    ],
+    "Wheel brake": [
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Front brake type",
+        "param_value": "Ventilated disc",
+        "idx": 71
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Rear brake type",
+        "param_value": "Ventilated disc",
+        "idx": 72
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Parking brake type",
+        "param_value": "Electronic parking brake",
+        "idx": 73
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Front tire specifications",
+        "param_value": "255/50 R20",
+        "idx": 74
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Rear tire specifications",
+        "param_value": "255/50 R20",
+        "idx": 75
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Spare tire specifications",
+        "param_value": "Tire Repair Tool Only",
+        "idx": 76
+      }
+    ],
+    "Electric motor": [
+      {
+        "group_name": "Electric motor",
+        "param_name": "Motor type",
+        "param_value": "Permanent Magnet/Synchronous",
+        "idx": 77
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Total motor power (kW)",
+        "param_value": "330",
+        "idx": 78
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Total motor power (Ps)",
+        "param_value": "449",
+        "idx": 79
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Total motor torque (N·m)",
+        "param_value": "660",
+        "idx": 80
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Maximum power of the rear motor (kW)",
+        "param_value": "200",
+        "idx": 81
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Maximum torque of the rear motor (N·m)",
+        "param_value": "360",
+        "idx": 82
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Number of drive motors",
+        "param_value": "Dual motors",
+        "idx": 83
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Motor layout",
+        "param_value": "Front-mounted Rear-mounted",
+        "idx": 84
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery type",
+        "param_value": "Lithium ternary battery",
+        "idx": 85
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery Cell Brand",
+        "param_value": "Contemporary Amperex Technology Co. Limited (CATL)",
+        "idx": 86
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery cooling method",
+        "param_value": "Liquid cooling",
+        "idx": 87
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "WLTC Comprehensive Endurance (km)",
+        "param_value": "1000",
+        "idx": 88
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery energy (kWh)",
+        "param_value": "40",
+        "idx": 89
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Electricity consumption per 100 kilometers (kWh/100 km)",
+        "param_value": "24",
+        "idx": 90
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery pack warranty",
+        "param_value": "Eight years or 160,000 kilometers",
+        "idx": 91
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Fast charging function",
+        "param_value": "Support",
+        "idx": 92
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Fast charging power (kW)",
+        "param_value": "100",
+        "idx": 93
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Fast charge percentage (%)",
+        "param_value": "80",
+        "idx": 94
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Max. power of front motor (kW)",
+        "param_value": "130",
+        "idx": 95
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Maximum torque of front motor (N · m)",
+        "param_value": "300",
+        "idx": 96
+      }
+    ],
+    "Active/Passive Safety Equipment": [
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Driver’s and passenger’s airbags",
+        "param_value": "Main standard/auxiliary standard",
+        "idx": 97
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Front/rear side airbags",
+        "param_value": "Front standard/rear standard",
+        "idx": 98
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Front/rear head airbags (curtain airbags)",
+        "param_value": "Front standard/rear standard",
+        "idx": 99
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "ISOFIX child seat anchorages",
+        "param_value": "Standard equipment",
+        "idx": 100
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "ABS anti-lock",
+        "param_value": "Standard equipment",
+        "idx": 101
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Braking force distribution (EBD/CBC, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 102
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Brake assist (EBA/BAS/BA, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 103
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Traction control (ASR/TCS/TRC, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 104
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Body stability control (ESC/ESP/DSC, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 105
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Lane Change Assist",
+        "param_value": "Standard equipment",
+        "idx": 106
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Lane Departure Warning System",
+        "param_value": "Standard equipment",
+        "idx": 107
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Lane Keeping Assist System",
+        "param_value": "Standard equipment",
+        "idx": 108
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Road Traffic Sign Recognition",
+        "param_value": "Standard equipment",
+        "idx": 109
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Automatic Braking/Advanced Safety System",
+        "param_value": "Standard equipment",
+        "idx": 110
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Fatigue Driving Alert",
+        "param_value": "Standard equipment",
+        "idx": 111
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "DOW opening alert",
+        "param_value": "Standard equipment",
+        "idx": 112
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Forward Collision Warning",
+        "param_value": "Standard equipment",
+        "idx": 113
+      }
+    ],
+    "Auxiliary/Control Configuration": [
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Front/rear parking Radar",
+        "param_value": "Front standard/rear standard",
+        "idx": 114
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Rear Side Vehicle Warning System",
+        "param_value": "Standard equipment",
+        "idx": 115
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Automatic parking",
+        "param_value": "Standard equipment",
+        "idx": 116
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Auto Hold",
+        "param_value": "Standard equipment",
+        "idx": 117
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Hill-start assist",
+        "param_value": "Standard equipment",
+        "idx": 118
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Hill descent control",
+        "param_value": "Standard equipment",
+        "idx": 119
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "braking energy recovery system",
+        "param_value": "Standard equipment",
+        "idx": 120
+      }
+    ],
+    "Exterior/Security Features": [
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Electric trunk lid",
+        "param_value": "Standard equipment",
+        "idx": 121
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Sensing trunk",
+        "param_value": "Standard equipment",
+        "idx": 122
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Electric trunk position memory",
+        "param_value": "Standard equipment",
+        "idx": 123
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Roof rack",
+        "param_value": "Standard equipment",
+        "idx": 124
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Engine electronic immobilizer",
+        "param_value": "Standard equipment",
+        "idx": 125
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "In-car central locking",
+        "param_value": "Standard equipment",
+        "idx": 126
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Keyless start system",
+        "param_value": "Standard equipment",
+        "idx": 127
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Hide electric door handle",
+        "param_value": "Standard equipment",
+        "idx": 128
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Battery pre-heating",
+        "param_value": "Standard equipment",
+        "idx": 129
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "External discharge",
+        "param_value": "Standard equipment",
+        "idx": 130
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Low Speed Driving Warning",
+        "param_value": "Standard equipment",
+        "idx": 131
+      }
+    ],
+    "Internal configuration": [
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Multi-function steering wheel",
+        "param_value": "Standard equipment",
+        "idx": 132
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "All-digital instrument cluster",
+        "param_value": "Standard equipment",
+        "idx": 133
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "HUD heads-up digital display",
+        "param_value": "Standard equipment",
+        "idx": 134
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Built-in dashcam",
+        "param_value": "Standard equipment",
+        "idx": 135
+      }
+    ],
+    "Seat configuration": [
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Electrically adjustable driver’s and passenger’s seats",
+        "param_value": "Main standard/auxiliary standard",
+        "idx": 136
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Rear adjustable button on the passenger side",
+        "param_value": "Standard equipment",
+        "idx": 137
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Second-row seats with electric adjustment",
+        "param_value": "Standard equipment",
+        "idx": 138
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Second row of independent seats",
+        "param_value": "Standard equipment",
+        "idx": 139
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Front/Rear Center Armrest",
+        "param_value": "Front standard/rear standard",
+        "idx": 140
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Rear cup holder",
+        "param_value": "Standard equipment",
+        "idx": 141
+      }
+    ],
+    "Multimedia Configuration": [
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Satellite navigation system",
+        "param_value": "Standard equipment",
+        "idx": 142
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Navigation traffic information is displayed.",
+        "param_value": "Standard equipment",
+        "idx": 143
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Roadside assistance call",
+        "param_value": "Standard equipment",
+        "idx": 144
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Bluetooth/Voice Call",
+        "param_value": "Standard equipment",
+        "idx": 145
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Facial recognition",
+        "param_value": "Standard equipment",
+        "idx": 146
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Internet of Vehicles",
+        "param_value": "Standard equipment",
+        "idx": 147
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "OTA update",
+        "param_value": "Standard equipment",
+        "idx": 148
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "220V/230V power supply",
+        "param_value": "Standard equipment",
+        "idx": 149
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Trunk 12V power outlet",
+        "param_value": "Standard equipment",
+        "idx": 150
+      }
+    ],
+    "Lighting configuration": [
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "LED daytime running lights",
+        "param_value": "Standard equipment",
+        "idx": 151
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Adaptive high/low beams",
+        "param_value": "Standard equipment",
+        "idx": 152
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Automatic headlights",
+        "param_value": "Standard equipment",
+        "idx": 153
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Headlight height is adjustable.",
+        "param_value": "Standard equipment",
+        "idx": 154
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Headlight delay-off",
+        "param_value": "Standard equipment",
+        "idx": 155
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Touch‑activated reading light",
+        "param_value": "Standard equipment",
+        "idx": 156
+      }
+    ],
+    "Glass/Rearview Mirror": [
+      {
+        "group_name": "Glass/Rearview Mirror",
+        "param_name": "Front/Rear Electric Window",
+        "param_value": "Front standard/rear standard",
+        "idx": 157
+      },
+      {
+        "group_name": "Glass/Rearview Mirror",
+        "param_name": "Window anti-pinch function",
+        "param_value": "Standard equipment",
+        "idx": 158
+      },
+      {
+        "group_name": "Glass/Rearview Mirror",
+        "param_name": "Rear side privacy glass",
+        "param_value": "Standard equipment",
+        "idx": 159
+      },
+      {
+        "group_name": "Glass/Rearview Mirror",
+        "param_name": "Rear wiper",
+        "param_value": "Standard equipment",
+        "idx": 160
+      }
+    ],
+    "Air conditioner/refrigerator": [
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Rear-seat air vent",
+        "param_value": "Standard equipment",
+        "idx": 161
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Temperature zoning control",
+        "param_value": "Standard equipment",
+        "idx": 162
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "In-car air purifier",
+        "param_value": "Standard equipment",
+        "idx": 163
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "In-vehicle PM2.5 filtration system",
+        "param_value": "Standard equipment",
+        "idx": 164
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Negative ion generator",
+        "param_value": "Standard equipment",
+        "idx": 165
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Interior fragrance device",
+        "param_value": "Standard equipment",
+        "idx": 166
+      }
+    ]
+  },
+  "geo_meta": {
+    "sourceName": "jyt",
+    "cityZh": "上海",
+    "coverUrl": "https://img.autohaina.com/vehicle/2026/10/13/u7rg4duded/u7rg4duded_1-1280w.webp",
+    "updatetime": "2026-10-13 21:24:35",
+    "verifiedAt": "2026-10-13 21:24:35",
+    "updatedAt": "2026-10-13 21:31:02.148410",
+    "publishedAt": "2026-10-13"
+  },
+  "sales_manager": {
+    "name": "autohaina@gmail.com",
+    "firstName": "AutoHaina",
+    "fullName": "AutoHaina",
+    "image": "https://img.autohaina.com/files/hnlogo750x750.jpg",
+    "bio": "你好",
+    "phone": null,
+    "jobTitle": null,
+    "whatsapp": null,
+    "wechat": "https://img.autohaina.com/files/autohainawx.jpg",
+    "telegram": null
+  },
+  "relatedVehicles": [
+    {
+      "id": "78uopocjfo",
+      "brandId": "s2rtgpo17h",
+      "brandName": "AITO AITO",
+      "seriesId": "37aske3bu9",
+      "seriesName": "AITO M7",
+      "registrationDate": "2024-11-14",
+      "title": "AITO 2024 AITO M7 Smart Drive Rear Drive Pro Edition 5-seat Automatic Gear",
+      "listedAt": "2026-10-14",
+      "price": 145800,
+      "fobPrice": 165300,
+      "horsepower": 268,
+      "year": "2024",
+      "mileage": "35,000 km",
+      "tag": "",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/78uopocjfo/78uopocjfo_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/78uopocjfo/78uopocjfo_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/78uopocjfo/78uopocjfo_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/78uopocjfo/78uopocjfo_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/78uopocjfo/78uopocjfo_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Jiangxi Fuzhou"
+      }
+    },
+    {
+      "id": "9q4eilr433",
+      "brandId": "s2rtgpo17h",
+      "brandName": "AITO AITO",
+      "seriesId": "37aske3bu9",
+      "seriesName": "AITO M7",
+      "registrationDate": "2025-10-14",
+      "title": "AITO 2024 AITO M7 Smart Drive Rear Drive Ultra Edition 5-seat Automatic Gear",
+      "listedAt": "2026-10-14",
+      "price": 166800,
+      "fobPrice": 189300,
+      "horsepower": 268,
+      "year": "2025",
+      "mileage": "21,000 km",
+      "tag": "Non-operational",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/9q4eilr433/9q4eilr433_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/9q4eilr433/9q4eilr433_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/9q4eilr433/9q4eilr433_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/9q4eilr433/9q4eilr433_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/9q4eilr433/9q4eilr433_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Zhejiang Jiaxing"
+      }
+    },
+    {
+      "id": "7k2dj6907a",
+      "brandId": "s2rtgpo17h",
+      "brandName": "AITO AITO",
+      "seriesId": "37aske3bu9",
+      "seriesName": "AITO M7",
+      "registrationDate": "2025-09-01",
+      "title": "AITO 2026 AITO M7 extended range Ultra 4-wheel drive version 5 (192-line laser Radar) automatic gear",
+      "listedAt": "2026-10-14",
+      "price": 275800,
+      "fobPrice": 298300,
+      "horsepower": 526,
+      "year": "2025",
+      "mileage": "9,000 km",
+      "tag": "High value preservation",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/7k2dj6907a/7k2dj6907a_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/7k2dj6907a/7k2dj6907a_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/7k2dj6907a/7k2dj6907a_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/7k2dj6907a/7k2dj6907a_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/7k2dj6907a/7k2dj6907a_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Fujian Xiamen"
+      }
+    },
+    {
+      "id": "u9c6sgkeru",
+      "brandId": "s2rtgpo17h",
+      "brandName": "AITO AITO",
+      "seriesId": "37aske3bu9",
+      "seriesName": "AITO M7",
+      "registrationDate": "2024-02-12",
+      "title": "AITO 2024 AITO M7 Smart Drive Four-wheel Drive Max Edition 5-seat Automatic Gear",
+      "listedAt": "2026-10-14",
+      "price": 168800,
+      "fobPrice": 191300,
+      "horsepower": 443,
+      "year": "2024",
+      "mileage": "29,000 km",
+      "tag": "",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/u9c6sgkeru/u9c6sgkeru_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/u9c6sgkeru/u9c6sgkeru_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/u9c6sgkeru/u9c6sgkeru_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/u9c6sgkeru/u9c6sgkeru_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/u9c6sgkeru/u9c6sgkeru_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Jiangxi Yichun"
+      }
+    },
+    {
+      "id": "dc3udamdbe",
+      "brandId": "s2rtgpo17h",
+      "brandName": "AITO AITO",
+      "seriesId": "37aske3bu9",
+      "seriesName": "AITO M7",
+      "registrationDate": "2025-10-17",
+      "title": "AITO 2026 AITO M7 extended range Ultra 4-wheel drive version 6 seats (192-line laser Radar) automatic gear",
+      "listedAt": "2026-10-13",
+      "price": 299000,
+      "fobPrice": 321500,
+      "horsepower": 526,
+      "year": "2025",
+      "mileage": "8,000 km",
+      "tag": "Original factory paint throughout the vehicle",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/13/dc3udamdbe/dc3udamdbe_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/dc3udamdbe/dc3udamdbe_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/dc3udamdbe/dc3udamdbe_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/dc3udamdbe/dc3udamdbe_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/13/dc3udamdbe/dc3udamdbe_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Sichuan Chengdu"
+      }
+    }
+  ]
+}

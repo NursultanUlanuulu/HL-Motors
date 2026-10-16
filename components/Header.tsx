@@ -1,85 +1,37 @@
 'use client';
-
-import { useLocale } from '@/components/LocaleProvider';
-
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { useLocale } from './LocaleProvider';
 import { Brand } from './Brand';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { MarketIcon } from './MarketIcon';
+import { useFavorites } from './FavoritesProvider';
+import { useSiteData } from './SiteDataProvider';
 
-type HeaderProps = { active?: 'catalog' | 'home' };
-
-export function Header({ active }: HeaderProps) {
+export function Header({ active }: { active?: 'catalog' | 'home' }) {
   const { t } = useLocale();
-  const [isLight, setIsLight] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const menu = useRef<HTMLDialogElement>(null);
+  const { ids } = useFavorites();
+  const { cars } = useSiteData();
+  const count = cars.filter(car => ids.includes(car.id)).length;
   const pathname = usePathname();
-
-  function closeMenu() {
-    menu.current?.close();
-    setMenuOpen(false);
-  }
-
-  useEffect(() => { closeMenu(); }, [pathname]);
-
+  const dialog = useRef<HTMLDialogElement>(null);
+  const [open, setOpen] = useState(false);
+  const links = [['/catalog', 'Каталог'], ['/delivery', 'Доставка и оплата'], ['/about', 'О компании'], ['/contacts', 'Контакты']];
+  function close() { dialog.current?.close(); setOpen(false); }
+  useEffect(() => { close(); }, [pathname]);
   useEffect(() => {
-    if (!menuOpen) return;
-    const dialog = menu.current;
-    if (!dialog) return;
-    dialog.showModal();
-    const previousOverflow = document.body.style.overflow;
+    if (!open) return;
+    dialog.current?.showModal();
+    const previous = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
-    const desktop = window.matchMedia('(min-width: 851px)');
-    const handleResize = () => { if (desktop.matches) closeMenu(); };
-    desktop.addEventListener('change', handleResize);
-    return () => {
-      document.body.style.overflow = previousOverflow;
-      desktop.removeEventListener('change', handleResize);
-      if (dialog.open) dialog.close();
-    };
-  }, [menuOpen]);
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('hl-theme') === 'light';
-    setIsLight(savedTheme);
-    document.body.classList.toggle('light', savedTheme);
-  }, []);
-
-  function toggleTheme() {
-    const nextTheme = !isLight;
-    setIsLight(nextTheme);
-    document.body.classList.toggle('light', nextTheme);
-    localStorage.setItem('hl-theme', nextTheme ? 'light' : 'dark');
-  }
-
-  return (
-    <header className={`site-header ${active === 'catalog' ? 'page-header' : ''}`}>
-      <Brand />
-      <nav className="desktop-nav" aria-label={t("Основная навигация")}>
-        <Link className={active === 'catalog' ? 'active' : ''} href="/catalog">{t("Автомобили")}</Link>
-        <Link href="/#process">{t("Как мы работаем")}</Link>
-        <Link href="/#about">{t("О компании")}</Link>
-        <Link href="/#contacts">{t("Контакты")}</Link>
-      </nav>
-      <div className="header-actions">
-        <LanguageSwitcher />
-        <button className="theme-toggle" aria-label={t("Переключить тему")} onClick={toggleTheme}><span className="theme-icon">◐</span></button>
-        <button className="menu-toggle" type="button" aria-label={t("Открыть меню")} aria-controls="mobile-navigation" aria-expanded={menuOpen} onClick={() => setMenuOpen(true)}><span></span><span></span></button>
-      </div>
-      <dialog ref={menu} id="mobile-navigation" className="mobile-menu" aria-label={t('Основная навигация')} onClose={() => setMenuOpen(false)} onClick={event => { if (event.target === event.currentTarget) closeMenu(); }}>
-        <div className="mobile-menu-content">
-          <div className="mobile-menu-header"><div onClick={closeMenu}><Brand /></div><button type="button" className="mobile-menu-close" onClick={closeMenu} aria-label={t('Закрыть меню')}>×</button></div>
-          <nav className="mobile-menu-links" aria-label={t('Основная навигация')}>
-            <Link href="/catalog" aria-current={active === 'catalog' ? 'page' : undefined} onClick={closeMenu}>{t('Автомобили')}<span aria-hidden="true">↗</span></Link>
-            <Link href="/#process" onClick={closeMenu}>{t('Как мы работаем')}<span aria-hidden="true">↗</span></Link>
-            <Link href="/#about" onClick={closeMenu}>{t('О компании')}<span aria-hidden="true">↗</span></Link>
-            <Link href="/#contacts" onClick={closeMenu}>{t('Контакты')}<span aria-hidden="true">↗</span></Link>
-          </nav>
-          <div className="mobile-menu-bottom"><span>{t('Выбор языка')}</span><LanguageSwitcher /></div>
-        </div>
-      </dialog>
-    </header>
-  );
+    return () => { document.body.style.overflow = previous; dialog.current?.close(); };
+  }, [open]);
+  const nav = links.map(([url, label]) => <Link key={url} href={url} onClick={close} aria-current={pathname === url || (url === '/catalog' && (active === 'catalog' || active === 'home')) ? 'page' : undefined}>{t(label)}</Link>);
+  return <header className="market-header"><div className="market-header-inner">
+    <Brand />
+    <nav className="market-nav" aria-label={t('Основная навигация')}>{nav}</nav>
+    <div className="market-header-actions"><Link className="market-saved-link" href="/favorites" aria-label={t('Избранное') + ': ' + count} aria-current={pathname === '/favorites' ? 'page' : undefined}><MarketIcon name="heart" /><span>{t('Избранное')}</span>{count > 0 && <b>{count}</b>}</Link><LanguageSwitcher /><button type="button" className="market-menu-button" aria-label={t('Открыть меню')} aria-expanded={open} aria-controls="market-navigation" onClick={() => setOpen(true)}>☰</button></div>
+    <dialog ref={dialog} id="market-navigation" className="market-menu" onClose={() => setOpen(false)} aria-label={t('Основная навигация')} onClick={event => { if (event.target === event.currentTarget) close(); }}><div><button className="market-close" type="button" onClick={close} aria-label={t('Закрыть меню')}><MarketIcon name="close" /></button><nav>{nav}<Link href="/favorites" onClick={close}>{t('Избранное')} · {count}</Link></nav><LanguageSwitcher /></div></dialog>
+  </div></header>;
 }

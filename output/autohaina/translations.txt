@@ -1,0 +1,348 @@
+Vehicle Model Name|Название модели и комплектации
+Reference Price (CNY)|Справочная цена в юанях
+Manufacturer’s Suggested Retail Price (RMB)|Рекомендованная цена производителя в юанях
+Manufacturer|Производитель
+Level|Класс автомобиля
+Energy type|Тип топлива или силовой установки
+Environmental standards|Экологический стандарт
+Release date|Дата выхода модели
+Maximum power (kW)|Максимальная мощность в кВт
+Maximum torque (N · m)|Максимальный крутящий момент в Н·м
+Engine|Двигатель
+gearbox|Коробка передач
+Length × Width × Height (mm)|Длина × ширина × высота в мм
+Body structure|Тип кузова и схема дверей и мест
+Maximum speed (km/h)|Максимальная скорость в км/ч
+Official 0–100 km/h acceleration (s)|Разгон до 100 км/ч в секундах
+Full-vehicle warranty|Гарантия на автомобиль
+WLTC pure electric range (km)|Запас хода на электричестве по WLTC в км
+CLTC pure electric cruising range (km)|Запас хода на электричестве по CLTC в км
+Fast charging time (hours)|Время быстрой зарядки в часах
+Slow charging time (hours)|Время медленной зарядки в часах
+Fast charge percentage|Диапазон заряда при быстрой зарядке
+Motor (Ps)|Мощность электромотора в л. с.
+WLTC combined fuel consumption (L/100 km)|Смешанный расход топлива WLTC в л/100 км
+Minimum state of charge fuel consumption (L/100km)|Расход при минимальном заряде в л/100 км
+Fast battery charging time (hours)|Время быстрой зарядки батареи в часах
+Battery fast charge range (%)|Диапазон заряда батареи в процентах
+Fuel consumption equivalent to electric energy (L/100 km)|Топливный эквивалент расхода электроэнергии в л/100 км
+First-Owner Warranty Policy|Гарантийные условия для первого владельца
+Curb weight (kg)|Снаряжённая масса в кг
+Maximum gross vehicle weight (kg)|Максимальная полная масса в кг
+Minimum SOC fuel consumption (L/100km)WLTC|Расход при минимальном заряде по WLTC в л/100 км
+Comprehensive fuel consumption of oil and electricity (L/100km)|Комбинированный расход гибридной установки в л/100 км
+NEDC pure electric cruising range (km)|Запас хода на электричестве по NEDC в км
+Length (mm)|Длина в мм
+Width (mm)|Ширина в мм
+Height (mm)|Высота в мм
+Wheelbase (mm)|Колёсная база в мм
+Front track (mm)|Передняя колея в мм
+Rear track (mm)|Задняя колея в мм
+Minimum ground clearance under full load (mm)|Клиренс при полной нагрузке в мм
+Number of doors (units)|Количество дверей
+Number of seats (units)|Количество мест
+Fuel tank capacity (L)|Объём топливного бака в литрах
+Trunk capacity (L)|Объём багажника в литрах
+Minimum ground clearance without load (mm)|Клиренс без нагрузки в мм
+Approach angle (°)|Угол въезда в градусах
+Departure angle (°)|Угол съезда в градусах
+Door opening method|Способ открывания дверей
+Minimum turning radius (m)|Минимальный радиус разворота в метрах
+Drag coefficient (Cd)|Коэффициент аэродинамического сопротивления
+Total mass of quasi-trailer (kg)|Допустимая масса прицепа в кг
+Maximum climbing degree (%)|Максимальный преодолеваемый подъём в процентах
+Maximum climbing angle (°)|Максимальный угол подъёма в градусах
+Engine model|Модель двигателя
+Displacement (mL)|Рабочий объём двигателя в см³
+Displacement (L)|Рабочий объём двигателя в литрах
+Intake mode|Тип наддува или атмосферный впуск
+Cylinder arrangement|Расположение цилиндров
+Number of cylinders (units)|Количество цилиндров
+Number of valves per cylinder (units)|Клапанов на цилиндр
+Compression ratio|Степень сжатия
+Valve train|Газораспределительный механизм
+Cylinder bore (mm)|Диаметр цилиндра в мм
+Stroke (mm)|Ход поршня в мм
+Maximum horsepower (Ps)|Максимальная мощность в метрических л. с.
+Fuel form|Вид топлива
+Fuel octane rating|Октановое число топлива
+Fuel supply method|Система подачи топлива
+Cylinder head material|Материал головки блока цилиндров
+Cylinder block material|Материал блока цилиндров
+Engine layout|Расположение двигателя
+Maximum net power (kW)|Максимальная полезная мощность в кВт
+Maximum power speed (rpm)|Обороты максимальной мощности
+Maximum torque speed (rpm)|Обороты максимального момента
+Engine Specific Technology|Фирменная технология двигателя
+Number of gears|Количество передач
+gearbox Type|Тип коробки передач
+Abbreviation|Краткое обозначение коробки
+Drive method|Компоновка и схема привода
+Front suspension type|Тип передней подвески
+Rear suspension type|Тип задней подвески
+Type of support|Тип усилителя рулевого управления
+Vehicle Body Structure|Несущая конструкция кузова
+Four-wheel drive form|Разновидность полного привода
+Central differential structure|Тип межосевого дифференциала или муфты
+Front brake type|Тип передних тормозов
+Rear brake type|Тип задних тормозов
+Parking brake type|Тип стояночного тормоза
+Front tire specifications|Размер передних шин
+Rear tire specifications|Размер задних шин
+Spare tire specifications|Запасное колесо или ремкомплект
+Motor type|Тип электромотора
+Total motor power (kW)|Суммарная мощность электромоторов в кВт
+Total motor power (Ps)|Суммарная мощность электромоторов в л. с.
+Total motor torque (N·m)|Суммарный момент электромоторов в Н·м
+Maximum power of the rear motor (kW)|Мощность заднего электромотора в кВт
+Maximum torque of the rear motor (N·m)|Момент заднего электромотора в Н·м
+Number of drive motors|Количество тяговых электромоторов
+Motor layout|Расположение электромоторов
+Battery type|Тип тяговой батареи
+Battery Cell Brand|Производитель аккумуляторных ячеек
+Battery cooling method|Способ охлаждения батареи
+WLTC Comprehensive Endurance (km)|Общий запас хода по WLTC в км
+Battery energy (kWh)|Энергетическая ёмкость батареи в кВт·ч
+Electricity consumption per 100 kilometers (kWh/100 km)|Расход электроэнергии в кВт·ч/100 км
+Battery pack warranty|Гарантия на тяговую батарею
+Fast charging function|Поддержка быстрой зарядки
+Fast charging power (kW)|Мощность быстрой зарядки в кВт
+Fast charge percentage (%)|Диапазон быстрой зарядки в процентах
+Max. power of front motor (kW)|Мощность переднего электромотора в кВт
+Maximum torque of front motor (N · m)|Момент переднего электромотора в Н·м
+Rear motor brand|Производитель заднего электромотора
+Rear motor model|Модель заднего электромотора
+Total motor horsepower (Ps)|Суммарная мощность электромоторов в л. с.
+Three electric first car owner warranty policy|Гарантия на электропривод батарею и электронику для первого владельца
+Front motor model|Модель переднего электромотора
+System integrated power (kW)|Суммарная мощность силовой установки в кВт
+System integrated power (Ps)|Суммарная мощность силовой установки в л. с.
+Comprehensive system torque (N · m)|Суммарный момент силовой установки в Н·м
+Battery energy density (Wh/kg)|Удельная энергоёмкость батареи в Вт·ч/кг
+Battery swapping|Поддержка замены батареи
+Driver’s and passenger’s airbags|Подушки водителя и переднего пассажира
+Front/rear side airbags|Передние и задние боковые подушки
+Front/rear head airbags (curtain airbags)|Передние и задние шторки безопасности
+ISOFIX child seat anchorages|Крепления ISOFIX
+ABS anti-lock|Антиблокировочная система ABS
+Braking force distribution (EBD/CBC, etc.)|Распределение тормозных усилий EBD и аналоги
+Brake assist (EBA/BAS/BA, etc.)|Усилитель экстренного торможения
+Traction control (ASR/TCS/TRC, etc.)|Противобуксовочная система
+Body stability control (ESC/ESP/DSC, etc.)|Система стабилизации
+Lane Change Assist|Ассистент перестроения
+Lane Departure Warning System|Предупреждение о выходе из полосы
+Lane Keeping Assist System|Удержание в полосе
+Road Traffic Sign Recognition|Распознавание дорожных знаков
+Automatic Braking/Advanced Safety System|Автоматическое экстренное торможение
+Fatigue Driving Alert|Контроль усталости водителя
+DOW opening alert|Предупреждение при открывании двери
+Forward Collision Warning|Предупреждение о фронтальном столкновении
+knee airbag|Коленная подушка безопасности
+run-flat tire|Шины Run Flat
+Lane center hold|Удержание по центру полосы
+Rear Collision Warning|Предупреждение о столкновении сзади
+Front/rear parking Radar|Передние и задние парктроники
+Rear Side Vehicle Warning System|Предупреждение о транспорте сзади сбоку
+Automatic parking|Автоматическая парковка
+Auto Hold|Автоматическое удержание тормозами
+Hill-start assist|Помощь при трогании на подъёме
+Hill descent control|Помощь при спуске
+braking energy recovery system|Рекуперация энергии торможения
+Engine start-stop technology|Система старт стоп
+Variable steering ratio|Переменное передаточное отношение руля
+Transparent chassis/540-degree imaging|Виртуальный прозрачный кузов и обзор 540 градусов
+Remote parking|Дистанционная парковка
+automatic lane change assist|Автоматическая помощь при смене полосы
+Central differential locking function|Блокировка межосевого дифференциала
+Tracking reversing|Движение задним ходом по записанному маршруту
+Low-speed four-wheel drive|Пониженный режим полного привода
+creep mode|Режим медленного движения по бездорожью
+Tank Turn|Разворот с уменьшенным радиусом Tank Turn
+YuanChen Summon|Дистанционный вызов автомобиля
+Electric trunk lid|Электропривод крышки багажника
+Sensing trunk|Бесконтактное открывание багажника
+Electric trunk position memory|Память положения крышки багажника
+Roof rack|Рейлинги на крыше
+Engine electronic immobilizer|Электронный иммобилайзер
+In-car central locking|Центральный замок
+Keyless start system|Бесключевой запуск
+Hide electric door handle|Выдвижные электрические ручки дверей
+Battery pre-heating|Предварительный подогрев батареи
+External discharge|Питание внешних устройств от автомобиля
+Low Speed Driving Warning|Звуковое предупреждение при малой скорости
+Sport Appearance Kit|Спортивный внешний обвес
+Frameless design door|Безрамочные двери
+Sentinel mode/clairvoyance|Режим охраны и удалённого наблюдения
+Multi-function steering wheel|Многофункциональный руль
+All-digital instrument cluster|Цифровая приборная панель
+HUD heads-up digital display|Проекционный дисплей HUD
+Built-in dashcam|Встроенный видеорегистратор
+Steering wheel shift paddles|Подрулевые лепестки переключения
+Steering wheel memory|Память положения руля
+ETC device|Устройство электронной оплаты дорог
+Steering wheel heating|Подогрев руля
+Active noise cancellation|Активное шумоподавление
+Central control color screen|Центральный цветной экран
+Central control screen size|Диагональ центрального экрана
+Central control screen type|Тип центрального экрана
+Bluetooth/Voice Call|Bluetooth и телефонные звонки
+Speech Recognition Control System|Голосовое управление функциями
+Voice assistant wake word|Фраза вызова голосового помощника
+Voice-based zone-specific wake-up recognition|Распознавание голоса по зонам салона
+Continuous speech recognition|Непрерывное распознавание речи
+Visible to say|Голосовой выбор видимых элементов интерфейса
+App Store|Магазин приложений
+In-vehicle intelligent system|Операционная система мультимедиа
+Internet of Vehicles|Подключение автомобиля к онлайн сервисам
+4G/5G networks|Поддерживаемые мобильные сети
+OTA update|Беспроводное обновление ПО
+Wi-Fi hotspot|Точка доступа Wi Fi
+Mobile APP YuanChen function|Удалённые функции мобильного приложения
+In-car KTV|Караоке в автомобиле
+Steering wheel material|Материал отделки руля
+Steering wheel position adjustment|Регулировки положения руля
+Gear-shifting method|Способ выбора передач
+Vehicle computer display screen|Дисплей бортового компьютера
+LCD instrument cluster size|Диагональ приборной панели
+Rearview mirror function|Функции салонного зеркала
+Multimedia/Charging Port|Мультимедийные и зарядные разъёмы
+Number of USB/Type-C ports|Количество портов USB и Type C
+Seat material|Материал обивки сидений
+Front seat adjustment method|Регулировки переднего сиденья
+Rear seat adjustment method|Регулировки второго указанного сиденья
+Electrically adjustable driver’s and passenger’s seats|Электрорегулировки водительского и пассажирского сидений
+Rear seat folding mechanism|Механизм складывания задних сидений
+Front/Rear Center Armrest|Передний и задний центральные подлокотники
+Number of speakers|Количество динамиков
+Touch‑activated reading light|Сенсорное управление лампами для чтения
+Air conditioning temperature control method|Тип управления климатической системой
+Rear-seat air vent|Дефлекторы для задних пассажиров
+In-vehicle PM2.5 filtration system|Фильтрация частиц PM2.5
+Rear adjustable button on the passenger side|Кнопка регулировки переднего пассажирского сиденья сзади
+Second-row seats with electric adjustment|Электрорегулировки сидений второго ряда
+Second row of independent seats|Раздельные сиденья второго ряда
+Rear cup holder|Задние подстаканники
+Front seat functions|Подогрев вентиляция массаж и другие функции передних сидений
+Electric seat memory function|Память электрорегулировок сидений
+Second row seat adjustment|Регулировки второго ряда
+Second row seat function|Функции сидений второго ряда
+Rear-seat tray table|Столики для задних пассажиров
+Third-row seat adjustment|Регулировки третьего ряда
+Third-row seat electric adjustment|Электрорегулировки третьего ряда
+Third row seat function|Функции сидений третьего ряда
+Seat layout|Схема размещения мест
+Rear seats electrically fold down|Электрическое складывание задних сидений
+Satellite navigation system|Спутниковая навигация
+Navigation traffic information is displayed.|Дорожная обстановка в навигации
+Roadside assistance call|Вызов дорожной помощи
+Facial recognition|Распознавание лица
+220V/230V power supply|Розетка 220 или 230 В
+Trunk 12V power outlet|Розетка 12 В в багажнике
+Rear control multimedia|Управление мультимедиа с задних мест
+LED daytime running lights|Светодиодные дневные ходовые огни
+Adaptive high/low beams|Автоматическое переключение дальнего и ближнего света
+Automatic headlights|Автоматическое включение фар
+Headlight height is adjustable.|Регулировка высоты света фар
+Headlight delay-off|Задержка выключения фар
+Steering-assisted lights|Подсветка поворотов
+Front/Rear Electric Window|Передние и задние электростеклоподъёмники
+Window anti-pinch function|Защита от защемления стёклами
+Rear side privacy glass|Тонированные задние боковые стёкла
+Rear wiper|Задний стеклоочиститель
+Temperature zoning control|Раздельные температурные зоны
+In-car air purifier|Очиститель воздуха
+Negative ion generator|Ионизатор воздуха
+Interior fragrance device|Ароматизация салона
+heat pump air conditioning|Тепловой насос
+Rear independent air conditioning|Отдельная климатическая система сзади
+Air quality monitoring|Контроль качества воздуха
+Car refrigerator|Автомобильный холодильник
+Battery Specific Technology|Фирменная технология батареи
+Slow Charge Interface Location|Расположение разъёма медленной зарядки
+Fast charging interface position|Расположение разъёма быстрой зарядки
+External AC discharge power (kW)|Мощность выдачи переменного тока наружу в кВт
+CLTC综合续航(km)|Общий запас хода по CLTC в км
+High-voltage fast charging|Высоковольтная быстрая зарядка
+HV Platform (V)|Напряжение высоковольтной платформы в вольтах
+Front middle airbag|Центральная передняя подушка безопасности
+Tire pressure monitoring function|Система контроля давления в шинах
+Seat belt reminder|Напоминание о ремнях безопасности
+Rollover prevention system|Предотвращение опрокидывания
+Driving mode switching|Режимы движения
+Energy recovery system|Система рекуперации энергии
+Variable suspension function|Регулировки подвески
+Air suspension|Пневматическая подвеска
+Air suspension type|Тип пневмоподвески
+Magic Carpet Smart Suspension|Интеллектуальная подвеска с прогнозированием дороги
+Driver-assistance imaging|Камеры и визуализация помощи водителю
+Assisted driving chip|Процессор систем помощи водителю
+Chip Total Power|Вычислительная производительность в TOPS
+Front-facing perception camera|Тип передней камеры восприятия
+Number of cameras|Количество камер
+Front perception camera pixels|Разрешение передней камеры восприятия
+Environment-aware camera pixels|Разрешение камер наблюдения за окружением
+Surround View Camera Pixel|Разрешение камер кругового обзора
+Number of in-vehicle cameras|Количество камер внутри салона
+Number of ultrasonic Radar|Количество ультразвуковых датчиков
+Millimeter wave Radar quantity|Количество миллиметровых радаров
+Laser Radar Brand|Производитель лидара
+Laser Radar Model|Модель лидара
+Number of laser Radar|Количество лидаров
+Number of laser Radar lines|Количество линий лидара
+Cruise control system|Тип круиз контроля
+Advanced Driver Assistance System|Название системы помощи водителю
+Levels of Advanced Driver Assistance Systems|Уровень автоматизации помощи водителю
+Map brand|Поставщик карт
+Parking assist|Помощь при парковке
+Memory parking|Парковка по запомненному маршруту
+Auxiliary lane change|Помощь при перестроении
+Automatic exit (entry) of auxiliary ramp|Помощь при въезде и съезде с автомагистрали
+Signal light identification|Распознавание сигналов светофора
+Steering wheel hands-off detection|Контроль рук водителя на руле
+Auxiliary driving section|Участки дорог для работы ассистентов
+high precision positioning|Высокоточное позиционирование
+Start Reminder|Напоминание о начале движения
+Electric spoiler|Активный электрический спойлер
+Rim material|Материал колёсных дисков
+Key type|Тип ключа
+Keyless entry function|Бесключевой доступ
+Active closed air intake grille|Активные заслонки решётки
+Electric suction door|Доводчики дверей
+Automatic door opening and closing|Автоматическое открывание и закрывание дверей
+Low beam light source|Источник ближнего света
+High-beam light source|Источник дальнего света
+Scene Light Language|Сценарии и сигналы наружного освещения
+Auxiliary driving lamp|Световой индикатор работы ассистентов
+Skylight type|Тип люка или панорамной крыши
+One-touch window lift function|Автоматический подъём и опускание стёкол
+In-car vanity mirror|Косметические зеркала
+Rain-sensing wiper function|Датчик дождя и режим стеклоочистителей
+Side window multi-layer soundproof glass|Многослойные шумоизоляционные боковые стёкла
+Rearview mirror functions|Функции наружных зеркал
+Central control screen resolution|Разрешение центрального экрана
+Central control LCD screen split screen display|Разделение центрального экрана на зоны
+Phone connectivity/mirroring|Интеграция телефона и дублирование экрана
+Voice activation without a wake word|Голосовые команды без фразы пробуждения
+Gesture Control|Управление жестами
+In-vehicle intelligent chip|Процессор мультимедийной системы
+Vehicle system memory (GB)|Оперативная память мультимедиа в ГБ
+Vehicle system storage (GB)|Накопитель мультимедиа в ГБ
+In-vehicle biological monitoring system|Контроль присутствия людей или животных в салоне
+Simulated sound waves|Имитация звука силовой установки
+Rear LCD screen size|Диагональ заднего экрана
+Rear LCD screen resolution|Разрешение заднего экрана
+Number of rear multimedia screens|Количество задних мультимедийных экранов
+HUD Head Size|Размер проекции HUD
+AR-HUD augmented reality head-up display|Проекционный дисплей с дополненной реальностью
+USB/Type-C maximum charging power|Максимальная мощность зарядки USB и Type C
+Wireless charging feature for mobile phones|Беспроводная зарядка телефонов
+Wireless charging power for mobile phones|Мощность беспроводной зарядки телефонов
+Number of external speakers|Количество наружных динамиков
+WANOS Panoramic Sound|Объёмное звучание WANOS
+Interior ambient lighting|Атмосферная подсветка салона
+Active ambient atmosphere lamp|Динамическая атмосферная подсветка
+流光星辰把手|Фирменный пакет дверных ручек 流光星辰
+天地之镜轮毂|Фирменный пакет колёсных дисков 天地之镜
+Dealer Quotation|Цена дилера
+Minimum state of charge fuel consumption (L/100km)NEDC|Расход при минимальном заряде по NEDC в л/100 км
+Front motor brand|Производитель переднего электромотора

@@ -1,0 +1,1302 @@
+{
+  "data": {
+    "id": "qfcs22ib3c",
+    "carCode": "4a3f12cf3062efe4 | 18533433",
+    "brandId": "s3u86vg679",
+    "title": "Tank 500 New Energy 2023 Tank 500 Hi4-T 2.0T Hi4-T Automatic",
+    "titleZh": "坦克 500新能源 2023款 坦克500 Hi4-T 2.0T Hi4-T 自动挡",
+    "metaTitle": "Tank 500 New Energy 2023 Tank 500 Hi4-T 2.0T Hi4-T Automatic",
+    "metaDescription": "Simply change the two doors to Dr. Cha SS",
+    "remark": "Simply change the two doors to Dr. Cha SS",
+    "featureTags": [
+      "Non-operational"
+    ],
+    "highlights": [
+      "Non-operational"
+    ],
+    "highlightItems": [
+      {
+        "name": "Non-operational",
+        "source": "jyt"
+      }
+    ],
+    "price": 209800,
+    "fobPrice": 232300,
+    "listedAt": "2026-10-13",
+    "registrationDate": "2023-09-14",
+    "horsepower": 252,
+    "year": "2023",
+    "mileage": "44,000 km",
+    "tag": "Non-operational",
+    "images": [
+      "https://img.autohaina.com/vehicle/2026/10/13/qfcs22ib3c/qfcs22ib3c_1-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/qfcs22ib3c/qfcs22ib3c_2-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/qfcs22ib3c/qfcs22ib3c_3-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/qfcs22ib3c/qfcs22ib3c_4-1280w.webp",
+      "https://img.autohaina.com/vehicle/2026/10/13/qfcs22ib3c/qfcs22ib3c_5-1280w.webp"
+    ],
+    "specs": {
+      "engine": "2.0T 252 horsepower L4",
+      "transmission": "Automatic",
+      "fuelType": "plug-in hybrid",
+      "driveType": "Four-wheel drive",
+      "seats": "5",
+      "color": "gray",
+      "bodyType": "SUV",
+      "displacement": "2.0T",
+      "flowMode": "Turbocharging",
+      "acceleration": "6.9",
+      "fuelConsumption": "2.2",
+      "batteryCapacity": "37.1",
+      "batteryType": "Tri-element lithium",
+      "range": "150",
+      "registrationDate": "2023-09-14",
+      "officialPrice": "335000",
+      "condition": "Used Car",
+      "location": "Tianjin Tianjin"
+    }
+  },
+  "breadcrumb": {
+    "brandId": "s3u86vg679",
+    "brandName": "Tank",
+    "seriesId": "32rjhpcl3f",
+    "seriesName": "500 new energy"
+  },
+  "parameters_by_group": {
+    "Basic Parameters": [
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Vehicle Model Name",
+        "param_value": "Tank 500 New Energy 2023 Hi4-T",
+        "idx": 1
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Reference Price (CNY)",
+        "param_value": "From 335000",
+        "idx": 2
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Manufacturer’s Suggested Retail Price (RMB)",
+        "param_value": "335000",
+        "idx": 3
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Manufacturer",
+        "param_value": "Great Wall car",
+        "idx": 4
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Level",
+        "param_value": "Mid-to-large SUV",
+        "idx": 5
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Energy type",
+        "param_value": "Plug-in hybrid",
+        "idx": 6
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Environmental standards",
+        "param_value": "China VI",
+        "idx": 7
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Release date",
+        "param_value": "2023.06",
+        "idx": 8
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Maximum power (kW)",
+        "param_value": "300",
+        "idx": 9
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Maximum torque (N · m)",
+        "param_value": "750",
+        "idx": 10
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Engine",
+        "param_value": "2.0T 252 horsepower L4",
+        "idx": 11
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "gearbox",
+        "param_value": "9-gear manual integration",
+        "idx": 12
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Length × Width × Height (mm)",
+        "param_value": "5078*1934*1905",
+        "idx": 13
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Body structure",
+        "param_value": "5 door 5 seat SUV",
+        "idx": 14
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Maximum speed (km/h)",
+        "param_value": "180",
+        "idx": 15
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Official 0–100 km/h acceleration (s)",
+        "param_value": "6.9",
+        "idx": 16
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Full-vehicle warranty",
+        "param_value": "Five years or 150000km",
+        "idx": 17
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Fast charging time (hours)",
+        "param_value": "0.4",
+        "idx": 18
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Slow charging time (hours)",
+        "param_value": "6.5",
+        "idx": 19
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Fast charge percentage",
+        "param_value": "30-80",
+        "idx": 20
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Motor (Ps)",
+        "param_value": "163",
+        "idx": 21
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "WLTC combined fuel consumption (L/100 km)",
+        "param_value": "2.2",
+        "idx": 22
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "Minimum state of charge fuel consumption (L/100km)",
+        "param_value": "9.55",
+        "idx": 23
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "First-Owner Warranty Policy",
+        "param_value": "Lifetime warranty for core components of engine and transmission (the liability exemption clause shall be subject to the official)",
+        "idx": 24
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "NEDC pure electric cruising range (km)",
+        "param_value": "120",
+        "idx": 25
+      },
+      {
+        "group_name": "Basic Parameters",
+        "param_name": "WLTC pure electric range (km)",
+        "param_value": "110",
+        "idx": 26
+      }
+    ],
+    "Car body": [
+      {
+        "group_name": "Car body",
+        "param_name": "Length (mm)",
+        "param_value": "5078",
+        "idx": 27
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Width (mm)",
+        "param_value": "1934",
+        "idx": 28
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Height (mm)",
+        "param_value": "1905",
+        "idx": 29
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Wheelbase (mm)",
+        "param_value": "2850",
+        "idx": 30
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Front track (mm)",
+        "param_value": "1635",
+        "idx": 31
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Rear track (mm)",
+        "param_value": "1635",
+        "idx": 32
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Minimum ground clearance under full load (mm)",
+        "param_value": "213",
+        "idx": 33
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Number of doors (units)",
+        "param_value": "5",
+        "idx": 34
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Number of seats (units)",
+        "param_value": "5",
+        "idx": 35
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Fuel tank capacity (L)",
+        "param_value": "70",
+        "idx": 36
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Curb weight (kg)",
+        "param_value": "2810",
+        "idx": 37
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Approach angle (°)",
+        "param_value": "30",
+        "idx": 38
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Departure angle (°)",
+        "param_value": "24",
+        "idx": 39
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Door opening method",
+        "param_value": "Swing door",
+        "idx": 40
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Maximum gross vehicle weight (kg)",
+        "param_value": "3310",
+        "idx": 41
+      },
+      {
+        "group_name": "Car body",
+        "param_name": "Total mass of quasi-trailer (kg)",
+        "param_value": "2500",
+        "idx": 42
+      }
+    ],
+    "Engine": [
+      {
+        "group_name": "Engine",
+        "param_name": "Engine model",
+        "param_value": "E20NA",
+        "idx": 43
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Displacement (mL)",
+        "param_value": "1998",
+        "idx": 44
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Displacement (L)",
+        "param_value": "2.0",
+        "idx": 45
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Intake mode",
+        "param_value": "Turbocharging",
+        "idx": 46
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Cylinder arrangement",
+        "param_value": "L",
+        "idx": 47
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Number of cylinders (units)",
+        "param_value": "4",
+        "idx": 48
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Number of valves per cylinder (units)",
+        "param_value": "4",
+        "idx": 49
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Valve train",
+        "param_value": "DOHC",
+        "idx": 50
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum horsepower (Ps)",
+        "param_value": "252",
+        "idx": 51
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum power speed (rpm)",
+        "param_value": "5500-6000",
+        "idx": 52
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum torque speed (rpm)",
+        "param_value": "1700-4000",
+        "idx": 53
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Fuel form",
+        "param_value": "Plug-in hybrid",
+        "idx": 54
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Fuel octane rating",
+        "param_value": "92.",
+        "idx": 55
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Fuel supply method",
+        "param_value": "Direct injection",
+        "idx": 56
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Cylinder head material",
+        "param_value": "Aluminum alloy",
+        "idx": 57
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Cylinder block material",
+        "param_value": "Aluminum alloy",
+        "idx": 58
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Engine layout",
+        "param_value": "Longitudinal",
+        "idx": 59
+      },
+      {
+        "group_name": "Engine",
+        "param_name": "Maximum net power (kW)",
+        "param_value": "180",
+        "idx": 60
+      }
+    ],
+    "gearbox": [
+      {
+        "group_name": "gearbox",
+        "param_name": "Number of gears",
+        "param_value": "9",
+        "idx": 61
+      },
+      {
+        "group_name": "gearbox",
+        "param_name": "Abbreviation",
+        "param_value": "9-gear manual integration",
+        "idx": 62
+      },
+      {
+        "group_name": "gearbox",
+        "param_name": "gearbox Type",
+        "param_value": "Hand-automatic integrated gearbox (AT)",
+        "idx": 63
+      }
+    ],
+    "Chassis steering": [
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Drive method",
+        "param_value": "Front-wheel drive with four-wheel drive",
+        "idx": 64
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Front suspension type",
+        "param_value": "Double wishbone independent suspension",
+        "idx": 65
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Rear suspension type",
+        "param_value": "Integral bridge type non-independent suspension",
+        "idx": 66
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Type of support",
+        "param_value": "Electric power assistance",
+        "idx": 67
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Vehicle Body Structure",
+        "param_value": "Non-bearing",
+        "idx": 68
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Four-wheel drive form",
+        "param_value": "Timely four-wheel drive",
+        "idx": 69
+      },
+      {
+        "group_name": "Chassis steering",
+        "param_name": "Central differential structure",
+        "param_value": "multi-plate clutch",
+        "idx": 70
+      }
+    ],
+    "Wheel brake": [
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Front brake type",
+        "param_value": "Ventilated disc",
+        "idx": 71
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Rear brake type",
+        "param_value": "Ventilated disc",
+        "idx": 72
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Parking brake type",
+        "param_value": "Electronic parking brake",
+        "idx": 73
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Front tire specifications",
+        "param_value": "265/55 R19",
+        "idx": 74
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Rear tire specifications",
+        "param_value": "265/55 R19",
+        "idx": 75
+      },
+      {
+        "group_name": "Wheel brake",
+        "param_name": "Spare tire specifications",
+        "param_value": "Full size",
+        "idx": 76
+      }
+    ],
+    "Electric motor": [
+      {
+        "group_name": "Electric motor",
+        "param_name": "Total motor power (kW)",
+        "param_value": "120",
+        "idx": 77
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Total motor torque (N·m)",
+        "param_value": "400",
+        "idx": 78
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery type",
+        "param_value": "Lithium ternary battery",
+        "idx": 79
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery Cell Brand",
+        "param_value": "SVOLT Energy",
+        "idx": 80
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery cooling method",
+        "param_value": "Liquid cooling",
+        "idx": 81
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery energy (kWh)",
+        "param_value": "37.1",
+        "idx": 82
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Battery pack warranty",
+        "param_value": "The first owner is not limited to years/mileage (liability exemption clause is subject to the official)",
+        "idx": 83
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Fast charging function",
+        "param_value": "Support",
+        "idx": 84
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Fast charge percentage (%)",
+        "param_value": "30-80",
+        "idx": 85
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "System integrated power (kW)",
+        "param_value": "300",
+        "idx": 86
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "System integrated power (Ps)",
+        "param_value": "408",
+        "idx": 87
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Comprehensive system torque (N · m)",
+        "param_value": "750",
+        "idx": 88
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Motor type",
+        "param_value": "Permanent Magnet/Synchronous",
+        "idx": 89
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "Fast charging power (kW)",
+        "param_value": "50",
+        "idx": 90
+      },
+      {
+        "group_name": "Electric motor",
+        "param_name": "WLTC Comprehensive Endurance (km)",
+        "param_value": "790",
+        "idx": 91
+      }
+    ],
+    "Active/Passive Safety Equipment": [
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Driver’s and passenger’s airbags",
+        "param_value": "Main standard/auxiliary standard",
+        "idx": 92
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Front/rear side airbags",
+        "param_value": "Front standard/rear-",
+        "idx": 93
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Front/rear head airbags (curtain airbags)",
+        "param_value": "Front standard/rear standard",
+        "idx": 94
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "ISOFIX child seat anchorages",
+        "param_value": "Standard equipment",
+        "idx": 95
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "ABS anti-lock",
+        "param_value": "Standard equipment",
+        "idx": 96
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Braking force distribution (EBD/CBC, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 97
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Brake assist (EBA/BAS/BA, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 98
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Traction control (ASR/TCS/TRC, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 99
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Body stability control (ESC/ESP/DSC, etc.)",
+        "param_value": "Standard equipment",
+        "idx": 100
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Lane Change Assist",
+        "param_value": "Standard equipment",
+        "idx": 101
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Lane Departure Warning System",
+        "param_value": "Standard equipment",
+        "idx": 102
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Lane Keeping Assist System",
+        "param_value": "Standard equipment",
+        "idx": 103
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Road Traffic Sign Recognition",
+        "param_value": "Standard equipment",
+        "idx": 104
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Automatic Braking/Advanced Safety System",
+        "param_value": "Standard equipment",
+        "idx": 105
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Fatigue Driving Alert",
+        "param_value": "Standard equipment",
+        "idx": 106
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "DOW opening alert",
+        "param_value": "Standard equipment",
+        "idx": 107
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Forward Collision Warning",
+        "param_value": "Standard equipment",
+        "idx": 108
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Lane center hold",
+        "param_value": "Standard equipment",
+        "idx": 109
+      },
+      {
+        "group_name": "Active/Passive Safety Equipment",
+        "param_name": "Rear Collision Warning",
+        "param_value": "Standard equipment",
+        "idx": 110
+      }
+    ],
+    "Auxiliary/Control Configuration": [
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Front/rear parking Radar",
+        "param_value": "Front standard/rear standard",
+        "idx": 111
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Rear Side Vehicle Warning System",
+        "param_value": "Standard equipment",
+        "idx": 112
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Automatic parking",
+        "param_value": "Standard equipment",
+        "idx": 113
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Engine start-stop technology",
+        "param_value": "Standard equipment",
+        "idx": 114
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Auto Hold",
+        "param_value": "Standard equipment",
+        "idx": 115
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Hill-start assist",
+        "param_value": "Standard equipment",
+        "idx": 116
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Hill descent control",
+        "param_value": "Standard equipment",
+        "idx": 117
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Central differential locking function",
+        "param_value": "Standard equipment",
+        "idx": 118
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Transparent chassis/540-degree imaging",
+        "param_value": "Standard equipment",
+        "idx": 119
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Tracking reversing",
+        "param_value": "Standard equipment",
+        "idx": 120
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Low-speed four-wheel drive",
+        "param_value": "Standard equipment",
+        "idx": 121
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "creep mode",
+        "param_value": "Standard equipment",
+        "idx": 122
+      },
+      {
+        "group_name": "Auxiliary/Control Configuration",
+        "param_name": "Tank Turn",
+        "param_value": "Standard equipment",
+        "idx": 123
+      }
+    ],
+    "Exterior/Security Features": [
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Roof rack",
+        "param_value": "Standard equipment",
+        "idx": 124
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Engine electronic immobilizer",
+        "param_value": "Standard equipment",
+        "idx": 125
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "In-car central locking",
+        "param_value": "Standard equipment",
+        "idx": 126
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Keyless start system",
+        "param_value": "Standard equipment",
+        "idx": 127
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Battery pre-heating",
+        "param_value": "Standard equipment",
+        "idx": 128
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "External discharge",
+        "param_value": "Standard equipment",
+        "idx": 129
+      },
+      {
+        "group_name": "Exterior/Security Features",
+        "param_name": "Low Speed Driving Warning",
+        "param_value": "Standard equipment",
+        "idx": 130
+      }
+    ],
+    "Internal configuration": [
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Multi-function steering wheel",
+        "param_value": "Standard equipment",
+        "idx": 131
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Steering wheel shift paddles",
+        "param_value": "Standard equipment",
+        "idx": 132
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Steering wheel heating",
+        "param_value": "Standard equipment",
+        "idx": 133
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Steering wheel memory",
+        "param_value": "Standard equipment",
+        "idx": 134
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "All-digital instrument cluster",
+        "param_value": "Standard equipment",
+        "idx": 135
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "HUD heads-up digital display",
+        "param_value": "Standard equipment",
+        "idx": 136
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Built-in dashcam",
+        "param_value": "Standard equipment",
+        "idx": 137
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "Active noise cancellation",
+        "param_value": "Standard equipment",
+        "idx": 138
+      },
+      {
+        "group_name": "Internal configuration",
+        "param_name": "ETC device",
+        "param_value": "Standard equipment",
+        "idx": 139
+      }
+    ],
+    "Seat configuration": [
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Electrically adjustable driver’s and passenger’s seats",
+        "param_value": "Main standard/auxiliary standard",
+        "idx": 140
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Front/Rear Center Armrest",
+        "param_value": "Front standard/rear standard",
+        "idx": 141
+      },
+      {
+        "group_name": "Seat configuration",
+        "param_name": "Rear cup holder",
+        "param_value": "Standard equipment",
+        "idx": 142
+      }
+    ],
+    "Multimedia Configuration": [
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Satellite navigation system",
+        "param_value": "Standard equipment",
+        "idx": 143
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Navigation traffic information is displayed.",
+        "param_value": "Standard equipment",
+        "idx": 144
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Roadside assistance call",
+        "param_value": "Standard equipment",
+        "idx": 145
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Bluetooth/Voice Call",
+        "param_value": "Standard equipment",
+        "idx": 146
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Internet of Vehicles",
+        "param_value": "Standard equipment",
+        "idx": 147
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "OTA update",
+        "param_value": "Standard equipment",
+        "idx": 148
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Rear control multimedia",
+        "param_value": "Standard equipment",
+        "idx": 149
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "220V/230V power supply",
+        "param_value": "Standard equipment",
+        "idx": 150
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Trunk 12V power outlet",
+        "param_value": "Standard equipment",
+        "idx": 151
+      },
+      {
+        "group_name": "Multimedia Configuration",
+        "param_name": "Wi-Fi hotspot",
+        "param_value": "Standard equipment",
+        "idx": 152
+      }
+    ],
+    "Lighting configuration": [
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "LED daytime running lights",
+        "param_value": "Standard equipment",
+        "idx": 153
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Adaptive high/low beams",
+        "param_value": "Standard equipment",
+        "idx": 154
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Automatic headlights",
+        "param_value": "Standard equipment",
+        "idx": 155
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Steering-assisted lights",
+        "param_value": "Standard equipment",
+        "idx": 156
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Headlight height is adjustable.",
+        "param_value": "Standard equipment",
+        "idx": 157
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Headlight delay-off",
+        "param_value": "Standard equipment",
+        "idx": 158
+      },
+      {
+        "group_name": "Lighting configuration",
+        "param_name": "Touch‑activated reading light",
+        "param_value": "Standard equipment",
+        "idx": 159
+      }
+    ],
+    "Glass/Rearview Mirror": [
+      {
+        "group_name": "Glass/Rearview Mirror",
+        "param_name": "Front/Rear Electric Window",
+        "param_value": "Front standard/rear standard",
+        "idx": 160
+      },
+      {
+        "group_name": "Glass/Rearview Mirror",
+        "param_name": "Window anti-pinch function",
+        "param_value": "Standard equipment",
+        "idx": 161
+      },
+      {
+        "group_name": "Glass/Rearview Mirror",
+        "param_name": "Rear side privacy glass",
+        "param_value": "Standard equipment",
+        "idx": 162
+      },
+      {
+        "group_name": "Glass/Rearview Mirror",
+        "param_name": "Rear wiper",
+        "param_value": "Standard equipment",
+        "idx": 163
+      }
+    ],
+    "Air conditioner/refrigerator": [
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Rear independent air conditioning",
+        "param_value": "Standard equipment",
+        "idx": 164
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Rear-seat air vent",
+        "param_value": "Standard equipment",
+        "idx": 165
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Temperature zoning control",
+        "param_value": "Standard equipment",
+        "idx": 166
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "In-car air purifier",
+        "param_value": "Standard equipment",
+        "idx": 167
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "In-vehicle PM2.5 filtration system",
+        "param_value": "Standard equipment",
+        "idx": 168
+      },
+      {
+        "group_name": "Air conditioner/refrigerator",
+        "param_name": "Air quality monitoring",
+        "param_value": "Standard equipment",
+        "idx": 169
+      }
+    ],
+    "Active Safety": [
+      {
+        "group_name": "Active Safety",
+        "param_name": "Rollover prevention system",
+        "param_value": "Standard equipment",
+        "idx": 170
+      }
+    ],
+    "Driving Control": [
+      {
+        "group_name": "Driving Control",
+        "param_name": "Energy recovery system",
+        "param_value": "Standard equipment",
+        "idx": 171
+      }
+    ],
+    "Screen/System": [
+      {
+        "group_name": "Screen/System",
+        "param_name": "App Store",
+        "param_value": "Standard equipment",
+        "idx": 172
+      },
+      {
+        "group_name": "Screen/System",
+        "param_name": "Voice activation without a wake word",
+        "param_value": "Standard equipment",
+        "idx": 173
+      },
+      {
+        "group_name": "Screen/System",
+        "param_name": "Continuous speech recognition",
+        "param_value": "Standard equipment",
+        "idx": 174
+      }
+    ]
+  },
+  "geo_meta": {
+    "sourceName": "jyt",
+    "cityZh": "天津",
+    "coverUrl": "https://img.autohaina.com/vehicle/2026/10/13/qfcs22ib3c/qfcs22ib3c_1-1280w.webp",
+    "updatetime": "2026-10-13 21:14:10",
+    "verifiedAt": "2026-10-13 21:14:10",
+    "updatedAt": "2026-10-13 21:24:36.133194",
+    "publishedAt": "2026-10-13"
+  },
+  "sales_manager": {
+    "name": "3325067593@qq.com",
+    "firstName": "Sofiya",
+    "fullName": "Sofiya",
+    "image": "https://img.autohaina.com/users/avatar/3325067593-qq.com/dealer-556349a.jpg",
+    "bio": "WeChat: +8618150219625",
+    "phone": "+8618150219625",
+    "jobTitle": "业务员",
+    "whatsapp": "+8618150219625",
+    "wechat": "https://img.autohaina.com/files/微信图片_20260408193336_676_14.png",
+    "telegram": "@Sofiya_HainaAuto"
+  },
+  "relatedVehicles": [
+    {
+      "id": "v8j5l83gd1",
+      "brandId": "s3u86vg679",
+      "brandName": "Tank",
+      "seriesId": "32rjhpcl3f",
+      "seriesName": "500 new energy",
+      "registrationDate": "2024-10-14",
+      "title": "Tank 500 New Energy 2024 Tank 500 Hi4-T 2.0T Hi4-T Black Samurai Edition Automatic Gear",
+      "listedAt": "2026-10-14",
+      "price": 240000,
+      "fobPrice": 262500,
+      "horsepower": 161,
+      "year": "2024",
+      "mileage": "35,000 km",
+      "tag": "High value preservation",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/v8j5l83gd1/v8j5l83gd1_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/v8j5l83gd1/v8j5l83gd1_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/v8j5l83gd1/v8j5l83gd1_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/v8j5l83gd1/v8j5l83gd1_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/v8j5l83gd1/v8j5l83gd1_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Shandong Dongying"
+      }
+    },
+    {
+      "id": "k4ni48g5l4",
+      "brandId": "s3u86vg679",
+      "brandName": "Tank",
+      "seriesId": "32rjhpcl3f",
+      "seriesName": "500 new energy",
+      "registrationDate": "2025-06-14",
+      "title": "Tank 500 New Energy 2023 Tank 500 Hi4-T 2.0T Hi4-T (Modified) Automatic Gear",
+      "listedAt": "2026-10-14",
+      "price": 250000,
+      "fobPrice": 272500,
+      "horsepower": 252,
+      "year": "2025",
+      "mileage": "57,000 km",
+      "tag": "High value preservation",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/k4ni48g5l4/k4ni48g5l4_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/k4ni48g5l4/k4ni48g5l4_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/k4ni48g5l4/k4ni48g5l4_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/k4ni48g5l4/k4ni48g5l4_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/k4ni48g5l4/k4ni48g5l4_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Xinjiang Ili"
+      }
+    },
+    {
+      "id": "77nv2i2245",
+      "brandId": "s3u86vg679",
+      "brandName": "Tank",
+      "seriesId": "32rjhpcl3f",
+      "seriesName": "500 new energy",
+      "registrationDate": "2026-02-14",
+      "title": "Tank 500 New Energy 2026 Model Tank 500 Hi4-T 2.0T Smart Enjoyment Version Automatic Transmission",
+      "listedAt": "2026-10-14",
+      "price": 219800,
+      "fobPrice": 242300,
+      "horsepower": 174,
+      "year": "2026",
+      "mileage": "6,000 km",
+      "tag": "defective car",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/77nv2i2245/77nv2i2245_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/77nv2i2245/77nv2i2245_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/77nv2i2245/77nv2i2245_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/77nv2i2245/77nv2i2245_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/77nv2i2245/77nv2i2245_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Liaoning Shenyang"
+      }
+    },
+    {
+      "id": "ehg9rd4v8k",
+      "brandId": "s3u86vg679",
+      "brandName": "Tank",
+      "seriesId": "32rjhpcl3f",
+      "seriesName": "500 new energy",
+      "registrationDate": "2024-03-04",
+      "title": "Tank 500 New Energy 2023 Tank 500 Hi4-T 2.0T Hi4-T Automatic",
+      "listedAt": "2026-10-14",
+      "price": 238000,
+      "fobPrice": 260500,
+      "horsepower": 252,
+      "year": "2024",
+      "mileage": "20,000 km",
+      "tag": "Non-operational",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/ehg9rd4v8k/ehg9rd4v8k_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/ehg9rd4v8k/ehg9rd4v8k_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/ehg9rd4v8k/ehg9rd4v8k_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/ehg9rd4v8k/ehg9rd4v8k_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/ehg9rd4v8k/ehg9rd4v8k_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Jiangxi Yichun"
+      }
+    },
+    {
+      "id": "jsg6lnhc7t",
+      "brandId": "s3u86vg679",
+      "brandName": "Tank",
+      "seriesId": "32rjhpcl3f",
+      "seriesName": "500 new energy",
+      "registrationDate": "2025-08-14",
+      "title": "Tank 500 New Energy 2026 Model Tank 500 Hi4-T 2.0T Smart Enjoyment Version Automatic Transmission",
+      "listedAt": "2026-10-14",
+      "price": 288800,
+      "fobPrice": 311300,
+      "horsepower": 174,
+      "year": "2025",
+      "mileage": "7,000 km",
+      "tag": "",
+      "images": [
+        "https://img.autohaina.com/vehicle/2026/10/14/jsg6lnhc7t/jsg6lnhc7t_1-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/jsg6lnhc7t/jsg6lnhc7t_2-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/jsg6lnhc7t/jsg6lnhc7t_3-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/jsg6lnhc7t/jsg6lnhc7t_4-1280w.webp",
+        "https://img.autohaina.com/vehicle/2026/10/14/jsg6lnhc7t/jsg6lnhc7t_5-1280w.webp"
+      ],
+      "specs": {
+        "location": "Beijing Beijing"
+      }
+    }
+  ]
+}
