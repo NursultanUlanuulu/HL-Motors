@@ -22,6 +22,30 @@ const { initialAdvancedFilters, matchesAdvanced } = load('lib/vehicle-filters.ts
 const { optionId, specSelects, specNumbers, carNumeric } = load('lib/vehicle-specs.ts');
 const { translate, carCount, parseLocale } = load('lib/i18n.ts');
 const { readMarketFilters, filterMarketCars, marketQuery, marketDefaults } = load('lib/marketplace-filters.ts');
+const { searchOptions, brandSelectOptions, modelSelectOptions } = load('lib/select-options.ts');
+const { optimizableImage } = load('lib/image-delivery.ts');
+
+test('brand and model lookup matches Russian aliases, Chinese names and punctuation across UI languages', () => {
+  const demo = require('../fixtures/demo-cars.json');
+  for (const locale of ['ru', 'en', 'zh']) {
+    const choices = brandSelectOptions(demo, locale);
+    for (const query of ['мерседес', 'Mercedes-Benz', '奔驰']) assert.equal(searchOptions(choices, query)[0].value, 'Mercedes Benz');
+    assert.equal(searchOptions(choices, 'тойота')[0].value, 'Toyota');
+    assert.equal(searchOptions(choices, 'зикр')[0].value, 'Zeekr');
+    assert.equal(choices[0].count, 1);
+    const models = modelSelectOptions(demo, 'BYD', locale);
+    assert.equal(searchOptions(models, 'seal06')[0].value, 'Seal 06 DM-i');
+    assert.equal(searchOptions(models, '海豹')[0].value, 'Seal 06 DM-i');
+    assert.equal(modelSelectOptions(demo, 'Toyota', locale).length, 0);
+  }
+});
+
+test('server image optimization only accepts allowed public origins and paths', () => {
+  assert.ok(optimizableImage('https://img.autohaina.com/vehicle/1/photo.webp'));
+  assert.ok(optimizableImage('https://images.unsplash.com/photo-example?w=600'));
+  assert.ok(optimizableImage('https://project.supabase.co/storage/v1/object/public/vehicle-media/test.jpg', 'https://project.supabase.co'));
+  for (const source of ['http://127.0.0.1/photo.jpg', 'https://img.autohaina.com.evil.test/vehicle/1.jpg', 'https://img.autohaina.com:9000/vehicle/1.jpg', 'https://user:secret@img.autohaina.com/vehicle/1.jpg', 'https://img.autohaina.com/private/1.jpg', 'https://other.supabase.co/storage/v1/object/public/vehicle-media/test.jpg', '//localhost/private', 'hl-media:local-id']) assert.equal(optimizableImage(source, 'https://project.supabase.co'), false, source);
+});
 
 test('marketplace URL state restores multiple fuels, canonical brands and ordering without changing records', () => {
   const demo = require('../fixtures/demo-cars.json');

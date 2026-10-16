@@ -17,6 +17,7 @@ async function main() {
   const browser = await chromium.launch({ headless: true, channel: 'msedge' });
   const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
   const page = await context.newPage();
+  const choose = async (combo, value) => { await combo.click(); await page.locator('.search-select-popup:popover-open [role=option][data-value=' + JSON.stringify(value) + ']').click(); };
   const errors = []; page.on('pageerror', error => errors.push(error.message));
   try {
     await page.goto(origin + '/login');
@@ -32,16 +33,15 @@ async function main() {
     if (initial.cars.some(car => car.carCode === 'BROWSER-QA')) await page.reload();
     await page.getByRole('button', { name: 'Add car' }).click();
     const dialog = page.getByRole('dialog', { name: 'Car editor' });
-    await dialog.getByLabel('Search brands', { exact: true }).fill('Toyota');
-    await dialog.getByRole('combobox', { name: /^Brand/ }).selectOption('Toyota');
-    await dialog.getByRole('combobox', { name: /^Fuel and powertrain/ }).selectOption(id('fuelType', 'Gasoline'));
-    await dialog.getByRole('combobox', { name: /^Transmission/ }).selectOption(id('transmission', 'Automatic'));
-    await dialog.getByRole('combobox', { name: /^Drivetrain/ }).selectOption(id('driveType', 'Precursor'));
-    await dialog.getByRole('combobox', { name: /^Body and size class/ }).selectOption(id('bodyType', 'Hatchback'));
-    await dialog.getByRole('combobox', { name: /^Exterior colour/ }).selectOption(id('color', 'white'));
-    await dialog.getByRole('combobox', { name: /^Seats/ }).selectOption(id('seats', '5'));
-    await dialog.getByRole('combobox', { name: /^Battery type/ }).selectOption(id('batteryType', 'Lithium iron phosphate'));
-    await dialog.getByRole('combobox', { name: /^Engine aspiration/ }).selectOption(id('flowMode', 'Turbocharging'));
+    await choose(dialog.getByRole('combobox', { name: /^Brand/ }), 'Toyota');
+    await choose(dialog.getByRole('combobox', { name: /^Fuel and powertrain/ }), id('fuelType', 'Gasoline'));
+    await choose(dialog.getByRole('combobox', { name: /^Transmission/ }), id('transmission', 'Automatic'));
+    await choose(dialog.getByRole('combobox', { name: /^Drivetrain/ }), id('driveType', 'Precursor'));
+    await choose(dialog.getByRole('combobox', { name: /^Body and size class/ }), id('bodyType', 'Hatchback'));
+    await choose(dialog.getByRole('combobox', { name: /^Exterior colour/ }), id('color', 'white'));
+    await choose(dialog.getByRole('combobox', { name: /^Seats/ }), id('seats', '5'));
+    await choose(dialog.getByRole('combobox', { name: /^Battery type/ }), id('batteryType', 'Lithium iron phosphate'));
+    await choose(dialog.getByRole('combobox', { name: /^Engine aspiration/ }), id('flowMode', 'Turbocharging'));
     for (const [label, value] of Object.entries({ 'Displacement, L': '2', 'Mileage, km': '12345', 'Power, hp': '180', '0–100 km/h, s': '8.4', 'Fuel consumption, L/100 km': '6.5', 'Battery capacity, kWh': '73.5', 'Range, km': '650', 'Manufacturer price, CNY': '250000' })) await dialog.getByLabel(label, { exact: true }).fill(value);
     await dialog.getByLabel('Registration date', { exact: true }).fill('2026-10-15');
     await dialog.getByLabel('Original paintwork', { exact: true }).check();
@@ -78,7 +78,7 @@ async function main() {
     await page.setViewportSize({ width: 1440, height: 1000 });
 
     await page.goto(origin + '/catalog');
-    await page.getByRole('combobox', { name: /^Brand/ }).selectOption('Toyota');
+    await choose(page.getByRole('combobox', { name: /^Brand/ }), 'Toyota');
     await page.getByRole('checkbox', { name: 'Gasoline', exact: true }).check();
     await page.waitForFunction(() => document.querySelectorAll('.catalog-page-card').length === 1);
     assert.equal(await page.locator('.catalog-page-card').count(), 1);
@@ -93,7 +93,7 @@ async function main() {
     assert.equal(await page.locator('.catalog-page-card').count(), 0);
     await page.locator('.market-desktop-filters').getByRole('button', { name: 'Reset', exact: true }).click();
     await page.locator('.market-desktop-filters summary').filter({ hasText: /^All filters$/ }).click();
-    await page.getByRole('combobox', { name: /^Condition and offer tags/ }).selectOption(saved.featureTags[0]);
+    await choose(page.getByRole('combobox', { name: /^Condition and offer tags/ }), saved.featureTags[0]);
     await page.waitForFunction(() => document.querySelectorAll('.catalog-page-card').length === 1);
     assert.equal(await page.locator('.catalog-page-card').count(), 1);
     await page.screenshot({ path: path.join(out, 'catalog-desktop.png') });

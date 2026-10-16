@@ -14,6 +14,7 @@ async function main() {
   const count = async (n, target = page) => target.waitForFunction(n => document.querySelectorAll('.market-car').length === n, n);
   const brand = () => page.getByRole('combobox', { name: /^Марка/ });
   const model = () => page.getByRole('combobox', { name: /^Модель/ });
+  const choose = async (combo, value) => { await combo.click(); await page.locator('.search-select-popup:popover-open [role=option][data-value=' + JSON.stringify(value) + ']').click(); };
   const reset = () => page.locator('.market-desktop-filters').getByRole('button', { name: 'Сбросить', exact: true }).click();
   try {
     await page.goto(origin, { waitUntil: 'domcontentloaded' }); await count(5);
@@ -24,9 +25,9 @@ async function main() {
     await page.getByRole('button', { name: 'Убрать из избранного' }).click(); await count(0); await count(0, tab);
     await page.getByRole('heading', { name: 'Здесь будут понравившиеся автомобили' }).waitFor(); await tab.close();
     await page.goto(origin + '/catalog', { waitUntil: 'domcontentloaded' }); await count(5);
-    await brand().selectOption('BYD'); await model().selectOption('Seal 06 DM-i'); await count(1);
+    await choose(brand(), 'BYD'); await choose(model(), 'Seal 06 DM-i'); await count(1);
     await page.reload({ waitUntil: 'domcontentloaded' }); await count(1);
-    assert.equal(await model().inputValue(), 'Seal 06 DM-i');
+    assert.equal(await model().getAttribute('data-value'), 'Seal 06 DM-i');
     await page.getByRole('button', { name: 'CN — 中文', exact: true }).click();
     await page.getByRole('heading', { name: '比亚迪 海豹06 DM-i', exact: true }).waitFor();
     await page.locator('.market-car-title a').click(); await page.waitForURL('**/catalog/DEMO-3?*');
@@ -35,8 +36,8 @@ async function main() {
     await page.getByText('Demo listing for testing this website.', { exact: false }).waitFor();
     await page.getByRole('link', { name: '← Back to results', exact: true }).click(); await count(1);
     await page.getByRole('button', { name: 'RU — Русский', exact: true }).click();
-    assert.equal(await model().inputValue(), 'Seal 06 DM-i');
-    await brand().selectOption('Buick'); await count(1); assert.equal(await model().inputValue(), '');
+    assert.equal(await model().getAttribute('data-value'), 'Seal 06 DM-i');
+    await choose(brand(), 'Buick'); await count(1); assert.equal(await model().getAttribute('data-value'), '');
     await reset(); await count(5);
     await page.getByRole('spinbutton', { name: 'Цена, $: До', exact: true }).fill('25000'); await count(2);
     await page.getByRole('button', { name: /^Убрать фильтр: Цена до/ }).click(); await count(5);
@@ -52,7 +53,7 @@ async function main() {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.getByRole('button', { name: 'Фильтры', exact: true }).click();
     let dialog = page.getByRole('dialog', { name: 'Фильтры', exact: true });
-    await dialog.getByRole('combobox', { name: /^Марка/ }).selectOption('BYD');
+    await choose(dialog.getByRole('combobox', { name: /^Марка/ }), 'BYD');
     await page.screenshot({ path: path.join(out, 'filters-mobile.png') });
     await page.keyboard.press('Escape');
     assert.equal(await dialog.isVisible(), false);
