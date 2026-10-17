@@ -1,0 +1,9 @@
+[
+  {
+    "AllowedOrigins": ["https://firstseven-auto.com", "https://www.firstseven-auto.com"],
+    "AllowedMethods": ["GET", "HEAD", "PUT"],
+    "AllowedHeaders": ["Content-Type", "Content-Length", "Cache-Control"],
+    "ExposeHeaders": ["ETag"],
+    "MaxAgeSeconds": 3600
+  }
+]

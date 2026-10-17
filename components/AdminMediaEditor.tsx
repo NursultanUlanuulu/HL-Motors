@@ -44,21 +44,21 @@ export function AdminMediaEditor({ car, onChange, onBusy, onUploaded }: {
     if (!files.length || active.current) return;
     setError('');
     const allowed = kind === 'photo' ? ['image/jpeg', 'image/png', 'image/webp', 'image/avif'] : ['video/mp4', 'video/webm', 'video/quicktime'];
-    const limit = (kind === 'photo' ? 15 : mode === 'supabase' ? 50 : 200) * 1024 * 1024;
+    const limit = (kind === 'photo' ? 15 : mode !== 'local' ? 50 : 200) * 1024 * 1024;
     if (kind === 'video' && files.length !== 1) { setError('Выберите одно видео.'); return; }
     const invalid = files.find((file) => !allowed.includes(file.type) || !file.size || file.size > limit);
-    if (invalid) { setError(`«${invalid.name}»: ${t(kind === 'photo' ? 'нужно фото JPG, PNG, WebP или AVIF до 15 МБ' : mode === 'supabase' ? 'нужно видео MP4, WebM или MOV до 50 МБ' : 'нужно видео MP4, WebM или MOV до 200 МБ')}.`); return; }
+    if (invalid) { setError(`«${invalid.name}»: ${t(kind === 'photo' ? 'нужно фото JPG, PNG, WebP или AVIF до 15 МБ' : mode !== 'local' ? 'нужно видео MP4, WebM или MOV до 50 МБ' : 'нужно видео MP4, WebM или MOV до 200 МБ')}.`); return; }
     active.current = true;
     setBusy(true);
     onBusy(true);
     try {
-      const sources = await (mode === 'supabase' ? uploadCloudMedia(files) : storeMedia(files));
+      const sources = await (mode !== 'local' ? uploadCloudMedia(files) : storeMedia(files));
       if (!mounted.current) { await removeMedia(sources); return; }
       onUploaded(sources);
       if (kind === 'photo') updatePhotos([...photos, ...sources]);
       else onChange({ image: car.image, gallery: car.gallery, video: sources[0] });
     } catch (err) {
-      if (mounted.current) setError(mode === 'supabase' && err instanceof Error ? err.message : 'Не удалось сохранить файлы. Возможно, в хранилище браузера недостаточно места. Попробуйте файл меньшего размера.');
+      if (mounted.current) setError(mode !== 'local' && err instanceof Error ? err.message : 'Не удалось сохранить файлы. Возможно, в хранилище браузера недостаточно места. Попробуйте файл меньшего размера.');
     } finally {
       active.current = false;
       if (mounted.current) { setBusy(false); onBusy(false); }
@@ -93,7 +93,7 @@ export function AdminMediaEditor({ car, onChange, onBusy, onUploaded }: {
     </article>)}</div>
     <details className="admin-media-link"><summary>{t("Добавить фото по ссылке")}</summary><div><input type="text" inputMode="url" aria-label={t("Ссылка на фотографию")} placeholder="https://…" value={url} onChange={(event) => setUrl(event.target.value)} onKeyDown={(event) => { if (event.key === 'Enter') { event.preventDefault(); addUrl(); } }} /><button type="button" onClick={addUrl}>{t("Добавить")}</button></div></details>
     <div className="admin-media-video"><h3>{t("Видеообзор")}</h3>{car.video && <><VideoPreview key={car.video} source={car.video} /><button className="admin-media-remove" type="button" onClick={() => onChange({ image: car.image, gallery: car.gallery, video: undefined })}>{t("Удалить видео")}</button></>}
-      <label className="admin-media-upload"><strong>{t(car.video ? 'Заменить видео' : '＋ Добавить видео')}</strong><span>{t(mode === 'supabase' ? 'MP4, WebM, MOV · до 50 МБ · для совместимости рекомендуем MP4 (H.264)' : 'MP4, WebM, MOV · до 200 МБ · для совместимости рекомендуем MP4 (H.264)')}</span><input type="file" accept="video/mp4,video/webm,video/quicktime" onChange={(event) => { const files = Array.from(event.target.files ?? []); event.target.value = ''; void upload(files, 'video'); }} /></label>
+      <label className="admin-media-upload"><strong>{t(car.video ? 'Заменить видео' : '＋ Добавить видео')}</strong><span>{t(mode !== 'local' ? 'MP4, WebM, MOV · до 50 МБ · для совместимости рекомендуем MP4 (H.264)' : 'MP4, WebM, MOV · до 200 МБ · для совместимости рекомендуем MP4 (H.264)')}</span><input type="file" accept="video/mp4,video/webm,video/quicktime" onChange={(event) => { const files = Array.from(event.target.files ?? []); event.target.value = ''; void upload(files, 'video'); }} /></label>
     </div>
     {busy && <p role="status">{t("Сохраняем файлы…")}</p>}
     {error && <p className="admin-media-error" role="alert">{t(error)}</p>}

@@ -31,7 +31,7 @@ const { requireAdmin, readJson, maxJsonBytes, apiError } = load('lib/api-server.
 const { withDeadline } = load('lib/request-deadline.ts');
 const { getSupabase, withSupabaseDeadline } = load('lib/supabase-server.ts');
 const { apiRequest, connectionErrorMessage } = load('lib/cloud-client.ts');
-const envKeys = ['SUPABASE_URL', 'SUPABASE_SECRET_KEY', 'ADMIN_SESSION_SECRET', 'ADMIN_ALLOWED_ORIGINS'];
+const envKeys = ['DATABASE_URL', 'SUPABASE_URL', 'SUPABASE_SECRET_KEY', 'ADMIN_SESSION_SECRET', 'ADMIN_ALLOWED_ORIGINS'];
 const originalEnv = Object.fromEntries(envKeys.map(key => [key, process.env[key]]));
 let baseUrl, responder, calls;
 const server = http.createServer((req, res) => {
@@ -43,6 +43,7 @@ before(async () => {
   baseUrl = `http://127.0.0.1:${server.address().port}`;
 });
 beforeEach(() => {
+  delete process.env.DATABASE_URL;
   calls = [];
   responder = (_req, res) => { res.setHeader('Content-Type', 'application/json'); res.end('[]'); };
   process.env.SUPABASE_URL = baseUrl;

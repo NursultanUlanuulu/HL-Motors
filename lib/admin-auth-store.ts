@@ -1,6 +1,7 @@
 import 'server-only';
 
 import { getDataMode, getSupabase, withSupabaseDeadline } from './supabase-server';
+import { pgQuery } from './postgres';
 
 type Session = { tokenHash: string; credentialVersion: string; expiresAt: number };
 type Attempt = { count: number; resetsAt: number };
@@ -77,7 +78,25 @@ const cloudStore: typeof localStore = {
   },
 };
 
+const postgresStore: typeof localStore = {
+  async createSession(session) {
+    await pgQuery('insert into public.admin_sessions(token_hash,credential_version,expires_at) values($1,$2,$3)', [session.tokenHash, session.credentialVersion, new Date(session.expiresAt)]);
+  },
+  async hasSession(tokenHash, credentialVersion) {
+    const { rowCount } = await pgQuery('select token_hash from public.admin_sessions where token_hash=$1 and credential_version=$2 and expires_at>now()', [tokenHash, credentialVersion]);
+    return !!rowCount;
+  },
+  async revokeSession(tokenHash) { await pgQuery('delete from public.admin_sessions where token_hash=$1', [tokenHash]); },
+  async reserveAttempt(sourceHash, admin) {
+    const { rows } = await pgQuery('select public.reserve_admin_login_attempt($1,$2) as retry', [sourceHash, admin]);
+    const retry = rows[0]?.retry;
+    if (!Number.isInteger(retry) || retry < 0 || retry > 900) throw new Error('Could not reserve login attempt.');
+    return retry as number;
+  },
+};
+
 export function getAdminAuthStore() {
+  if (getDataMode() === 'postgres') return postgresStore;
   if (getDataMode() === 'supabase') return cloudStore;
   if (localAdminAuthAllowed()) return localStore;
   throw new Error('A shared authentication store is required.');

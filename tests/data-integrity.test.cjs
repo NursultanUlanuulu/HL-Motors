@@ -147,7 +147,7 @@ test('one malformed stored row does not poison the public catalogue or leak priv
     { id: 'LAST', data: fixture('LAST'), version: 1 },
   ];
   const query = { select() { return this; }, order() { return this; }, async range() { return { data: rows, error: null }; } };
-  const isolated = modules({ './supabase-server': { getSupabase: () => ({ from: () => query }) } });
+  const isolated = modules({ './supabase-server': { getDataMode: () => 'supabase', getSupabase: () => ({ from: () => query }) } });
   const result = await isolated('lib/cloud-repository.ts').listCloudCars();
   assert.deepEqual(result.map(car => car.id), ['GOOD', 'LAST']);
   assert.equal(result[0].version, 2);

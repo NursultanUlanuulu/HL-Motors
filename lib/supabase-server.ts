@@ -6,6 +6,7 @@ import { DataError } from './cloud-validation';
 import { withDeadline, serverRequestTimeoutMs, type DeadlineOptions } from './request-deadline';
 
 const operationSignal = new AsyncLocalStorage<AbortSignal>();
+export const currentDataSignal = () => operationSignal.getStore();
 
 export function withSupabaseDeadline<T>(operation: (signal: AbortSignal) => PromiseLike<T>, options: DeadlineOptions = {}) {
   const parent = operationSignal.getStore();
@@ -14,6 +15,7 @@ export function withSupabaseDeadline<T>(operation: (signal: AbortSignal) => Prom
 }
 
 export function getDataMode(): DataMode {
+  if (process.env.DATABASE_URL) return 'postgres';
   return process.env.SUPABASE_URL || process.env.SUPABASE_SECRET_KEY ? 'supabase' : 'local';
 }
 

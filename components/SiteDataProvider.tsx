@@ -33,7 +33,7 @@ export function SiteDataProvider({ children, mode = 'local' }: { children: React
 
   const coordinator = useMemo(() => createRefreshCoordinator({
     load: async (signal: AbortSignal): Promise<RefreshSnapshot> => {
-      if (mode === 'supabase') return apiRequest<CloudSnapshot>('/api/site', undefined, 'GET', { signal });
+      if (mode !== 'local') return apiRequest<CloudSnapshot>('/api/site', undefined, 'GET', { signal });
       const snapshot: RefreshSnapshot = {};
       try { snapshot.cars = readCars(); }
       catch { snapshot.error = 'Не удалось прочитать каталог. Проверьте доступ к хранилищу браузера и сохранённые данные.'; }
@@ -56,15 +56,15 @@ export function SiteDataProvider({ children, mode = 'local' }: { children: React
   useEffect(() => {
     void refresh();
     const onStorage = (event: StorageEvent) => { if (mode === 'local' && (event.key === null || event.key === carsKey || event.key === contactsKey)) void refresh(); };
-    const onVisible = () => { if (mode === 'supabase' && document.visibilityState === 'visible') void refresh(); };
+    const onVisible = () => { if (mode !== 'local' && document.visibilityState === 'visible') void refresh(); };
     window.addEventListener('storage', onStorage);
     window.addEventListener('focus', onVisible);
     document.addEventListener('visibilitychange', onVisible);
-    if (mode === 'supabase' && typeof BroadcastChannel !== 'undefined') {
+    if (mode !== 'local' && typeof BroadcastChannel !== 'undefined') {
       channel.current = new BroadcastChannel('motors-cloud-updates');
       channel.current.onmessage = () => { void refresh(); };
     }
-    const timer = mode === 'supabase' ? window.setInterval(onVisible, 30000) : undefined;
+    const timer = mode !== 'local' ? window.setInterval(onVisible, 30000) : undefined;
     return () => {
       coordinator.dispose();
       window.removeEventListener('storage', onStorage); window.removeEventListener('focus', onVisible);
@@ -89,7 +89,7 @@ export function SiteDataProvider({ children, mode = 'local' }: { children: React
     },
     removeCar(car) {
       return coordinator.mutate(async () => {
-        if (mode === 'supabase') await apiRequest('/api/admin/vehicles', { id: car.id, version: car.version }, 'DELETE');
+        if (mode !== 'local') await apiRequest('/api/admin/vehicles', { id: car.id, version: car.version }, 'DELETE');
         const next = mode === 'local' ? await withBrowserWriteLock(() => deleteCar(car)) : currentCars.current.filter(item => item.id !== car.id);
         updateCars(next); setError(''); channel.current?.postMessage('changed'); return next;
       });

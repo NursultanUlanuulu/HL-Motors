@@ -1,0 +1,7 @@
+{$SITE_DOMAIN}, www.{$SITE_DOMAIN} {
+    encode zstd gzip
+    reverse_proxy app:3000 {
+        # Replace client-provided headers; the app is not published on the host.
+        header_up X-HL-Client-IP {remote_host}
+    }
+}

@@ -1,0 +1,9 @@
+node_modules
+.next
+.git
+.env*
+output
+tests
+*.tsbuildinfo
+*.log
+deploy/backups

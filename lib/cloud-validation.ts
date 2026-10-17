@@ -1,7 +1,7 @@
 import type { Car } from './cars';
 import { isCar, publicCar } from './site-data';
 
-export type DataMode = 'local' | 'supabase';
+export type DataMode = 'local' | 'supabase' | 'postgres';
 export const mediaBucket = 'vehicle-media';
 export const photoLimit = 15 * 1024 * 1024;
 export const cloudVideoLimit = 50 * 1024 * 1024;

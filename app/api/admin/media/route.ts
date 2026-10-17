@@ -2,6 +2,7 @@ import { randomUUID } from 'node:crypto';
 import { apiError, readJson, requireAdmin } from '@/lib/api-server';
 import { mediaBucket, validateUpload } from '@/lib/cloud-validation';
 import { getSupabase, withSupabaseDeadline } from '@/lib/supabase-server';
+import { r2Enabled, signR2Upload } from '@/lib/r2-storage';
 
 export async function POST(request: Request) {
   try {
@@ -10,6 +11,7 @@ export async function POST(request: Request) {
       const { type, size } = await readJson(request, ['type', 'size'], { signal });
       const extension = validateUpload(type, size);
       const path = `vehicles/${randomUUID()}.${extension}`;
+      if (r2Enabled()) return Response.json(await signR2Upload(path, type as string, size as number));
       const storage = getSupabase().storage.from(mediaBucket);
       const { data, error } = await storage.createSignedUploadUrl(path);
       if (error) throw error;

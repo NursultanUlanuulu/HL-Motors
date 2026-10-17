@@ -1,0 +1,92 @@
+name: hl-motors
+services:
+  db:
+    image: postgres:16-bookworm
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: hl_motors
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set database owner password}
+    volumes:
+      - database:/var/lib/postgresql/data
+    networks: [database]
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U postgres -d hl_motors"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    logging: &logging
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"
+
+  migrate:
+    image: hl-motors:${APP_VERSION:-local}
+    build:
+      context: .
+      args:
+        MEDIA_PUBLIC_URL: ${MEDIA_PUBLIC_URL:?Set public media HTTPS origin}
+    command: [node, scripts/postgres-bootstrap.cjs]
+    restart: "no"
+    environment:
+      PGHOST: db
+      PGDATABASE: hl_motors
+      PGUSER: postgres
+      PGPASSWORD: ${POSTGRES_PASSWORD:?Set database owner password}
+      APP_DATABASE_PASSWORD: ${APP_DATABASE_PASSWORD:?Set app database password}
+    depends_on:
+      db: {condition: service_healthy}
+    networks: [database]
+    logging: *logging
+
+  app:
+    image: hl-motors:${APP_VERSION:-local}
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://hl_app:${APP_DATABASE_PASSWORD:?Set app database password}@db:5432/hl_motors
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Set admin password}
+      ADMIN_SESSION_SECRET: ${ADMIN_SESSION_SECRET:?Set session secret}
+      ADMIN_ALLOWED_ORIGINS: https://${SITE_DOMAIN:?Set site domain},https://www.${SITE_DOMAIN}
+      ADMIN_TRUSTED_IP_HEADER: X-HL-Client-IP
+      R2_ENDPOINT: ${R2_ENDPOINT:?Set R2 endpoint}
+      R2_BUCKET: ${R2_BUCKET:?Set media bucket}
+      R2_ACCESS_KEY_ID: ${R2_ACCESS_KEY_ID:?Set R2 access key}
+      R2_SECRET_ACCESS_KEY: ${R2_SECRET_ACCESS_KEY:?Set R2 secret}
+      MEDIA_PUBLIC_URL: ${MEDIA_PUBLIC_URL}
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    networks: [database, web]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:3000/api/site').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+      start_period: 30s
+    logging: *logging
+
+  proxy:
+    image: caddy:2
+    restart: unless-stopped
+    environment:
+      SITE_DOMAIN: ${SITE_DOMAIN}
+    ports: ["80:80", "443:443", "443:443/udp"]
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      app: {condition: service_healthy}
+    networks: [web]
+    logging: *logging
+
+networks:
+  database:
+    internal: true
+  web:
+
+volumes:
+  database:
+  caddy_data:
+  caddy_config:

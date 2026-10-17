@@ -84,5 +84,5 @@ export function apiError(error: unknown) {
   if (error instanceof DataError) return Response.json({ error: error.message }, { status: error.status });
   if (error instanceof Error && error.name === 'TimeoutError') return Response.json({ error: timeoutMessage }, { status: 504 });
   // Never return database diagnostics or credentials to a browser.
-  return Response.json({ error: 'Не удалось выполнить запрос к Supabase. Проверьте подключение и схему базы.' }, { status: 503 });
+  return Response.json({ error: 'Не удалось выполнить запрос к базе данных. Проверьте подключение и схему базы.' }, { status: 503 });
 }

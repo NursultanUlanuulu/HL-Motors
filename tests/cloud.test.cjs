@@ -34,9 +34,11 @@ const site = load('app/api/site/route.ts');
 const repo = load('lib/cloud-repository.ts');
 const { getDataMode } = load('lib/supabase-server.ts');
 const originalFetch = global.fetch;
-const originalEnv = { SUPABASE_URL: process.env.SUPABASE_URL, SUPABASE_SECRET_KEY: process.env.SUPABASE_SECRET_KEY, ADMIN_SESSION_SECRET: process.env.ADMIN_SESSION_SECRET };
+const envKeys = ['DATABASE_URL', 'SUPABASE_URL', 'SUPABASE_SECRET_KEY', 'ADMIN_SESSION_SECRET', 'R2_ENDPOINT', 'R2_BUCKET', 'R2_ACCESS_KEY_ID', 'R2_SECRET_ACCESS_KEY', 'MEDIA_PUBLIC_URL'];
+const originalEnv = Object.fromEntries(envKeys.map(key => [key, process.env[key]]));
 let requests, responder;
 beforeEach(() => {
+  for (const key of envKeys) delete process.env[key];
   signedIn = true;
   requests = [];
   process.env.SUPABASE_URL = 'https://example.supabase.co';

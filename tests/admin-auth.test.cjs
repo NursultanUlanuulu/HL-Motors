@@ -8,7 +8,7 @@ const { NextRequest } = require('next/server');
 
 const root = path.resolve(__dirname, '..');
 const password = 'Synthetic-only-Password9!';
-const envKeys = ['NODE_ENV', 'SUPABASE_URL', 'SUPABASE_SECRET_KEY', 'ADMIN_PASSWORD', 'ADMIN_SESSION_SECRET', 'ADMIN_LOCAL_AUTH', 'ADMIN_TRUSTED_IP_HEADER', 'ADMIN_ALLOWED_ORIGINS'];
+const envKeys = ['DATABASE_URL', 'NODE_ENV', 'SUPABASE_URL', 'SUPABASE_SECRET_KEY', 'ADMIN_PASSWORD', 'ADMIN_SESSION_SECRET', 'ADMIN_LOCAL_AUTH', 'ADMIN_TRUSTED_IP_HEADER', 'ADMIN_ALLOWED_ORIGINS'];
 const originalEnv = Object.fromEntries(envKeys.map(key => [key, process.env[key]]));
 const originalFetch = global.fetch;
 const jar = new Map();
@@ -88,6 +88,7 @@ before(async () => {
   await db.exec(migration);
 });
 beforeEach(async () => {
+  delete process.env.DATABASE_URL;
   process.env.NODE_ENV = 'production';
   process.env.SUPABASE_URL = 'https://synthetic.example.invalid';
   process.env.SUPABASE_SECRET_KEY = 'synthetic-service-key';

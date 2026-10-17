@@ -38,7 +38,7 @@ export function AdminDataImport() {
   }
 
   async function runImport() {
-    if (!preview || mode !== 'supabase' || running.current) return;
+    if (!preview || mode === 'local' || running.current) return;
     running.current = true; setBusy(true); setError(''); setResult(null);
     let imported = 0, skipped = 0;
     try {
@@ -67,9 +67,9 @@ export function AdminDataImport() {
   const existing = new Set(cars.map(car => car.id));
   const count = preview?.cars.filter(car => !existing.has(car.id)).length ?? 0;
   return <section className="admin-panel admin-section-panel">
-    <div className="admin-panel-top"><div><h2>{t('Хранение данных')}</h2><p>{t(mode === 'supabase' ? 'Источник данных: Supabase' : 'Источник данных: этот браузер')}</p></div></div>
-    <p className="admin-media-help">{t(mode === 'supabase' ? 'Импорт перенесёт автомобили и локальные файлы из этого браузера. Существующие объявления в облаке будут пропущены. Оригиналы останутся в браузере.' : 'Supabase ещё не подключён. Существующие данные сохраняются в этом браузере.')}</p>
-    {mode === 'supabase' && <>
+    <div className="admin-panel-top"><div><h2>{t('Хранение данных')}</h2><p>{t(mode === 'postgres' ? 'Источник данных: сервер PostgreSQL' : mode === 'supabase' ? 'Источник данных: Supabase' : 'Источник данных: этот браузер')}</p></div></div>
+    <p className="admin-media-help">{t(mode !== 'local' ? 'Импорт перенесёт автомобили и локальные файлы из этого браузера. Существующие объявления в облаке будут пропущены. Оригиналы останутся в браузере.' : 'Supabase ещё не подключён. Существующие данные сохраняются в этом браузере.')}</p>
+    {mode !== 'local' && <>
       <p className="admin-media-help">{t(loaded && !cloudError ? 'Подключение к базе работает.' : 'База пока недоступна. Проверьте настройки подключения.')}</p>
       <button className="admin-filter-button" type="button" disabled={busy} onClick={() => { void refresh(); }}>{t('Проверить подключение')}</button>{' '}
       <button className="admin-primary" type="button" disabled={busy || !loaded || !!cloudError} onClick={inspect}>{t('Подготовить импорт из браузера')}</button>

@@ -39,12 +39,12 @@ export async function uploadCloudMedia(files: File[], options: DeadlineOptions =
   const sources: string[] = [];
   for (const file of files) {
     const source = await withDeadline(async signal => {
-      const { uploadUrl, publicUrl } = await apiRequest<{ uploadUrl: string; publicUrl: string }>('/api/admin/media', { type: file.type, size: file.size }, 'POST', { signal });
-      const body = new FormData();
-      body.append('cacheControl', '31536000');
-      body.append('', file);
-      const response = await fetchWithConnectionError(uploadUrl, { method: 'PUT', body, signal });
-      if (!response.ok) throw new Error('Не удалось загрузить файл в Supabase Storage. Повторите попытку.');
+      const { uploadUrl, publicUrl, raw, headers } = await apiRequest<{ uploadUrl: string; publicUrl: string; raw?: boolean; headers?: Record<string, string> }>('/api/admin/media', { type: file.type, size: file.size }, 'POST', { signal });
+      const form = new FormData();
+      form.append('cacheControl', '31536000');
+      form.append('', file);
+      const response = await fetchWithConnectionError(uploadUrl, { method: 'PUT', body: raw ? file : form, headers: raw ? headers : undefined, signal });
+      if (!response.ok) throw new Error('Не удалось загрузить файл в хранилище. Повторите попытку.');
       return publicUrl;
     }, { ...options, timeoutMs: options.timeoutMs ?? mediaUploadTimeoutMs });
     sources.push(source);

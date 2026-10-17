@@ -1,4 +1,8 @@
 export const marketplaceUi: Record<string, { en: string; zh: string }> = {
+  'Источник данных: сервер PostgreSQL': { en: 'Data source: PostgreSQL server', zh: '数据来源：PostgreSQL服务器' },
+  'Не удалось загрузить файл в хранилище. Повторите попытку.': { en: 'Could not upload the file. Please try again.', zh: '文件上传失败，请重试。' },
+  'Хранилище файлов на сервере не настроено.': { en: 'Server file storage is not configured.', zh: '尚未配置服务器文件存储。' },
+  'Не удалось выполнить запрос к базе данных. Проверьте подключение и схему базы.': { en: 'Database request failed. Check the connection and database schema.', zh: '数据库请求失败，请检查连接和数据库结构。' },
   'Главная': { en: 'Home', zh: '首页' },
   'Ещё': { en: 'More', zh: '更多' },
   'Быстрая навигация': { en: 'Quick navigation', zh: '快捷导航' },

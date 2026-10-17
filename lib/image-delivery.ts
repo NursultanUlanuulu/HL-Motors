@@ -1,11 +1,12 @@
 // Only these public image hosts are passed through the server optimizer.
-export function optimizableImage(source: string, mediaOrigin = process.env.NEXT_PUBLIC_MEDIA_ORIGIN ?? ''): boolean {
+export function optimizableImage(source: string, mediaOrigin = process.env.NEXT_PUBLIC_MEDIA_ORIGIN ?? '', r2Origin = process.env.NEXT_PUBLIC_R2_ORIGIN ?? ''): boolean {
   if (source.startsWith('/') && !source.startsWith('//') && !source.startsWith('/api/')) return !source.toLowerCase().endsWith('.svg');
   try {
     const url = new URL(source);
     if (url.protocol !== 'https:' || url.port || url.username || url.password) return false;
     if (url.hostname === 'img.autohaina.com') return url.pathname.startsWith('/vehicle/') && !url.search;
     if (url.hostname === 'images.unsplash.com') return url.pathname.startsWith('/photo-');
+    if (r2Origin && url.origin === r2Origin) return url.pathname.startsWith('/vehicles/') && !url.search;
     return !!mediaOrigin && url.origin === mediaOrigin && url.pathname.startsWith('/storage/v1/object/public/vehicle-media/') && !url.search;
   } catch { return false; }
 }

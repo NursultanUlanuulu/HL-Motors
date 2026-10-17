@@ -22,7 +22,7 @@ export function strongAdminPassword(password: string | undefined): password is s
 function configuration() {
   const password = process.env.ADMIN_PASSWORD;
   if (!strongAdminPassword(password)) throw new Error(adminConfigurationError);
-  const cloud = getDataMode() === 'supabase';
+  const cloud = getDataMode() !== 'local';
   if (!cloud && !localAdminAuthAllowed()) throw new Error(adminConfigurationError);
   const configuredSecret = process.env.ADMIN_SESSION_SECRET;
   if ((cloud || configuredSecret) && (configuredSecret?.length ?? 0) < 32) throw new Error(adminConfigurationError);
