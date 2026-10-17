@@ -6,6 +6,7 @@ import { languageKey, parseLocale, translate, type Locale, type TranslationParam
 
 const Context = createContext<{ locale: Locale; setLocale: (locale: Locale) => void; t: (text: string, params?: TranslationParams) => string } | null>(null);
 const titles: Record<string, string> = {
+  '/faq': 'Вопросы и ответы — Motors',
   '/favorites': 'Избранное — Motors', '/delivery': 'Доставка и оплата — Motors', '/about': 'О компании — Motors', '/contacts': 'Контакты — Motors',
   '/': 'Motors — Автомобили из Китая', '/catalog': 'Автомобили — Motors', '/login': 'Вход — Motors',
   '/admin/vehicles': 'Автомобили — Админка Motors', '/admin/settings': 'Настройки — Админка Motors',

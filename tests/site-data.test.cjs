@@ -142,3 +142,21 @@ test('translation validation and Chinese search do not break canonical status fi
   assert.equal(carCount(21, 'zh'), '21 辆车');
   assert.equal(localizeCar(data.readCars()[0], 'zh').mileage, '6 800 公里');
 });
+
+test('manager contacts round-trip both WhatsApp numbers and WeChat without requiring email', () => {
+  const input = { ...data.defaultContacts, whatsapp: '+86 150 6076 1179', whatsappSecondary: '+996 (502) 102-270', telegram: '@nursauto_kg' };
+  const normalized = data.normalizeContacts(input);
+  assert.deepEqual(normalized, data.defaultContacts);
+  assert.equal(Object.hasOwn(normalized, 'email'), false);
+  data.writeContacts(input, data.readContacts());
+  assert.deepEqual(data.readContacts(), normalized);
+  assert.equal(data.whatsappLink(normalized, 'DEMO-4 & HUA'), 'https://wa.me/8615060761179?text=DEMO-4%20%26%20HUA');
+  assert.equal(data.telegramLink(normalized), 'https://t.me/nursauto_kg');
+  for (const wechatQr of ['javascript:alert(1)', 'data:text/html,x', '//evil.test/qr.jpg', 'https://user:pass@example.com/qr.jpg']) {
+    assert.throws(() => data.normalizeContacts({ ...normalized, wechatQr }));
+  }
+  assert.throws(() => data.normalizeContacts({ ...normalized, whatsappSecondary: 'invalid' }));
+  assert.throws(() => data.normalizeContacts({ ...normalized, wechatId: '' }));
+  const legacy = { whatsapp: '996502102270', telegram: 'old_user', email: 'legacy@example.com' };
+  assert.deepEqual(data.normalizeContacts(legacy), legacy, 'Legacy shape stays stable for optimistic concurrency');
+});

@@ -2,22 +2,36 @@
 import Link from 'next/link';
 import { MarketFrame } from './MarketFrame';
 import { useLocale } from './LocaleProvider';
-import { useSiteData } from './SiteDataProvider';
-import { telegramLink, whatsappLink } from '@/lib/site-data';
+import { ManagerContacts } from './ManagerContacts';
+import { companyContent, companyFaq, officeMapUrl, orderSteps } from '@/lib/company-content';
 
-export function MarketInfo({ kind }: { kind: 'delivery' | 'about' | 'contacts' }) {
-  const { t } = useLocale(); const { contacts } = useSiteData();
-  const title = kind === 'delivery' ? 'Доставка и оплата' : kind === 'about' ? 'О компании' : 'Контакты';
-  const steps = [
-    ['Подбор', 'Находим автомобиль по вашим параметрам и бюджету.'],
-    ['Проверка', 'Проводим осмотр, диагностику и проверяем документы.'],
-    ['Доставка', 'Организуем безопасную перевозку и сопровождаем груз.'],
-    ['Оформление', 'Таможня, лаборатория и документы — без лишних забот.'],
-  ];
-  return <MarketFrame><main className="market-main market-info"><nav className="market-breadcrumbs"><Link href="/catalog">{t('Каталог')}</Link><span>/</span><span>{t(title)}</span></nav><h1>{t(title)}</h1>
-    <p className="market-info-lead">{t(kind === 'contacts' ? 'Расскажите, какой автомобиль ищете — найдём лучший вариант и рассчитаем поставку под ключ.' : 'Вы выбираете автомобиль. Всё остальное берём на себя — от проверки в Китае до выдачи в вашем городе.')}</p>
-    {kind !== 'contacts' && <div className="market-info-grid">{steps.map(([label, text], index) => <section className="market-info-section" key={label}><b>0{index + 1}</b><h2>{t(label)}</h2><p>{t(text)}</p></section>)}</div>}
-    {kind === 'delivery' && <section className="market-info-section" style={{ marginTop: 20 }}><h2>{t('Стоимость и оплата')}</h2><p>{t('Статус и состав цены зависят от страны доставки. Менеджер подготовит расчёт под ключ с учётом таможенного оформления, лаборатории и регистрации.')}</p><p>{t('Сроки доставки, порядок оплаты и итоговая стоимость согласовываются с менеджером до оформления заказа.')}</p></section>}
-    <div className="market-info-contact"><a className="market-primary" href={whatsappLink(contacts)} target="_blank" rel="noreferrer">{t('Написать в WhatsApp')} ↗</a><a className="market-secondary" href={telegramLink(contacts)} target="_blank" rel="noreferrer">{t('Написать в Telegram')} ↗</a>{kind === 'contacts' && <a className="market-secondary" href={`mailto:${contacts.email}`}>{contacts.email}</a>}</div>
+export function MarketInfo({ kind }: { kind: 'delivery' | 'about' | 'contacts' | 'faq' }) {
+  const { locale, t } = useLocale();
+  const c = (key: keyof typeof companyContent) => companyContent[key][locale];
+  const title = kind === 'delivery' ? t('Доставка и оплата') : kind === 'about' ? t('О компании') : kind === 'faq' ? c('faqTitle') : t('Контакты');
+  const lead = kind === 'delivery' ? 'deliveryLead' : kind === 'about' ? 'aboutLead' : kind === 'faq' ? 'faqLead' : 'contactsLead';
+  const card = (heading: keyof typeof companyContent, body: keyof typeof companyContent) => <section className="market-info-section" key={heading}><h2>{c(heading)}</h2><p>{c(body)}</p></section>;
+  const stats = kind === 'about' ? [['2021', 'founded'], ['10+', 'chinaYears'], ['5+', 'kyrgyzYears']] as const : [[c('from14'), 'deliveryTime'], ['50–80%', 'advance'], [c('cash'), 'officePayment']] as const;
+  return <MarketFrame><main className="market-main market-info company-page">
+    <nav className="market-breadcrumbs" aria-label={t('Навигация по страницам')}><Link href="/catalog">{t('Каталог')}</Link><span>/</span><span>{title}</span></nav>
+    <div className="company-heading"><span className="company-kicker">HL MOTORS · {c('since')}</span><h1>{title}</h1><p className="market-info-lead">{c(lead)}</p></div>
+    {(kind === 'about' || kind === 'delivery') && <div className="company-stats">{stats.map(([value, label]) => <div key={label}><strong>{value}</strong><span>{c(label)}</span></div>)}</div>}
+    {kind === 'about' && <>
+      <section className="company-section"><h2>{c('twoTeams')}</h2><div className="market-info-grid">{card('chinaTeam', 'chinaTeamBody')}{card('kyrgyzTeam', 'kyrgyzTeamBody')}</div></section>
+      <section className="company-section"><h2>{c('process')}</h2><ol className="company-steps">{orderSteps.map(([heading, body], index) => <li key={heading}><span>{String(index + 1).padStart(2, '0')}</span><div><h3>{c(heading)}</h3><p>{c(body)}</p></div></li>)}</ol></section>
+      <div className="company-inline-links"><Link href="/catalog" className="market-primary">{t('Перейти в каталог')}</Link><Link href="/delivery" className="market-secondary">{t('Доставка и оплата')} ↗</Link></div>
+    </>}
+    {kind === 'delivery' && <>
+      <section className="company-section"><h2>{c('included')}</h2><div className="market-info-grid">{card('stockTitle', 'stockBody')}{card('orderTitle', 'orderBody')}</div></section>
+      <section className="company-payment market-info-section"><h2>{c('paymentTitle')}</h2><p>{c('paymentBody')}</p><Link href="/contacts">{c('office')} · {c('address')} ↗</Link></section>
+      <div className="market-info-grid company-section">{card('logisticsTitle', 'logisticsBody')}{card('collectionTitle', 'collectionBody')}{card('cancellationTitle', 'cancellationBody')}{card('damageTitle', 'damageBody')}</div>
+    </>}
+    {kind === 'contacts' && <div className="market-info-grid company-office">
+      <section className="market-info-section"><h2>{c('office')}</h2><address>{c('address')}</address><a className="company-map-link" href={officeMapUrl} target="_blank" rel="noreferrer">{c('map')} ↗</a></section>
+      <section className="market-info-section"><h2>{c('hoursTitle')}</h2><p className="company-hours">{c('hours')}</p><p>{c('timezone')}</p></section>
+    </div>}
+    {kind === 'faq' && <div className="company-faq">{companyFaq.map(([question, answer]) => <details key={question}><summary><span>{c(question)}</span><i aria-hidden="true">+</i></summary><p>{c(answer)}</p></details>)}</div>}
+    {kind !== 'contacts' && <section className="company-question"><div><h2>{c('faqMore')}</h2><p>{c('faqContact')}</p></div>{kind !== 'faq' && <Link href="/faq" className="market-secondary">FAQ ↗</Link>}</section>}
+    <section className="market-manager-section"><h2>{t('Контакты менеджеров')}</h2><ManagerContacts /></section>
   </main></MarketFrame>;
 }

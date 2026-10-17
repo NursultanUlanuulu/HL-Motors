@@ -8,8 +8,9 @@ import { optionId, specSelects } from '@/lib/vehicle-specs';
 import type { MarketFilters as Values } from '@/lib/marketplace-filters';
 import { useLocale } from './LocaleProvider';
 
-export function MarketFilters({ cars, value, update, reset }: { cars: Car[]; value: Values; update: (key: keyof Values, value: string) => void; reset: () => void }) {
+export function MarketFilters({ cars, value, update, updateYears, reset }: { cars: Car[]; value: Values; update: (key: keyof Values, value: string) => void; updateYears: (min: string, max: string) => void; reset: () => void }) {
   const { locale, t } = useLocale();
+  const currentYear = new Date().getFullYear();
   const brands = useMemo(() => brandSelectOptions(cars, locale), [cars, locale]);
   const models = useMemo(() => modelSelectOptions(cars, value.brand, locale), [cars, value.brand, locale]);
   const fuelMain = ['Gasoline', 'Pure electric', 'Plug-in hybrid'].map(label => optionId('fuelType', label));
@@ -30,6 +31,11 @@ export function MarketFilters({ cars, value, update, reset }: { cars: Car[]; val
     <div className="market-field"><SearchSelect label={t('Модель')} value={value.model} onChange={value => update('model', value)} placeholder={t('Все модели')} options={models} /><small className="market-field-help">{t('Модели из объявлений каталога')}</small></div>
     {range('Цена, $', 'minPrice', 'maxPrice', 100000000)}
     {range('Год выпуска', 'minYear', 'maxYear', 2100)}
+    <fieldset className="market-age"><legend>{t('Возраст автомобиля')}</legend><div className="market-age-options">{[[1, 3, '1–3 года'], [3, 5, '3–5 лет'], [5, 7, '5–7 лет'], [7, 10, '7–10 лет']].map(([min, max, label]) => {
+      const from = String(currentYear - Number(max)); const to = String(currentYear - Number(min));
+      const selected = value.minYear === from && value.maxYear === to;
+      return <button key={label} type="button" aria-pressed={selected} onClick={() => updateYears(selected ? '' : from, selected ? '' : to)}><span>{t(String(label))}</span><small>{from}–{to}</small></button>;
+    })}</div><small className="market-field-help">{t('По году выпуска, границы включены')}</small></fieldset>
     {range('Пробег, км', 'minMileage', 'maxMileage', 10000000)}
     <fieldset className="market-checks"><legend>{t('Топливо')}</legend>{vehicleOptions.fuelType.filter(item => fuelMain.includes(item.id)).map(fuelCheckbox)}<details className="market-more-fuel"><summary>{t('Другие типы топлива')}</summary>{vehicleOptions.fuelType.filter(item => !fuelMain.includes(item.id)).map(fuelCheckbox)}</details></fieldset>
     <fieldset className="market-checks"><legend>{t('Состояние')}</legend><div className="market-inline-checks">{['Новый', 'С пробегом'].map(item => <label key={item} className="market-check"><input type="checkbox" checked={value.condition.split('|').includes(item)} onChange={() => toggle('condition', item)} />{t(item)}</label>)}</div></fieldset>

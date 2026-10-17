@@ -1,0 +1,70 @@
+// Local demo only. Inspects external links without opening messengers.
+const { chromium } = require('./audit/runtime/node_modules/playwright');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const crypto = require('node:crypto');
+const origin = 'http://localhost:3107';
+async function main() {
+  const browser = await chromium.launch({ channel: 'msedge', headless: true });
+  try {
+    const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, permissions: ['clipboard-read', 'clipboard-write'] });
+    const page = await context.newPage(); const errors = []; page.on('pageerror', error => errors.push(error.message));
+    const snapshot = await (await page.request.get(origin + '/api/site')).json();
+    assert.equal(snapshot.contacts.wechatId, 'YH15060761179'); assert.equal(snapshot.contacts.email, undefined);
+    await page.goto(origin + '/contacts', { waitUntil: 'domcontentloaded' });
+    const hua = page.locator('main').getByRole('link', { name: /WhatsApp · HUA/ }); const nursultan = page.locator('main').getByRole('link', { name: /WhatsApp · Нурсултан/ });
+    assert.equal(await hua.getAttribute('href'), 'https://wa.me/8615060761179');
+    assert.equal(await nursultan.getAttribute('href'), 'https://wa.me/996502102270');
+    assert.equal(await page.locator('main').getByRole('link', { name: /Telegram/ }).getAttribute('href'), 'https://t.me/nursauto_kg');
+    assert.equal(await page.locator('a[href^="mailto:"]').count(), 0);
+    await page.screenshot({ path: 'output/marketplace-qa/manager-contacts-desktop.png' });
+    await page.getByRole('button', { name: /WeChat/ }).click();
+    let dialog = page.getByRole('dialog', { name: 'WeChat', exact: true });
+    await page.waitForFunction(() => document.querySelector('.wechat-qr')?.naturalWidth > 0);
+    assert.equal(await dialog.getByLabel('WeChat ID').inputValue(), 'YH15060761179');
+    await dialog.getByRole('button', { name: 'Скопировать ID', exact: true }).click();
+    assert.equal(await page.evaluate(() => navigator.clipboard.readText()), 'YH15060761179');
+    const downloaded = page.waitForEvent('download'); await dialog.getByRole('link', { name: 'Сохранить QR', exact: true }).click();
+    const download = await downloaded; const bytes = fs.readFileSync(await download.path());
+    assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), crypto.createHash('sha256').update(fs.readFileSync('public/contacts/wechat-hua.jpg')).digest('hex'));
+    await page.keyboard.press('Escape'); assert.equal(await page.getByRole('dialog').count(), 0);
+    assert.equal(await page.evaluate(() => document.body.style.overflow), '');
+    await page.goto(origin + '/catalog/DEMO-4', { waitUntil: 'domcontentloaded' });
+    await page.locator('main').getByRole('link', { name: /WhatsApp · HUA/ }).waitFor();
+    const inquiry = new URL(await page.locator('main').getByRole('link', { name: /WhatsApp · HUA/ }).getAttribute('href')).searchParams.get('text');
+    assert.ok(inquiry.includes('DEMO-4') && inquiry.includes('AITO'));
+    await page.setViewportSize({ width: 390, height: 844 }); await page.getByRole('button', { name: 'Связаться', exact: true }).click();
+    dialog = page.getByRole('dialog', { name: 'Связаться с менеджером', exact: true });
+    assert.equal(await dialog.getByRole('link').count(), 3);
+    await dialog.getByRole('button', { name: /WeChat/ }).click();
+    dialog = page.getByRole('dialog', { name: 'WeChat', exact: true });
+    await dialog.getByRole('link', { name: 'Сохранить QR', exact: true }).scrollIntoViewIfNeeded();
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    await page.screenshot({ path: 'output/marketplace-qa/wechat-mobile.png' });
+    await dialog.getByRole('button', { name: /Все способы связи/ }).click();
+    await page.getByRole('dialog', { name: 'Связаться с менеджером', exact: true }).waitFor(); await page.keyboard.press('Escape');
+    await page.goto(origin + '/contacts', { waitUntil: 'domcontentloaded' });
+    await page.getByRole('button', { name: 'EN — English', exact: true }).click();
+    await page.locator('main').getByRole('heading', { name: 'Contact our managers', exact: true }).waitFor();
+    await page.getByRole('button', { name: 'CN — 中文', exact: true }).click();
+    await page.locator('main').getByRole('heading', { name: '联系销售经理', exact: true }).waitFor();
+    await page.goto(origin + '/login', { waitUntil: 'domcontentloaded' });
+    await page.getByRole('button', { name: 'EN — English', exact: true }).click();
+    await page.getByLabel('Username', { exact: true }).fill('admin'); await page.getByLabel('Password', { exact: true }).fill('Synthetic-only-Password9!');
+    await page.getByRole('button', { name: 'Sign in', exact: true }).click(); await page.waitForURL('**/admin/vehicles');
+    await page.goto(origin + '/admin/settings', { waitUntil: 'domcontentloaded' });
+    await page.getByLabel('WeChat ID', { exact: true }).waitFor();
+    await page.waitForFunction(() => document.querySelector('input[placeholder="YH15060761179"]')?.value === 'YH15060761179');
+    assert.equal(await page.getByLabel('WhatsApp 1', { exact: true }).inputValue(), '8615060761179');
+    assert.equal(await page.getByLabel('WhatsApp 2', { exact: true }).inputValue(), '996502102270');
+    assert.equal(await page.locator('input[type="email"]').count(), 0);
+    // Save the unchanged values to verify persistence without changing contacts.
+    const saved = page.waitForResponse(response => response.url().endsWith('/api/admin/contacts') && response.request().method() === 'POST');
+    await page.locator('.admin-settings-form button[type="submit"], .admin-settings-form > button').click();
+    assert.equal((await saved).status(), 200);
+    assert.deepEqual((await (await page.request.get(origin + '/api/site')).json()).contacts, snapshot.contacts);
+    assert.deepEqual(errors, []);
+    console.log('PASS: manager links, vehicle inquiry, QR download bytes, clipboard, mobile modal, three languages, no email, admin save');
+  } finally { await browser.close(); }
+}
+main().catch(error => { console.error(error); process.exitCode = 1; });

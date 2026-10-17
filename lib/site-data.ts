@@ -3,8 +3,16 @@ import { validSpecs, validFeatureTags, validDate, selectableBrands, canonicalBra
 
 export const carsKey = 'hl-motors-admin-cars';
 export const contactsKey = 'hl-motors-contacts';
-export type Contacts = { whatsapp: string; telegram: string; email: string };
-export const defaultContacts: Contacts = { whatsapp: '996502102270', telegram: 'nur6ultan', email: 'hello@hlmotors.com' };
+export type Contacts = {
+  whatsapp: string; telegram: string; whatsappName?: string; whatsappSecondary?: string; whatsappSecondaryName?: string;
+  wechatId?: string; wechatQr?: string;
+  /** Retained only for compatibility with older saved records. Not displayed. */
+  email?: string;
+};
+export const defaultContacts: Contacts = {
+  whatsapp: '8615060761179', telegram: 'nursauto_kg', whatsappName: 'HUA',
+  whatsappSecondary: '996502102270', whatsappSecondaryName: 'Нурсултан', wechatId: 'YH15060761179', wechatQr: '/contacts/wechat-hua.jpg',
+};
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return value !== null && typeof value === 'object' && !Array.isArray(value);
@@ -100,17 +108,35 @@ export function deleteCar(car: Car): Car[] {
 }
 
 export function normalizeContacts(value: unknown): Contacts {
-  if (!isRecord(value) || Object.keys(value).some(key => !['whatsapp', 'telegram', 'email'].includes(key))
-    || !boundedText(value.whatsapp, 100) || !boundedText(value.telegram, 100) || !boundedText(value.email, 254)) {
+  const optionalLimits: Record<string, number> = { email: 254, whatsappName: 80, whatsappSecondary: 100, whatsappSecondaryName: 80, wechatId: 80, wechatQr: 2048 };
+  if (!isRecord(value) || Object.keys(value).some(key => !['whatsapp', 'telegram', ...Object.keys(optionalLimits)].includes(key))
+    || !boundedText(value.whatsapp, 100) || !boundedText(value.telegram, 100)
+    || Object.entries(optionalLimits).some(([key, limit]) => value[key] !== undefined && !boundedText(value[key], limit))) {
     throw new Error('Проверьте контакты.');
   }
   const whatsapp = value.whatsapp.trim().replace(/^https:\/\/wa\.me\//i, '').replace(/[\s()+-]/g, '');
   const telegram = value.telegram.trim().replace(/^https:\/\/t\.me\//i, '').replace(/^@/, '').replace(/\/$/, '');
-  const email = value.email.trim();
+  const email = typeof value.email === 'string' ? value.email.trim() : undefined;
   if (!/^\d{7,15}$/.test(whatsapp)) throw new Error('Введите номер WhatsApp с кодом страны, например +996 502 102 270.');
   if (!/^[a-zA-Z][a-zA-Z0-9_]{4,31}$/.test(telegram)) throw new Error('Введите имя Telegram (5–32 символа), например @nur6ultan.');
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) throw new Error('Введите корректный email.');
-  return { whatsapp, telegram, email };
+  if (email !== undefined && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) throw new Error('Введите корректный email.');
+  const result: Contacts = { whatsapp, telegram, ...(email !== undefined ? { email } : {}) };
+  for (const key of ['whatsappName', 'whatsappSecondary', 'whatsappSecondaryName', 'wechatId', 'wechatQr'] as const) {
+    if (typeof value[key] === 'string') result[key] = value[key].trim();
+  }
+  if (result.whatsappSecondary) {
+    result.whatsappSecondary = result.whatsappSecondary.replace(/^https:\/\/wa\.me\//i, '').replace(/[\s()+-]/g, '');
+    if (!/^\d{7,15}$/.test(result.whatsappSecondary)) throw new Error('Введите корректный номер второго менеджера.');
+  }
+  if (result.wechatId && !/^[a-zA-Z][a-zA-Z0-9_-]{5,19}$/.test(result.wechatId)) throw new Error('Проверьте WeChat ID.');
+  if (result.wechatQr) {
+    const local = /^\/(?!\/)[\w./-]+$/.test(result.wechatQr);
+    let remote = false;
+    try { const url = new URL(result.wechatQr); remote = url.protocol === 'https:' && !url.username && !url.password; } catch { /* Relative public asset. */ }
+    if (!local && !remote) throw new Error('Укажите HTTPS-ссылку или путь к QR-коду на сайте.');
+    if (!result.wechatId) throw new Error('Добавьте WeChat ID для QR-кода.');
+  }
+  return result;
 }
 
 export function readContacts(): Contacts {
@@ -122,7 +148,7 @@ export function readContacts(): Contacts {
 export function writeContacts(value: Contacts, previous: Contacts): Contacts {
   const contacts = normalizeContacts(value);
   const original = normalizeContacts(previous);
-  if (JSON.stringify(readContacts()) !== JSON.stringify(original)) throw new Error('Контакты изменились. Обновите страницу и повторите.');
+  if (JSON.stringify(normalizeContacts(readContacts())) !== JSON.stringify(original)) throw new Error('Контакты изменились. Обновите страницу и повторите.');
   localStorage.setItem(contactsKey, JSON.stringify(contacts));
   return contacts;
 }

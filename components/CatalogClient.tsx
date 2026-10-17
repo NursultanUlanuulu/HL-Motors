@@ -65,7 +65,7 @@ export function CatalogClient({ favorites = false }: { favorites?: boolean }) {
     const field = [...specSelects, ['featureTags', 'Метки состояния и предложения'] as const].find(([id]) => id === key);
     return field ? t(field[1]) + ': ' + input.split('|').map(id => optionLabel(field[0], id, locale)).join(', ') : input;
   }
-  const filters = <MarketFilters cars={source} value={value} update={update} reset={reset} />;
+  const filters = <MarketFilters cars={source} value={value} update={update} updateYears={(minYear, maxYear) => navigate({ ...value, minYear, maxYear, page: '1' })} reset={reset} />;
   const loading = !loaded || (favorites && !ready);
   return <main className="market-main">
     <div className="market-title-row"><div><h1>{t(favorites ? 'Избранное' : 'Автомобили из Китая')}</h1><p role="status" aria-live="polite">{loading ? t('Загружаем каталог…') : carCount(visible.length, locale)}</p></div><form className="market-search" role="search" onSubmit={event => { event.preventDefault(); update('query', search.trim()); }}><label><MarketIcon name="search" /><input type="search" value={search} onChange={event => setSearch(event.target.value)} aria-label={t('Поиск автомобилей')} placeholder={t('Марка, модель или ключевое слово')} /></label><button type="submit" className="market-primary">{t('Найти')}</button></form></div>

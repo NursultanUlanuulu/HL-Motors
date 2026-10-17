@@ -27,7 +27,7 @@ function synthetic(id, maximum = false) {
   };
 }
 
-async function database(initialCars = [synthetic('QA-NORMAL'), synthetic('QA-LONG', true)]) {
+async function database(initialCars = [synthetic('QA-NORMAL'), synthetic('QA-LONG', true)], companyContacts = false) {
   const db = new PGlite(); await db.waitReady;
   await db.exec(`create role anon; create role authenticated; create role service_role bypassrls;
     grant usage on schema public to anon, authenticated, service_role;
@@ -35,7 +35,7 @@ async function database(initialCars = [synthetic('QA-NORMAL'), synthetic('QA-LON
     create table storage.buckets(id text primary key, name text, public boolean, file_size_limit bigint, allowed_mime_types text[]);`);
   const migrations = fs.readdirSync(path.join(root, 'supabase/migrations')).filter(name => name.endsWith('.sql')).sort();
   for (const name of migrations) await db.exec(fs.readFileSync(path.join(root, 'supabase/migrations', name), 'utf8'));
-  await db.query('update public.site_settings set contacts=$1 where id=$2', [{ whatsapp: '10000000000', telegram: 'qa_preview', email: 'qa@example.invalid' }, 'main']);
+  if (!companyContacts) await db.query('update public.site_settings set contacts=$1 where id=$2', [{ whatsapp: '10000000000', telegram: 'qa_preview', email: 'qa@example.invalid' }, 'main']);
   for (const car of initialCars) {
     await db.query('insert into public.vehicles(id,data) values($1,$2)', [car.id, car]);
   }
@@ -123,13 +123,13 @@ async function adapter(db) {
   return server;
 }
 
-async function main(initialCars = [synthetic('QA-NORMAL'), synthetic('QA-LONG', true)]) {
+async function main(initialCars = [synthetic('QA-NORMAL'), synthetic('QA-LONG', true)], companyContacts = false) {
   // Refuse to attach to or replace another local application.
   await new Promise((resolve, reject) => {
     const probe = net.createServer(); probe.once('error', reject);
     probe.listen(3107, '127.0.0.1', () => probe.close(resolve));
   });
-  const db = await database(initialCars); const server = await adapter(db);
+  const db = await database(initialCars, companyContacts); const server = await adapter(db);
   const logPath = path.join(os.tmpdir(), `motors-security-preview-${process.pid}.log`);
   const log = fs.openSync(logPath, 'w');
   const child = spawn(process.execPath, [path.join(root, 'node_modules/next/dist/bin/next'), 'start', '-p', '3107', '-H', '127.0.0.1'], {

@@ -8,4 +8,4 @@ const cars = snapshotIndex >= 0
   ? JSON.parse(fs.readFileSync(path.resolve(process.argv[snapshotIndex + 1]), 'utf8')).cars.map(({ version, ...car }) => car)
   : require('../fixtures/demo-cars.json');
 if (!Array.isArray(cars)) throw new Error('Expected a catalogue snapshot with a cars array.');
-main(cars).catch(error => { console.error(error); process.exitCode = 1; });
+main(cars, true).catch(error => { console.error(error); process.exitCode = 1; });

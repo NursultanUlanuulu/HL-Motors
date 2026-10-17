@@ -25,7 +25,7 @@ export function AdminSettings() {
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault(); setBusy(true); setMessage(''); setError('');
     try {
-      const normalized = normalizeContacts(value);
+      const normalized = normalizeContacts({ ...value, email: undefined });
       if (mode === 'local' && !await withDeadline(() => ensureAdminSession(), { timeoutMs: clientRequestTimeoutMs })) throw new Error('Сессия завершена. Войдите в админку снова.');
       await saveContacts(normalized, originalContacts.current ?? contacts); setDraft(null); originalContacts.current = undefined; setMessage('Контакты сохранены и обновлены на сайте.');
     } catch (err) { setError(err instanceof Error ? err.message : 'Не удалось сохранить контакты.'); }
@@ -35,9 +35,13 @@ export function AdminSettings() {
     <div className="admin-panel-top"><div><h2>{t("Контакты компании")}</h2><p>{t("Используются на главной странице, в карточках автомобилей и в подвале сайта.")}</p></div></div>
     <form className="admin-settings-form" onSubmit={submit}>
       <fieldset disabled={busy || !contactsLoaded}><div className="admin-form-grid">
-        <label className="wide">WhatsApp<input type="tel" maxLength={100} value={value.whatsapp} onChange={event => update('whatsapp', event.target.value)} placeholder="+996 502 102 270" required /><small>{t("Номер с кодом страны или ссылка https://wa.me/…")}</small></label>
-        <label className="wide">Telegram<input maxLength={100} value={value.telegram} onChange={event => update('telegram', event.target.value)} placeholder="@nur6ultan" required /><small>{t("Имя пользователя или ссылка https://t.me/…")}</small></label>
-        <label className="wide">Email<input type="email" maxLength={254} value={value.email} onChange={event => update('email', event.target.value)} placeholder="hello@hlmotors.com" required /></label>
+        <label>{t('Имя первого менеджера')}<input maxLength={80} value={value.whatsappName ?? ''} onChange={event => update('whatsappName', event.target.value)} placeholder="HUA" /></label>
+        <label>WhatsApp 1<input type="tel" maxLength={100} value={value.whatsapp} onChange={event => update('whatsapp', event.target.value)} placeholder="+8615060761179" required /></label>
+        <label>{t('Имя второго менеджера')}<input maxLength={80} value={value.whatsappSecondaryName ?? ''} onChange={event => update('whatsappSecondaryName', event.target.value)} placeholder={t('Нурсултан')} /></label>
+        <label>WhatsApp 2<input type="tel" maxLength={100} value={value.whatsappSecondary ?? ''} onChange={event => update('whatsappSecondary', event.target.value)} placeholder="+996502102270" /></label>
+        <label className="wide">Telegram<input maxLength={100} value={value.telegram} onChange={event => update('telegram', event.target.value)} placeholder="@nursauto_kg" required /><small>{t("Имя пользователя или ссылка https://t.me/…")}</small></label>
+        <label className="wide">WeChat ID<input maxLength={20} value={value.wechatId ?? ''} onChange={event => update('wechatId', event.target.value)} placeholder="YH15060761179" /></label>
+        <label className="wide">{t('Изображение QR-кода WeChat')}<input maxLength={2048} value={value.wechatQr ?? ''} onChange={event => update('wechatQr', event.target.value)} placeholder="/contacts/wechat-hua.jpg" /><small>{t('HTTPS-ссылка или путь к изображению на сайте.')}</small></label>
       </div></fieldset>
       {(error || contactsError) && <p className="admin-media-error" role="alert">{t(error || contactsError)}</p>}
       {message && <p className="admin-save-success" role="status">{t(message)}</p>}

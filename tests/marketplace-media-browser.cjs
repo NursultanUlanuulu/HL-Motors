@@ -35,9 +35,9 @@ async function main() {
     await popup().getByRole('listbox').press('End'); await popup().getByRole('listbox').press('Enter');
     assert.ok(page.url().includes('sort=newest'));
     await page.locator('.market-car-title a').click();
-    const image = page.locator('.main-gallery-image img');
+    const image = page.locator('.main-gallery-image .gallery-frame[data-active=true] img');
     await image.waitFor();
-    await page.waitForFunction(() => document.querySelector('.main-gallery-image img')?.complete && document.querySelector('.main-gallery-image img')?.naturalWidth > 0, null, { timeout: 60000 });
+    await page.waitForFunction(() => document.querySelector('.main-gallery-image .gallery-frame[data-active=true] img')?.complete && document.querySelector('.main-gallery-image .gallery-frame[data-active=true] img')?.naturalWidth > 0, null, { timeout: 60000 });
     assert.equal(new URL(await image.getAttribute('src'), origin).pathname, '/_next/image');
     assert.ok((await page.locator('.gallery-thumb img').first().getAttribute('sizes')).includes('90px'));
     await page.getByRole('button', { name: 'Открыть фотогалерею' }).click();
@@ -45,7 +45,7 @@ async function main() {
     await page.keyboard.press('ArrowRight'); await viewer.getByText('2 / 5', { exact: true }).waitFor();
     await viewer.getByRole('button', { name: 'Увеличить фото', exact: true }).click();
     assert.ok(await viewer.locator('.photo-viewer-canvas.zoomed').isVisible());
-    await page.waitForFunction(() => { const img = document.querySelector('.photo-viewer-image img'); return img?.complete && img.naturalWidth > 0; }, null, { timeout: 60000 });
+    await page.waitForFunction(() => { const img = document.querySelector('.photo-viewer-image .gallery-frame[data-active=true] img'); return img?.complete && img.naturalWidth > 0; }, null, { timeout: 60000 });
     await page.screenshot({ path: path.join(output, 'gallery-fullscreen.png') });
     await viewer.getByRole('button', { name: 'Уменьшить фото', exact: true }).click();
     await swipe(viewer.locator('.photo-viewer-canvas'), 'left'); await viewer.getByText('3 / 5', { exact: true }).waitFor();
@@ -57,7 +57,7 @@ async function main() {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.getByRole('button', { name: 'Открыть фотогалерею' }).click();
     await viewer.waitFor();
-    await page.waitForFunction(() => { const img = document.querySelector('.photo-viewer-image img'); return img?.complete && img.naturalWidth > 0; }, null, { timeout: 60000 });
+    await page.waitForFunction(() => { const img = document.querySelector('.photo-viewer-image .gallery-frame[data-active=true] img'); return img?.complete && img.naturalWidth > 0; }, null, { timeout: 60000 });
     await page.screenshot({ path: path.join(output, 'gallery-mobile.png') }); await page.keyboard.press('Escape');
     await page.goto(origin + '/catalog', { waitUntil: 'domcontentloaded' });
     await page.getByRole('button', { name: 'Фильтры', exact: true }).click();

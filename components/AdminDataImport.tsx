@@ -79,7 +79,7 @@ export function AdminDataImport() {
       <p>{t('Будет пропущено: {count}', { count: preview.cars.length - count })}</p>
       <ul>{preview.cars.filter(car => !existing.has(car.id)).map(car => <li key={car.id}>{car.brand} {car.model} · {car.year}</li>)}</ul>
       <label><input type="checkbox" checked={includeContacts} disabled={busy} onChange={event => setIncludeContacts(event.target.checked)} /> {t('Также заменить контакты сайта данными этого браузера')}</label>
-      {includeContacts && <p>{preview.contacts.email} · WhatsApp +{preview.contacts.whatsapp} · Telegram @{preview.contacts.telegram}</p>}
+      {includeContacts && <p>WhatsApp +{preview.contacts.whatsapp} · Telegram @{preview.contacts.telegram}</p>}
       <button className="admin-primary" type="button" disabled={busy || (!count && !includeContacts)} onClick={() => { void runImport(); }}>{t(busy ? 'Импортируем…' : 'Начать импорт')}</button>
     </div>}
     {progress && <p role="status">{t('Импортируем…')} {progress}</p>}

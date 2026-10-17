@@ -23,16 +23,16 @@ export function useMediaUrl(source?: string) {
   return source && isLocalMedia(source) ? (resolved?.source === source ? resolved.url : undefined) : source || undefined;
 }
 
-export function MediaImage({ source, alt, variant, eager = false }: { source?: string; alt: string; variant?: ImageVariant; eager?: boolean }) {
+export function MediaImage({ source, alt, variant, eager = false, sizes, fetchPriority, onReady }: { source?: string; alt: string; variant?: ImageVariant; eager?: boolean; sizes?: string; fetchPriority?: 'auto' | 'low' | 'high'; onReady?: () => void }) {
   const { t } = useLocale();
   const url = useMediaUrl(source);
   const [failed, setFailed] = useState<string>();
   const [original, setOriginal] = useState<string>();
   if (url && failed !== url && variant && original !== url && optimizableImage(url)) {
-    return <Image src={url} alt={alt} width={1600} height={1000} sizes={imageSizes[variant]} quality={variant === 'gallery' || variant === 'fullscreen' ? 85 : 70}
-      loading={eager ? 'eager' : 'lazy'} decoding="async" onError={() => setOriginal(url)} className="optimized-vehicle-image" />;
+    return <Image src={url} alt={alt} width={1600} height={1000} sizes={sizes ?? imageSizes[variant]} quality={variant === 'gallery' || variant === 'fullscreen' ? 85 : 70}
+      loading={eager ? 'eager' : 'lazy'} fetchPriority={fetchPriority} decoding="async" onLoad={onReady} onError={() => setOriginal(url)} className="optimized-vehicle-image" />;
   }
   return url && failed !== url
-    ? <img src={url} alt={alt} loading={eager ? 'eager' : 'lazy'} decoding="async" onError={() => setFailed(url)} />
+    ? <img src={url} alt={alt} loading={eager ? 'eager' : 'lazy'} fetchPriority={fetchPriority} decoding="async" onLoad={onReady} onError={() => { setFailed(url); onReady?.(); }} />
     : <span className="admin-media-placeholder" role="img" aria-label={t(alt || 'Фото отсутствует')}>{t("Нет фото")}</span>;
 }
