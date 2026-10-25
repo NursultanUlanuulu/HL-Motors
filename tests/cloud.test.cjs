@@ -121,7 +121,7 @@ test('contact edits compare the original stored contacts and reject stale update
 });
 
 test('file signing validates format and size before any storage request', async () => {
-  for (const file of [{ type: 'text/html', size: 1 }, { type: 'image/png', size: 16 * 1024 * 1024 }, { type: 'video/mp4', size: 51 * 1024 * 1024 }]) {
+  for (const file of [{ type: 'text/html', size: 1 }, { type: 'image/heic', size: 1234 }, { type: 'image/jpeg', size: 16 * 1024 * 1024 }, { type: 'image/png', size: 100 * 1024 * 1024 + 1 }, { type: 'video/mp4', size: 51 * 1024 * 1024 }]) {
     assert.equal((await media.POST(request(file))).status, 400);
   }
   assert.equal(requests.length, 0);
@@ -129,7 +129,7 @@ test('file signing validates format and size before any storage request', async 
     assert.match(call.url.pathname, /^\/storage\/v1\/object\/upload\/sign\/vehicle-media\/vehicles\/[\w-]+\.png$/);
     return Response.json({ url: call.url.pathname.replace('/storage/v1', '') + '?token=test-upload-token' });
   };
-  const response = await media.POST(request({ type: 'image/png', size: 1234 }));
+  const response = await media.POST(request({ type: 'image/png', size: 100 * 1024 * 1024 }));
   assert.equal(response.status, 200);
   const result = await response.json();
   assert.match(result.uploadUrl, /token=test-upload-token/);

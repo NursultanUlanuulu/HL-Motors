@@ -17,7 +17,7 @@ const nextConfig: NextConfig = {
     ],
     deviceSizes: [480, 640, 960, 1280, 1920], imageSizes: [96, 160, 320], qualities: [70, 85],
     formats: ['image/webp'], minimumCacheTTL: 86400,
-    maximumRedirects: 0, maximumResponseBody: 20_000_000, maximumDiskCacheSize: 250_000_000,
+    maximumRedirects: 0, maximumResponseBody: 100 * 1024 * 1024, maximumDiskCacheSize: 250_000_000,
   },
 };
 

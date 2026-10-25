@@ -8,6 +8,8 @@ import { MediaImage as AdminMediaImage, useMediaUrl } from './MediaImage';
 import { removeMedia, storeMedia } from '@/lib/admin-media';
 import { useSiteData } from './SiteDataProvider';
 import { uploadCloudMedia } from '@/lib/cloud-client';
+import { acceptsPhoto, isHeicPhoto, photoAccept } from '@/lib/photo-types';
+import { preparePhoto } from '@/lib/photo-upload';
 
 export { MediaImage as AdminMediaImage } from './MediaImage';
 
@@ -30,6 +32,7 @@ export function AdminMediaEditor({ car, onChange, onBusy, onUploaded }: {
   const { mode } = useSiteData();
   const photos = car.gallery ?? (car.image ? [car.image] : []);
   const [busy, setBusy] = useState(false);
+  const [progress, setProgress] = useState('');
   const [error, setError] = useState('');
   const [url, setUrl] = useState('');
   const active = useRef(false);
@@ -46,22 +49,35 @@ export function AdminMediaEditor({ car, onChange, onBusy, onUploaded }: {
     const allowed = kind === 'photo' ? ['image/jpeg', 'image/png', 'image/webp', 'image/avif'] : ['video/mp4', 'video/webm', 'video/quicktime'];
     const limit = (kind === 'photo' ? 15 : mode !== 'local' ? 50 : 200) * 1024 * 1024;
     if (kind === 'video' && files.length !== 1) { setError('Выберите одно видео.'); return; }
-    const invalid = files.find((file) => !allowed.includes(file.type) || !file.size || file.size > limit);
-    if (invalid) { setError(`«${invalid.name}»: ${t(kind === 'photo' ? 'нужно фото JPG, PNG, WebP или AVIF до 15 МБ' : mode !== 'local' ? 'нужно видео MP4, WebM или MOV до 50 МБ' : 'нужно видео MP4, WebM или MOV до 200 МБ')}.`); return; }
+    const invalid = files.find((file) => kind === 'photo' ? !acceptsPhoto(file) : !allowed.includes(file.type) || !file.size || file.size > limit);
+    if (invalid) { setError(`«${invalid.name}»: ${t(kind === 'photo' ? 'нужно фото JPG, PNG, WebP, AVIF, HEIC или HEIF до 15 МБ' : mode !== 'local' ? 'нужно видео MP4, WebM или MOV до 50 МБ' : 'нужно видео MP4, WebM или MOV до 200 МБ')}.`); return; }
     active.current = true;
     setBusy(true);
     onBusy(true);
+    const sources: string[] = [];
     try {
-      const sources = await (mode !== 'local' ? uploadCloudMedia(files) : storeMedia(files));
-      if (!mounted.current) { await removeMedia(sources); return; }
-      onUploaded(sources);
-      if (kind === 'photo') updatePhotos([...photos, ...sources]);
-      else onChange({ image: car.image, gallery: car.gallery, video: sources[0] });
+      for (const [index, file] of files.entries()) {
+        if (!mounted.current) break;
+        setProgress(t(kind === 'photo' && isHeicPhoto(file) ? 'Конвертируем HEIC в PNG: {number} из {total}…' : 'Загружаем файл: {number} из {total}…', { number: index + 1, total: files.length }));
+        const prepared = kind === 'photo' ? await preparePhoto(file) : file;
+        if (!mounted.current) break;
+        setProgress(t('Загружаем файл: {number} из {total}…', { number: index + 1, total: files.length }));
+        const uploaded = await (mode !== 'local' ? uploadCloudMedia([prepared]) : storeMedia([prepared]));
+        if (!mounted.current) { await removeMedia(uploaded); break; }
+        sources.push(...uploaded);
+        onUploaded(uploaded);
+      }
     } catch (err) {
-      if (mounted.current) setError(mode !== 'local' && err instanceof Error ? err.message : 'Не удалось сохранить файлы. Возможно, в хранилище браузера недостаточно места. Попробуйте файл меньшего размера.');
+      if (mounted.current) setError(err instanceof Error ? err.message : 'Не удалось сохранить файлы. Возможно, в хранилище браузера недостаточно места. Попробуйте файл меньшего размера.');
     } finally {
       active.current = false;
-      if (mounted.current) { setBusy(false); onBusy(false); }
+      if (mounted.current) {
+        if (sources.length) {
+          if (kind === 'photo') updatePhotos([...photos, ...sources]);
+          else onChange({ image: car.image, gallery: car.gallery, video: sources[0] });
+        }
+        setBusy(false); setProgress(''); onBusy(false);
+      }
     }
   }
 
@@ -84,7 +100,8 @@ export function AdminMediaEditor({ car, onChange, onBusy, onUploaded }: {
   return <fieldset className="admin-media" disabled={busy}>
     <legend>{t("Фотографии и видео")}</legend>
     <p className="admin-media-help">{t("Можно добавить больше 12 фото и одно видео. Первое фото — обложка объявления.")}</p>
-    <label className="admin-media-upload"><strong>{t("＋ Добавить фотографии")}</strong><span>{t("JPG, PNG, WebP, AVIF · до 15 МБ каждое")}</span><input type="file" multiple accept="image/jpeg,image/png,image/webp,image/avif" onChange={(event) => { const files = Array.from(event.target.files ?? []); event.target.value = ''; void upload(files, 'photo'); }} /></label>
+    <label className="admin-media-upload"><strong>{t("＋ Добавить фотографии")}</strong><span>{t("JPG, PNG, WebP, AVIF, HEIC/HEIF · до 15 МБ каждое")}</span><input type="file" multiple accept={photoAccept} onChange={(event) => { const files = Array.from(event.target.files ?? []); event.target.value = ''; void upload(files, 'photo'); }} /></label>
+    <p className="admin-media-help">{t('HEIC автоматически преобразуется в PNG без уменьшения разрешения. Для Live Photo сохраняется один кадр.')}</p>
     <p className="admin-media-count">{t("Фотографии:")} {photos.length}</p>
     <div className="admin-media-grid">{photos.map((source, index) => <article className="admin-media-photo" key={`${source}-${index}`}>
       <AdminMediaImage source={source} alt={t('Фото автомобиля {number}', { number: index + 1 })} />
@@ -95,7 +112,7 @@ export function AdminMediaEditor({ car, onChange, onBusy, onUploaded }: {
     <div className="admin-media-video"><h3>{t("Видеообзор")}</h3>{car.video && <><VideoPreview key={car.video} source={car.video} /><button className="admin-media-remove" type="button" onClick={() => onChange({ image: car.image, gallery: car.gallery, video: undefined })}>{t("Удалить видео")}</button></>}
       <label className="admin-media-upload"><strong>{t(car.video ? 'Заменить видео' : '＋ Добавить видео')}</strong><span>{t(mode !== 'local' ? 'MP4, WebM, MOV · до 50 МБ · для совместимости рекомендуем MP4 (H.264)' : 'MP4, WebM, MOV · до 200 МБ · для совместимости рекомендуем MP4 (H.264)')}</span><input type="file" accept="video/mp4,video/webm,video/quicktime" onChange={(event) => { const files = Array.from(event.target.files ?? []); event.target.value = ''; void upload(files, 'video'); }} /></label>
     </div>
-    {busy && <p role="status">{t("Сохраняем файлы…")}</p>}
+    {busy && <p role="status">{progress || t("Сохраняем файлы…")}</p>}
     {error && <p className="admin-media-error" role="alert">{t(error)}</p>}
   </fieldset>;
 }

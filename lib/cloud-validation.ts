@@ -1,5 +1,6 @@
 import type { Car } from './cars';
 import { isCar, publicCar } from './site-data';
+import { pngUploadLimit } from './photo-types';
 
 export type DataMode = 'local' | 'supabase' | 'postgres';
 export const mediaBucket = 'vehicle-media';
@@ -41,7 +42,7 @@ export function validateUpload(type: unknown, size: unknown) {
   if (typeof type !== 'string' || !Object.hasOwn(mediaTypes, type) || typeof size !== 'number' || !Number.isSafeInteger(size) || size <= 0) {
     throw new DataError('Неподдерживаемый файл.');
   }
-  const limit = type.startsWith('image/') ? photoLimit : cloudVideoLimit;
-  if (size > limit) throw new DataError('Фото — до 15 МБ, видео — до 50 МБ.');
+  const limit = type === 'image/png' ? pngUploadLimit : type.startsWith('image/') ? photoLimit : cloudVideoLimit;
+  if (size > limit) throw new DataError('Фото — до 15 МБ, PNG — до 100 МБ, видео — до 50 МБ.');
   return mediaTypes[type];
 }
