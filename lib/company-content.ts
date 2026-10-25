@@ -5,15 +5,15 @@ const copy = (ru: string, en: string, zh: string): Record<Locale, string> => ({ 
 // Business facts and terms supplied and confirmed by the owner, October 2026.
 export const companyContent = {
   tagline: copy('Автомобили из Китая. Подбор, осмотр и доставка.', 'Cars from China. Sourcing, inspection and delivery.', '中国汽车采购、验车与运输。'),
-  aboutLead: copy('HL Motors продаёт автомобили из Китая и подбирает их под задачи клиента. Наш опыт на рынке Китая — более 10 лет, на рынке Кыргызстана — более 5 лет. Компания HL Motors основана в 2021 году.', 'HL Motors sells cars from China and sources vehicles to suit each customer. We have over 10 years of experience in the Chinese market and over 5 years in Kyrgyzstan. HL Motors was founded in 2021.', 'HL Motors销售来自中国的汽车，并根据客户需求选车。我们在中国市场拥有超过10年的经验，在吉尔吉斯斯坦市场拥有超过5年的经验。HL Motors成立于2021年。'),
-  founded: copy('Год основания HL Motors', 'HL Motors founded', 'HL Motors成立年份'),
+  aboutLead: copy('firstseven avto продаёт автомобили из Китая и подбирает их под задачи клиента. Наш опыт на рынке Китая — более 10 лет, на рынке Кыргызстана — более 5 лет. Компания firstseven avto основана в 2021 году.', 'firstseven avto sells cars from China and sources vehicles to suit each customer. We have over 10 years of experience in the Chinese market and over 5 years in Kyrgyzstan. firstseven avto was founded in 2021.', 'firstseven avto销售来自中国的汽车，并根据客户需求选车。我们在中国市场拥有超过10年的经验，在吉尔吉斯斯坦市场拥有超过5年的经验。firstseven avto成立于2021年。'),
+  founded: copy('Год основания firstseven avto', 'firstseven avto founded', 'firstseven avto成立年份'),
   chinaYears: copy('Лет на рынке Китая', 'Years in the Chinese market', '中国市场经验（年）'),
   kyrgyzYears: copy('Лет на рынке Кыргызстана', 'Years in the Kyrgyz market', '吉尔吉斯斯坦市场经验（年）'),
   twoTeams: copy('Две команды — от подбора до получения', 'Two teams, from sourcing to handover', '两地团队，从选车到交付'),
   chinaTeam: copy('Команда в Китае', 'Our team in China', '中国团队'),
   chinaTeamBody: copy('Подбирает автомобиль, проводит осмотр и готовит фото- и видеообзор. После подтверждения клиента оформляет экспортные документы и организует отправку.', 'Sources the vehicle, inspects it and prepares a photo and video report. After the customer confirms, the team prepares export documents and arranges shipment.', '负责选车、验车并提供照片和视频报告。客户确认后，团队准备出口文件并安排发运。'),
   kyrgyzTeam: copy('Команда в Кыргызстане', 'Our team in Kyrgyzstan', '吉尔吉斯斯坦团队'),
-  kyrgyzTeamBody: copy('Встречает и принимает автомобили, прибывающие в Кыргызстан. В офисе HL Motors в Бишкеке можно обсудить заказ, заключить договор и внести оплату.', 'Receives arriving vehicles in Kyrgyzstan. At the HL Motors office in Bishkek, you can discuss your order, sign a contract and make payment.', '负责接收抵达吉尔吉斯斯坦的车辆。您可在比什凯克HL Motors办公室咨询订单、签订合同并付款。'),
+  kyrgyzTeamBody: copy('Встречает и принимает автомобили, прибывающие в Кыргызстан. В офисе firstseven avto в Бишкеке можно обсудить заказ, заключить договор и внести оплату.', 'Receives arriving vehicles in Kyrgyzstan. At the firstseven avto office in Bishkek, you can discuss your order, sign a contract and make payment.', '负责接收抵达吉尔吉斯斯坦的车辆。您可在比什凯克firstseven avto办公室咨询订单、签订合同并付款。'),
   process: copy('Как проходит заказ', 'How ordering works', '订车流程'),
   sourcing: copy('Подбор под ваши задачи', 'Sourcing for your needs', '按需求选车'),
   sourcingBody: copy('Обсуждаем бюджет и пожелания, подбираем варианты автомобилей в Китае.', 'We discuss your budget and preferences, then source suitable vehicles in China.', '沟通预算和需求，在中国寻找合适的车辆。'),
@@ -45,7 +45,7 @@ export const companyContent = {
   damageTitle: copy('Повреждения при доставке', 'Damage during delivery', '运输中的损坏'),
   damageBody: copy('Если автомобиль получает повреждения при доставке, компания оплачивает их устранение.', 'If the vehicle is damaged during delivery, the company pays for the repairs.', '如车辆在运输过程中受损，公司承担修复费用。'),
   contactsLead: copy('Обсудим подходящий автомобиль, проверку и доставку. Напишите HUA или Нурсултану в WhatsApp, свяжитесь с нами в Telegram или добавьте менеджера в WeChat.', 'Let’s discuss your vehicle, inspection and delivery. Message HUA or Nursultan on WhatsApp, contact us on Telegram, or add our manager on WeChat.', '欢迎咨询选车、验车及运输。您可以通过WhatsApp联系HUA或努尔苏丹，通过Telegram联系我们，或添加经理的微信。'),
-  office: copy('Офис HL Motors', 'HL Motors office', 'HL Motors办公室'),
+  office: copy('Офис firstseven avto', 'firstseven avto office', 'firstseven avto办公室'),
   address: copy('Бишкек, ул. Исакеева, 32/2', '32/2 Isakeeva Street, Bishkek', '比什凯克，Isakeeva街32/2号'),
   hoursTitle: copy('График работы', 'Opening hours', '营业时间'),
   hours: copy('Ежедневно, 11:00–19:00', 'Daily, 11:00–19:00', '每天11:00–19:00'),
@@ -70,4 +70,4 @@ export const companyContent = {
 
 export const orderSteps = [['sourcing', 'sourcingBody'], ['inspection', 'inspectionBody'], ['approval', 'approvalBody'], ['export', 'exportBody']] as const;
 export const companyFaq = [['qCountries', 'deliveryLead'], ['qTime', 'logisticsBody'], ['qPrice', 'orderBody'], ['qStock', 'stockBody'], ['qPayment', 'paymentBody'], ['qInspection', 'inspectionBody'], ['qVisit', 'collectionBody'], ['qCancel', 'cancellationBody'], ['qDamage', 'damageBody']] as const;
-export const officeMapUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('HL Motors, Исакеева 32/2, Бишкек');
+export const officeMapUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('firstseven avto, Исакеева 32/2, Бишкек');

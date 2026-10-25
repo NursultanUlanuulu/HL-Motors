@@ -23,7 +23,7 @@ export function VehicleDetail({ id }: { id: string }) {
     if (target && /^\/(?:catalog|favorites)?(?:\?|$)/.test(target)) setBack(target);
   }, [id]);
   useEffect(() => {
-    if (loaded) document.title = car ? (car.metaTitle || car.brand + ' ' + car.model) + ' — Motors' : t('Автомобиль недоступен — Motors');
+    if (loaded) document.title = car ? (car.metaTitle || car.brand + ' ' + car.model) + ' — firstseven avto' : t('Автомобиль недоступен — firstseven avto');
   }, [car?.brand, car?.model, car?.metaTitle, loaded, locale]);
   useEffect(() => {
     if (!car?.metaDescription) return;

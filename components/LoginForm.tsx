@@ -12,7 +12,7 @@ export function LoginForm() {
   const [state, action, pending] = useActionState(login, { error: '' });
   return <form action={action} className="admin-login-card">
     <LanguageSwitcher admin />
-    <p className="eyebrow">{t("Motors / Панель управления")}</p>
+    <p className="eyebrow">{t("firstseven avto / Панель управления")}</p>
     <h1>{t("Вход администратора")}</h1>
     <label>{t("Логин")}<input name="username" autoComplete="username" required autoFocus /></label>
     <label>{t("Пароль")}<input name="password" type="password" autoComplete="current-password" required /></label>

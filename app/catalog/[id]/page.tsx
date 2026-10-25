@@ -1,6 +1,6 @@
 import { VehicleDetail } from '@/components/VehicleDetail';
 
-export const metadata = { title: 'Автомобиль — Motors' };
+export const metadata = { title: 'Автомобиль — firstseven avto' };
 
 // Local records are resolved after hydration, including IDs created in the admin panel.
 export default async function VehiclePage({ params }: { params: Promise<{ id: string }> }) {

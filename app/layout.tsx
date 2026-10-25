@@ -7,7 +7,7 @@ import { LocaleProvider } from '@/components/LocaleProvider';
 import { getDataMode } from '@/lib/supabase-server';
 
 export const metadata: Metadata = {
-  title: 'Motors — Автомобили из Китая',
+  title: 'firstseven avto — Автомобили из Китая',
   description: 'Поставка автомобилей из Китая под ключ: проверка, доставка и оформление.',
 };
 

@@ -63,7 +63,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
     {sidebarOpen && <button className="admin-sidebar-backdrop" type="button" onClick={closeSidebar} aria-label={t("Закрыть меню")} />}
     <section className="admin-content">
       <header className="admin-header">
-        <div className="admin-heading"><button ref={toggle} className="admin-sidebar-toggle" type="button" onClick={() => setSidebarOpen((current) => !current)} aria-controls="admin-navigation" aria-expanded={sidebarOpen} aria-label={t(sidebarOpen ? 'Скрыть меню' : 'Открыть меню')}><span aria-hidden="true">{sidebarOpen ? '←' : '☰'}</span><span>{t(sidebarOpen ? 'Скрыть меню' : 'Открыть меню')}</span></button><div><p>{t("Motors / Панель управления")}</p><h1>{t(title)}</h1></div></div>
+        <div className="admin-heading"><button ref={toggle} className="admin-sidebar-toggle" type="button" onClick={() => setSidebarOpen((current) => !current)} aria-controls="admin-navigation" aria-expanded={sidebarOpen} aria-label={t(sidebarOpen ? 'Скрыть меню' : 'Открыть меню')}><span aria-hidden="true">{sidebarOpen ? '←' : '☰'}</span><span>{t(sidebarOpen ? 'Скрыть меню' : 'Открыть меню')}</span></button><div><p>{t("firstseven avto / Панель управления")}</p><h1>{t(title)}</h1></div></div>
         <LanguageSwitcher admin />
         <a className="admin-view-site" href="/" target="_blank" rel="noreferrer">{t("Открыть сайт ↗")}</a>
       </header>

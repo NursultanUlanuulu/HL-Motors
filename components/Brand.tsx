@@ -2,7 +2,6 @@
 
 import { useLocale } from '@/components/LocaleProvider'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import type { MouseEvent } from 'react'
@@ -35,17 +34,9 @@ export function Brand({ admin = false }: { admin?: boolean }) {
 			className={`brand${admin ? ' admin-brand' : ''}`}
 			href='/'
 			onClick={handleLogoClick}
-			aria-label={t('Motors — на главную')}
+			aria-label={t('firstseven avto — на главную')}
 		>
-			<Image
-				className='brand-logo'
-				src='/motors-logo.png'
-				width={1020}
-				height={554}
-				alt=''
-				sizes='84px'
-			/>
-			<span className='brand-name'>Motors</span>
+			<span className='brand-name'>firstseven<span className='brand-descriptor'>avto</span></span>
 		</Link>
 	)
 }

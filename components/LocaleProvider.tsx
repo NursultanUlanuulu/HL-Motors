@@ -6,11 +6,11 @@ import { languageKey, parseLocale, translate, type Locale, type TranslationParam
 
 const Context = createContext<{ locale: Locale; setLocale: (locale: Locale) => void; t: (text: string, params?: TranslationParams) => string } | null>(null);
 const titles: Record<string, string> = {
-  '/faq': 'Вопросы и ответы — Motors',
-  '/favorites': 'Избранное — Motors', '/delivery': 'Доставка и оплата — Motors', '/about': 'О компании — Motors', '/contacts': 'Контакты — Motors',
-  '/': 'Motors — Автомобили из Китая', '/catalog': 'Автомобили — Motors', '/login': 'Вход — Motors',
-  '/admin/vehicles': 'Автомобили — Админка Motors', '/admin/settings': 'Настройки — Админка Motors',
-  '/admin/analytics': 'Аналитика — Админка Motors', '/admin/contacts': 'Обращения — Админка Motors',
+  '/faq': 'Вопросы и ответы — firstseven avto',
+  '/favorites': 'Избранное — firstseven avto', '/delivery': 'Доставка и оплата — firstseven avto', '/about': 'О компании — firstseven avto', '/contacts': 'Контакты — firstseven avto',
+  '/': 'firstseven avto — Автомобили из Китая', '/catalog': 'Автомобили — firstseven avto', '/login': 'Вход — firstseven avto',
+  '/admin/vehicles': 'Автомобили — Админка firstseven avto', '/admin/settings': 'Настройки — Админка firstseven avto',
+  '/admin/analytics': 'Аналитика — Админка firstseven avto', '/admin/contacts': 'Обращения — Админка firstseven avto',
 };
 
 export function LocaleProvider({ children }: { children: ReactNode }) {

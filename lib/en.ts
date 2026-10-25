@@ -26,7 +26,7 @@ export const en: Record<string, string> = Object.fromEntries(`
 Организуем безопасную перевозку и сопровождаем груз.|We arrange safe transport and track the shipment.
 Оформление|Paperwork
 Таможня, лаборатория и документы — без лишних забот.|Customs, testing and paperwork, without the hassle.
-В Motors нет сюрпризов после покупки. Только честный автомобиль, прозрачная цена и команда, которой можно доверять.|At Motors, there are no surprises after you buy. Just an honestly presented car, transparent pricing and a team you can trust.
+В firstseven avto нет сюрпризов после покупки. Только честный автомобиль, прозрачная цена и команда, которой можно доверять.|At firstseven avto, there are no surprises after you buy. Just an honestly presented car, transparent pricing and a team you can trust.
 Алексей М.|Alexey M.
 Zeekr 001 · Бишкек|Zeekr 001 · Bishkek
 А|A
@@ -39,7 +39,7 @@ Zeekr 001 · Бишкек|Zeekr 001 · Bishkek
 Написать|Message us
 на ваш маршрут.|for your journey.
 В наличии, уже в пути или под заказ из Китая. Каждое предложение прошло проверку нашей команды.|In stock, in transit or sourced to order from China. Every listing has been checked by our team.
-Каталог автомобилей Motors: в наличии, в пути и под заказ.|Motors car catalogue: in stock, in transit and on order.
+Каталог автомобилей firstseven avto: в наличии, в пути и под заказ.|firstseven avto car catalogue: in stock, in transit and on order.
 Zeekr|Zeekr
 Li Auto|Li Auto
 Toyota|Toyota
@@ -116,22 +116,22 @@ MP4, WebM, MOV · до 50 МБ · для совместимости рекоме
 Автомобили|Cars
 Автомобиль|Car
 Автомобили,|Cars,
-Автомобили Motors|Motors cars
-Автомобили — Motors|Cars — Motors
-Автомобили — Админка Motors|Cars — Motors Admin
+Автомобили firstseven avto|firstseven avto cars
+Автомобили — firstseven avto|Cars — firstseven avto
+Автомобили — Админка firstseven avto|Cars — firstseven avto Admin
 Автомобили из Китая.|Cars from China.
-Motors — Автомобили из Китая|Motors — Cars from China
-Motors / Панель управления|Motors / Dashboard
-Motors · полная прозрачность|Motors · Full transparency
-Motors — на главную|Motors — Home
+firstseven avto — Автомобили из Китая|firstseven avto — Cars from China
+firstseven avto / Панель управления|firstseven avto / Dashboard
+firstseven avto · полная прозрачность|firstseven avto · Full transparency
+firstseven avto — на главную|firstseven avto — Home
 Панель управления|Dashboard
-Панель управления — Motors|Dashboard — Motors
+Панель управления — firstseven avto|Dashboard — firstseven avto
 Администратор|Administrator
 Войти|Sign in
 Выйти|Sign out
 Входим…|Signing in…
 Вход администратора|Admin sign in
-Вход — Motors|Sign in — Motors
+Вход — firstseven avto|Sign in — firstseven avto
 Логин|Username
 Пароль|Password
 Неверный логин или пароль.|Incorrect username or password.
@@ -215,8 +215,8 @@ Motors — на главную|Motors — Home
 Загружаем автомобиль…|Loading car…
 Загрузка…|Loading…
 Автомобиль недоступен|Car unavailable
-Автомобиль недоступен — Motors|Car unavailable — Motors
-Автомобиль — Motors|Car — Motors
+Автомобиль недоступен — firstseven avto|Car unavailable — firstseven avto
+Автомобиль — firstseven avto|Car — firstseven avto
 Объявление снято с публикации или отсутствует в этом браузере.|This listing has been removed or is not stored in this browser.
 Об автомобиле|About this car
 Всё, что важно|Everything you need
@@ -363,7 +363,7 @@ MP4, WebM, MOV · до 200 МБ · для совместимости реком�
 Укажите полную ссылку на изображение, начинающуюся с https:// или http://.|Enter the full image URL starting with https:// or http://.
 Закройте другие вкладки админки и повторите.|Close other admin tabs and try again.
 Настройки|Settings
-Настройки — Админка Motors|Settings — Motors Admin
+Настройки — Админка firstseven avto|Settings — firstseven avto Admin
 Контакты компании|Company contacts
 Используются на главной странице, в карточках автомобилей и в подвале сайта.|Used on the home page, car pages and website footer.
 Номер с кодом страны или ссылка https://wa.me/…|Number with country code or https://wa.me/… URL
@@ -375,14 +375,14 @@ MP4, WebM, MOV · до 200 МБ · для совместимости реком�
 Введите имя Telegram (5–32 символа), например @nur6ultan.|Enter a Telegram username (5–32 characters), for example @nur6ultan.
 Введите корректный email.|Enter a valid email address.
 Обращения|Enquiries
-Обращения — Админка Motors|Enquiries — Motors Admin
+Обращения — Админка firstseven avto|Enquiries — firstseven avto Admin
 Обращения клиентов|Customer enquiries
 Заявки по автомобилям и обращения через мессенджеры.|Car enquiries and messages.
 Приём обращений пока не подключён|Enquiry collection is not connected yet
 После подключения здесь появятся обращения клиентов с автомобилем, датой и каналом связи.|Once connected, customer enquiries will appear here with the car, date and contact channel.
 Перейти к автомобилям →|Go to cars →
 Аналитика|Analytics
-Аналитика — Админка Motors|Analytics — Motors Admin
+Аналитика — Админка firstseven avto|Analytics — firstseven avto Admin
 Статистика каталога|Catalogue statistics
 Всего объявлений|Total listings
 В каталоге|In the catalogue

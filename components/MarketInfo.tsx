@@ -14,7 +14,7 @@ export function MarketInfo({ kind }: { kind: 'delivery' | 'about' | 'contacts' |
   const stats = kind === 'about' ? [['2021', 'founded'], ['10+', 'chinaYears'], ['5+', 'kyrgyzYears']] as const : [[c('from14'), 'deliveryTime'], ['50–80%', 'advance'], [c('cash'), 'officePayment']] as const;
   return <MarketFrame><main className="market-main market-info company-page">
     <nav className="market-breadcrumbs" aria-label={t('Навигация по страницам')}><Link href="/catalog">{t('Каталог')}</Link><span>/</span><span>{title}</span></nav>
-    <div className="company-heading"><span className="company-kicker">HL MOTORS · {c('since')}</span><h1>{title}</h1><p className="market-info-lead">{c(lead)}</p></div>
+    <div className="company-heading"><span className="company-kicker">firstseven avto · {c('since')}</span><h1>{title}</h1><p className="market-info-lead">{c(lead)}</p></div>
     {(kind === 'about' || kind === 'delivery') && <div className="company-stats">{stats.map(([value, label]) => <div key={label}><strong>{value}</strong><span>{c(label)}</span></div>)}</div>}
     {kind === 'about' && <>
       <section className="company-section"><h2>{c('twoTeams')}</h2><div className="market-info-grid">{card('chinaTeam', 'chinaTeamBody')}{card('kyrgyzTeam', 'kyrgyzTeamBody')}</div></section>
