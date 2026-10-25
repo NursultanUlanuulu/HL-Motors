@@ -1,4 +1,6 @@
 export const marketplaceUi: Record<string, { en: string; zh: string }> = {
+  'Другие автомобили': { en: 'Other vehicles', zh: '其他车辆' },
+  'Весь каталог': { en: 'View all vehicles', zh: '查看全部车辆' },
   'JPG, PNG, WebP, AVIF, HEIC/HEIF · до 15 МБ каждое': { en: 'JPG, PNG, WebP, AVIF, HEIC/HEIF · up to 15 MB each', zh: 'JPG、PNG、WebP、AVIF、HEIC/HEIF · 每张最大15 MB' },
   'нужно фото JPG, PNG, WebP, AVIF, HEIC или HEIF до 15 МБ': { en: 'choose a JPG, PNG, WebP, AVIF, HEIC or HEIF photo up to 15 MB', zh: '请选择不超过15 MB的JPG、PNG、WebP、AVIF、HEIC或HEIF照片' },
   'HEIC автоматически преобразуется в PNG без уменьшения разрешения. Для Live Photo сохраняется один кадр.': { en: 'HEIC is automatically converted to PNG at its original resolution. One still frame is saved for Live Photos.', zh: 'HEIC将自动转换为PNG，保持原始分辨率。实况照片仅保存一张静态图像。' },

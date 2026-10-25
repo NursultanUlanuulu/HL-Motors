@@ -5,6 +5,7 @@ import { useLocale } from './LocaleProvider';
 import { MarketFrame } from './MarketFrame';
 import { VehicleGallery } from './VehicleGallery';
 import { VehicleExtraSpecs } from './VehicleExtraSpecs';
+import { VehicleCard } from './VehicleCard';
 import { FavoriteButton } from './FavoriteButton';
 import { useSiteData } from './SiteDataProvider';
 import { localizeCar } from '@/lib/car-translations';
@@ -35,6 +36,7 @@ export function VehicleDetail({ id }: { id: string }) {
   if (!loaded) return <MarketFrame catalog><main className="market-main"><p role="status">{t(error || 'Загружаем автомобиль…')}</p>{error && <button className="market-primary" onClick={() => void refresh()}>{t('Повторить')}</button>}</main></MarketFrame>;
   if (!car) return <MarketFrame catalog><main className="market-main market-empty"><h1>{t('Автомобиль недоступен')}</h1><p>{t('Объявление снято с публикации или отсутствует в этом браузере.')}</p><Link className="market-primary" href={back}>{t('Вернуться в каталог')}</Link></main></MarketFrame>;
   const gallery = car.gallery?.length ? car.gallery : car.image ? [car.image] : [];
+  const otherCars = cars.filter(item => item.id !== id).slice(0, 6);
   const whatsappText = t('Здравствуйте! Интересует {name}. Номер объявления: {id}. Год: {year}. Цена: ${price}. Статус: {status}.', { name: car.brand + ' ' + car.model, id: car.id, year: car.year, price: formatPrice(car.price), status: t(car.status) });
 
   const specs = [
@@ -51,5 +53,9 @@ export function VehicleDetail({ id }: { id: string }) {
       <section className="market-specs-panel"><div className="spec-section"><h3>{t('Основные характеристики')}</h3><dl className="spec-grid">{specs.map(([label, val]) => <Fragment key={label}><dt>{t(label)}</dt><dd>{val}</dd></Fragment>)}</dl></div><VehicleExtraSpecs car={car} /></section>
       <section className="market-specs-panel"><div className="spec-section"><h3>{t('Местонахождение')}</h3><p>{car.city} · {t(car.status)}</p></div><div className="spec-section"><h3>{t('Доставка и оплата')}</h3><p className="vehicle-free-text">{t('Статус и состав цены зависят от страны доставки. Менеджер подготовит расчёт под ключ с учётом таможенного оформления, лаборатории и регистрации.')}</p></div><ManagerContacts message={whatsappText} asButton label="Уточнить условия ↗" className="market-secondary" /></section>
     </div><aside className="market-contact-card"><strong>${formatPrice(car.price)}</strong><small>{t('Ориентировочная цена в USD')}</small><div className="market-contact-status">{status}<span>{car.city}</span></div><ManagerContacts message={whatsappText} /><FavoriteButton id={car.id} label /><p>{t('Свяжитесь с менеджером — он отправит подробный отчёт, ответит на вопросы и зафиксирует условия.')}</p></aside></div>
+    {otherCars.length > 0 && <section className="market-other-vehicles" aria-labelledby="other-vehicles-heading">
+      <div className="market-other-vehicles-heading"><h2 id="other-vehicles-heading">{t('Другие автомобили')}</h2><Link className="market-secondary" href="/catalog">{t('Весь каталог')} →</Link></div>
+      <div className="market-cars">{otherCars.map(item => <VehicleCard key={item.id} car={item} returnHref={back} />)}</div>
+    </section>}
   </main><div className="market-mobile-contact"><div><strong>${formatPrice(car.price)}</strong><div>{status}</div></div><ManagerContacts message={whatsappText} asButton label="Связаться" /></div></MarketFrame>;
 }
