@@ -12,6 +12,9 @@ button { cursor:pointer; }
 .brand-logo { display:block; width:84px; height:auto; flex:none; border-radius:3px; }
 .brand-name { display:flex; flex-direction:column; gap:5px; font:700 20px var(--sans); line-height:1; }
 .brand-descriptor { color:#b98229; font:600 10px var(--sans); line-height:1; letter-spacing:.28em; }
+.firstseven-logo { display:block; width:220px; max-width:100%; height:auto; flex:none; object-fit:contain; }
+.admin-brand .firstseven-logo { width:200px; background:#fff; border-radius:6px; }
+@media(max-width:650px) { .firstseven-logo { width:160px; } }
 .brand.admin-brand { align-items:center; gap:10px; letter-spacing:-.4px; }
 .brand.admin-brand .brand-name { font-size:20px; }
 .desktop-nav { display:flex; gap:29px; margin-left:95px; }

@@ -3,6 +3,7 @@
 import { useLocale } from '@/components/LocaleProvider'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import type { MouseEvent } from 'react'
 
@@ -36,7 +37,7 @@ export function Brand({ admin = false }: { admin?: boolean }) {
 			onClick={handleLogoClick}
 			aria-label={t('firstseven avto — на главную')}
 		>
-			<span className='brand-name'>firstseven<span className='brand-descriptor'>avto</span></span>
+			<Image src='/firstseven-avto-logo.png' alt='firstseven avto' width={2172} height={724} sizes='(max-width: 650px) 160px, 220px' quality={85} className='firstseven-logo' />
 		</Link>
 	)
 }
