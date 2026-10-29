@@ -63,6 +63,31 @@ test car, uploads/removes a PNG, checks CORS and revokes its session. Set
 It never prints passwords, session cookies or signed URLs. Do not substitute it
 for the browser editor/MP4/China checks listed above.
 
+## Video processing
+
+Production video uploads use `/api/admin/video` and signed direct PUTs to R2
+(up to 500 MiB). A persistent `video_jobs` queue is processed by the separate
+`video-worker` Compose service, one job at a time with 1 CPU and 1536 MiB RAM.
+Apply migrations before starting the new app and worker; this adds a queue table
+without changing catalogue records. Both services must run the same image.
+
+The worker verifies the actual object size and media streams, allows up to 30
+minutes and 8192 pixels per side (36 megapixels), and produces H.264/AAC MP4 with
+faststart, CRF 22, up to 1920x1080 or 1080x1920 without cropping or enlargement.
+It caps high frame rates at 30 fps and tone-maps HDR to SDR. This is lossy
+compression, not archival preservation. Temporary originals are deleted after
+two hours; completed MP4s remain in R2. Existing published videos are unchanged.
+
+The editor uploads first, then shows processing status while other fields stay
+editable. The administrator explicitly selects “Use video” and saves the listing.
+The last 20 jobs from the past 7 days can be recovered in “Recent video uploads”,
+including after a page refresh. Expired uploads and malformed media show a retry
+message. Interrupted processing retries up to 3 attempts with a heartbeat lease.
+
+Run `node scripts/video-smoke.cjs` inside the built image (mount the script into
+`/app/scripts` for testing) to validate synthetic orientation, codecs and faststart
+without touching catalogue data. Deployment must include worker health checks.
+
 ## Backups and recovery — deferred by owner
 
 On 17 October 2026 the owner explicitly asked not to upload backups yet.

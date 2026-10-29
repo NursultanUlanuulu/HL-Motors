@@ -16,7 +16,7 @@ export async function signR2Upload(path: string, type: string, size: number) {
   try {
     const cacheControl = 'public, max-age=31536000, immutable';
     const uploadUrl = await getSignedUrl(client, new PutObjectCommand({ Bucket: bucket, Key: path, ContentType: type, ContentLength: size, CacheControl: cacheControl }), {
-      expiresIn: 300, signableHeaders: new Set(['content-type', 'content-length', 'cache-control']),
+      expiresIn: type.startsWith('video/') ? 3600 : 300, signableHeaders: new Set(['content-type', 'content-length', 'cache-control']),
     });
     return { uploadUrl, publicUrl: `${origin.origin}/${path}`, raw: true, headers: { 'Content-Type': type, 'Cache-Control': cacheControl } };
   } finally { client.destroy(); }

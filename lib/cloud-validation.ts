@@ -5,7 +5,7 @@ import { pngUploadLimit } from './photo-types';
 export type DataMode = 'local' | 'supabase' | 'postgres';
 export const mediaBucket = 'vehicle-media';
 export const photoLimit = 15 * 1024 * 1024;
-export const cloudVideoLimit = 50 * 1024 * 1024;
+export const cloudVideoLimit = 500 * 1024 * 1024;
 export const mediaTypes: Record<string, string> = {
   'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp', 'image/avif': 'avif',
   'video/mp4': 'mp4', 'video/webm': 'webm', 'video/quicktime': 'mov',
@@ -43,6 +43,6 @@ export function validateUpload(type: unknown, size: unknown) {
     throw new DataError('Неподдерживаемый файл.');
   }
   const limit = type === 'image/png' ? pngUploadLimit : type.startsWith('image/') ? photoLimit : cloudVideoLimit;
-  if (size > limit) throw new DataError('Фото — до 15 МБ, PNG — до 100 МБ, видео — до 50 МБ.');
+  if (size > limit) throw new DataError('Фото — до 15 МБ, PNG — до 100 МБ, видео — до 500 МБ.');
   return mediaTypes[type];
 }

@@ -6,6 +6,7 @@ New-Item -ItemType Directory -Force -Path 'output/marketplace-qa' | Out-Null
 $releaseFiles = @(
   'app', 'components', 'lib', 'public', 'styles.css', 'marketplace.css',
   'scripts/postgres-migrate.cjs', 'scripts/postgres-bootstrap.cjs',
+  'scripts/video-worker.cjs',
   'supabase/migrations', 'deploy/Caddyfile', 'deploy/prepare-host.sh',
   'deploy/README.md', 'deploy/production.env.example', 'deploy/r2-cors.json',
   'deploy/smoke.cjs', 'Dockerfile', 'compose.yaml', '.dockerignore',

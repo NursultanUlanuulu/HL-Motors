@@ -66,6 +66,35 @@ services:
       start_period: 30s
     logging: *logging
 
+  video-worker:
+    image: hl-motors:${APP_VERSION:-local}
+    command: [node, scripts/video-worker.cjs]
+    restart: unless-stopped
+    init: true
+    cpus: 1.0
+    mem_limit: 1536m
+    pids_limit: 128
+    environment:
+      DATABASE_URL: postgresql://hl_app:${APP_DATABASE_PASSWORD:?Set app database password}@db:5432/hl_motors
+      R2_ENDPOINT: ${R2_ENDPOINT}
+      R2_BUCKET: ${R2_BUCKET}
+      R2_ACCESS_KEY_ID: ${R2_ACCESS_KEY_ID}
+      R2_SECRET_ACCESS_KEY: ${R2_SECRET_ACCESS_KEY}
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    networks: [database, web]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    read_only: true
+    tmpfs: [/tmp:size=1200m,uid=1000,gid=1000,mode=1700]
+    healthcheck:
+      test: [CMD, node, -e, "const fs=require('fs');if(Date.now()-Number(fs.readFileSync('/tmp/video-worker-heartbeat','utf8'))>120000)process.exit(1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    logging: *logging
+
   proxy:
     image: caddy:2
     restart: unless-stopped

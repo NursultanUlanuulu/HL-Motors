@@ -30,6 +30,7 @@ const { defaultContacts } = load('lib/site-data.ts');
 const vehicles = load('app/api/admin/vehicles/route.ts');
 const contacts = load('app/api/admin/contacts/route.ts');
 const media = load('app/api/admin/media/route.ts');
+const video = load('app/api/admin/video/route.ts');
 const site = load('app/api/site/route.ts');
 const repo = load('lib/cloud-repository.ts');
 const { getDataMode } = load('lib/supabase-server.ts');
@@ -65,7 +66,7 @@ function request(body, method = 'POST', origin = 'http://localhost:3000') {
 
 test('all cloud writes require the existing admin session and matching origin', async () => {
   signedIn = false;
-  for (const handler of [vehicles.POST, vehicles.DELETE, contacts.POST, media.POST]) {
+  for (const handler of [vehicles.POST, vehicles.DELETE, contacts.POST, media.POST, video.POST]) {
     assert.equal((await handler(request({}))).status, 401);
   }
   signedIn = true;
@@ -121,7 +122,7 @@ test('contact edits compare the original stored contacts and reject stale update
 });
 
 test('file signing validates format and size before any storage request', async () => {
-  for (const file of [{ type: 'text/html', size: 1 }, { type: 'image/heic', size: 1234 }, { type: 'image/jpeg', size: 16 * 1024 * 1024 }, { type: 'image/png', size: 100 * 1024 * 1024 + 1 }, { type: 'video/mp4', size: 51 * 1024 * 1024 }]) {
+  for (const file of [{ type: 'text/html', size: 1 }, { type: 'image/heic', size: 1234 }, { type: 'image/jpeg', size: 16 * 1024 * 1024 }, { type: 'image/png', size: 100 * 1024 * 1024 + 1 }, { type: 'video/mp4', size: 500 * 1024 * 1024 + 1 }]) {
     assert.equal((await media.POST(request(file))).status, 400);
   }
   assert.equal(requests.length, 0);
