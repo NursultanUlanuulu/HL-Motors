@@ -19,12 +19,12 @@ type SiteData = {
 const Context = createContext<SiteData | null>(null);
 type RefreshSnapshot = Partial<CloudSnapshot> & { error?: string; contactsError?: string };
 
-export function SiteDataProvider({ children, mode = 'local' }: { children: ReactNode; mode?: DataMode }) {
+export function SiteDataProvider({ children, mode = 'local', initial }: { children: ReactNode; mode?: DataMode; initial?: CloudSnapshot }) {
   const { t } = useLocale();
-  const [cars, setCars] = useState<Car[]>(mode === 'local' ? seedCars : []);
-  const [contacts, setContacts] = useState(defaultContacts);
-  const [loaded, setLoaded] = useState(false);
-  const [contactsLoaded, setContactsLoaded] = useState(false);
+  const [cars, setCars] = useState<Car[]>(initial?.cars ?? (mode === 'local' ? seedCars : []));
+  const [contacts, setContacts] = useState(initial?.contacts ?? defaultContacts);
+  const [loaded, setLoaded] = useState(Boolean(initial));
+  const [contactsLoaded, setContactsLoaded] = useState(Boolean(initial));
   const [error, setError] = useState('');
   const [contactsError, setContactsError] = useState('');
   const currentCars = useRef(cars);

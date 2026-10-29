@@ -11,6 +11,7 @@ import { useSiteData } from './SiteDataProvider';
 import { localizeCar } from '@/lib/car-translations';
 import { formatPrice } from '@/lib/cars';
 import { ManagerContacts } from './ManagerContacts';
+import { vehicleSeo } from '@/lib/seo';
 
 export function VehicleDetail({ id }: { id: string }) {
   const { locale, t } = useLocale();
@@ -23,16 +24,16 @@ export function VehicleDetail({ id }: { id: string }) {
     if (target && /^\/(?:catalog|favorites)?(?:\?|$)/.test(target)) setBack(target);
   }, [id]);
   useEffect(() => {
-    if (loaded) document.title = car ? (car.metaTitle || car.brand + ' ' + car.model) + ' — firstseven avto' : t('Автомобиль недоступен — firstseven avto');
+    if (loaded) document.title = car ? (locale === 'ru' ? vehicleSeo(car).title : (car.metaTitle || car.brand + ' ' + car.model + ' ' + car.year) + ' — firstseven avto') : t('Автомобиль недоступен — firstseven avto');
   }, [car?.brand, car?.model, car?.metaTitle, loaded, locale]);
   useEffect(() => {
-    if (!car?.metaDescription) return;
+    if (!car) return;
     let meta = document.querySelector<HTMLMetaElement>('meta[name="description"]');
     const previous = meta?.content;
     if (!meta) { meta = document.createElement('meta'); meta.name = 'description'; document.head.append(meta); }
-    meta.content = car.metaDescription;
+    meta.content = locale === 'ru' ? vehicleSeo(car).description : car.metaDescription || `${car.brand} ${car.model}, ${car.year}. $${formatPrice(car.price)}. firstseven avto.`;
     return () => { if (previous === undefined) meta.remove(); else meta.content = previous; };
-  }, [car?.metaDescription]);
+  }, [car?.id, car?.metaDescription, car?.price, car?.year, locale]);
   if (!loaded) return <MarketFrame catalog><main className="market-main"><p role="status">{t(error || 'Загружаем автомобиль…')}</p>{error && <button className="market-primary" onClick={() => void refresh()}>{t('Повторить')}</button>}</main></MarketFrame>;
   if (!car) return <MarketFrame catalog><main className="market-main market-empty"><h1>{t('Автомобиль недоступен')}</h1><p>{t('Объявление снято с публикации или отсутствует в этом браузере.')}</p><Link className="market-primary" href={back}>{t('Вернуться в каталог')}</Link></main></MarketFrame>;
   const gallery = car.gallery?.length ? car.gallery : car.image ? [car.image] : [];

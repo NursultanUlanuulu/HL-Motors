@@ -24,7 +24,8 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
   }, []);
   useEffect(() => {
     document.documentElement.lang = locale === 'zh' ? 'zh-CN' : locale;
-    if (titles[pathname]) document.title = translate(titles[pathname], locale);
+    const serverTitle = document.querySelector<HTMLMetaElement>('meta[property="og:title"]')?.content;
+    if (titles[pathname]) document.title = locale === 'ru' && serverTitle ? serverTitle : translate(titles[pathname], locale);
   }, [locale, pathname]);
   function setLocale(value: Locale) {
     setLanguage(value);

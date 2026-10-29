@@ -6,6 +6,9 @@ let r2Origin = '';
 try { const url = new URL(process.env.MEDIA_PUBLIC_URL ?? ''); if (url.protocol === 'https:' && !url.username && !url.password) r2Origin = url.origin; } catch { /* R2 is optional for existing Supabase deployments. */ }
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [{ source: '/:path*', has: [{ type: 'host', value: 'www.firstseven-auto.com' }], destination: 'https://firstseven-auto.com/:path*', permanent: true }];
+  },
   reactStrictMode: true,
   env: { NEXT_PUBLIC_MEDIA_ORIGIN: mediaOrigin, NEXT_PUBLIC_R2_ORIGIN: r2Origin },
   images: {

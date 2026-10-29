@@ -1,5 +1,8 @@
 import { CatalogPage } from '@/components/CatalogPageContent';
+import { catalogMetadata } from '@/lib/seo';
 
-export const metadata = { title: 'Автомобили — firstseven avto', description: 'Каталог автомобилей firstseven avto: в наличии, в пути и под заказ.' };
+export async function generateMetadata({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
+  return catalogMetadata('/catalog', await searchParams);
+}
 
 export default function Page() { return <CatalogPage />; }

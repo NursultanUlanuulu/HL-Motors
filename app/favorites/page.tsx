@@ -1,3 +1,3 @@
 import { CatalogPage } from '@/components/CatalogPageContent';
-export const metadata = { title: 'Избранное — firstseven avto' };
+export const metadata = { title: 'Избранное — firstseven avto', robots: { index: false, follow: true } };
 export default function FavoritesPage() { return <CatalogPage favorites />; }

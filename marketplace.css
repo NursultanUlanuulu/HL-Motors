@@ -107,8 +107,8 @@ body:has(.marketplace) > .noise { display:none; }
 .market-car-bottom svg { width:14px; height:14px; flex:none; }
 .market-car-bottom a { color:#a37124; white-space:nowrap; }
 .market-pagination { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:8px; padding-top:32px; }
-.market-pagination button { min-width:36px; height:38px; padding:0 10px; border:1px solid #e1e4e8; background:transparent; border-radius:5px; color:#535a64; font-size:12px; }
-.market-pagination button[aria-current] { background:#b98229; color:#fff; border-color:#b98229; }
+.market-pagination a, .market-pagination button { display:inline-flex; align-items:center; justify-content:center; text-decoration:none; min-width:36px; height:38px; padding:0 10px; border:1px solid #e1e4e8; background:transparent; border-radius:5px; color:#535a64; font-size:12px; }
+.market-pagination [aria-current] { background:#b98229; color:#fff; border-color:#b98229; }
 .market-ellipsis { padding:0 10px; }
 .market-skeleton { min-height:300px; background:linear-gradient(110deg,#e8eaed,#f3f4f5,#e8eaed); border-radius:8px; }
 .market-empty { display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; min-height:360px; padding:24px; gap:15px; background:#fff; border:1px solid #e5e7eb; border-radius:8px; }
