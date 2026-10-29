@@ -16,6 +16,8 @@ import { CarSpecsEditor } from './CarSpecsEditor';
 import { normalizeCarText, localizeCar, brandLabel } from '@/lib/car-translations';
 import { ensureAdminSession } from '@/app/actions/auth';
 import { withDeadline, clientRequestTimeoutMs } from '@/lib/request-deadline';
+import { SearchSelect } from './SearchSelect';
+import { applyCarTemplate } from '@/lib/car-template';
 
 const statuses: CarStatus[] = ['В наличии', 'В пути', 'Под заказ'];
 const conditions: CarCondition[] = ['Новый', 'С пробегом'];
@@ -31,9 +33,15 @@ export function AdminDashboard() {
   const [editorError, setEditorError] = useState('');
   const [mediaBusy, setMediaBusy] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [templateId, setTemplateId] = useState('');
+  const [templateApplied, setTemplateApplied] = useState(false);
   const pendingMedia = useRef<string[]>([]);
   const original = useRef<Car | undefined>(undefined);
   const visible = useMemo(() => filterAdminCars(items, filters), [items, filters]);
+  const templateOptions = useMemo(() => items.map(car => {
+    const display = localizeCar(car, locale);
+    return { value: car.id, label: `${display.brand} ${display.model} · ${car.year}`, detail: [display.trim, car.carCode || car.id].filter(Boolean).join(' · '), keywords: [car.brand, car.model, car.id, ...Object.values(car.translations ?? {}).flatMap(text => [text.brand, text.model, text.trim])].filter(Boolean).join(' ') };
+  }), [items, locale]);
   const { brands, years } = catalogOptions(items);
   const busy = mediaBusy || saving;
   const draftDisplay = draft ? localizeCar(draft, locale) : null;
@@ -44,7 +52,15 @@ export function AdminDashboard() {
     original.current = car;
     pendingMedia.current = [];
     setEditorError('');
+    setTemplateId('');
+    setTemplateApplied(false);
     setDraft(car ? { ...car, gallery: car.gallery ? [...car.gallery] : undefined } : emptyCar());
+  }
+  function applyTemplate() {
+    const source = items.find(car => car.id === templateId);
+    if (!source || !draft || original.current || busy) return;
+    setDraft(applyCarTemplate(draft, source));
+    setTemplateApplied(true);
   }
   function closeEditor() {
     if (busy) return;
@@ -119,6 +135,16 @@ export function AdminDashboard() {
       <form className="admin-editor" onSubmit={saveCar}>
         <header><div><p>{t(original.current ? 'Редактирование объявления' : 'Новое объявление')}</p><h2>{draftDisplay?.brand && draftDisplay?.model ? `${draftDisplay.brand} ${draftDisplay.model}` : t('Автомобиль')}</h2></div><button type="button" className="admin-editor-close" disabled={busy} onClick={closeEditor} aria-label={t("Закрыть")}>×</button></header>
         <div className="admin-editor-body"><fieldset className="admin-editor-fields" disabled={saving}>
+          {!original.current && <fieldset><legend>{t('Создать на основе')}</legend>
+            <p className="admin-media-help">{t('Выберите автомобиль из каталога, чтобы заполнить характеристики и описания на всех языках.')}</p>
+            <div className="admin-form-grid">
+              <SearchSelect label={t('Автомобиль из каталога')} value={templateId} options={templateOptions} placeholder={t('Выберите автомобиль')} disabled={busy || !items.length} onChange={value => { setTemplateId(value); setTemplateApplied(false); }} />
+              <button type="button" className="admin-cancel" disabled={busy || !items.some(car => car.id === templateId)} onClick={applyTemplate}>{t('Заполнить характеристики')}</button>
+            </div>
+            <p className="admin-media-help">{t('Заменятся только характеристики модели и описания. Год, цвет, пробег, цены, VIN, фотографии и другие данные новой машины заполняются отдельно. Проверьте скопированные описания.')}</p>
+            {!items.length && <p className="admin-media-help">{t('В каталоге пока нет автомобилей для копирования.')}</p>}
+            {templateApplied && <p role="status" className="admin-media-help">{t('Данные скопированы. Проверьте форму и сохраните новое объявление.')}</p>}
+          </fieldset>}
           <AdminMediaEditor key={`media-${draft.id}`} car={draft} onChange={media => setDraft(current => current ? { ...current, ...media } : current)} onBusy={setMediaBusy} onUploaded={sources => { pendingMedia.current.push(...sources); }} />
           <CarSpecsEditor key={`specs-${draft.id}`} car={draft} onChange={setDraft} />
           <CarTextEditor key={`text-${draft.id}`} car={draft} onChange={setDraft} />

@@ -1,4 +1,12 @@
 export const marketplaceUi: Record<string, { en: string; zh: string }> = {
+  'Создать на основе': { en: 'Create from existing vehicle', zh: '基于现有车辆创建' },
+  'Автомобиль из каталога': { en: 'Vehicle from catalogue', zh: '目录中的车辆' },
+  'Выберите автомобиль': { en: 'Select a vehicle', zh: '选择车辆' },
+  'Заполнить характеристики': { en: 'Fill in specifications', zh: '填入车辆参数' },
+  'Выберите автомобиль из каталога, чтобы заполнить характеристики и описания на всех языках.': { en: 'Choose a vehicle from the catalogue to fill in specifications and descriptions in all languages.', zh: '选择目录中的车辆，填入参数及所有语言的描述。' },
+  'Заменятся только характеристики модели и описания. Год, цвет, пробег, цены, VIN, фотографии и другие данные новой машины заполняются отдельно. Проверьте скопированные описания.': { en: 'Only model specifications and descriptions will be replaced. Enter the new vehicle’s year, colour, mileage, prices, VIN, photos and other individual details separately. Review the copied descriptions.', zh: '仅替换车型参数和描述。新车的年份、颜色、里程、价格、VIN、照片等信息需单独填写。请检查复制的描述。' },
+  'В каталоге пока нет автомобилей для копирования.': { en: 'There are no vehicles to copy from yet.', zh: '目录中暂无可复制的车辆。' },
+  'Данные скопированы. Проверьте форму и сохраните новое объявление.': { en: 'Details copied. Review the form and save the new listing.', zh: '信息已复制。请检查表单并保存新车辆信息。' },
   'Другие автомобили': { en: 'Other vehicles', zh: '其他车辆' },
   'Весь каталог': { en: 'View all vehicles', zh: '查看全部车辆' },
   'JPG, PNG, WebP, AVIF, HEIC/HEIF · до 15 МБ каждое': { en: 'JPG, PNG, WebP, AVIF, HEIC/HEIF · up to 15 MB each', zh: 'JPG、PNG、WebP、AVIF、HEIC/HEIF · 每张最大15 MB' },
