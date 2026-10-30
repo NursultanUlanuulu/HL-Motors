@@ -86,7 +86,7 @@ services:
     security_opt: [no-new-privileges:true]
     cap_drop: [ALL]
     read_only: true
-    tmpfs: [/tmp:size=1200m,uid=1000,gid=1000,mode=1700]
+    tmpfs: ['/tmp:size=1200m,uid=1000,gid=1000,mode=1700']
     healthcheck:
       test: [CMD, node, -e, "const fs=require('fs');if(Date.now()-Number(fs.readFileSync('/tmp/video-worker-heartbeat','utf8'))>120000)process.exit(1)"]
       interval: 30s
