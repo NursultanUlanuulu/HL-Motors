@@ -39,6 +39,7 @@ export function AdminMediaEditor({ car, onChange, onBusy, onUploaded }: {
   const [videoJob, setVideoJob] = useState<VideoJob | null>(null);
   const [recentJobs, setRecentJobs] = useState<VideoJob[] | null>(null);
   const [recentBusy, setRecentBusy] = useState(false);
+  const [removingJob, setRemovingJob] = useState('');
   const active = useRef(false);
   const mounted = useRef(true);
   useEffect(() => { mounted.current = true; return () => { mounted.current = false; }; }, []);
@@ -66,6 +67,16 @@ export function AdminMediaEditor({ car, onChange, onBusy, onUploaded }: {
     if (job.status !== 'ready' || !job.publicUrl) return;
     onChange({ image: car.image, gallery: car.gallery, video: job.publicUrl });
     onUploaded([job.publicUrl]); setVideoJob(null); setRecentJobs(null);
+  }
+  async function dismissVideo(job: VideoJob) {
+    if (removingJob || recentBusy) return;
+    setRemovingJob(job.id); setError('');
+    try {
+      await apiRequest('/api/admin/video', { action: 'dismiss', id: job.id });
+      setRecentJobs(current => current?.filter(item => item.id !== job.id) ?? null);
+      setVideoJob(current => current?.id === job.id ? null : current);
+    } catch (err) { setError(err instanceof Error ? err.message : 'Не удалось выполнить запрос.'); }
+    finally { setRemovingJob(''); }
   }
 
   function updatePhotos(gallery: string[]) {
@@ -151,8 +162,19 @@ export function AdminMediaEditor({ car, onChange, onBusy, onUploaded }: {
       </div>}
       {mode !== 'local' && <>
         <p className="admin-media-help">{t('Обработка продолжается на сервере. Можно заполнить остальные поля. Когда видео готово, нажмите «Использовать видео» и сохраните объявление. После обновления страницы найдите ролик в недавних загрузках.')}</p>
-        <button type="button" className="admin-cancel" disabled={recentBusy} onClick={() => void showRecent()}>{t(recentBusy ? 'Загрузка…' : 'Недавние загрузки видео')}</button>
-        {recentJobs && <div className="admin-video-jobs">{recentJobs.length === 0 && <p>{t('Загрузок видео пока нет.')}</p>}{recentJobs.map(job => <div key={job.id}><p>{job.filename} — {t(job.status === 'ready' ? 'Видео готово' : job.status === 'failed' ? 'Ошибка обработки видео' : job.status === 'uploading' ? 'Загрузка не завершена' : 'Обработка видео')}</p>{job.status === 'ready' ? <button type="button" className="admin-cancel" onClick={() => useVideo(job)}>{t('Использовать видео')}</button> : ['queued', 'processing'].includes(job.status) ? <button type="button" className="admin-cancel" onClick={() => { setVideoJob(job); setRecentJobs(null); }}>{t('Показать обработку')}</button> : job.status === 'uploading' ? <button type="button" className="admin-cancel" onClick={() => { void apiRequest<VideoJob>('/api/admin/video', { action: 'start', id: job.id }).then(result => { setVideoJob(result); setRecentJobs(null); }).catch(err => setError(err.message)); }}>{t('Проверить загруженный файл')}</button> : <p>{t(job.error || '')}</p>}</div>)}</div>}
+        <button type="button" className="admin-cancel" disabled={recentBusy || !!removingJob} onClick={() => void showRecent()}>{t(recentBusy ? 'Загрузка…' : 'Недавние загрузки видео')}</button>
+        {recentJobs && <div className="admin-video-jobs">
+          <p className="admin-media-help">{t('«Удалить из списка» убирает запись из недавних загрузок. Видео в объявлении останется.')}</p>
+          {recentJobs.length === 0 && <p>{t('Загрузок видео пока нет.')}</p>}
+          {recentJobs.map(job => <div key={job.id}>
+            <p>{job.filename} — {t(job.status === 'ready' ? 'Видео готово' : job.status === 'failed' ? 'Ошибка обработки видео' : job.status === 'uploading' ? 'Загрузка не завершена' : 'Обработка видео')}</p>
+            {job.status === 'ready' ? <button type="button" className="admin-cancel" disabled={!!removingJob} onClick={() => useVideo(job)}>{t('Использовать видео')}</button>
+              : ['queued', 'processing'].includes(job.status) ? <button type="button" className="admin-cancel" onClick={() => { setVideoJob(job); setRecentJobs(null); }}>{t('Показать обработку')}</button>
+              : job.status === 'uploading' ? <button type="button" className="admin-cancel" onClick={() => { void apiRequest<VideoJob>('/api/admin/video', { action: 'start', id: job.id }).then(result => { setVideoJob(result); setRecentJobs(null); }).catch(err => setError(err.message)); }}>{t('Проверить загруженный файл')}</button>
+              : <p>{t(job.error || '')}</p>}
+            {['ready', 'failed'].includes(job.status) && <button type="button" className="admin-media-remove" disabled={!!removingJob || recentBusy} onClick={() => void dismissVideo(job)} aria-label={t('Удалить из списка: {name}', { name: job.filename })}>{t(removingJob === job.id ? 'Удаляем…' : 'Удалить из списка')}</button>}
+          </div>)}
+        </div>}
       </>}
     </div>
     {busy && <p role="status">{progress || t("Сохраняем файлы…")}</p>}

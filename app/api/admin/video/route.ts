@@ -25,10 +25,15 @@ export async function POST(request: Request) {
       return Response.json({ uploadUrl: signed.uploadUrl, headers: signed.headers, id: jobId });
     }
     if (action === 'recent') {
-      const { rows } = await pgQuery(`select id,filename,status,progress,error,output_key from video_jobs where created_at > now()-interval '7 days' order by created_at desc limit 20`);
+      const { rows } = await pgQuery(`select id,filename,status,progress,error,output_key from video_jobs where dismissed_at is null and created_at > now()-interval '7 days' order by created_at desc limit 20`);
       return Response.json({ jobs: rows.map(publicJob) });
     }
     if (typeof id !== 'string' || !/^[a-f0-9-]{36}$/i.test(id)) throw new DataError('Некорректный запрос.');
+    if (action === 'dismiss') {
+      const { rows } = await pgQuery("update video_jobs set dismissed_at=now() where id=$1 and status in ('ready','failed') returning id", [id]);
+      if (!rows.length) throw new DataError('Дождитесь завершения обработки видео.', 409);
+      return Response.json({ removed: true });
+    }
     if (action === 'start') await pgQuery("update video_jobs set status='queued',updated_at=now() where id=$1 and status='uploading'", [id]);
     else if (action !== 'status') throw new DataError('Некорректный запрос.');
     const { rows } = await pgQuery('select id,filename,status,progress,error,output_key from video_jobs where id=$1', [id]);

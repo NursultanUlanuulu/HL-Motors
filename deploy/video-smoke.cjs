@@ -54,9 +54,13 @@ async function main() {
   const output=videoInfo(await probe('/tmp/video-result-qa.mp4'));assert.equal(output.video.width,360);assert.equal(output.video.height,640);assert.equal(output.video.codec_name,'h264');assert.ok(buffer.length<bytes);
   assert.ok(buffer.indexOf(Buffer.from('moov'))<buffer.indexOf(Buffer.from('mdat')));
   assert.ok((await api({action:'recent'})).jobs.some(job=>job.id===id&&job.status==='ready'));
+  assert.equal((await api({action:'dismiss',id})).removed,true);
+  assert.equal((await api({action:'dismiss',id})).removed,true);
+  assert.ok(!(await api({action:'recent'})).jobs.some(job=>job.id===id));
+  assert.equal((await api({action:'status',id})).publicUrl,result.publicUrl);
   const range = await fetch(result.publicUrl,{headers:{Range:'bytes=0-1023'}});assert.equal(range.status,206);await range.arrayBuffer();
   const after = await (await fetch(base+'/api/site')).json();assert.deepEqual(after.cars,before.cars);
-  console.log('PASS real 60 MiB signed upload, CORS, durable queue, MP4 conversion, portrait geometry, faststart, HTTP range playback, recent jobs; catalogue unchanged.');
+  console.log('PASS real 60 MiB upload and processing; removed from recent jobs while MP4 and range playback stay available; catalogue unchanged.');
 }
 async function cleanup() {
   if(id) {

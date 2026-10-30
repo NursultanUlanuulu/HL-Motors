@@ -1,4 +1,8 @@
 export const marketplaceUi: Record<string, { en: string; zh: string }> = {
+  'Удалить из списка': { en: 'Remove from list', zh: '从列表移除' },
+  'Удалить из списка: {name}': { en: 'Remove from list: {name}', zh: '从列表移除：{name}' },
+  '«Удалить из списка» убирает запись из недавних загрузок. Видео в объявлении останется.': { en: '“Remove from list” hides the recent upload. The video in your listing stays available.', zh: '“从列表移除”只隐藏最近上传记录，车辆信息中的视频将保留。' },
+  'Дождитесь завершения обработки видео.': { en: 'Wait for video processing to finish.', zh: '请等待视频处理完成。' },
   'Фото — до 15 МБ, PNG — до 100 МБ, видео — до 500 МБ.': { en: 'Photos up to 15 MB, PNG up to 100 MB, videos up to 500 MB.', zh: '照片最大15 MB，PNG最大100 MB，视频最大500 MB。' },
   'нужно видео MP4, WebM или MOV до 500 МБ': { en: 'choose MP4, WebM or MOV up to 500 MB', zh: '请选择不超过500 MB的MP4、WebM或MOV视频' },
   'MP4, WebM, MOV · до 500 МБ и 30 минут · автоматическая подготовка до 1080p': { en: 'MP4, WebM, MOV · up to 500 MB and 30 minutes · automatic conversion up to 1080p', zh: 'MP4、WebM、MOV · 最大500 MB、30分钟 · 自动转换至最高1080p' },
