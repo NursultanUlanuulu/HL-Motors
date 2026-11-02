@@ -196,5 +196,28 @@ test('new database migration preserves legacy rows and agrees with application v
     await db.query('insert into vehicles(id,data) values($1,$2)', [good.id, good]);
     const saved = (await db.query('select data from vehicles where id=$1', [good.id])).rows[0].data;
     assert.deepEqual(publicCar(saved), good);
+    await db.exec(fs.readFileSync(path.join(root, 'supabase/migrations/202611020001_custom_vehicle_options.sql'), 'utf8'));
+    const { customValue, existingValue } = load('lib/custom-options.ts');
+    const entries = [];
+    const custom = { ...good, featureTags: [], specs: {} };
+    for (const category of ['brand','status','customsType','condition','featureTags', ...specSelects.map(([key]) => key)]) {
+      const entry = { category, ru: 'Особый ' + category, en: 'Special ' + category, zh: '' };
+      await db.query('insert into vehicle_options(category,ru,en,zh) values($1,$2,$3,$4)', Object.values(entry));
+      entries.push(entry);
+      const id = customValue(entry);
+      if (category === 'featureTags') custom.featureTags.push(id);
+      else if (['brand','status','condition','customsType'].includes(category)) custom[category] = id;
+      else custom.specs[category] = id;
+    }
+    assert.equal(existingValue(entries, 'color', ' ОСОБЫЙ COLOR '), custom.specs.color);
+    await assert.rejects(db.query("insert into vehicle_options(category,ru) values('color','ОСОБЫЙ COLOR')"), /unique/i);
+    assert.equal(localizeCar(custom, 'en', entries).color, 'Special color');
+    assert.equal(localizeCar(custom, 'zh', entries).color, 'Особый color');
+    assert.ok(isCar(custom));
+    const filters = readMarketFilters(new URLSearchParams({ fuelType: custom.specs.fuelType, color: custom.specs.color, status: custom.status, condition: custom.condition, featureTags: custom.featureTags[0] }));
+    assert.equal(filters.color, custom.specs.color);
+    assert.deepEqual(filterMarketCars([good, custom], filters), [custom]);
+    await db.query('update vehicles set data=$1 where id=$2', [custom, good.id]);
+    await assert.rejects(db.query('update vehicles set data=$1 where id=$2', [{ ...custom, specs: { color: custom.specs.fuelType } }, good.id]), /check constraint/);
   } finally { await db.close(); }
 });

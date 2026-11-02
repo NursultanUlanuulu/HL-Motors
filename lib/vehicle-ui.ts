@@ -37,4 +37,13 @@ export const vehicleUi: Record<string, { en: string; zh: string }> = {
   'Год от': { en: 'Year from', zh: '起始年份' },
   'Год до': { en: 'Year to', zh: '截止年份' },
   'Поиск модели или комплектации': { en: 'Search model or trim', zh: '搜索车型或配置' },
+  'Добавить вариант': { en: 'Add option', zh: '添加选项' },
+  'Название варианта': { en: 'Option name', zh: '选项名称' },
+  'Перевод на английский (необязательно)': { en: 'English translation (optional)', zh: '英文翻译（可选）' },
+  'Перевод на китайский (необязательно)': { en: 'Chinese translation (optional)', zh: '中文翻译（可选）' },
+  'Уже есть в списке': { en: 'Already in the list', zh: '列表中已有此选项' },
+  'Добавить и выбрать': { en: 'Add and select', zh: '添加并选择' },
+  'Выбрать': { en: 'Select', zh: '选择' },
+  'Проверьте название варианта.': { en: 'Check the option name.', zh: '请检查选项名称。' },
+  'Сначала добавьте вариант или закройте его форму.': { en: 'Add the option or close its form first.', zh: '请先添加选项或关闭选项表单。' },
 };

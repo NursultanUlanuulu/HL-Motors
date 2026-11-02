@@ -8,6 +8,7 @@ import { useFavorites } from './FavoritesProvider';
 import { carCount } from '@/lib/i18n';
 import { brandLabel, modelLabel } from '@/lib/car-translations';
 import { filterMarketCars, marketDefaults, marketQuery, readMarketFilters, type MarketFilters as Values } from '@/lib/marketplace-filters';
+import { customLabel } from '@/lib/custom-options';
 import { optionLabel, specSelects } from '@/lib/vehicle-specs';
 import { VehicleCard } from './VehicleCard';
 import { MarketFilters } from './MarketFilters';
@@ -18,7 +19,7 @@ const pageSize = 12;
 const numericLabels: Record<string, string> = { minPrice: 'Цена от, USD', maxPrice: 'Цена до, USD', minYear: 'Год от', maxYear: 'Год до', minMileage: 'Пробег от, км', maxMileage: 'Пробег до, км', minPower: 'Мощность от, л.с.', maxPower: 'Мощность до, л.с.' };
 export function CatalogClient({ favorites = false }: { favorites?: boolean }) {
   const { locale, t } = useLocale();
-  const { cars, loaded, error, refresh } = useSiteData();
+  const { cars, options, loaded, error, refresh } = useSiteData();
   const { ids, ready, saved } = useFavorites();
   const params = useSearchParams();
   const pathname = usePathname();
@@ -58,13 +59,13 @@ export function CatalogClient({ favorites = false }: { favorites?: boolean }) {
     return () => { document.body.style.overflow = oldOverflow; media.removeEventListener('change', resized); dialog.current?.close(); };
   }, [mobileOpen]);
   function chip(key: keyof Values, input: string): string {
-    if (key === 'brand') return brandLabel(input, cars, locale);
+    if (key === 'brand') return brandLabel(input, cars, locale, options);
     if (key === 'model') return modelLabel(input, cars, locale, value.brand);
     if (key === 'query') return '«' + input + '»';
-    if (key === 'condition' || key === 'status') return input.split('|').map(item => t(item)).join(', ');
+    if (key === 'condition' || key === 'status') return input.split('|').map(item => customLabel(options, key, item, locale)).join(', ');
     if (numericLabels[key]) return t(numericLabels[key]) + ': ' + input;
     const field = [...specSelects, ['featureTags', 'Метки состояния и предложения'] as const].find(([id]) => id === key);
-    return field ? t(field[1]) + ': ' + input.split('|').map(id => optionLabel(field[0], id, locale)).join(', ') : input;
+    return field ? t(field[1]) + ': ' + input.split('|').map(id => optionLabel(field[0], id, locale, options)).join(', ') : input;
   }
   const filters = <MarketFilters cars={source} value={value} update={update} updateYears={(minYear, maxYear) => navigate({ ...value, minYear, maxYear, page: '1' })} reset={reset} />;
   const loading = !loaded || (favorites && !ready);

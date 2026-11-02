@@ -7,9 +7,12 @@ import { apiRequest, type CloudSnapshot } from '@/lib/cloud-client';
 import type { DataMode } from '@/lib/cloud-validation';
 import { createRefreshCoordinator } from '@/lib/refresh-coordinator';
 import { withBrowserWriteLock } from '@/lib/browser-write-lock';
+import { customOptionsKey, readLocalOptions, parseOption, existingValue, customValue, type CustomOption } from '@/lib/custom-options';
+import { ensureAdminSession } from '@/app/actions/auth';
 import { useLocale } from './LocaleProvider';
 
 type SiteData = {
+  options: CustomOption[]; addOption: (entry: CustomOption) => Promise<string>;
   cars: Car[]; contacts: Contacts; loaded: boolean; contactsLoaded: boolean; error: string; contactsError: string; mode: DataMode;
   refresh: () => Promise<void>;
   saveCar: (car: Car, previous?: Car) => Promise<Car[]>;
@@ -22,6 +25,7 @@ type RefreshSnapshot = Partial<CloudSnapshot> & { error?: string; contactsError?
 export function SiteDataProvider({ children, mode = 'local', initial }: { children: ReactNode; mode?: DataMode; initial?: CloudSnapshot }) {
   const { t } = useLocale();
   const [cars, setCars] = useState<Car[]>(initial?.cars ?? (mode === 'local' ? seedCars : []));
+  const [options, setOptions] = useState<CustomOption[]>(initial?.options ?? []);
   const [contacts, setContacts] = useState(initial?.contacts ?? defaultContacts);
   const [loaded, setLoaded] = useState(Boolean(initial));
   const [contactsLoaded, setContactsLoaded] = useState(Boolean(initial));
@@ -35,7 +39,7 @@ export function SiteDataProvider({ children, mode = 'local', initial }: { childr
     load: async (signal: AbortSignal): Promise<RefreshSnapshot> => {
       if (mode !== 'local') return apiRequest<CloudSnapshot>('/api/site', undefined, 'GET', { signal });
       const snapshot: RefreshSnapshot = {};
-      try { snapshot.cars = readCars(); }
+      try { snapshot.cars = readCars(); snapshot.options = readLocalOptions(); }
       catch { snapshot.error = 'Не удалось прочитать каталог. Проверьте доступ к хранилищу браузера и сохранённые данные.'; }
       try { snapshot.contacts = readContacts(); }
       catch { snapshot.contactsError = 'Не удалось прочитать контакты из хранилища браузера.'; }
@@ -43,6 +47,7 @@ export function SiteDataProvider({ children, mode = 'local', initial }: { childr
     },
     onData: snapshot => {
       if (snapshot.cars) { updateCars(snapshot.cars); setLoaded(true); }
+      if (snapshot.options) setOptions(snapshot.options);
       if (snapshot.contacts) { setContacts(snapshot.contacts); setContactsLoaded(true); }
       setError(snapshot.error ?? ''); setContactsError(snapshot.contactsError ?? '');
     },
@@ -55,7 +60,7 @@ export function SiteDataProvider({ children, mode = 'local', initial }: { childr
 
   useEffect(() => {
     void refresh();
-    const onStorage = (event: StorageEvent) => { if (mode === 'local' && (event.key === null || event.key === carsKey || event.key === contactsKey)) void refresh(); };
+    const onStorage = (event: StorageEvent) => { if (mode === 'local' && (event.key === null || event.key === carsKey || event.key === contactsKey || event.key === customOptionsKey)) void refresh(); };
     const onVisible = () => { if (mode !== 'local' && document.visibilityState === 'visible') void refresh(); };
     window.addEventListener('storage', onStorage);
     window.addEventListener('focus', onVisible);
@@ -75,6 +80,29 @@ export function SiteDataProvider({ children, mode = 'local', initial }: { childr
 
   const value: SiteData = {
     cars, contacts, loaded, contactsLoaded, error, contactsError, mode, refresh,
+    options,
+    addOption(entry) {
+      return coordinator.mutate(async () => {
+        parseOption(entry);
+        let result: { options: CustomOption[]; value: string };
+        if (mode === 'local') {
+          if (!await ensureAdminSession()) throw new Error('Сессия завершена. Войдите в админку снова.');
+          result = await withBrowserWriteLock(() => {
+            const options = readLocalOptions();
+            const value = existingValue(options, entry.category, entry.ru);
+            if (value) return { value, options };
+            options.push(entry);
+            localStorage.setItem(customOptionsKey, JSON.stringify(options));
+            return { options, value: customValue(entry) };
+          });
+        } else {
+          result = await apiRequest('/api/admin/options', entry);
+          channel.current?.postMessage('changed');
+        }
+        setOptions(result.options);
+        return result.value;
+      });
+    },
     saveCar(car, previous) {
       return coordinator.mutate(async () => {
         let next: Car[];

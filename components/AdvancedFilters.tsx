@@ -1,14 +1,16 @@
 'use client';
-import { vehicleOptions } from '@/lib/vehicle-dictionaries';
+import { optionsFor } from '@/lib/custom-options';
+import { useSiteData } from './SiteDataProvider';
 import { specSelects } from '@/lib/vehicle-specs';
 import type { AdvancedFilters as Values } from '@/lib/vehicle-filters';
 import { useLocale } from './LocaleProvider';
 
 export function AdvancedFilters({ value, onChange }: { value: Values; onChange: (key: keyof Values, value: string) => void }) {
   const { locale, t } = useLocale();
+  const { options } = useSiteData();
   return <div className="advanced-filter-fields">
     <label>{t('Поиск модели или комплектации')}<input type="search" value={value.query} onChange={event => onChange('query', event.target.value)} /></label>
-    {[...specSelects, ['featureTags', 'Метки состояния и предложения'] as const].map(([key, label]) => <label key={key}>{t(label)}<select value={value[key]} onChange={event => onChange(key, event.target.value)}><option value="">{t('Все')}</option>{vehicleOptions[key].map(option => <option key={option.id} value={option.id}>{option[locale]}</option>)}</select></label>)}
+    {[...specSelects, ['featureTags', 'Метки состояния и предложения'] as const].map(([key, label]) => <label key={key}>{t(label)}<select value={value[key]} onChange={event => onChange(key, event.target.value)}><option value="">{t('Все')}</option>{optionsFor(options, key).map(option => <option key={option.id} value={option.id}>{option[locale]}</option>)}</select></label>)}
     {([
       ['minPrice', 'Цена от, USD', 0, 100000000], ['maxPrice', 'Цена до, USD', 0, 100000000],
       ['minYear', 'Год от', 2000, 2035], ['maxYear', 'Год до', 2000, 2035],

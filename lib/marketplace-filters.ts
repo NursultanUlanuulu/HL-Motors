@@ -1,4 +1,5 @@
 import type { Car } from './cars';
+import { isCustomValue } from './custom-options';
 import { vehicleOptions } from './vehicle-dictionaries';
 import { initialAdvancedFilters, matchesAdvanced } from './vehicle-filters';
 import { canonicalBrand, carOption } from './vehicle-specs';
@@ -13,13 +14,13 @@ export function readMarketFilters(params: URLSearchParams): MarketFilters {
   }
   value.sort = ['asc', 'desc', 'newest'].includes(value.sort) ? value.sort : 'asc';
   value.page = /^\d+$/.test(value.page) ? String(Math.max(1, Math.min(Number(value.page), 100000))) : '1';
-  value.status = ['В наличии', 'В пути', 'Под заказ'].includes(value.status) ? value.status : '';
-  value.condition = value.condition.split('|').filter(x => ['Новый', 'С пробегом'].includes(x)).join('|');
+  value.status = ['В наличии', 'В пути', 'Под заказ'].includes(value.status) || isCustomValue(value.status) ? value.status : '';
+  value.condition = value.condition.split('|').filter(x => ['Новый', 'С пробегом'].includes(x) || isCustomValue(x)).join('|');
   for (const key of Object.keys(initialAdvancedFilters) as (keyof typeof initialAdvancedFilters)[]) {
     if (key.startsWith('min') || key.startsWith('max')) value[key] = /^\d{1,9}(\.\d{1,2})?$/.test(value[key]) ? value[key] : '';
     if (key in vehicleOptions) {
       const choices = vehicleOptions[key as keyof typeof vehicleOptions];
-      value[key] = value[key].split('|').filter(id => choices.some(option => option.id === id)).slice(0, key === 'fuelType' ? choices.length : 1).join('|');
+      value[key] = value[key].split('|').filter(id => choices.some(option => option.id === id) || isCustomValue(id)).slice(0, key === 'fuelType' ? 100 : 1).join('|');
     }
   }
   return value;

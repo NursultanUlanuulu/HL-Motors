@@ -1,4 +1,5 @@
 import { cars as seedCars, carFields, carTextFields, carTextLimits, carPriceMin, carPriceMax, customsTypes, type Car, type CarTextField } from './cars';
+import { isCustomValue } from './custom-options';
 import { validSpecs, validFeatureTags, validDate, selectableBrands, canonicalBrand } from './vehicle-specs';
 
 export const carsKey = 'hl-motors-admin-cars';
@@ -32,10 +33,10 @@ export function isCar(value: unknown): value is Car {
     && carTextFields.every(field => car[field] === undefined || boundedText(car[field], carTextLimits[field]))
     && typeof car.price === 'number' && Number.isSafeInteger(car.price) && car.price >= carPriceMin && car.price <= carPriceMax
     && typeof car.year === 'number' && Number.isInteger(car.year) && car.year >= 2000 && car.year <= 2035
-    && typeof car.status === 'string' && ['В наличии', 'В пути', 'Под заказ'].includes(car.status)
-    && typeof car.condition === 'string' && ['Новый', 'С пробегом'].includes(car.condition)
+    && typeof car.status === 'string' && (['В наличии', 'В пути', 'Под заказ'].includes(car.status) || isCustomValue(car.status))
+    && typeof car.condition === 'string' && (['Новый', 'С пробегом'].includes(car.condition) || isCustomValue(car.condition))
     && (car.version === undefined || (typeof car.version === 'number' && Number.isSafeInteger(car.version) && car.version >= 1))
-    && (car.customsType === undefined || customsTypes.some(type => type === car.customsType))
+    && (car.customsType === undefined || isCustomValue(car.customsType) || customsTypes.some(type => type === car.customsType))
     && validTranslations(car.translations)
     && validSpecs(car.specs) && validFeatureTags(car.featureTags)
     && (car.carCode === undefined || boundedText(car.carCode, 160))

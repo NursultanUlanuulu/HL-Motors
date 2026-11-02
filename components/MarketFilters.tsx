@@ -4,14 +4,18 @@ import { useMemo } from 'react';
 import { brandSelectOptions, modelSelectOptions } from '@/lib/select-options';
 import { SearchSelect } from './SearchSelect';
 import { vehicleOptions } from '@/lib/vehicle-dictionaries';
+import { optionsFor, conditions, statuses, customLabel, customValue } from '@/lib/custom-options';
+import { useSiteData } from './SiteDataProvider';
 import { optionId, specSelects } from '@/lib/vehicle-specs';
 import type { MarketFilters as Values } from '@/lib/marketplace-filters';
 import { useLocale } from './LocaleProvider';
 
 export function MarketFilters({ cars, value, update, updateYears, reset }: { cars: Car[]; value: Values; update: (key: keyof Values, value: string) => void; updateYears: (min: string, max: string) => void; reset: () => void }) {
   const { locale, t } = useLocale();
+  const { options } = useSiteData();
+  const fuels = optionsFor(options, 'fuelType');
   const currentYear = new Date().getFullYear();
-  const brands = useMemo(() => brandSelectOptions(cars, locale), [cars, locale]);
+  const brands = useMemo(() => brandSelectOptions(cars, locale, options), [cars, locale, options]);
   const models = useMemo(() => modelSelectOptions(cars, value.brand, locale), [cars, value.brand, locale]);
   const fuelMain = ['Gasoline', 'Pure electric', 'Plug-in hybrid'].map(label => optionId('fuelType', label));
   function toggle(key: 'fuelType' | 'condition', item: string) {
@@ -22,7 +26,7 @@ export function MarketFilters({ cars, value, update, updateYears, reset }: { car
     return <fieldset className="market-range"><legend>{t(label)}</legend><div><input type="number" min="0" max={limit} inputMode="numeric" aria-label={`${t(label)}: ${t('От')}`} placeholder={t('От')} value={value[min]} onChange={event => update(min, event.target.value)} /><span>—</span><input type="number" min="0" max={limit} inputMode="numeric" aria-label={`${t(label)}: ${t('До')}`} placeholder={t('До')} value={value[max]} onChange={event => update(max, event.target.value)} /></div></fieldset>;
   }
   function choice(key: typeof specSelects[number][0] | 'featureTags', label: string) {
-    return <div className="market-field"><SearchSelect label={t(label)} value={value[key]} onChange={value => update(key, value)} placeholder={t('Все')} options={vehicleOptions[key].map(item => ({ value: item.id, label: item[locale], keywords: [item.ru, item.en, item.zh, ...item.sources].join(' ') }))} /></div>;
+    return <div className="market-field"><SearchSelect label={t(label)} value={value[key]} onChange={value => update(key, value)} placeholder={t('Все')} options={optionsFor(options, key).map(item => ({ value: item.id, label: item[locale], keywords: [item.ru, item.en, item.zh, ...item.sources].join(' ') }))} /></div>;
   }
   const fuelCheckbox = (item: typeof vehicleOptions.fuelType[number]) => <label className="market-check" key={item.id}><input type="checkbox" checked={value.fuelType.split('|').includes(item.id)} onChange={() => toggle('fuelType', item.id)} />{item[locale]}</label>;
   return <div className="market-filter-content">
@@ -37,9 +41,9 @@ export function MarketFilters({ cars, value, update, updateYears, reset }: { car
       return <button key={label} type="button" aria-pressed={selected} onClick={() => updateYears(selected ? '' : from, selected ? '' : to)}><span>{t(String(label))}</span><small>{from}–{to}</small></button>;
     })}</div><small className="market-field-help">{t('По году выпуска, границы включены')}</small></fieldset>
     {range('Пробег, км', 'minMileage', 'maxMileage', 10000000)}
-    <fieldset className="market-checks"><legend>{t('Топливо')}</legend>{vehicleOptions.fuelType.filter(item => fuelMain.includes(item.id)).map(fuelCheckbox)}<details className="market-more-fuel"><summary>{t('Другие типы топлива')}</summary>{vehicleOptions.fuelType.filter(item => !fuelMain.includes(item.id)).map(fuelCheckbox)}</details></fieldset>
-    <fieldset className="market-checks"><legend>{t('Состояние')}</legend><div className="market-inline-checks">{['Новый', 'С пробегом'].map(item => <label key={item} className="market-check"><input type="checkbox" checked={value.condition.split('|').includes(item)} onChange={() => toggle('condition', item)} />{t(item)}</label>)}</div></fieldset>
-    <div className="market-field"><SearchSelect label={t('Статус')} value={value.status} onChange={value => update('status', value)} placeholder={t('Любой статус')} searchable={false} options={['В наличии', 'В пути', 'Под заказ'].map(item => ({ value: item, label: t(item) }))} /></div>
+    <fieldset className="market-checks"><legend>{t('Топливо')}</legend>{fuels.filter(item => fuelMain.includes(item.id)).map(fuelCheckbox)}<details className="market-more-fuel"><summary>{t('Другие типы топлива')}</summary>{fuels.filter(item => !fuelMain.includes(item.id)).map(fuelCheckbox)}</details></fieldset>
+    <fieldset className="market-checks"><legend>{t('Состояние')}</legend><div className="market-inline-checks">{[...conditions, ...options.filter(row => row.category === 'condition').map(customValue)].map(item => <label key={item} className="market-check"><input type="checkbox" checked={value.condition.split('|').includes(item)} onChange={() => toggle('condition', item)} />{customLabel(options, 'condition', item, locale)}</label>)}</div></fieldset>
+    <div className="market-field"><SearchSelect label={t('Статус')} value={value.status} onChange={value => update('status', value)} placeholder={t('Любой статус')} searchable={false} options={[...statuses, ...options.filter(row => row.category === 'status').map(customValue)].map(item => ({ value: item, label: customLabel(options, 'status', item, locale) }))} /></div>
     {(['transmission', 'driveType', 'bodyType'] as const).map(key => <details key={key} className="market-filter-section"><summary>{t(specSelects.find(([id]) => id === key)![1])}{value[key] && <i />}</summary>{choice(key, specSelects.find(([id]) => id === key)![1])}</details>)}
     <details className="market-filter-section"><summary>{t('Все фильтры')}{['color', 'seats', 'batteryType', 'flowMode', 'featureTags', 'minPower', 'maxPower'].some(key => value[key as keyof Values]) && <i />}</summary>{specSelects.filter(([key]) => ['color', 'seats', 'batteryType', 'flowMode'].includes(key)).map(([key, label]) => <div key={key}>{choice(key, label)}</div>)}{choice('featureTags', 'Метки состояния и предложения')}{range('Мощность, л.с.', 'minPower', 'maxPower', 10000)}</details>
   </div>;

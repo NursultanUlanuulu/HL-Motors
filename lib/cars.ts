@@ -1,8 +1,9 @@
 import type { VehicleSpecs } from './vehicle-specs';
-export type CarStatus = 'В наличии' | 'В пути' | 'Под заказ';
-export type CarCondition = 'Новый' | 'С пробегом';
+export type CustomValue = `custom:${string}`;
+export type CarStatus = CustomValue | 'В наличии' | 'В пути' | 'Под заказ';
+export type CarCondition = CustomValue | 'Новый' | 'С пробегом';
 export const customsTypes = ['ТПО', 'ГТД'] as const;
-export type CustomsType = typeof customsTypes[number];
+export type CustomsType = CustomValue | typeof customsTypes[number];
 export const carTextFields = ['brand', 'model', 'trim', 'mileage', 'city', 'power', 'drive', 'body', 'color', 'transmission', 'engine', 'title', 'remark', 'metaTitle', 'metaDescription', 'highlights'] as const;
 export type CarTextField = typeof carTextFields[number];
 export type CarText = Partial<Record<CarTextField, string>>;

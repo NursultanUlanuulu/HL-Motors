@@ -5,7 +5,9 @@ import { useLocale } from '@/components/LocaleProvider';
 import { type FormEvent, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import type { Car, CarCondition, CarStatus, CustomsType } from '@/lib/cars';
-import { carPriceMin, carPriceMax, customsTypes, formatPrice } from '@/lib/cars';
+import { customLabel, customValue, conditions as baseConditions, statuses as baseStatuses } from '@/lib/custom-options';
+import { DictionaryChoice } from './DictionaryChoice';
+import { carPriceMin, carPriceMax, formatPrice } from '@/lib/cars';
 import { AdminMediaEditor, AdminMediaImage, mediaSources } from './AdminMediaEditor';
 import { removeMedia } from '@/lib/admin-media';
 import { useSiteData } from './SiteDataProvider';
@@ -19,13 +21,14 @@ import { withDeadline, clientRequestTimeoutMs } from '@/lib/request-deadline';
 import { SearchSelect } from './SearchSelect';
 import { applyCarTemplate } from '@/lib/car-template';
 
-const statuses: CarStatus[] = ['В наличии', 'В пути', 'Под заказ'];
-const conditions: CarCondition[] = ['Новый', 'С пробегом'];
+
 const emptyCar = (): Car => ({ id: `HL-${crypto.randomUUID()}`, brand: '', model: '', trim: '', price: 0, year: new Date().getFullYear(), mileage: '', status: 'Под заказ', condition: 'Новый', city: 'Китай', power: '', drive: '', image: '', gallery: [] });
 
 export function AdminDashboard() {
   const { locale, t } = useLocale();
-  const { cars: items, loaded, error, mode, saveCar: storeCar, removeCar } = useSiteData();
+  const { cars: items, options, loaded, error, mode, saveCar: storeCar, removeCar } = useSiteData();
+  const statuses = [...baseStatuses, ...options.filter(entry => entry.category === 'status').map(customValue)];
+  const conditions = [...baseConditions, ...options.filter(entry => entry.category === 'condition').map(customValue)];
   const [filters, setFilters] = useState(initialAdminFilters);
   const [draft, setDraft] = useState<Car | null>(null);
   const [deleting, setDeleting] = useState<Car | null>(null);
@@ -39,12 +42,12 @@ export function AdminDashboard() {
   const original = useRef<Car | undefined>(undefined);
   const visible = useMemo(() => filterAdminCars(items, filters), [items, filters]);
   const templateOptions = useMemo(() => items.map(car => {
-    const display = localizeCar(car, locale);
+    const display = localizeCar(car, locale, options);
     return { value: car.id, label: `${display.brand} ${display.model} · ${car.year}`, detail: [display.trim, car.carCode || car.id].filter(Boolean).join(' · '), keywords: [car.brand, car.model, car.id, ...Object.values(car.translations ?? {}).flatMap(text => [text.brand, text.model, text.trim])].filter(Boolean).join(' ') };
-  }), [items, locale]);
+  }), [items, locale, options]);
   const { brands, years } = catalogOptions(items);
   const busy = mediaBusy || saving;
-  const draftDisplay = draft ? localizeCar(draft, locale) : null;
+  const draftDisplay = draft ? localizeCar(draft, locale, options) : null;
   const updateFilter = (key: keyof AdminFilters, value: string) => setFilters(current => ({ ...current, [key]: value }));
   const updateDraft = <K extends keyof Car>(key: K, value: Car[K]) => setDraft(current => current ? { ...current, [key]: value } : current);
 
@@ -77,6 +80,8 @@ export function AdminDashboard() {
   async function saveCar(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (busy || !loaded || !draft) return;
+    const entry = event.currentTarget.querySelector<HTMLInputElement>('.dictionary-entry input');
+    if (entry) { setEditorError('Сначала добавьте вариант или закройте его форму.'); entry.focus(); return; }
     setSaving(true); setEditorError('');
     try {
       if (mode === 'local' && !await withDeadline(() => ensureAdminSession(), { timeoutMs: clientRequestTimeoutMs })) throw new Error('Сессия завершена. Войдите в админку снова.');
@@ -107,24 +112,24 @@ export function AdminDashboard() {
       <div className="admin-panel-top"><div><h2>{t("Список автомобилей")}</h2><p>{t("Управляйте объявлениями, ценами и текущими статусами.")}</p></div><button className="admin-primary" type="button" disabled={!loaded} onClick={() => openEditor()}><span>＋</span>  {t("Добавить автомобиль")}</button></div>
       <div className="admin-controls">
         <label className="admin-search"><span>⌕</span><input aria-label={t("Поиск автомобилей")} value={filters.query} onChange={event => updateFilter('query', event.target.value)} placeholder={t("Марка, модель, номер или VIN")} /></label>
-        <div className="admin-status-tabs">{['', ...statuses].map(status => <button key={status} className={filters.status === status ? 'active' : ''} onClick={() => updateFilter('status', status)}>{t(status || 'Все')}</button>)}</div>
+        <div className="admin-status-tabs">{['', ...statuses].map(status => <button key={status} className={filters.status === status ? 'active' : ''} onClick={() => updateFilter('status', status)}>{status ? customLabel(options, 'status', status, locale) : t('Все')}</button>)}</div>
         <span className="admin-result-count">{loaded ? t('{shown} из {total}', { shown: visible.length, total: items.length }) : t('Загрузка…')}</span>
       </div>
       <div className="admin-catalog-filters">
-        <label>{t("Марка")}<select value={filters.brand} onChange={event => updateFilter('brand', event.target.value)}><option value="">{t("Все марки")}</option>{brands.map(brand => <option key={brand} value={brand}>{brandLabel(brand, items, locale)}</option>)}</select></label>
+        <label>{t("Марка")}<select value={filters.brand} onChange={event => updateFilter('brand', event.target.value)}><option value="">{t("Все марки")}</option>{brands.map(brand => <option key={brand} value={brand}>{brandLabel(brand, items, locale, options)}</option>)}</select></label>
         <label>{t("Год")}<select value={filters.year} onChange={event => updateFilter('year', event.target.value)}><option value="">{t("Любой год")}</option>{years.map(year => <option key={year} value={year}>{year}</option>)}</select></label>
         <label>{t("Цена от, USD")}<input type="number" min="0" value={filters.minPrice} onChange={event => updateFilter('minPrice', event.target.value)} placeholder={t("Без ограничения")} /></label>
         <label>{t("Цена до, USD")}<input type="number" min="0" value={filters.maxPrice} onChange={event => updateFilter('maxPrice', event.target.value)} placeholder={t("Без ограничения")} /></label>
-        <label>{t("Состояние")}<select value={filters.condition} onChange={event => updateFilter('condition', event.target.value)}><option value="">{t("Любое состояние")}</option>{conditions.map(condition => <option key={condition} value={condition}>{t(condition)}</option>)}</select></label>
+        <label>{t("Состояние")}<select value={filters.condition} onChange={event => updateFilter('condition', event.target.value)}><option value="">{t("Любое состояние")}</option>{conditions.map(condition => <option key={condition} value={condition}>{customLabel(options, 'condition', condition, locale)}</option>)}</select></label>
         <label>{t("Сортировка")}<select value={filters.sort} onChange={event => updateFilter('sort', event.target.value)}><option value="default">{t("Порядок каталога")}</option><option value="price-asc">{t("Сначала дешевле")}</option><option value="price-desc">{t("Сначала дороже")}</option><option value="year-desc">{t("Сначала новее")}</option><option value="year-asc">{t("Сначала старше")}</option><option value="brand">{t("По марке и модели")}</option></select></label>
         <button className="admin-cancel" type="button" onClick={() => setFilters(initialAdminFilters)}>{t("Сбросить фильтры")}</button>
       </div>
       {filters.minPrice && filters.maxPrice && Number(filters.minPrice) > Number(filters.maxPrice) && <p className="admin-media-error">{t("Цена «от» не должна быть больше цены «до».")}</p>}
       <div className="admin-table-wrap"><table className="admin-table"><thead><tr><th>{t("Автомобиль")}</th><th>{t("Цена")}</th><th>{t("Статус")}</th><th>{t("Год / пробег")}</th><th>{t("Местонахождение")}</th><th>{t("Действия")}</th></tr></thead><tbody>
-        {loaded && visible.map(car => { const displayCar = localizeCar(car, locale); return <tr key={car.id}>
+        {loaded && visible.map(car => { const displayCar = localizeCar(car, locale, options); return <tr key={car.id}>
           <td><div className="admin-car"><AdminMediaImage source={car.image} alt="" /><div><b>{displayCar.brand} {displayCar.model}</b><span>{t(displayCar.trim || 'Комплектация не указана')} · {car.id}</span></div></div></td>
           <td><b>${formatPrice(car.price)}</b><span className="admin-cell-note">USD</span></td>
-          <td><span className={`admin-status ${car.status === 'В наличии' ? 'available' : car.status === 'В пути' ? 'transit' : 'order'}`}><i />{t(car.status)}</span></td>
+          <td><span className={`admin-status ${car.status === 'В наличии' ? 'available' : car.status === 'В пути' ? 'transit' : 'order'}`}><i />{customLabel(options, 'status', car.status, locale)}</span></td>
           <td>{car.year}<span className="admin-cell-note">{displayCar.mileage}</span></td><td>{displayCar.city}</td>
           <td><div className="admin-row-actions"><Link className="admin-preview-link" href={`/catalog/${car.id}`} target="_blank">{t("На сайте ↗")}</Link><button className="admin-edit-button" type="button" onClick={() => openEditor(car)} aria-label={t('Редактировать {name}', { name: `${displayCar.brand} ${displayCar.model}` })}>{t("✎ Редактировать")}</button><button type="button" onClick={() => setDeleting(car)} aria-label={t('Удалить {name}', { name: `${displayCar.brand} ${displayCar.model}` })}>×</button></div></td>
         </tr>; })}
@@ -155,11 +160,11 @@ export function AdminDashboard() {
             <label>{t('Код автомобиля')}<input maxLength={160} value={draft.carCode ?? ''} onChange={event => updateDraft('carCode', event.target.value)} /></label>
             <label>{t('Дата публикации')}<input type="date" value={draft.listedAt ?? ''} onChange={event => updateDraft('listedAt', event.target.value || undefined)} /></label>
             <label>{t('Цена FOB, USD')}<input type="number" min={carPriceMin} max={carPriceMax} step="1" value={draft.fobPrice ?? ''} onChange={event => updateDraft('fobPrice', event.target.value === '' ? undefined : Number(event.target.value))} /></label>
-            <label>{t("Тип оформления")}<select value={draft.customsType ?? ''} onChange={event => updateDraft('customsType', event.target.value ? event.target.value as CustomsType : undefined)}><option value="">{t("Не указано")}</option>{customsTypes.map(type => <option key={type} value={type}>{type}</option>)}</select></label>
+            <DictionaryChoice group="customsType" label="Тип оформления" value={draft.customsType ?? ''} onChange={value => updateDraft('customsType', value ? value as CustomsType : undefined)} />
           </div></fieldset>
           <fieldset><legend>{t("Публикация")}</legend><div className="admin-form-grid">
-            <label>{t("Статус")}<select value={draft.status} onChange={event => updateDraft('status', event.target.value as CarStatus)}>{statuses.map(status => <option key={status} value={status}>{t(status)}</option>)}</select></label>
-            <label>{t("Состояние")}<select value={draft.condition} onChange={event => updateDraft('condition', event.target.value as CarCondition)}>{conditions.map(condition => <option key={condition} value={condition}>{t(condition)}</option>)}</select></label>
+            <DictionaryChoice group="status" label="Статус" value={draft.status} onChange={value => updateDraft('status', value as CarStatus)} />
+            <DictionaryChoice group="condition" label="Состояние" value={draft.condition} onChange={value => updateDraft('condition', value as CarCondition)} />
           </div></fieldset>
         </fieldset>
         <div className="admin-editor-tip"><span>✦</span><p>{t("Сохранённое объявление сразу появится на сайте.")}</p></div>

@@ -257,6 +257,11 @@ html:has(.site-header) { scroll-padding-top:calc(var(--site-header-height) + 16p
 .mobile-contact>span { min-width:0; font-size:clamp(16px,5vw,22px); }
 .mobile-contact .button { flex-shrink:0; }
 .admin-form-grid label { min-width:0; }
+.dictionary-add { display:block; margin-top:4px; padding:5px 0; color:#695124; border:0; background:none; font:inherit; font-size:12px; cursor:pointer; }
+.dictionary-entry { display:grid; gap:8px; margin-top:8px; padding:10px; border:1px solid #e1dfda; border-radius:4px; background:#fff; }
+.dictionary-entry label { display:grid; gap:4px; font-size:12px; }
+.dictionary-entry input { width:100%; min-width:0; padding:7px; border:1px solid #e1dfda; border-radius:3px; }
+.dictionary-entry button { padding:6px 9px; border:1px solid #d8d2c6; border-radius:3px; background:#fbfaf8; cursor:pointer; }
 .admin-form-grid small { line-height:1.5; }
 .site-sync-notice { position:fixed; z-index:95; top:94px; left:50%; transform:translateX(-50%); width:min(620px,calc(100% - 32px)); display:flex; align-items:center; gap:16px; padding:12px 16px; color:#f5e7cd; background:#30291d; border:1px solid #a2814d; border-radius:5px; box-shadow:0 8px 28px #0004; font:12px/1.6 var(--sans); }
 .site-sync-notice button { flex-shrink:0; min-height:40px; padding:0 10px; background:transparent; border:1px solid #bfa372; border-radius:3px; color:inherit; cursor:pointer; }

@@ -83,7 +83,7 @@ async function adapter(db) {
         if (url.pathname === '/rest/v1/rpc/reserve_admin_login_attempt') {
           return { scalar: true, value: (await tx.query('select public.reserve_admin_login_attempt($1,$2) as retry', [body.p_source, body.p_admin])).rows[0].retry };
         }
-        const tables = { '/rest/v1/vehicles': 'vehicles', '/rest/v1/site_settings': 'site_settings', '/rest/v1/admin_sessions': 'admin_sessions' };
+        const tables = { '/rest/v1/vehicles': 'vehicles', '/rest/v1/site_settings': 'site_settings', '/rest/v1/admin_sessions': 'admin_sessions', '/rest/v1/vehicle_options': 'vehicle_options' };
         const table = tables[url.pathname];
         if (!table) return { status: 404, value: {} };
         const params = []; const add = value => { params.push(value); return '$' + params.length; };
@@ -98,9 +98,13 @@ async function adapter(db) {
         if (req.method === 'GET') {
           let sql = `select * from public.${table}${where}`;
           if (table === 'vehicles') sql += ' order by created_at desc,id';
+          if (table === 'vehicle_options') sql += ' order by category,ru';
           if (url.searchParams.has('limit')) sql += ' limit ' + add(Number(url.searchParams.get('limit')));
           if (url.searchParams.has('offset')) sql += ' offset ' + add(Number(url.searchParams.get('offset')));
           rows = (await tx.query(sql, params)).rows;
+        } else if (req.method === 'POST' && table === 'vehicle_options') {
+          await tx.query('insert into public.vehicle_options(category,ru,en,zh) values($1,$2,$3,$4)', [body.category, body.ru, body.en, body.zh]);
+          rows = [];
         } else if (req.method === 'POST' && table === 'vehicles') {
           rows = (await tx.query('insert into public.vehicles(id,data) values($1,$2) returning *', [body.id, body.data])).rows;
         } else if (req.method === 'POST' && table === 'admin_sessions') {

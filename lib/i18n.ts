@@ -12,7 +12,7 @@ export const languageKey = 'hl-motors-language';
 
 export function translate(text: string, locale: Locale, params: TranslationParams = {}) {
   const translated = locale === 'ru' ? text : marketplaceUi[text]?.[locale] ?? vehicleUi[text]?.[locale] ?? (locale === 'zh' ? zh[text] : en[text]) ?? text;
-  return translated.replace(/\{(\w+)\}/g, (token, key: string) => params[key] === undefined ? token : String(params[key]));
+  return (typeof translated === 'string' ? translated : text).replace(/\{(\w+)\}/g, (token, key: string) => params[key] === undefined ? token : String(params[key]));
 }
 
 export function carCount(count: number, locale: Locale) {

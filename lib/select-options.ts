@@ -1,3 +1,4 @@
+import { type CustomOption, customLabel } from './custom-options';
 import type { Car } from './cars';
 import type { Locale } from './i18n';
 import { vehicleBrands } from './vehicle-dictionaries';
@@ -23,11 +24,11 @@ export function searchOptions(options: SelectOption[], query: string): SelectOpt
     return tokens.every(token => text.includes(token));
   }) : options;
 }
-export function brandSelectOptions(cars: Car[], locale: Locale): SelectOption[] {
-  const names = [...new Set([...vehicleBrands.filter(brand => brand.selectable).map(brand => brand.name), ...cars.map(car => canonicalBrand(car.brand))])];
-  return names.map(value => ({ value, label: dictionaryBrand(value, locale) ?? value,
+export function brandSelectOptions(cars: Car[], locale: Locale, entries: CustomOption[] = []): SelectOption[] {
+  const names = [...new Set([...vehicleBrands.filter(brand => brand.selectable).map(brand => brand.name), ...entries.filter(row => row.category === 'brand').map(row => row.ru), ...cars.filter(car => car.brand).map(car => canonicalBrand(car.brand))])];
+  return names.map(value => ({ value, label: dictionaryBrand(value, locale) ?? customLabel(entries, 'brand', value, locale),
     detail: locale === 'zh' ? dictionaryBrand(value, 'en') : dictionaryBrand(value, 'zh'),
-    keywords: `${dictionaryBrand(value, 'en') ?? ''} ${dictionaryBrand(value, 'zh') ?? ''} ${russianBrands[value] ?? ''}`,
+    keywords: `${dictionaryBrand(value, 'en') ?? ''} ${dictionaryBrand(value, 'zh') ?? ''} ${entries.filter(row => row.category === 'brand' && row.ru === value).map(row => [row.en, row.zh].join(' ')).join(' ')} ${russianBrands[value] ?? ''}`,
     count: cars.filter(car => canonicalBrand(car.brand) === value).length,
   })).sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, locale));
 }

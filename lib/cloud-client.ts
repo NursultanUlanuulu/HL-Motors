@@ -1,3 +1,4 @@
+import type { CustomOption } from './custom-options';
 import type { Car } from './cars';
 import type { Contacts } from './site-data';
 import { withDeadline, clientRequestTimeoutMs, mediaUploadTimeoutMs, type DeadlineOptions } from './request-deadline';
@@ -33,7 +34,7 @@ export async function apiRequest<T>(url: string, body?: unknown, method = 'POST'
   }, { ...options, timeoutMs: options.timeoutMs ?? clientRequestTimeoutMs });
 }
 
-export type CloudSnapshot = { cars: Car[]; contacts: Contacts };
+export type CloudSnapshot = { cars: Car[]; contacts: Contacts; options?: CustomOption[] };
 
 export async function uploadCloudMedia(files: File[], options: DeadlineOptions = {}) {
   const sources: string[] = [];

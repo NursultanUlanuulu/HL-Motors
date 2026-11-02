@@ -1,4 +1,5 @@
 import { vehicleOptions, vehicleBrands } from './vehicle-dictionaries';
+import { isCustomValue, customLabel, brandDisplayName, type CustomOption } from './custom-options';
 import type { Car } from './cars';
 import type { Locale } from './i18n';
 
@@ -22,7 +23,8 @@ export const specNumbers = [
   ['range', 'Запас хода, км', 0, 10000, 1],
   ['officialPrice', 'Цена производителя, CNY', 0, 100000000, 1],
 ] as const;
-export function optionLabel(group: OptionGroup, id: string, locale: Locale): string {
+export function optionLabel(group: OptionGroup, id: string, locale: Locale, entries: CustomOption[] = []): string {
+  if (isCustomValue(id)) return customLabel(entries, group, id, locale);
   const option = vehicleOptions[group].find(item => item.id === id);
   return option?.[locale] ?? id;
 }
@@ -63,21 +65,20 @@ export function validSpecs(value: unknown): boolean {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return false;
   return Object.entries(value).every(([key, entry]) => {
     const select = specSelects.find(([field]) => field === key);
-    if (select) return typeof entry === 'string' && vehicleOptions[select[0]].some(item => item.id === entry);
+    if (select) return typeof entry === 'string' && (vehicleOptions[select[0]].some(item => item.id === entry) || isCustomValue(entry));
     const numeric = specNumbers.find(([field]) => field === key);
     if (numeric) return typeof entry === 'number' && Number.isFinite(entry) && entry >= numeric[2] && entry <= numeric[3] && (numeric[4] !== 1 || Number.isInteger(entry));
     return key === 'registrationDate' && validDate(entry);
   });
 }
 export function validFeatureTags(value: unknown): boolean {
-  return value === undefined || (Array.isArray(value) && value.length <= vehicleOptions.featureTags.length
-    && new Set(value).size === value.length && value.every(id => typeof id === 'string' && vehicleOptions.featureTags.some(item => item.id === id)));
+  return value === undefined || (Array.isArray(value) && value.length <= 100
+    && new Set(value).size === value.length && value.every(id => typeof id === 'string' && (vehicleOptions.featureTags.some(item => item.id === id) || isCustomValue(id))));
 }
 const brandAliases: Record<string, string> = { 'Mercedes-Benz': 'Mercedes Benz', 'Li Auto': 'Li car', 'Aito': 'AITO AITO', 'Zeekr': 'Zeekr', 'Geely': 'Geely car' };
-export function canonicalBrand(value: string): string { return brandAliases[value] ?? value; }
+export function canonicalBrand(value: string): string { return Object.hasOwn(brandAliases, value) ? brandAliases[value] : value; }
 export const selectableBrands = [...new Set(vehicleBrands.filter(item => item.selectable).map(item => item.name))].sort((a, b) => a.localeCompare(b));
 export function dictionaryBrand(value: string, locale: Locale): string | undefined {
   const brand = vehicleBrands.find(item => item.name === canonicalBrand(value));
-  const display: Record<string, string> = { 'Li car': 'Li Auto', 'Mercedes Benz': 'Mercedes-Benz', 'AITO AITO': 'AITO', 'Geely car': 'Geely' };
-  return brand ? locale === 'zh' ? brand.zh : display[brand.name] ?? brand.name : undefined;
+  return brand ? locale === 'zh' ? brand.zh : brandDisplayName(brand.name) : undefined;
 }

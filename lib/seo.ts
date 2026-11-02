@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import type { Car } from './cars';
+import { customLabel, isCustomValue } from './custom-options';
 import { localizeCar } from './car-translations';
 
 export const siteUrl = 'https://firstseven-auto.com';
@@ -17,7 +18,7 @@ export function vehicleSeo(source: Car) {
   const name = `${car.brand} ${car.model}`;
   const title = `${car.metaTitle || `${name} ${car.year} — купить автомобиль`} — ${siteName}`;
   const mileage = car.mileage && car.mileage !== 'Новый' ? ` Пробег: ${car.mileage}.` : '';
-  const description = car.metaDescription || `${name}, ${car.year} год. Ориентировочная цена $${car.price.toLocaleString('en-US')}. ${car.condition}.${mileage} ${car.status}. Фото, осмотр и доставка. ${siteName}.`;
+  const description = car.metaDescription || `${name}, ${car.year} год. Ориентировочная цена $${car.price.toLocaleString('en-US')}. ${customLabel([], 'condition', car.condition, 'ru')}.${mileage} ${customLabel([], 'status', car.status, 'ru')}. Фото, осмотр и доставка. ${siteName}.`;
   return { car, name, title, description, path: `/catalog/${encodeURIComponent(car.id)}` };
 }
 export function jsonLd(value: unknown) { return JSON.stringify(value).replace(/</g, '\\u003c'); }
@@ -29,9 +30,9 @@ export function vehicleStructuredData(source: Car) {
     url: siteUrl + path, sku: car.id, brand: { '@type': 'Brand', name: car.brand },
     model: car.model, vehicleModelDate: String(car.year),
     image: car.gallery?.length ? car.gallery : car.image ? [car.image] : undefined,
-    itemCondition: `https://schema.org/${car.condition === 'Новый' ? 'NewCondition' : 'UsedCondition'}`,
+    itemCondition: isCustomValue(car.condition) ? undefined : `https://schema.org/${car.condition === 'Новый' ? 'NewCondition' : 'UsedCondition'}`,
     offers: { '@type': 'Offer', url: siteUrl + path, price: car.price, priceCurrency: 'USD',
-      availability: `https://schema.org/${car.status === 'В наличии' ? 'InStock' : 'PreOrder'}`,
+      availability: isCustomValue(car.status) ? undefined : `https://schema.org/${car.status === 'В наличии' ? 'InStock' : 'PreOrder'}`,
       seller: { '@type': 'Organization', name: siteName, url: siteUrl } },
   };
 }

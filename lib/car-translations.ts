@@ -1,16 +1,18 @@
+import { customLabel, type CustomOption } from './custom-options';
 import { carTextFields, type Car, type CarText, type CarTextField } from './cars';
 import { translate, type Locale } from './i18n';
 import { carOption, canonicalBrand, dictionaryBrand, optionLabel } from './vehicle-specs';
 
-export function translatedCarText(car: Car, field: CarTextField, locale: Locale): string {
+export function translatedCarText(car: Car, field: CarTextField, locale: Locale, entries: CustomOption[] = []): string {
   if (field === 'brand') {
     const brand = dictionaryBrand(car.brand, locale);
     if (brand) return brand;
+    if (entries.some(entry => entry.category === 'brand' && entry.ru === car.brand)) return customLabel(entries, 'brand', car.brand, locale);
   }
   const group = field === 'drive' ? 'driveType' : field === 'body' ? 'bodyType' : field === 'color' ? 'color' : field === 'transmission' ? 'transmission' : undefined;
   if (group) {
     const selected = carOption(car, group);
-    if (selected) return optionLabel(group, selected, locale);
+    if (selected) return optionLabel(group, selected, locale, entries);
   }
   const number = field === 'mileage' ? car.specs?.mileageKm : field === 'power' ? car.specs?.powerHp : undefined;
   if (number !== undefined) return `${new Intl.NumberFormat(locale, { maximumFractionDigits: 2 }).format(number)} ${field === 'mileage' ? (locale === 'zh' ? '公里' : locale === 'en' ? 'km' : 'км') : locale === 'zh' ? '马力' : locale === 'en' ? 'hp' : 'л.с.'}`;
@@ -21,13 +23,13 @@ export function translatedCarText(car: Car, field: CarTextField, locale: Locale)
   return translate(value, locale).replace(/\s*км(?=\s|$)/gu, locale === 'en' ? ' km' : ' 公里').replace(/\s*л\.с\./gu, locale === 'en' ? ' hp' : ' 马力');
 }
 
-export function localizeCar(car: Car, locale: Locale): Car {
-  return { ...car, ...Object.fromEntries(carTextFields.map(field => [field, translatedCarText(car, field, locale)])) };
+export function localizeCar(car: Car, locale: Locale, entries: CustomOption[] = []): Car {
+  return { ...car, ...Object.fromEntries(carTextFields.map(field => [field, translatedCarText(car, field, locale, entries)])) };
 }
 
-export function brandLabel(brand: string, cars: Car[], locale: Locale) {
+export function brandLabel(brand: string, cars: Car[], locale: Locale, entries: CustomOption[] = []) {
   const car = cars.find(item => item.brand === brand);
-  return dictionaryBrand(brand, locale) ?? (car ? translatedCarText(car, 'brand', locale) : brand);
+  return dictionaryBrand(brand, locale) ?? (car ? translatedCarText(car, 'brand', locale, entries) : customLabel(entries, 'brand', brand, locale));
 }
 
 export function modelLabel(model: string, cars: Car[], locale: Locale, brand = '') {
