@@ -2,7 +2,7 @@ import type { Car, CarText } from './cars';
 import type { VehicleSpecs } from './vehicle-specs';
 
 const sharedText = ['brand', 'model', 'trim', 'power', 'drive', 'body', 'transmission', 'engine', 'remark', 'highlights'] as const;
-const sharedSpecs = ['fuelType', 'transmission', 'driveType', 'bodyType', 'seats', 'batteryType', 'flowMode', 'displacement', 'powerHp', 'acceleration', 'fuelConsumption', 'batteryCapacity', 'range'] as const;
+const sharedSpecs = ['fuelType', 'transmission', 'driveType', 'bodyType', 'seats', 'batteryType', 'flowMode', 'displacement', 'powerHp', 'acceleration', 'fuelConsumption', 'batteryCapacity', 'range', 'electricRangeKm', 'totalRangeKm'] as const;
 
 /** Copy only model information, retaining this draft's identity and individual data. */
 export function applyCarTemplate(draft: Car, source: Car): Car {

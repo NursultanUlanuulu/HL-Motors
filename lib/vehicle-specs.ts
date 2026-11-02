@@ -6,7 +6,7 @@ import type { Locale } from './i18n';
 export type OptionGroup = keyof typeof vehicleOptions;
 export type VehicleSpecs = Partial<Record<'fuelType' | 'transmission' | 'driveType' | 'bodyType' | 'color' | 'seats' | 'batteryType' | 'flowMode', string>> & {
   displacement?: number; mileageKm?: number; powerHp?: number; acceleration?: number;
-  fuelConsumption?: number; batteryCapacity?: number; range?: number;
+  fuelConsumption?: number; batteryCapacity?: number; range?: number; electricRangeKm?: number; totalRangeKm?: number;
   registrationDate?: string; officialPrice?: number;
 };
 export const specSelects = [
@@ -20,6 +20,8 @@ export const specNumbers = [
   ['acceleration', 'Разгон 0–100 км/ч, с', 0, 300, 0.01],
   ['fuelConsumption', 'Расход топлива, л/100 км', 0, 200, 0.01],
   ['batteryCapacity', 'Ёмкость батареи, кВт·ч', 0, 2000, 0.01],
+  ['electricRangeKm', 'Запас хода на электротяге, км', 0, 10000, 1],
+  ['totalRangeKm', 'Общий запас хода, км', 0, 10000, 1],
   ['range', 'Запас хода, км', 0, 10000, 1],
   ['officialPrice', 'Цена производителя, CNY', 0, 100000000, 1],
 ] as const;

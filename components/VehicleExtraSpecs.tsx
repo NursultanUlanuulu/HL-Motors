@@ -16,6 +16,7 @@ export function VehicleExtraSpecs({ car }: { car: Car }) {
   }
   for (const [key, label] of specNumbers) {
     if (key === 'mileageKm' || key === 'powerHp') continue;
+    if (key === 'range' && (car.specs?.electricRangeKm !== undefined || car.specs?.totalRangeKm !== undefined)) continue;
     const value = car.specs?.[key];
     if (value !== undefined) rows.push([label, new Intl.NumberFormat(locale, { maximumFractionDigits: 3 }).format(value)]);
   }

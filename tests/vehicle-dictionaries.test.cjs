@@ -179,9 +179,14 @@ test('new database migration preserves legacy rows and agrees with application v
     const before = (await db.query('select * from vehicles')).rows;
     const migration = fs.readFileSync(path.join(root, 'supabase/migrations/202610150001_vehicle_dictionaries.sql'), 'utf8');
     await db.exec(migration); await db.exec(migration);
+    for (const name of ['202611020001_custom_vehicle_options.sql', '202611020002_vehicle_ranges.sql']) {
+      await db.exec(fs.readFileSync(path.join(root, 'supabase/migrations', name), 'utf8'));
+    }
     assert.deepEqual((await db.query('select * from vehicles')).rows, before);
     const good = fixture();
-    const cases = [good, { ...good, specs: {} }, ...specNumbers.flatMap(([key,,min,max]) => [{ ...good, specs: { [key]: min } }, { ...good, specs: { [key]: max } }]),
+    const cases = [good, { ...good, specs: {} }, { ...good, specs: { electricRangeKm: 120, totalRangeKm: 1050 } },
+      ...['electricRangeKm', 'totalRangeKm'].flatMap(key => [-1, 1.5, 10001, '100'].map(value => ({ ...good, specs: { [key]: value } }))),
+      ...specNumbers.flatMap(([key,,min,max]) => [{ ...good, specs: { [key]: min } }, { ...good, specs: { [key]: max } }]),
       { ...good, specs: null }, { ...good, specs: { private: 'secret' } }, { ...good, specs: { fuelType: 'unknown' } }, { ...good, specs: { mileageKm: 0.5 } },
       { ...good, specs: { displacement: -1 } }, { ...good, specs: { batteryCapacity: '73.5' } }, { ...good, specs: { registrationDate: '2026-02-30' } },
       { ...good, featureTags: [good.featureTags[0], good.featureTags[0]] }, { ...good, featureTags: ['unknown'] }, { ...good, featureTags: null },
@@ -196,7 +201,6 @@ test('new database migration preserves legacy rows and agrees with application v
     await db.query('insert into vehicles(id,data) values($1,$2)', [good.id, good]);
     const saved = (await db.query('select data from vehicles where id=$1', [good.id])).rows[0].data;
     assert.deepEqual(publicCar(saved), good);
-    await db.exec(fs.readFileSync(path.join(root, 'supabase/migrations/202611020001_custom_vehicle_options.sql'), 'utf8'));
     const { customValue, existingValue } = load('lib/custom-options.ts');
     const entries = [];
     const custom = { ...good, featureTags: [], specs: {} };
