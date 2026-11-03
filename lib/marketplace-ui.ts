@@ -30,7 +30,7 @@ export const marketplaceUi: Record<string, { en: string; zh: string }> = {
   'Автомобиль из каталога': { en: 'Vehicle from catalogue', zh: '目录中的车辆' },
   'Выберите автомобиль': { en: 'Select a vehicle', zh: '选择车辆' },
   'Скопировать поля': { en: 'Copy fields', zh: '复制字段' },
-  'Выберите автомобиль, чтобы скопировать все поля, включая видео и переводы. Фотографии загрузите для новой машины.': { en: 'Select a vehicle to copy all fields, including its video and translations. Upload photos for the new vehicle.', zh: '选择车辆以复制全部字段，包括视频和翻译。请为新车上传照片。' },
+  'Выберите автомобиль, чтобы скопировать данные и переводы. Фотографии и видео добавьте для новой машины.': { en: 'Select a vehicle to copy its details and translations. Add photos and a video for the new vehicle.', zh: '选择车辆以复制车辆信息和翻译。请为新车添加照片和视频。' },
   'В каталоге пока нет автомобилей для копирования.': { en: 'There are no vehicles to copy from yet.', zh: '目录中暂无可复制的车辆。' },
   'Данные скопированы. Проверьте форму и сохраните новое объявление.': { en: 'Details copied. Review the form and save the new listing.', zh: '信息已复制。请检查表单并保存新车辆信息。' },
   'Другие автомобили': { en: 'Other vehicles', zh: '其他车辆' },

@@ -141,7 +141,7 @@ export function AdminDashboard() {
         <header><div><p>{t(original.current ? 'Редактирование объявления' : 'Новое объявление')}</p><h2>{draftDisplay?.brand && draftDisplay?.model ? `${draftDisplay.brand} ${draftDisplay.model}` : t('Автомобиль')}</h2></div><button type="button" className="admin-editor-close" disabled={busy} onClick={closeEditor} aria-label={t("Закрыть")}>×</button></header>
         <div className="admin-editor-body"><fieldset className="admin-editor-fields" disabled={saving}>
           {!original.current && <fieldset><legend>{t('Создать на основе')}</legend>
-            <p className="admin-media-help">{t('Выберите автомобиль, чтобы скопировать все поля, включая видео и переводы. Фотографии загрузите для новой машины.')}</p>
+            <p className="admin-media-help">{t('Выберите автомобиль, чтобы скопировать данные и переводы. Фотографии и видео добавьте для новой машины.')}</p>
             <div className="admin-form-grid">
               <SearchSelect label={t('Автомобиль из каталога')} value={templateId} options={templateOptions} placeholder={t('Выберите автомобиль')} disabled={busy || !items.length} onChange={value => { setTemplateId(value); setTemplateApplied(false); }} />
               <button type="button" className="admin-cancel" disabled={busy || !items.some(car => car.id === templateId)} onClick={applyTemplate}>{t('Скопировать поля')}</button>

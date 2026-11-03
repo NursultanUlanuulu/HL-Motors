@@ -8,8 +8,8 @@ new Function('exports', 'module', ts.transpileModule(fs.readFileSync(require.res
 }).outputText)(mod.exports, mod);
 const { applyCarTemplate } = mod.exports;
 
-test('copies all listing details independently, preserving the new identity and draft photos', () => {
-  const draft = { id: 'new', image: 'new.jpg', gallery: ['new.jpg'] };
+test('copies all listing details independently, preserving the new identity and draft media', () => {
+  const draft = { id: 'new', image: 'new.jpg', gallery: ['new.jpg'], video: 'new.mp4' };
   const source = { id: 'source', version: 8, image: 'old.jpg', gallery: ['old.jpg'], brand: 'BYD', model: 'Seal',
     year: 2024, price: 16000, status: 'В наличии', condition: 'С пробегом', vin: 'source-vin', carCode: 'A',
     listedAt: '2026-11-02', fobPrice: 15000, video: 'video.mp4', featureTags: ['offer'],
@@ -31,6 +31,7 @@ test('copies all listing details independently, preserving the new identity and 
 test('reapplying a template removes values absent in the second source and never imports its photos', () => {
   const draft = { id: 'new', image: '', gallery: [] };
   const first = applyCarTemplate(draft, { model: 'First', vin: 'old', video: 'first.mp4', translations: { en: { title: 'First' } }, specs: { range: 600 } });
+  assert.equal(first.video, undefined);
   const next = applyCarTemplate(first, { model: 'Second', image: 'second.jpg', gallery: ['second.jpg'], version: 3 });
   assert.deepEqual(next, { ...draft, model: 'Second' });
 });
