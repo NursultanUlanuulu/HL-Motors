@@ -17,7 +17,7 @@ import { SearchSelect } from './SearchSelect';
 
 const pageSize = 12;
 const numericLabels: Record<string, string> = { minPrice: 'Цена от, USD', maxPrice: 'Цена до, USD', minYear: 'Год от', maxYear: 'Год до', minMileage: 'Пробег от, км', maxMileage: 'Пробег до, км', minPower: 'Мощность от, л.с.', maxPower: 'Мощность до, л.с.' };
-export function CatalogClient({ favorites = false }: { favorites?: boolean }) {
+export function CatalogClient({ favorites = false, homepage = false }: { favorites?: boolean; homepage?: boolean }) {
   const { locale, t } = useLocale();
   const { cars, options, loaded, error, refresh } = useSiteData();
   const { ids, ready, saved } = useFavorites();
@@ -69,6 +69,24 @@ export function CatalogClient({ favorites = false }: { favorites?: boolean }) {
   }
   const filters = <MarketFilters cars={source} value={value} update={update} updateYears={(minYear, maxYear) => navigate({ ...value, minYear, maxYear, page: '1' })} reset={reset} />;
   const loading = !loaded || (favorites && !ready);
+  if (homepage) {
+    const sections = [
+      { condition: 'Новый', title: 'Новые автомобили' },
+      { condition: 'С пробегом', title: 'Автомобили с пробегом' },
+    ];
+    return <main className="market-main market-home">
+      <div className="market-title-row"><div><h1>{t('Автомобили из Китая')}</h1><p>{loading ? t('Загружаем каталог…') : carCount(cars.length, locale)}</p></div><form className="market-search" role="search" onSubmit={event => { event.preventDefault(); window.location.href = '/catalog?query=' + encodeURIComponent(search.trim()); }}><label><MarketIcon name="search" /><input type="search" value={search} onChange={event => setSearch(event.target.value)} aria-label={t('Поиск автомобилей')} placeholder={t('Марка, модель или ключевое слово')} /></label><button type="submit" className="market-primary">{t('Найти')}</button></form></div>
+      {error && <div className="market-notice" role="alert"><p>{t(error)}</p><button className="market-secondary" onClick={() => void refresh()}>{t('Повторить')}</button></div>}
+      {sections.map(section => {
+        const items = filterMarketCars(cars, { ...marketDefaults, condition: section.condition }).slice(0, pageSize);
+        const href = '/catalog?condition=' + encodeURIComponent(section.condition);
+        return <section className="market-home-section" key={section.condition} aria-labelledby={'home-' + (section.condition === 'Новый' ? 'new' : 'used')}>
+          <div className="market-home-section-heading"><div><h2 id={'home-' + (section.condition === 'Новый' ? 'new' : 'used')}>{t(section.title)}</h2><p>{loading ? t('Загружаем каталог…') : carCount(filterMarketCars(cars, { ...marketDefaults, condition: section.condition }).length, locale)}</p></div><Link className="market-secondary market-home-view-all" href={href}>{t('Посмотреть весь каталог')} <span aria-hidden="true">↗</span></Link></div>
+          {loading ? <div className="market-cars" aria-busy="true">{Array.from({ length: 3 }, (_, index) => <div className="market-skeleton" key={index} />)}</div> : items.length ? <div className="market-cars">{items.map((car, index) => <VehicleCard key={car.id} car={car} returnHref={href} eager={index < 3} />)}</div> : <p className="market-home-empty">{t(section.condition === 'Новый' ? 'Новых автомобилей пока нет.' : 'Автомобилей с пробегом пока нет.')}</p>}
+        </section>;
+      })}
+    </main>;
+  }
   return <main className="market-main">
     <div className="market-title-row"><div><h1>{t(favorites ? 'Избранное' : 'Автомобили из Китая')}</h1><p role="status" aria-live="polite">{loading ? t('Загружаем каталог…') : carCount(visible.length, locale)}</p></div><form className="market-search" role="search" onSubmit={event => { event.preventDefault(); update('query', search.trim()); }}><label><MarketIcon name="search" /><input type="search" value={search} onChange={event => setSearch(event.target.value)} aria-label={t('Поиск автомобилей')} placeholder={t('Марка, модель или ключевое слово')} /></label><button type="submit" className="market-primary">{t('Найти')}</button></form></div>
     {!saved && <p className="market-notice" role="status">{t('Избранное сохранится только до закрытия страницы: хранилище браузера недоступно.')}</p>}

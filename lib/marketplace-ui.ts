@@ -1,4 +1,9 @@
 export const marketplaceUi: Record<string, { en: string; zh: string }> = {
+  'Новые автомобили': { en: 'New cars', zh: '新车' },
+  'Автомобили с пробегом': { en: 'Used cars', zh: '二手车' },
+  'Посмотреть весь каталог': { en: 'View all cars', zh: '查看全部车辆' },
+  'Новых автомобилей пока нет.': { en: 'There are no new cars yet.', zh: '暂时没有新车。' },
+  'Автомобилей с пробегом пока нет.': { en: 'There are no used cars yet.', zh: '暂时没有二手车。' },
   'Удалить из списка': { en: 'Remove from list', zh: '从列表移除' },
   'Удалить из списка: {name}': { en: 'Remove from list: {name}', zh: '从列表移除：{name}' },
   '«Удалить из списка» убирает запись из недавних загрузок. Видео в объявлении останется.': { en: '“Remove from list” hides the recent upload. The video in your listing stays available.', zh: '“从列表移除”只隐藏最近上传记录，车辆信息中的视频将保留。' },
